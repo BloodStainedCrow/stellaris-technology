@@ -7,10 +7,11 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 750,
+    "cost": 2500,
     "feature_unlocks": [
       "<b>Component</b>: Large Null Void Beam",
       "<b>Component</b>: Medium Null Void Beam",
+      "<b>Component</b>: Null Void Siphon",
       "<b>Component</b>: Small Null Void Beam"
     ],
     "is_dangerous": false,
@@ -82,7 +83,7 @@
         "feature_unlocks": [
           "<b>Building</b>: Omega Alignment"
         ],
-        "is_dangerous": false,
+        "is_dangerous": true,
         "is_rare": true,
         "is_start_tech": false,
         "prerequisites": [
@@ -122,7 +123,7 @@
     "feature_unlocks": [
       "<b>Building</b>: Omega Alignment"
     ],
-    "is_dangerous": false,
+    "is_dangerous": true,
     "is_rare": true,
     "is_start_tech": false,
     "prerequisites": [
@@ -147,16 +148,76 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_amoeba_strike_craft_1",
-    "name": "Amoeba Breeding Program",
-    "description": "By breeding Space Amoebas in captivity, we can program their symbiotic flagella to act as organic strike craft for our navy.",
+    "key": "tech_alien_life_studies",
+    "name": "Xenology",
+    "description": "Studying the fauna of other worlds gives insight into alien behaviors, allowing us to identify and domesticate docile entities.",
     "area": "society",
-    "base_factor": 1.0,
+    "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
     "cost": 2500,
     "feature_unlocks": [
-      "<b>Component</b>: Amoeba Flagella"
+      "<b>Building</b>: Alien Zoo"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 1,
+    "prerequisites_names": [],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
+      "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has Fanatic Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Fanatic Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
+      "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Isolated Valley<br/>\t\t    •   Has deposit Avian Reserve<br/>\t\t    •   Any owned Population Group:<br/>\t\t\t    •   One must be true<br/>\t\t\t\t    •   Pop is NOT Sapient<br/>\t\t\t\t    •   Is livestock<br/>\t\t\t\t    •   has_disconnected_drone_citizenship_type=yes",
+      "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
+    ],
+    "potential": [
+      "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+    ],
+    "children": [],
+    "is_event": true,
+    "is_gestalt": false,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_alien_topography",
+    "name": "Alien Topography",
+    "description": "Civilizations flourish in locations that promotes growth, and by analyzing where the majority of pre-FTL settlements thrive we can gain more out of our colonies.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "New Worlds",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Max Districts (non-artificial planets only) +1"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_amoeba_strike_craft_1",
+    "name": "Flagella Weaponization",
+    "description": "By altering the breeding process of Space Amoebas, we can program their symbiotic flagella to act as organic strike craft for our navy.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 6000,
+    "feature_unlocks": [
+      "<b>Component</b>: Amoeba Flagella",
+      "<b>Component</b>: Flagella Swarmers"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -171,6 +232,654 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_ascension_theory",
+    "name": "Ascension Theory",
+    "description": "Our history is a repeating cycle of dramatic technological, political, and cultural leaps; these leaps are often preceded by periods of upheaval and followed by times of relative stability. By identifying the core, recurring premises of these leaps, we may be able to effectively short-circuit the cycle for our own benefit.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Statecraft",
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Unity Ambitions",
+      "Ascension Perks Unlocked +1"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [
+      "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Has the Curator Insight modifier<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Statecraft 1"
+    ],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_asteroidal_carapace",
+    "name": "Asteroidal Carapace",
+    "description": "The shell of a Cutholoid is not mineral alone, but reinforced with strong biological fibers. We can synthesize this process using advanced metallurgic techniques.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Materials",
+    "cost": 0,
+    "feature_unlocks": [
+      "<b>Component</b>: Asteroidal Carapace"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Grand Archive"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_atmospheric_orbital_mechanics",
+    "name": "Atmospheric Orbital Mechanics",
+    "description": "Due to our vast experience operating observation stations in orbit of pre-FTL worlds, we have discovered slight optimizations. By implementing them empire-wide, we can drastically reduce the maintenance our stations require.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Mining Station Output +5%",
+      "Research Station Output +5%",
+      "Station Upkeep -50%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_boarding_cables",
+    "name": "Boarding Cables",
+    "description": "Repurposed small-caliber artillery that fire piercing hooks attached to resilient carbon fiber cables, perfect for immobilizing and boarding enemy ships.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Propulsion",
+    "cost": 8000,
+    "feature_unlocks": [
+      "<b>Component</b>: Boarding Cables"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 1,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Grand Archive"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_btc_1",
+    "name": "Star Cracker",
+    "description": "PLANET_KILLER_STAR_CRACKER_DESC",
+    "area": "engineering",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 48000,
+    "feature_unlocks": [
+      "<b>Component</b>: Star Cracker"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Nemesis",
+      "Has Galactic Nemesis Ascension Perk",
+      "Has the can_build_star_eaters country flag"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_climate_restoration",
+    "name": "Climate Restoration",
+    "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 45.0,
+    "category": "New Worlds",
+    "cost": 16000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_terrestrial_sculpting"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Terrestrial Sculpting",
+        "key": "tech_terrestrial_sculpting"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+    ],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_climate_restoration",
+    "name": "Climate Restoration",
+    "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 45.0,
+    "category": "New Worlds",
+    "cost": 16000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_terrestrial_sculpting"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Terrestrial Sculpting",
+        "key": "tech_terrestrial_sculpting"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+    ],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_combat_computers_bio_integration",
+    "name": "Combat Computer Bio-integration",
+    "description": "We can develop specialized neurochips to influence the behavior of space fauna involved in wide scale fleet combat.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 4000,
+    "feature_unlocks": [
+      "<b>Component</b>: Advanced Neurochips",
+      "<b>Component</b>: Autonomous Neurochips",
+      "<b>Component</b>: NEUROCHIPS",
+      "<b>Component</b>: Precognitive Interface",
+      "<b>Component</b>: Sapient Neurochips"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations"
+    ],
+    "tier": 2,
+    "prerequisites_names": [
+      {
+        "name": "Controlled Mutations",
+        "key": "tech_controlled_mutations"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_compact_living",
+    "name": "Compact Living",
+    "description": "While no one civilization has the perfect solution to the ever-expanding challenge of governing a growing nation, we have found a partial solution. After studying a multitude of species and governments, we have discovered an outstanding balance of flexibility and function.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Statecraft",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "The Empire Size Effect is modified by: -5%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_containment_vessel",
+    "name": "Curator Containment Protocols",
+    "description": "Gravity Snares capture double the amount of Space Fauna.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Field Manipulation",
+    "cost": 8000,
+    "feature_unlocks": [
+      "Fauna Capture Amount +1",
+      "Fauna Capture Chance +10%"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_gravity_wells"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Gravity Snares",
+        "key": "tech_gravity_wells"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Any Leader in council has trait Curator 1"
+    ],
+    "potential": [
+      "Has DLC Grand Archive"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_FE_titan",
+    "name": "Paradox Titan",
+    "description": "These formidable ships are closer to mobile fortresses than anything else, and only the most brutal assaults have a chance to damage them.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_battlecruiser",
+    "name": "Enigma Battlecruiser",
+    "description": "Another optimized spacecraft, this time of larger dimensions, will make current Battleships look like toys.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_crisis_1",
+    "name": "Exponential Learning Theory",
+    "description": "The radical shift in perspective required to comprehend the infinite layers of reality challenges even our most brilliant minds.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 10000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_crisis_2",
+    "name": "Gravitic Brush",
+    "description": "Gravity and spacetime shape the universe. Starting with gravity, we will master tools to power our ascension.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 50000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_crisis_3",
+    "name": "Theoretical Infinity Thesis",
+    "description": "Precise and incredibly minute alterations in gravity allow us to inject commands into the code of reality. Extreme caution is imperative as we learn the applications of this new and incredible tool.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 100000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_crisis_4",
+    "name": "The Rules of Reality",
+    "description": "Recent experiments confirm that our edits to reality are only temporary. More significant alterations will be necessary to anchor these changes.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 200000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_crisis_5",
+    "name": "Nascent Universes",
+    "description": "Large-scale travel to different universes is a daunting task. We must engineer a spacecraft that can not only pierce the fabric of spacetime but also survive the journey.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 300000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_escort",
+    "name": "Riddle Escort",
+    "description": "A starship of modest size that optimizes our knowledge of spacetime to enact dimensional transcendentalism, making the inside bigger than its outward shape suggests. Advanced firepower capabilities come at a reduced logistical cost compared to traditional ship designs.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_world",
+    "name": "Scalable Reservoir Computing",
+    "description": "Colossal in scale, the Synaptic Lathe is a reservoir computer. The processing power of our population's networked minds is used to compute and store data. The benefits are obvious, but some misguided species may view the transmutation of individuals into computing chips as morally questionable.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Materials",
+    "cost": 32000,
+    "feature_unlocks": [
+      "<b>Mega-Structure</b>: Synaptic Lathe"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age",
+      "Has Cosmogenesis Ascension Perk"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_covenant_composer",
+    "name": "Mark of the Composer",
+    "description": "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 60000,
+    "feature_unlocks": [
+      "<b>Component</b>: Blessing of the Composer",
+      "<b>Component</b>: Mark of the Composer"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_theory"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Theory",
+        "key": "tech_psionic_theory"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_covenant_eater",
+    "name": "Mark of the Eater",
+    "description": "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 60000,
+    "feature_unlocks": [
+      "<b>Component</b>: Blessing of the Eater",
+      "<b>Component</b>: Mark of the Eater"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_theory"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Theory",
+        "key": "tech_psionic_theory"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_covenant_instrument",
+    "name": "Mark of the Instrument",
+    "description": "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 60000,
+    "feature_unlocks": [
+      "<b>Component</b>: Blessing of the Instrument",
+      "<b>Component</b>: Mark of the Instrument"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_theory"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Theory",
+        "key": "tech_psionic_theory"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_covenant_whisperers",
+    "name": "Mark of the Whisperers",
+    "description": "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 60000,
+    "feature_unlocks": [
+      "<b>Component</b>: Blessing of the Whisperers",
+      "<b>Component</b>: Mark of the Whisperers"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_theory"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Theory",
+        "key": "tech_psionic_theory"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_crystal_armor_1",
     "name": "Crystal-Infused Plating",
     "description": "By infusing armor plating with Crystalline matter we are able to further increase the durability of our ships' protective hulls.",
@@ -178,8 +887,9 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 2500,
+    "cost": 6000,
     "feature_unlocks": [
+      "<b>Component</b>: Crystal Infused Innards",
       "<b>Component</b>: Large Crystal-Infused Plating",
       "<b>Component</b>: Medium Crystal-Infused Plating",
       "<b>Component</b>: Small Crystal-Infused Plating"
@@ -206,8 +916,9 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 8000,
+    "cost": 16000,
     "feature_unlocks": [
+      "<b>Component</b>: Crystal Forged Innards",
       "<b>Component</b>: Large Crystal-Forged Plating",
       "<b>Component</b>: Medium Crystal-Forged Plating",
       "<b>Component</b>: Small Crystal-Forged Plating"
@@ -232,10 +943,14 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 50000,
+    "cost": 60000,
     "feature_unlocks": [
+      "<b>Component</b>: Draconic Carapace",
+      "<b>Component</b>: Large Draconic Carapace",
       "<b>Component</b>: Large Dragonscale Armor",
+      "<b>Component</b>: Medium Draconic Carapace",
       "<b>Component</b>: Medium Dragonscale Armor",
+      "<b>Component</b>: Small Draconic Carapace",
       "<b>Component</b>: Small Dragonscale Armor"
     ],
     "is_dangerous": false,
@@ -258,12 +973,14 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Dyson Sphere",
       "<b>Mega-Structure</b>: Dyson Sphere Frame",
       "<b>Mega-Structure</b>: Dyson Sphere Site",
-      "<b>Mega-Structure</b>: Partial Dyson Sphere"
+      "<b>Mega-Structure</b>: Dyson Sphere: Initial",
+      "<b>Mega-Structure</b>: Dyson Sphere: Medial",
+      "<b>Mega-Structure</b>: Dyson Sphere: Penultimate"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -279,6 +996,98 @@
       }
     ],
     "weight_modifiers": [],
+    "potential": [
+      "Has DLC Utopia"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_ecological_adaptation",
+    "name": "Ecological Adaptation",
+    "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 60.0,
+    "category": "New Worlds",
+    "cost": 10000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Ecological Adaptation"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_terrestrial_sculpting"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Terrestrial Sculpting",
+        "key": "tech_terrestrial_sculpting"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+    ],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_ecological_adaptation",
+    "name": "Ecological Adaptation",
+    "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 60.0,
+    "category": "New Worlds",
+    "cost": 10000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Ecological Adaptation"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_terrestrial_sculpting"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Terrestrial Sculpting",
+        "key": "tech_terrestrial_sculpting"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+    ],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_enhanced_cryosleep_sedatives",
+    "name": "Enhanced Cryosleep Sedatives",
+    "description": "Sedatives based on a rare enzyme enable enhanced cryosleep, greatly improving organic species' tolerance of long-distance space travel.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 2000,
+    "feature_unlocks": [
+      "Resettlement cost for organic pops -30%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
     "potential": [],
     "children": [],
     "is_event": true,
@@ -292,9 +1101,10 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 50000,
+    "cost": 60000,
     "feature_unlocks": [
-      "<b>Component</b>: Enigmatic Decoder"
+      "<b>Component</b>: Enigmatic Decoder",
+      "<b>Component</b>: Enigmatic Decoder Chip"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -316,9 +1126,10 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 50000,
+    "cost": 60000,
     "feature_unlocks": [
-      "<b>Component</b>: Enigmatic Encoder"
+      "<b>Component</b>: Enigmatic Encoder",
+      "<b>Component</b>: Enigmatic Encoder Chip"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -340,8 +1151,9 @@
     "base_factor": 10.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
+      "<b>Component</b>: Bio-Disintegrator",
       "<b>Component</b>: Large Matter Disintegrator",
       "<b>Component</b>: Medium Matter Disintegrator",
       "<b>Component</b>: Small Matter Disintegrator"
@@ -353,8 +1165,7 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(×<b style='color:red'>0.0</b>) Does NOT have the Covenant: End of the Cycle modifier",
-      "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
+      "(×<b style='color:red'>0.0</b>) Does NOT have the Covenant: End of the Cycle modifier"
     ],
     "potential": [],
     "children": [],
@@ -369,7 +1180,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 4000,
+    "cost": 8000,
     "feature_unlocks": [
       "£energy£ Energy Credits from £job£ Jobs +5%"
     ],
@@ -386,18 +1197,73 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_genetic_resequencing",
-    "name": "Genetic Resequencing",
-    "description": "No longer will we be limited by the basic biological structure of a species when striving to improve them. DNA is just another material to be shaped as the sculptor wills it.",
-    "area": "society",
+    "key": "tech_hyper_drive_bio_integration",
+    "name": "Hyperdrive Bio-integration",
+    "description": "Traveling across hyperlanes can be hazardous for spaceborne life, but we are able to enhance their capabilities.",
+    "area": "physics",
     "base_factor": 1.0,
     "base_weight": 0.0,
-    "category": "Biology",
-    "cost": 15000,
+    "category": "Particles",
+    "cost": 4000,
     "feature_unlocks": [
-      "<b>Feature : </b>Advanced Traits",
-      "<b>Feature : </b>Genetic Resequencing"
+      "<b>Component</b>: Hyperdimensional Inner-Ear",
+      "<b>Component</b>: Imprinted Breach Point Memories",
+      "<b>Component</b>: Psychically Enhanced Bio-Drive",
+      "<b>Component</b>: Slipstream-Sensible Vision"
     ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations"
+    ],
+    "tier": 2,
+    "prerequisites_names": [
+      {
+        "name": "Controlled Mutations",
+        "key": "tech_controlled_mutations"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_identity_copy",
+    "name": "Identity Copies",
+    "description": "We will be able to copy the identity and memories of a Synthetic into a new mechanical body. The copies have predictable skill sets but make for stale conversation.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Industry",
+    "cost": 16000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_leviathan_techgenesis",
+    "name": "Leviathan Tech Genesis",
+    "description": "Utilizing the received knowledge seized from Leviathans, we now have access to new improvements for our frames.",
+    "area": "engineering",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Industry",
+    "cost": 32000,
+    "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": true,
     "is_start_tech": false,
@@ -405,7 +1271,9 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -418,9 +1286,9 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 6000,
+    "cost": 12000,
     "feature_unlocks": [],
-    "is_dangerous": false,
+    "is_dangerous": true,
     "is_rare": true,
     "is_start_tech": false,
     "prerequisites": [],
@@ -435,6 +1303,34 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_lost_building_methods",
+    "name": "Lost Building Methods",
+    "description": "Any civilization with a long enough history has examples of great wonders built by forgotten ancients which can no longer be replicated. Luckily for us we have documented these great ancients when they appeared on pre-FTL worlds.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Industry",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "District Cost -30%",
+      "Empire Size from Districts -30%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_matter_decompressor",
     "name": "Matter Decompressor",
     "description": "The Matter Decompressor lenses a black hole's gravity, forming a drill of gravitational forces to retrieve £minerals£ Minerals from the singularity.",
@@ -442,7 +1338,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Matter Decompressor",
       "<b>Mega-Structure</b>: Matter Decompressor Site",
@@ -464,7 +1360,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Megacorp"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -472,21 +1370,77 @@
   {
     "key": "tech_mining_drone_weapon_1",
     "name": "Mining Drone Lasers",
-    "description": "Using strong-focus lenses in combination with an oscillating firing frequence help create lasers strong enough to mine asteroids, or shoot down hostiles.",
+    "description": "Using intense-focus lenses in combination with an oscillating firing frequency help create lasers strong enough to mine asteroids, or shoot down hostiles.",
     "area": "physics",
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 2000,
+    "cost": 5000,
     "feature_unlocks": [
       "<b>Component</b>: Medium Cutting Laser",
-      "<b>Component</b>: Small Cutting Laser"
+      "<b>Component</b>: Medium Mining Beam Projector",
+      "<b>Component</b>: Sharp-Eye Laser",
+      "<b>Component</b>: Small Cutting Laser",
+      "<b>Component</b>: Small Mining Beam Projector"
     ],
     "is_dangerous": false,
     "is_rare": false,
     "is_start_tech": false,
     "prerequisites": [],
     "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_nanite_autocannon",
+    "name": "Nanite Autocannon",
+    "description": "Highly advanced autocannons capable of ejecting shells that explode into a cloud of nanites at the target, overwhelming shields and chewing through hull sections.",
+    "area": "engineering",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Propulsion",
+    "cost": 48000,
+    "feature_unlocks": [
+      "<b>Component</b>: Large Nanite Quill Battery",
+      "<b>Component</b>: Medium Nanite Quill Battery",
+      "<b>Component</b>: Nanite Autocannon",
+      "<b>Component</b>: Nanite-Infused Thorn Cannon",
+      "<b>Component</b>: Small Nanite Quill Battery"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_nanite_flak_batteries",
+    "name": "Nanite Flak Battery",
+    "description": "Improving upon previous designs by launching canisters of nanites capable of eating away at strike craft, these flak batteries are the bane of any fighter pilot.",
+    "area": "engineering",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Propulsion",
+    "cost": 48000,
+    "feature_unlocks": [
+      "<b>Component</b>: Nanite Flak Battery",
+      "<b>Component</b>: Nanite-Infused Barb Artillery"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [],
@@ -502,7 +1456,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 20000,
+    "cost": 40000,
     "feature_unlocks": [
       "<b>Component</b>: Nanite Repair System"
     ],
@@ -519,6 +1473,32 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_nanite_repair_system_synth_queen",
+    "name": "Cetana's Nanites",
+    "description": "Cetana's advanced nanite systems will tirelessly repair and refresh our ships at a rate far beyond our current capabilities.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Materials",
+    "cost": 48000,
+    "feature_unlocks": [
+      "<b>Component</b>: Cetana's Nanites Repair System"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_neuroregeneration",
     "name": "Neural Tissue Engineering",
     "description": "When tailored to a species' genome, this form of tissue engineering has intensive neuroregenerative properties, significantly increasing the development of neurons, axons, and synapses in its recipient.",
@@ -526,9 +1506,9 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 10000,
+    "cost": 20000,
     "feature_unlocks": [
-      "Leader Level Cap +1",
+      "Leader Lifespan +10",
       "Species Leader Exp Gain +25%"
     ],
     "is_dangerous": false,
@@ -544,6 +1524,33 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_new_numbers",
+    "name": "New Numbers",
+    "description": "After studying multiple pre-FTL civilizations, we have realized that there are many alternative ways to calculate the universe. It has even introduced new numbers into our mathematics.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Research Speed +5%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_orbital_trash_dispersal",
     "name": "Orbital Trash Dispersal",
     "description": "This orbital bombardment management system spams a planet with millions of minute, high-velocity projectiles, overwhelming planetside defensive grids with trash data. Ships equipped with this component will cause more damage during orbital bombardment.",
@@ -551,8 +1558,9 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 4000,
+    "cost": 8000,
     "feature_unlocks": [
+      "<b>Component</b>: Orbital Shed Disperser",
       "<b>Component</b>: Orbital Trash Disperser"
     ],
     "is_dangerous": false,
@@ -568,6 +1576,59 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_ordered_retreat",
+    "name": "Ordered Retreat",
+    "description": "While studying the victors of battles might be the most obvious way to gain insight from combat, observing the loser on pre-FTL worlds has taught us how to organize our withdraws more effectively.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Time Spent Missing In Action -15%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_predatory_tactics",
+    "name": "Predatory Tactics",
+    "description": "Just like how clever pre-FTLs move to conceal each other as they approach an enemy, so too can our pilots move faster without disrupting their cloaking field.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Military Theory",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys "
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_prescient_data_modeling",
     "name": "Numistic Data Modeling",
     "description": "Are the precognitive powers of Numa at work or is it a matter of skilled craftsmanship? Either way this galactic stock market prediction model will forecast fluctuations in the economy with divine accuracy.",
@@ -575,9 +1636,9 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 4000,
+    "cost": 8000,
     "feature_unlocks": [
-      "£energy£ Energy Credits from £job£ Jobs +5%"
+      "£trade£ Trade from £job£ Jobs +5%"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -599,10 +1660,14 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Psionics",
-    "cost": 4000,
+    "cost": 8000,
     "feature_unlocks": [
+      "<b>Component</b>: Large Psi-Resonant Tissue",
       "<b>Component</b>: Large Psionic Barrier",
+      "<b>Component</b>: Medium Psi-Resonant Tissue",
       "<b>Component</b>: Medium Psionic Barrier",
+      "<b>Component</b>: Null Void Epidermis",
+      "<b>Component</b>: Small Psi-Resonant Tissue",
       "<b>Component</b>: Small Psionic Barrier"
     ],
     "is_dangerous": false,
@@ -632,11 +1697,15 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Psionics",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
       "<b>Component</b>: Large Psionic Shield",
+      "<b>Component</b>: Large Zro-Infused Musculature",
       "<b>Component</b>: Medium Psionic Shield",
-      "<b>Component</b>: Small Psionic Shield"
+      "<b>Component</b>: Medium Zro-Infused Musculature",
+      "<b>Component</b>: Psionic Skin",
+      "<b>Component</b>: Small Psionic Shield",
+      "<b>Component</b>: Small Zro-Infused Musculature"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -665,7 +1734,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 5000,
+    "cost": 10000,
     "feature_unlocks": [
       "<b>Component</b>: Regenerative Hull Tissue"
     ],
@@ -682,14 +1751,40 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_rift_sphere",
+    "name": "Rift Sphere",
+    "description": "It seems that space and time tend to gather together in layers, all laid on top of one another. The trick is how to slip between the folds.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Field Manipulation",
+    "cost": 10000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Astral Rift Exploration"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Astral Planes"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_ring_world",
-    "name": "Ring World",
-    "description": "A Ring World allows for multiple planet-like zones, cannibalizing all other planets in the system for materials.",
+    "name": "Ring Segment",
+    "description": "A Ring Segment allows for multiple planet-like zones, cannibalizing all other planets in the system for materials.",
     "area": "engineering",
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Completed Ring World Section",
       "<b>Mega-Structure</b>: Ring World Frame",
@@ -709,7 +1804,37 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Utopia",
+      "Is NOT Wilderness Empire"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_satisfying_insults",
+    "name": "Satisfying Insults",
+    "description": "Nothing is quite as powerful as a well-placed insult, and we now know how to insult a species's progenitor in many languages.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Statecraft",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Insult Efficiency +50%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -722,9 +1847,10 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
-      "<b>Component</b>: Large Scourge Missile"
+      "<b>Component</b>: Large Scourge Missile",
+      "<b>Component</b>: Scourge Missile"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -739,6 +1865,221 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_secrets_baol",
+    "name": "Baol Organic Plant",
+    "description": "The Baol Organism had a unique way of producing tools. Given the species' relative slowness, they would simply grow them out of organic matter in locations that were half orchard, half factory. With the proper genetic adjustments, we could also grow various commodities and tools alongside our regular crops.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Building</b>: Baol Organic Plant"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_cybrex",
+    "name": "Cybrex Mining Hub",
+    "description": "To build their ring world, the Cybrex relied on highly efficient mining drones to survey and harvest orbital resources. Cybrex-made memory chips and sensors could augment our own mining operations, so that we might put their millennia old algorithms to good use.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Cybrex Mining Hub"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_irassian",
+    "name": "Irassian Naval Yards",
+    "description": "The Irassian astronaval tradition was unmatched in their time. Their shipyards produced a constant stream of ships for their navy and merchant fleets, which would ultimately be their downfall. With so many ships, and such a high reliance on them, the Irassians were powerless to quarantine the disease that would claim their empire.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Irassian Naval Yards"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_league",
+    "name": "First League Filing Offices",
+    "description": "The sprawling empire of the First League dwarfed our own at its peak, and relied on implacable bureaucracy to keep the wheels of the state in motion. The quantic filing arrays they used afforded them unprecedented efficiency in the sorting and storing of documents.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Building</b>: First League Filing Offices"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_vultaum",
+    "name": "Vultaum Reality Computer",
+    "description": "The reality computers of the Vultaums were unique processing units, dedicated to analyzing existence itself, not quite through physics, but rather by trying to reverse engineer reality's source code and find the glitch that would finally allow the Vultaums to take down the simulation where they believed they lived.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Building</b>: Vultaum Reality Computer"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_yuht",
+    "name": "Yuht Astronomical Interferometer",
+    "description": "The Yuht were a paradoxical society, obsessed with the idea of finding other sentient species, yet refusing to accept that they were not alone. They were so focused on disproving any claim of alien life, that their bias found a way into their technology. However, with the proper modifications and calibrations, we could certainly fix their powerful detection arrays.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Yuht Astronomical Interferometer"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_secrets_zroni",
+    "name": "Zroni Storm Caster",
+    "description": "Zro is a fascinating element, prone to chaotic bursts of energy. We believe that with the right artifacts, we could use it to fuel spatial storms over entire solar systems.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Archaeostudies",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Zroni Storm Caster"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Ancient Relics Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_sensors_bio_integration",
+    "name": "Sensor Bio-integration",
+    "description": "The diverse sensory organs of spaceborne life can be enhanced by our developed technologies with minimal harm to the organism.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 4000,
+    "feature_unlocks": [
+      "<b>Component</b>: Gravity-Attuned Sensory Organs",
+      "<b>Component</b>: Subspace-Monitoring Sensory Organs",
+      "<b>Component</b>: Tachyon-Receiving Sensory Organs"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations"
+    ],
+    "tier": 2,
+    "prerequisites_names": [
+      {
+        "name": "Controlled Mutations",
+        "key": "tech_controlled_mutations"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_space_cloud_weapon_1",
     "name": "Cloud Lightning Conduits",
     "description": "Void Clouds use the electrical charges generated by the dense gases that make up most of their core to release bolts of burning plasma. Using the same gas composition together with a specialized conduit allows for powerful lightning weaponry.",
@@ -746,9 +2087,10 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 2500,
+    "cost": 6000,
     "feature_unlocks": [
-      "<b>Component</b>: Cloud Lightning"
+      "<b>Component</b>: Cloud Lightning",
+      "<b>Component</b>: Lightning Breath"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -770,7 +2112,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 1000,
+    "cost": 3000,
     "feature_unlocks": [
       "<b>Component</b>: Energy Siphon"
     ],
@@ -787,6 +2129,60 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_strike_craft_skrand",
+    "name": "Skravird Strike Craft",
+    "description": "Learning from the design expertise of Skrand and his people, these superior strike craft are capable of prolonged engagement and highly adaptive tactics.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Component</b>: Skravird Strike Craft",
+      "<b>Component</b>: Warmaster Flagella"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 4,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Galactic Paragons"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_supreme_alloy",
+    "name": "Supreme Alloy",
+    "description": "What we thought was the greatest alloy turned out to be far from the truth. Countless pre-FTL refining processes have been cataloged, and we have now synthesized an unbeatable metal.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Materials",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "£alloys£ Alloys per 100 [foundry.GetIcon] [GetAlloyProducerPlural] +50%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_swarm_strike_craft_1",
     "name": "Swarm Spawning Pools",
     "description": "Collecting specimens from defeated Prethoryn enables us to clone and genetically program a war-brood of our own.",
@@ -794,8 +2190,9 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 20000,
+    "cost": 48000,
     "feature_unlocks": [
+      "<b>Component</b>: Scourge Swarmers",
       "<b>Component</b>: Swarm Strikers"
     ],
     "is_dangerous": false,
@@ -808,6 +2205,539 @@
     "potential": [],
     "children": [],
     "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_temple_of_transportation",
+    "name": "Temple of Transportation",
+    "description": "Transportation networks bring people together: a sentiment shared by many civilization we observed. While we do not have steam engines, our hyper relay networks could serve a similar purpose.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Voidcraft",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Monthly £unity£ Unity from Hyper Relays +3"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_terrestrial_sculpting",
+    "name": "Terrestrial Sculpting",
+    "description": "There is no simple solution to the problem of macro-scale reshaping of planetary crusts - only bigger trowels and orbitally-deployed drills.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "New Worlds",
+    "cost": 6000,
+    "feature_unlocks": [
+      "<b>Edict</b>: Terraforming Gases",
+      "<b>Feature : </b>Terraforming"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_colonization_1"
+    ],
+    "tier": 2,
+    "prerequisites_names": [
+      {
+        "name": "New Worlds Protocol",
+        "key": "tech_colonization_1"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
+      "(×<b style='color:lime'>1.25</b>) Has trait Aquatic",
+      "(×<b style='color:lime'>1.25</b>) Has trait Waterproof",
+      "(×<b style='color:lime'>1.25</b>) Has Origin Life-Seeded",
+      "(+) Has Origin Wilderness"
+    ],
+    "potential": [],
+    "children": [
+      {
+        "key": "tech_ecological_adaptation",
+        "name": "Ecological Adaptation",
+        "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
+        "area": "society",
+        "base_factor": 1.0,
+        "base_weight": 60.0,
+        "category": "New Worlds",
+        "cost": 10000,
+        "feature_unlocks": [
+          "<b>Feature : </b>Ecological Adaptation"
+        ],
+        "is_dangerous": false,
+        "is_rare": false,
+        "is_start_tech": false,
+        "prerequisites": [
+          "tech_terrestrial_sculpting"
+        ],
+        "tier": 3,
+        "prerequisites_names": [
+          {
+            "name": "Terrestrial Sculpting",
+            "key": "tech_terrestrial_sculpting"
+          }
+        ],
+        "weight_modifiers": [
+          "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+        ],
+        "potential": [],
+        "children": [],
+        "is_event": true,
+        "source": "vanilla"
+      },
+      {
+        "key": "tech_climate_restoration",
+        "name": "Climate Restoration",
+        "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
+        "area": "society",
+        "base_factor": 1.0,
+        "base_weight": 45.0,
+        "category": "New Worlds",
+        "cost": 16000,
+        "feature_unlocks": [],
+        "is_dangerous": false,
+        "is_rare": false,
+        "is_start_tech": false,
+        "prerequisites": [
+          "tech_terrestrial_sculpting"
+        ],
+        "tier": 4,
+        "prerequisites_names": [
+          {
+            "name": "Terrestrial Sculpting",
+            "key": "tech_terrestrial_sculpting"
+          }
+        ],
+        "weight_modifiers": [
+          "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+        ],
+        "potential": [],
+        "children": [],
+        "is_event": true,
+        "source": "vanilla"
+      }
+    ],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_thrusters_bio_integration",
+    "name": "Thruster Bio-integration",
+    "description": "Artificial thrusters can be integrated into spaceborne organisms with appropriate considerations for energy supply and connections to neural motor centers.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Propulsion",
+    "cost": 4000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations"
+    ],
+    "tier": 2,
+    "prerequisites_names": [
+      {
+        "name": "Controlled Mutations",
+        "key": "tech_controlled_mutations"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_trinary_computing",
+    "name": "Trinary Computing",
+    "description": "Different societies have developed alternative solutions for their logistics and computing. These alien ways of thinking have made it easier for us to adapt to foreign empires' structures.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Operation Difficulty +-1",
+      "Operation Speed +10%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_crystalline_entity",
+    "name": "Fissile Cores",
+    "description": "Redundant thought centers allow for a Crystalline Entity to split itself in two as a final gambit to protect its clutch against a particularly dangerous foe.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_cutholoid",
+    "name": "Gastric Fountain",
+    "description": "The powerful digestive system of a Cutholoid can be repurposed to fire kinetic projectiles at extremely high velocity.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [
+      "<b>Component</b>: Gastric Fountain"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_restorative_enzymes",
+    "name": "RESTORATIVE_ENZYMES",
+    "description": "When this creature dies, a random creature in the fleet regains $@unique_mutation_restorative_enzymes_gain|0%$ of its Hull and Armor.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 16000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_space_amoeba",
+    "name": "Leechcraft",
+    "description": "Modified Flagella spawn that siphon nutrients and materials from their prey in order to support the regeneration of their host Amoeba.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [
+      "<b>Component</b>: Leechcraft"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_starborne_biology",
+    "name": "Starborne Biology",
+    "description": "A main source of energy for large creatures in deep space comes from the power of starlight. The closer they are to brighter stars, the faster they develop.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 16000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_tiyanki",
+    "name": "Herdsong Chords",
+    "description": "The somber song of the Tiyanki inspires its fellow creatures, hardening their resolve in combat.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unique_mutation_voidworm",
+    "name": "Virulent Cysts",
+    "description": "Cysts filled with reproductive fluid allow for each Voidworm in a fertile Troika to independently produce spawn when bombarding an inhabited planet.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_controlled_mutations_2"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Advanced Controlled Mutations",
+        "key": "tech_controlled_mutations_2"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_universal_marcophage",
+    "name": "Universal Macrophage",
+    "description": "These powerful immunology boosters make disease a thing of the past, allowing organic populations to live fuller, healthier lives. May cause serious side effects.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Biological Pop Growth Speed +10%",
+      "Organic Leader Lifespan +10%"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_unusual_senses",
+    "name": "Unusual Senses",
+    "description": "Nothing is more innovative than natural evolution. By studying how pre-FTL societies view their world, we have devised new methods of detecting uninvited ships.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Particles",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys "
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_voidworm_immunity",
+    "name": "Voidworm Immunity",
+    "description": "We can develop a cure for Voidworm parasitic infection. All of our colonies would be rendered immune to their current strain of spore bombardment.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 8000,
+    "feature_unlocks": [
+      "Damage to Voidworms ",
+      "mod_tech_voidworm_immunity_effect"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Grand Archive"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_xeno_aesthetics",
+    "name": "Xeno-Aesthetics",
+    "description": "After analyzing a multitude of artists from drastically different cultures, we have come up with a general theorem. By studying a civilization's art and culture, we can gain an advantage against them in combat.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Statecraft",
+    "cost": 6000,
+    "feature_unlocks": [
+      "Available Envoys ",
+      "Damage to Rivals +10%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC First Contact"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_xeno_linguistics",
+    "name": "Xeno-Linguistics",
+    "description": "Given recent encounters with intelligent races, it is essential that we improve our xeno-linguistic capabilities.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Statecraft",
+    "cost": 2500,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Interstellar Recruitment Office",
+      "First Contact Speed +20%",
+      "mod_tech_xeno_linguistics_effect"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 1,
+    "prerequisites_names": [],
+    "weight_modifiers": [
+      "(+) All must be true<br/>    •   null<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Is NOT homocidal<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
+    ],
+    "potential": [
+      "Has DLC Galactic Paragons",
+      "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+      "Does NOT have Gestalt Consciousness Ethic",
+      "Is NOT homocidal"
+    ],
+    "children": [],
+    "is_event": true,
+    "is_gestalt": false,
     "source": "vanilla"
   }
 ]

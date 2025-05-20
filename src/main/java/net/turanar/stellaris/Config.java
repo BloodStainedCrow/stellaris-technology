@@ -24,10 +24,12 @@ public class Config {
         HashMap<String,String> retval = new HashMap<>();
 
         parse("files/common/scripted_variables", "txt", p -> {
+            System.err.println(p);
             factory.getParser(p).file().var().forEach(v -> retval.put(v.VARIABLE().getText(), v.NUMBER().getText()));
         });
 
         parse("files/common/technology", "txt", p -> {
+            System.err.println(p);
             factory.getParser(p).file().var().forEach(v -> retval.put(v.VARIABLE().getText(), v.NUMBER().getText()));
         });
 
@@ -39,10 +41,15 @@ public class Config {
         Map<String,String> retval = new HashMap<>();
 
         parse("files/localisation/english", "yml", path -> {
+            System.err.println(path);
             Yaml yaml = new Yaml();
             Iterable<Object> data = yaml.loadAll(new StellarisYamlReader(path));
             Map<String,Map<Object,Object>> map = (Map<String,Map<Object,Object>>)data.iterator().next();
-            map.get("l_english").forEach((k, v) -> {
+            Map<Object,Object> values = map.get("l_english");
+            if (values == null) {
+                return;
+            }
+            values.forEach((k, v) -> {
                 retval.put(k.toString().toLowerCase(), v.toString());
             });
         });
@@ -55,7 +62,8 @@ public class Config {
         Map<String, StellarisParser.PairContext> retval = new HashMap<>();
 
         parse("files/common/scripted_triggers", "txt", path -> {
-            factory.getParser(path).file().pair().forEach(pair -> retval.put(pair.key(), pair));
+            System.err.println(path);
+            factory.getParser(path).file().pair().forEach(pair -> retval.put(pair.BAREWORD().getText(), pair));
         });
 
         return retval;

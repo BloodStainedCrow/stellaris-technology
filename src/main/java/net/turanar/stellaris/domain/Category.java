@@ -8,7 +8,9 @@ public enum Category {
     // society
     Biology, @SerializedName("Military Theory") Military_Theory, @SerializedName("New Worlds") New_Worlds, Statecraft, Psionics,
     // engineering
-    Industry, Materials, Propulsion, Voidcraft;
+    Industry, Materials, Propulsion, Voidcraft,
+    // new
+    Archaeostudies;
 
     public static Category eval(String name) {
 

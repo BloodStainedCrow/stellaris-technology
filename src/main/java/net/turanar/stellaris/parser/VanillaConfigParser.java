@@ -30,6 +30,7 @@ public class VanillaConfigParser extends AbstractConfigParser {
 
     public void parseTechnolgies(String folder) throws IOException {
         parse(folder + "/common/technology","txt", f -> {
+            System.out.println(f);
             factory.getParser(f).file().pair().forEach(p -> {
                 Technology t = techVisitor.visitPair(p);
                 technologies.put(t.key, t);
@@ -41,7 +42,8 @@ public class VanillaConfigParser extends AbstractConfigParser {
         Arrays.stream(GameObject.values()).forEach(type -> {
             try {
                 parse(folder + "/" + type.folder, "txt", path -> {
-                    if (path.getFileName().toString().startsWith("README")) return;
+                    System.out.println(path);
+                    if (path.getFileName().toString().contains("README")) return;
                     if (!path.getFileName().toString().endsWith(type.filter)) return;
                     unlockVisitor.visitFile(type, factory.getParser(path).file());
                 });

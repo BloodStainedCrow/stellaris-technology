@@ -27,7 +27,7 @@ public class UnlockVisitor {
     }
 
     public Technology visitPair(GameObject type, StellarisParser.PairContext pair) {
-        String key = pair.key();
+        String key = pair.BAREWORD().getText();
         if(type == GameObject.STARBASE) {
             //System.out.println(key);
         }
@@ -35,16 +35,16 @@ public class UnlockVisitor {
         if(pair.value().map() == null) return null;
 
         for(StellarisParser.PairContext props : pair.value().map().pair()) {
-            if(props.key().equals("prerequisites")) {
+            if(props.BAREWORD().getText().equals("prerequisites")) {
                 if(props.value().array() == null) continue;
                 for(StellarisParser.ValueContext ctx : props.value().array().value()) {
                     tech = technologies.get(gs(ctx));
                 }
-            } else if (props.key().equals("key") || props.key().equals("name")) {
+            } else if (props.BAREWORD().getText().equals("key") || props.BAREWORD().getText().equals("name")) {
                 key = gs(props.value());
-            } else if (props.key().equals("show_in_tech")) {
+            } else if (props.BAREWORD().getText().equals("show_in_tech")) {
                 tech = technologies.get(gs(props.value()));
-            } else if (props.key().equals("option") && type == GameObject.POLICY) {
+            } else if (props.BAREWORD().getText().equals("option") && type == GameObject.POLICY) {
                 key = null;
                 tech = visitPair(type, props);
             }

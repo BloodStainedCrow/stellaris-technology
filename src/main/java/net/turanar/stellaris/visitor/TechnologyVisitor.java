@@ -20,16 +20,16 @@ public class TechnologyVisitor {
     private void visitFeatureUnlocks(Technology retval, StellarisParser.ValueContext val) {
         if(val.map() == null) return;
         for(StellarisParser.PairContext mod : val.map().pair()) {
-            if(mod.key().equals("BIOLOGICAL_species_trait_points_add")) continue;
-            if(mod.key().equals("show_only_custom_tooltip")) continue;
-            if(mod.key().equals("description") || mod.key().equals("custom_tooltip")) {
+            if(mod.BAREWORD().getText().equals("BIOLOGICAL_species_trait_points_add")) continue;
+            if(mod.BAREWORD().getText().equals("show_only_custom_tooltip")) continue;
+            if(mod.BAREWORD().getText().equals("description") || mod.BAREWORD().getText().equals("custom_tooltip")) {
                 String key = mod.value().BAREWORD().getText();
                 String effect = i18n(key);
                 if(key.equals(effect)) effect = i18n("mod_" + key.toLowerCase());
                 effect = effect.replace("$POINTS|0=+$","+1");
                 retval.feature_unlocks.add(effect);
-            } else if (!mod.key().startsWith("description")){
-                String key = mod.key().toLowerCase();
+            } else if (!mod.BAREWORD().getText().startsWith("description")){
+                String key = mod.BAREWORD().getText().toLowerCase();
 
                 if(key.equals("science_ship_survey_speed")) key = "mod_ship_science_survey_speed";
                 if(key.equals("ship_anomaly_generation_chance_mult")) key = "mod_ship_anomaly_generation_chance";
@@ -66,13 +66,18 @@ public class TechnologyVisitor {
     public Technology visitPair(StellarisParser.PairContext ctx) {
         Technology retval = new Technology();
 
-        retval.key = ctx.key();
+        retval.key = ctx.BAREWORD().getText();
         retval.name = i18n(retval.key);
         retval.description = i18n(retval.key + "_desc");
 
         for(StellarisParser.PairContext pair : ctx.value().map().pair()) {
-            switch (pair.key()) {
+            switch (pair.BAREWORD().getText()) {
                 case "cost":
+                    String rhs = gs(pair);
+                    if (rhs == null) {
+                        System.err.println("WARN: rhs null for cost");
+                        continue;
+                    }
                     retval.cost = Integer.valueOf(gs(pair)); break;
                 case "tier":
                     retval.tier = Integer.valueOf(gs(pair)); break;
@@ -100,11 +105,24 @@ public class TechnologyVisitor {
                 case "modifier":
                     visitFeatureUnlocks(retval, pair.value()); break;
                 case "prerequisites":
+                    if(pair.value() == null) break;
                     if(pair.value().array() == null) break;
                     pair.value().array().value().forEach(val -> {
-                         retval.prerequisites.add(gs(val).replaceAll("\"",""));
-                    });
+                        if (val == null) {
+                            System.err.println("VAL IS NULL!");
+                            return;
+                        }
 
+                        if (gs(val) == null) {
+                            System.err.print(val.BAREWORD());
+                        } else {
+                            retval
+                                .prerequisites
+                                .add(gs(val)
+                                .replaceAll("\"",""));
+                        }
+                    });
+                    System.err.println();
             }
         }
         return retval;

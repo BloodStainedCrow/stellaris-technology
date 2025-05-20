@@ -34,7 +34,7 @@ public class Global {
         String retval = GLOBAL_STRINGS.get(key.toLowerCase());
         if(retval == null) return key;
         if(retval.contains("$")) {
-            retval = applyTemplate(retval);
+            retval = applyTemplate(retval, key);
         }
         return retval;
     }
@@ -53,6 +53,7 @@ public class Global {
         if("<".equals(operator)) return "lower than";
         if(">=".equals(operator)) return "greater than or equal to";
         if("<=".equals(operator)) return "less than or equal to";
+        if("!=".equals(operator)) return "not equal to";
         return "equal to";
     }
 
@@ -78,14 +79,22 @@ public class Global {
         return GLOBAL_VARIABLES.get(key);
     }
 
-    public static String applyTemplate(String retval) {
+    public static String applyTemplate(String retval, String oldval) {
         Pattern p = Pattern.compile("\\$([a-zA-z0-9_]+)\\$");
 
         int i = 0;
         while(retval.contains("$") && i < 2) {
             Matcher m2 = p.matcher(retval);
             if(m2.find()) {
-                retval = m2.replaceFirst(i18n(m2.group(1)));
+                String newval = m2.group(1);
+
+                if (newval.equals(oldval)) {
+                    // We are in an infite evaluation loop
+                    return oldval;
+                }
+
+                String replace_val = i18n(newval);
+                retval = m2.replaceFirst(Matcher.quoteReplacement(replace_val));
                 m2.reset();
             }
             i++;

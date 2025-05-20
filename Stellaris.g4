@@ -1,7 +1,7 @@
 grammar Stellaris;
 
 file
-   : (pair|var)*
+   : (pair|var)* EOF
    ;
 
 map
@@ -43,7 +43,7 @@ VARIABLE
    ;
 
 SPECIFIER
-   : '=' | '<>' | '>' | '<' | '<=' | '>=' ;
+   : '=' | '<>' | '>' | '<' | '<=' | '>=' | '!=' ;
 
 NUMBER
    : '-'?[0-9]+'%'
@@ -55,7 +55,7 @@ DATE
    : [0-9]+'.'[0-9]+'.'[0-9]+;
 
 BAREWORD
-   : [A-Za-z][@A-Za-z_0-9.%-]*
+   : [A-Za-z][@A-Za-z_0-9./%|:-]*
    ;
 
 STRING

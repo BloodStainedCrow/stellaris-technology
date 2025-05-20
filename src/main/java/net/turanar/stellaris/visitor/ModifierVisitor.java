@@ -21,7 +21,7 @@ public class ModifierVisitor {
         ctx.value().map().pair().forEach(p -> {
             try {
                 Modifier m = new Modifier();
-                m.type = ModifierType.valueOf(p.key());
+                m.type = ModifierType.valueOf(p.BAREWORD().getText());
                 m.pair = p;
                 retval.add(m);
             } catch (IllegalArgumentException e) {
@@ -34,7 +34,7 @@ public class ModifierVisitor {
     public List<WeightModifier> visitPair(Technology tech, StellarisParser.PairContext ctx) {
         List<WeightModifier> retval = new ArrayList<WeightModifier>();
         ctx.value().map().pair().forEach(p -> {
-            switch(p.key()) {
+            switch(p.BAREWORD().getText()) {
                 case "factor": tech.base_factor = Float.valueOf(gs(p)); break;
                 case "modifier":
                     WeightModifier m = visitModifier(p);
@@ -50,11 +50,22 @@ public class ModifierVisitor {
         WeightModifier retval = new WeightModifier();
         ctx.value().map().pair().forEach(p -> {
             try {
-                switch(p.key()) {
-                    case "factor": retval.factor = Float.valueOf(gs(p)); break;
+                switch(p.BAREWORD().getText()) {
+                    case "factor":
+                        if (gs(p).startsWith("value:")) {
+                            // FIXME(Tim Aschhoff): This value is hardcoded for now
+                            if (gs(p).equals("value:tech_weight_likelihood")) {
+                                retval.factor = 1.25f;
+                            } else {
+                                System.err.println("Please handle defines! No value for define " + gs(p));
+                            }
+                        } else {
+                            retval.factor = Float.valueOf(gs(p));
+                        }
+                        break;
                     case "add": retval.add = Integer.valueOf(gs(p)); break;
                     default:
-                        retval.type = ModifierType.valueOf(p.key());
+                        retval.type = ModifierType.valueOf(p.BAREWORD().getText());
                         retval.pair = p;
                 }
             } catch (IllegalArgumentException e) {

@@ -1,4 +1,4 @@
-// Generated from D:/workspaces/stellaris\Stellaris.g4 by ANTLR 4.7
+// Generated from Stellaris.g4 by ANTLR 4.9.3
 package net.turanar.stellaris.antlr;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 

@@ -27,8 +27,8 @@ import static net.turanar.stellaris.Global.parse;
 public class App {
     @Autowired
     VanillaConfigParser vanilla;
-    @Autowired
-    GigaStructureConfigParser gigaStructure;
+    // @Autowired
+    // GigaStructureConfigParser gigaStructure;
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);

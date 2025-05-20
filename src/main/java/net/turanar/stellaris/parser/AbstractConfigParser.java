@@ -41,7 +41,14 @@ public abstract class AbstractConfigParser {
             while(iter.hasNext()) {
                 String preq = iter.next();
                 Technology reqTech = technologies.get(preq);
-                if(reqTech.is_start_tech && reqTech.area != tech.area) iter.remove();
+                if (reqTech == null) {
+                    System.err.println("reqTech is null");
+                    iter.remove();
+                    continue;
+                }
+
+                if(reqTech.is_start_tech && reqTech.area != tech.area)
+                    iter.remove();
             }
 
             for(String preq : tech.prerequisites) {

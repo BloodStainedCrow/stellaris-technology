@@ -10,6 +10,18 @@ import java.util.function.Function;
 import static net.turanar.stellaris.Global.*;
 
 public enum ModifierType {
+    host_has_dlc("Has DLC %s"),
+    has_grand_archive_dlc("Has DLC Grand Archive"),
+    has_astral_planes_dlc("Has DLC Astral Planes"),
+    has_first_contact_dlc("Has DLC First Contact"),
+    has_paragon_dlc("Has DLC Galactic Paragons"),
+    has_nemesis("Has DLC Nemesis"),
+    has_machine_age_dlc("Has DLC Machine Age"),
+    has_overlord_dlc("Has DLC Overlord"),
+    has_cosmic_storms_dlc("Has DLC Cosmic Storms"),
+    has_biogenesis_dlc("Has DLC Biogenesis"),
+
+
     has_ascension_perk("Has %s Ascension Perk"),
     has_authority("Has %s Authority"),
     has_blocker("Has £blocker£ Tile Blocker: %s"),
@@ -18,7 +30,6 @@ public enum ModifierType {
     has_civic("Has Government Civic: %s"),
     has_modifier("Has the %s modifier"),
     has_ethic("Has %s Ethic"),
-    host_has_dlc("Has DLC %s"),
     has_tradition("Has %s Tradition"),
     has_country_flag("Has the %s country flag"),
     has_global_flag("Has the %s global flag"),
@@ -73,15 +84,94 @@ public enum ModifierType {
     owner_species("Founder Species :", DefaultParser.CONDITIONAL),
     no_scope("", DefaultParser.CONDITIONAL),
 
+    is_astral_scar("Is astral scar|Is NOT astral scar", DefaultParser.SIMPLE_BOOLEAN),
+
     NOR("All must be false", DefaultParser.CONDITIONAL),
     OR("One must be true", DefaultParser.CONDITIONAL),
     NAND("One or more must be false", DefaultParser.CONDITIONAL),
     AND("All must be true", DefaultParser.CONDITIONAL),
 
+    // TODO(Tim Aschhoff): Make sure this does what I think it does
+    pop_amount("Pop count is %s %s", DefaultParser.SIMPLE_OPERATION),
+
+    has_ai_personality((p) -> f("AI Personality is %s", i18n("personality_" + gs(p).toLowerCase()))),
+
+    has_completed_precursor_research("Has completed Precursor technology|Has NOT completed Precursor technology", DefaultParser.SIMPLE_BOOLEAN),
+    has_crisis_level("Has Crisis level: %s"),
+
+    // What is the difference?!?
+    // TODO(Tim Aschhoff): Explain these better
+    has_void_dweller_origin("Has Void Dweller Origin|Does NOT have Void Dweller Origin", DefaultParser.SIMPLE_BOOLEAN),
+    is_void_dweller_empire("Is Void Dweller Empire|Is NOT Void Dweller Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_individual_machine("Is individualist Machine Empire|Is NOT individualist Machine Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_lithoid_empire("Is Lithoid Empire|Is NOT Lithoid Empire", DefaultParser.SIMPLE_BOOLEAN),
+    // TODO(Tim Aschhoff): Do I want to make it clearer what these are (i.e. origin vs civic)?
+    is_natural_design_empire("Is Natural Design Empire|Is NOT Natural Design Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_wilderness_empire("Is Wilderness Empire|Is NOT Wilderness Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_beastmasters_empire("Is Beastmasters Empire|Is NOT Beastmasters Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_anglers_empire("Is Anglers Empire|Is NOT Anglers Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_catalytic_empire("Is Cataclytic Empire|Is NOT Cataclytic Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_memorialist_empire("Is Memorialist Empire|Is NOT Memorialist Empire", DefaultParser.SIMPLE_BOOLEAN),
+    is_galactic_curators_empire("Is Galactic Curators Empire|Is NOT Galactic Curators Empire", DefaultParser.SIMPLE_BOOLEAN),
+
+
+    has_encountered_any_fauna("Has encountered any space fauna|Has NOT encountered any space fauna", DefaultParser.SIMPLE_BOOLEAN),
+
+    acquired_specimen_count("Number of aquired specimen is %s %s", DefaultParser.SIMPLE_OPERATION),
+    num_cosmic_storms_encountered("Number of Cosmic Storms encountered is %s %s", DefaultParser.SIMPLE_OPERATION),
+
+    country_uses_bio_ships("Country uses biological ships|Country does NOT use biological ships", DefaultParser.SIMPLE_BOOLEAN),
+
+    has_origin("Has Origin %s"),
+
+    has_megastructure("Has Megastructure %s"),
+    has_relic("Has Relic %s"),
+
+    country_uses_consumer_goods("Country uses Consumer Goods|Country does NOT use Consumer Goods", DefaultParser.SIMPLE_BOOLEAN),
+
+    is_active_resolution("Currently active resolution is %s"),
+
+    can_research_technology("Can research technology: %s"),
+
+    // TODO(Tim Aschhoff): This is not very clear what this means
+    exists("%s exists"),
+
+    // TODO(Tim Aschhoff):
+    has_disconnected_drone_citizenship_type("Is TODO|Is NOT TODO", DefaultParser.SIMPLE_BOOLEAN),
+
+    any_owned_pop_group("Any owned Population Group:", DefaultParser.CONDITIONAL),
+    // is_sapient("Is Sapient|Is NOT Sapient", DefaultParser.SIMPLE_BOOLEAN),
+    // is_enslaved("Is enslaved|Is NOT enslaved", DefaultParser.SIMPLE_BOOLEAN),
+    is_livestock("Is livestock|Is NOT livestock", DefaultParser.SIMPLE_BOOLEAN),
+    pop_group_has_trait("Has trait %s"),
+
+    any_owned_leader("Any owned Leader:", DefaultParser.CONDITIONAL),
+    is_ruler("Is Ruler|Is NOT Ruler", DefaultParser.SIMPLE_BOOLEAN),
+    is_councilor("Is Councilor|Is NOT Councilor", DefaultParser.SIMPLE_BOOLEAN),
+    // TODO(Tim Aschhoff) Confirm this is correct!
+    has_base_skill("Skill level is %s %s", DefaultParser.SIMPLE_OPERATION),
+
+    mid_game_years_passed("Number of midgame years passed %s %s", DefaultParser.SIMPLE_OPERATION),
+
+    any_owned_species("Any owned Species:", DefaultParser.CONDITIONAL),
+    is_organic_species("Is Organic|Is NOT Organic", DefaultParser.SIMPLE_BOOLEAN),
+
+    // FXIME(Tim Aschhoff) Explain this
+    has_storm_attraction_civic("Has any Storm Attraction civic", DefaultParser.SIMPLE_BOOLEAN),
+
+    is_inside_nebula("Is in nebula|Is NOT in nebula", DefaultParser.SIMPLE_BOOLEAN),
+
+    perc_communications_with_playable("Percentage of playable empires met is %s %s%%", DefaultParser.SIMPLE_OPERATION),
+
+    // TODO(Tim Aschhoff): Make sure the definition for this does not change (i.e. if the federation perk changes)
+    has_make_spiritualist_perk("Is a Member of a spiritualist Federation with perk 'A Union of Faith'|Is NOT a Member of a spiritualist Federation with perk 'A Union of Faith'", DefaultParser.SIMPLE_BOOLEAN),
+
+    is_homicidal("Is homocidal|Is NOT homocidal", DefaultParser.SIMPLE_BOOLEAN),
+
     has_trait((p) -> {
         String expertise = i18n(gs(p));
         if(expertise.contains("Expertise: ")) expertise = expertise.replaceAll("Expertise: ","") + " Expert";
-        return "Is " + expertise;
+        return "Has trait " + expertise;
     }),
     area((p) -> StringUtils.capitalize(gs(p))),
     research_leader((p) -> {
@@ -103,9 +193,9 @@ public enum ModifierType {
         String type = "";
         String count = "";
         for(PairContext prop : p.value().map().pair()) {
-            if(prop.key().equals("type")) {
+            if(prop.BAREWORD().getText().equals("type")) {
                 type = gs(prop);
-            } else if (prop.key().equals("amount")) {
+            } else if (prop.BAREWORD().getText().equals("amount")) {
                 count = op(prop) + " " + gs(prop);
             }
         }
@@ -116,9 +206,9 @@ public enum ModifierType {
         String retval = "Number of %s is %s %s";
         String size = null, operator = null, count = null;
         for(PairContext prop : p.value().map().pair()) {
-            if(prop.key().equals("starbase_size")) {
+            if(prop.BAREWORD().getText().equals("starbase_size")) {
                 size = i18n(gs(prop));
-            } else if (prop.key().equals("count")) {
+            } else if (prop.BAREWORD().getText().equals("count")) {
                 operator = op(prop);
                 count = gs(prop);
             }
@@ -126,29 +216,85 @@ public enum ModifierType {
         return String.format(retval, size, operator, count);
     }),
 
+    has_trait_in_council((p) -> {
+        String retval = "Any Leader in council has trait %s %s";
+        String trait = null, level = null;
+        for(PairContext prop : p.value().map().pair()) {
+            if(prop.BAREWORD().getText().equals("TRAIT")) {
+
+                String traitPreTranslation = gs(prop);
+
+                if (Character.isDigit(traitPreTranslation.charAt(traitPreTranslation.length()-1))) {
+                    int index = traitPreTranslation.lastIndexOf("_");
+                    level = traitPreTranslation.substring(index + 1);
+                    traitPreTranslation = traitPreTranslation.substring(0, index);
+                } else {
+                    level = "1";
+                }
+                trait = i18n(traitPreTranslation);
+
+            } else {
+                System.err.println("Unexpected field: " + prop.BAREWORD().getText());
+            }
+        }
+        return String.format(retval, trait, level);
+    }),
+
+    has_tier1or2or3_in_council((p) -> {
+        String retval = "Any Leader in council has trait %s at level 1, 2 or 3";
+        String trait = null;
+        for(PairContext prop : p.value().map().pair()) {
+            if(prop.BAREWORD().getText().equals("TRAIT")) {
+
+                String traitPreTranslation = gs(prop);
+
+                if (Character.isDigit(traitPreTranslation.charAt(traitPreTranslation.length()-1))) {
+                    int index = traitPreTranslation.lastIndexOf("_");
+                    traitPreTranslation = traitPreTranslation.substring(0, index);
+                }
+
+                trait = i18n(traitPreTranslation);
+
+            } else {
+                System.err.println("Unexpected field: " + prop.BAREWORD().getText());
+            }
+        }
+        return String.format(retval, trait);
+    }),
+
     num_districts((p)->{
         String type = "";
         String count = "";
         for(PairContext prop : p.value().map().pair()) {
-            if(prop.key().equals("type")) {
+            if(prop.BAREWORD().getText().equals("type")) {
                 type = i18n(gs(prop));
-            } else if (prop.key().equals("value")) {
+            } else if (prop.BAREWORD().getText().equals("value")) {
                 count = op(prop) + " " + gs(prop);
             }
         }
         return "Number of " + type + " is " + count;
     }),
 
+    is_specialist_subject_type((p)->{
+        String type = "";
+        for(PairContext prop : p.value().map().pair()) {
+            if(prop.BAREWORD().getText().equals("TYPE")) {
+                type = i18n(gs(prop));
+            }
+        }
+        return "Is a " + type + " (specialised subject)";
+    }),
+
     count_owned_pops((p) -> {
         String limits = "";
         String count = "";
         for(PairContext prop : p.value().map().pair()) {
-            if(prop.key().equals("limit")) {
+            if(prop.BAREWORD().getText().equals("limit")) {
                 for(PairContext l : prop.value().map().pair()) {
                     Modifier m = visitCondition(l);
                     limits += "\n" + LS + m.toString();
                 }
-            } else if(prop.key().equals("count")) {
+            } else if(prop.BAREWORD().getText().equals("count")) {
                 count = op(prop) + " " + gs(prop);
             }
         }
@@ -202,7 +348,7 @@ public enum ModifierType {
             return retval;
         }),
         SCRIPTED((format, p) -> {
-            PairContext q = GLOBAL_TRIGGERS.get(p.key());
+            PairContext q = GLOBAL_TRIGGERS.get(p.BAREWORD().getText());
             boolean value = gs(p).equals("yes");
             List<String> conditions = new ArrayList<>();
 
@@ -270,7 +416,7 @@ public enum ModifierType {
 
     public static Modifier visitCondition(PairContext pair) {
         Modifier retval = new Modifier();
-        retval.type = ModifierType.value(pair.key());
+        retval.type = ModifierType.value(pair.BAREWORD().getText());
         retval.pair = pair;
         return retval;
     }
