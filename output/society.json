@@ -45,8 +45,8 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
-            "Is NOT individualist Machine Empire"
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [
             {
@@ -85,8 +85,8 @@
                 "(×<b style='color:lime'>2.0</b>) Has the payback_researching_gene_clinics country flag"
               ],
               "potential": [
-                "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
-                "Is NOT individualist Machine Empire"
+                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+                "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -126,7 +126,7 @@
                   ],
                   "potential": [
                     "Does NOT have Gestalt Consciousness Ethic",
-                    "Is NOT individualist Machine Empire"
+                    "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
                   ],
                   "children": [],
                   "is_event": false,
@@ -190,10 +190,10 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>20.0</b>) One must be true<br/>    •   Is Cataclytic Empire<br/>    •   Has Machine Intelligence Authority<br/>    •   One must be true<br/>\t    •   Founder Species :<br/>\t\t    •   Has trait Mechanical<br/>\t    •   Has the Synthetic Empire country flag<br/>    •   Is Lithoid Empire"
+                "(×<b style='color:lime'>20.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Government Civic: Catalytic Processing<br/>\t    •   Has Government Civic: Catalytic Recyclers<br/>\t    •   Has Government Civic: Organic Reprocessing<br/>\t    •   Has Government Civic: Organic Retrofitting<br/>    •   Has Machine Intelligence Authority<br/>    •   One must be true<br/>\t    •   Founder Species :<br/>\t\t    •   Has trait Mechanical<br/>\t    •   Has the Synthetic Empire country flag<br/>    •   Founder Species :<br/>\t    •   Is Lithoid"
               ],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [
                 {
@@ -222,10 +222,10 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>20.0</b>) One must be true<br/>    •   Is Cataclytic Empire<br/>    •   Has Machine Intelligence Authority<br/>    •   One must be true<br/>\t    •   Founder Species :<br/>\t\t    •   Has trait Mechanical<br/>\t    •   Has the Synthetic Empire country flag<br/>    •   Is Lithoid Empire"
+                    "(×<b style='color:lime'>20.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Government Civic: Catalytic Processing<br/>\t    •   Has Government Civic: Catalytic Recyclers<br/>\t    •   Has Government Civic: Organic Reprocessing<br/>\t    •   Has Government Civic: Organic Retrofitting<br/>    •   Has Machine Intelligence Authority<br/>    •   One must be true<br/>\t    •   Founder Species :<br/>\t\t    •   Has trait Mechanical<br/>\t    •   Has the Synthetic Empire country flag<br/>    •   Founder Species :<br/>\t    •   Is Lithoid"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -264,7 +264,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                 "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -301,9 +301,9 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
-                    "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Government Civic: Agrarian Idyll<br/>    •   Is Anglers Empire",
-                    "(×<b style='color:lime'>2.0</b>) Is Cataclytic Empire",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                    "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Government Civic: Agrarian Idyll<br/>    •   One must be true<br/>\t    •   Has Government Civic: Anglers<br/>\t    •   Has Government Civic: Trawling Operations<br/>\t    •   Has Government Civic: Marine Machines<br/>\t    •   Has Government Civic: Maritime Robotics",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Catalytic Processing<br/>    •   Has Government Civic: Catalytic Recyclers<br/>    •   Has Government Civic: Organic Reprocessing<br/>    •   Has Government Civic: Organic Retrofitting",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                     "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
                   ],
@@ -338,7 +338,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
@@ -383,14 +383,14 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                     "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                     "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [
                     {
@@ -422,14 +422,14 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
                       ],
                       "potential": [
-                        "Is NOT Wilderness Empire"
+                        "Does NOT have Origin Wilderness"
                       ],
                       "children": [
                         {
@@ -460,7 +460,7 @@
                           ],
                           "weight_modifiers": [
                             "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1",
                             "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
@@ -469,7 +469,7 @@
                           ],
                           "potential": [
                             "Does NOT have Machine Intelligence Authority",
-                            "Is NOT Wilderness Empire"
+                            "Does NOT have Origin Wilderness"
                           ],
                           "children": [],
                           "is_event": false,
@@ -507,7 +507,7 @@
                       ],
                       "weight_modifiers": [],
                       "potential": [
-                        "Is NOT Wilderness Empire"
+                        "Does NOT have Origin Wilderness"
                       ],
                       "children": [],
                       "is_event": false,
@@ -1081,9 +1081,9 @@
             "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
             "(×<b style='color:lime'>1.25</b>) Has Supremacy Traditions Tradition",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-            "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
+            "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
             "(×<b style='color:red'>0.5</b>) Has Origin Synthetic Fertility",
-            "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   One must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Has Origin Synthetic Fertility<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   One must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Has Origin Synthetic Fertility<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
           ],
           "potential": [
             "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor\n    •   Has Government Civic: Genesis Architects"
@@ -1118,9 +1118,9 @@
                 "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
                 "(×<b style='color:lime'>1.25</b>) Has Supremacy Traditions Tradition",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
+                "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
                 "(×<b style='color:red'>0.5</b>) Has Origin Synthetic Fertility",
-                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
+                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
               ],
               "potential": [
                 "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator"
@@ -1197,7 +1197,7 @@
                       ],
                       "potential": [
                         "Does NOT have Machine Intelligence Authority",
-                        "Is NOT Natural Design Empire"
+                        "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
                       ],
                       "children": [],
                       "is_event": false,
@@ -1276,7 +1276,7 @@
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
               ],
               "potential": [
-                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Has Government Civic: Oppressive Autocracy\n    •   Is individualist Machine Empire"
+                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Has Government Civic: Oppressive Autocracy\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -1320,7 +1320,7 @@
                 }
               ],
               "is_event": false,
-              "is_gestalt": true,
+              "is_gestalt": false,
               "source": "vanilla"
             },
             {
@@ -1359,7 +1359,7 @@
               ],
               "potential": [
                 "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor",
-                "Is NOT Natural Design Empire"
+                "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
               ],
               "children": [
                 {
@@ -1392,12 +1392,12 @@
                     "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
                     "(×<b style='color:lime'>1.25</b>) Has trait Necrophage",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                    "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
-                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
+                    "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
                   ],
                   "potential": [
                     "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor",
-                    "Is NOT Natural Design Empire"
+                    "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
                   ],
                   "children": [],
                   "is_event": false,
@@ -1435,7 +1435,7 @@
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
                   ],
                   "potential": [
-                    "One must be true\n    •   All must be false\n\t    •   Has Machine Intelligence Authority\n\t    •   Is individualist Machine Empire\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor",
+                    "One must be true\n    •   All must be false\n\t    •   Has Machine Intelligence Authority\n\t    •   All must be true\n\t\t    •   Founder Species:\n\t\t\t    •   Is archetype Machine\n\t\t    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor",
                     "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
                   ],
                   "children": [],
@@ -1477,11 +1477,11 @@
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1",
                     "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
-                    "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
-                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
+                    "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
                   ],
                   "potential": [
-                    "All must be false\n    •   Has Machine Intelligence Authority\n    •   Is Natural Design Empire\n    •   Is individualist Machine Empire\n    •   Is Wilderness Empire"
+                    "All must be false\n    •   Has Machine Intelligence Authority\n    •   One must be true\n\t    •   Has Government Civic: Natural Design\n\t    •   Has Government Civic: Innate Design\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -1500,8 +1500,8 @@
               "name": "Epigenetic Triggers",
               "description": "Advanced DNA methylation techniques allow for functionally significant alterations to be made to arbitrary genomes.",
               "area": "society",
-              "base_factor": 5.0,
-              "base_weight": 375.0,
+              "base_factor": 1.0,
+              "base_weight": 75.0,
               "category": "Biology",
               "cost": 5000,
               "feature_unlocks": [
@@ -1526,13 +1526,14 @@
                 "(×<b style='color:lime'>1.25</b>) Has Xenophile Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Xenophile Ethic",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
+                "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
                 "(×<b style='color:red'>0.5</b>) Has Origin Synthetic Fertility",
-                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic",
+                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic",
+                "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Genesis Guides<br/>    •   Has Government Civic: Genesis Symbiotes<br/>    •   Has Government Civic: Genesis Architects<br/>    •   Has Government Civic: Astrogenesis Technologies",
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the found_presapients country flag<br/>    •   Any Planet within borders<br/>\t    •   Any owned Population Group:<br/>\t\t    •   Pop is NOT Sapient<br/>\t\t    •   Does NOT have trait Nascent Stage"
               ],
               "potential": [
-                "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   Is Natural Design Empire\n    •   Is Wilderness Empire",
+                "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   One must be true\n\t    •   Has Government Civic: Natural Design\n\t    •   Has Government Civic: Innate Design\n    •   Has Origin Wilderness",
                 "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor\n    •   Has Government Civic: Genesis Architects"
               ],
               "children": [
@@ -1571,7 +1572,7 @@
                     "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2"
                   ],
                   "potential": [
-                    "All must be false\n    •   Has Machine Intelligence Authority\n    •   Is Natural Design Empire\n    •   Is individualist Machine Empire\n    •   Is Wilderness Empire"
+                    "All must be false\n    •   Has Machine Intelligence Authority\n    •   One must be true\n\t    •   Has Government Civic: Natural Design\n\t    •   Has Government Civic: Innate Design\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -1615,14 +1616,14 @@
                 "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
                 "(×<b style='color:lime'>1.25</b>) Has Supremacy Traditions Tradition",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
+                "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
                 "(×<b style='color:red'>0.5</b>) Has Origin Synthetic Fertility",
-                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
+                "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
               ],
               "potential": [
                 "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator",
-                "Is NOT Wilderness Empire",
-                "Is NOT Natural Design Empire"
+                "Does NOT have Origin Wilderness",
+                "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
               ],
               "children": [
                 {
@@ -1652,13 +1653,13 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
-                    "(×<b style='color:red'>0.5</b>) Is individualist Machine Empire",
-                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   Is individualist Machine Empire<br/>    •   Any owned Species:<br/>\t    •   Is Organic",
+                    "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic",
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2"
                   ],
                   "potential": [
-                    "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Is NOT Wilderness Empire\n    •   Has Government Civic: Driven Assimilator",
-                    "Is NOT Natural Design Empire"
+                    "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Does NOT have Origin Wilderness\n    •   Has Government Civic: Driven Assimilator",
+                    "All must be false\n    •   Has Government Civic: Natural Design\n    •   Has Government Civic: Innate Design"
                   ],
                   "children": [],
                   "is_event": false,
@@ -1934,7 +1935,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Is Wilderness Empire"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                       ],
                       "potential": [
                         "Country uses biological ships"
@@ -1964,7 +1965,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Is Wilderness Empire"
+                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -3058,7 +3059,7 @@
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
           ],
           "potential": [
-            "Is NOT Wilderness Empire"
+            "Does NOT have Origin Wilderness"
           ],
           "children": [
             {
@@ -3096,7 +3097,7 @@
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
               ],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [
                 {
@@ -3134,7 +3135,7 @@
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -3168,7 +3169,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:red'>0.0</b>) Has Machine Intelligence Authority",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -3231,7 +3232,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000",
@@ -3747,7 +3748,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+            "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [
             {
@@ -3780,7 +3781,7 @@
                 "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1"
               ],
               "potential": [
-                "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [],
               "is_event": false,
@@ -4035,7 +4036,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -4501,6 +4502,110 @@
               "source": "vanilla"
             },
             {
+              "key": "tech_terrestrial_sculpting",
+              "name": "Terrestrial Sculpting",
+              "description": "There is no simple solution to the problem of macro-scale reshaping of planetary crusts - only bigger trowels and orbitally-deployed drills.",
+              "area": "society",
+              "base_factor": 1.5,
+              "base_weight": 105.0,
+              "category": "New Worlds",
+              "cost": 6000,
+              "feature_unlocks": [
+                "<b>Edict</b>: Terraforming Gases",
+                "<b>Feature : </b>Terraforming"
+              ],
+              "is_dangerous": false,
+              "is_rare": false,
+              "is_start_tech": false,
+              "prerequisites": [
+                "tech_colonization_1"
+              ],
+              "tier": 2,
+              "prerequisites_names": [
+                {
+                  "name": "New Worlds Protocol",
+                  "key": "tech_colonization_1"
+                }
+              ],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) All must be true<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Has Government Civic: Devouring Swarm<br/>    •   Does NOT have Origin Wilderness",
+                "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
+                "(×<b style='color:lime'>1.25</b>) Has trait Aquatic",
+                "(×<b style='color:lime'>1.25</b>) Has trait Waterproof",
+                "(×<b style='color:lime'>1.25</b>) Has Origin Life-Seeded",
+                "(+) Has Origin Wilderness"
+              ],
+              "potential": [],
+              "children": [
+                {
+                  "key": "tech_ecological_adaptation",
+                  "name": "Ecological Adaptation",
+                  "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
+                  "area": "society",
+                  "base_factor": 1.0,
+                  "base_weight": 60.0,
+                  "category": "New Worlds",
+                  "cost": 10000,
+                  "feature_unlocks": [
+                    "<b>Feature : </b>Ecological Adaptation"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_terrestrial_sculpting"
+                  ],
+                  "tier": 3,
+                  "prerequisites_names": [
+                    {
+                      "name": "Terrestrial Sculpting",
+                      "key": "tech_terrestrial_sculpting"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+                  ],
+                  "potential": [],
+                  "children": [],
+                  "is_event": false,
+                  "source": "vanilla"
+                },
+                {
+                  "key": "tech_climate_restoration",
+                  "name": "Climate Restoration",
+                  "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
+                  "area": "society",
+                  "base_factor": 1.0,
+                  "base_weight": 45.0,
+                  "category": "New Worlds",
+                  "cost": 16000,
+                  "feature_unlocks": [],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_terrestrial_sculpting"
+                  ],
+                  "tier": 4,
+                  "prerequisites_names": [
+                    {
+                      "name": "Terrestrial Sculpting",
+                      "key": "tech_terrestrial_sculpting"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+                  ],
+                  "potential": [],
+                  "children": [],
+                  "is_event": false,
+                  "source": "vanilla"
+                }
+              ],
+              "is_event": false,
+              "source": "vanilla"
+            },
+            {
               "key": "tech_mountain_range",
               "name": "Planetary Resurfacing",
               "description": "With the advent of clean fusion, automation, and matter compression technologies, it was only a matter of time before mountain top removal became mountain range removal.",
@@ -4810,7 +4915,7 @@
           "weight_modifiers": [],
           "potential": [
             "Has Hive Mind Authority",
-            "Is NOT Wilderness Empire"
+            "Does NOT have Origin Wilderness"
           ],
           "children": [
             {
@@ -4843,7 +4948,7 @@
               ],
               "weight_modifiers": [],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [
                 {
@@ -4914,7 +5019,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Is Wilderness Empire"
+            "Has Origin Wilderness"
           ],
           "children": [
             {
@@ -5107,7 +5212,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition"
               ],
               "potential": [
-                "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -5188,7 +5293,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "One must be true\n    •   Does NOT have Hive Mind Authority\n    •   Is Memorialist Empire"
+            "One must be true\n    •   Does NOT have Hive Mind Authority\n    •   One must be true\n\t    •   Has Government Civic: Memorialists\n\t    •   Has Government Civic: Memorialist\n\t    •   Has Government Civic: Memorialist"
           ],
           "children": [
             {
@@ -5670,8 +5775,8 @@
                       "name": "Federation Code",
                       "description": "A Federation must be more than goodwill and shared ambition. This code provides the groundwork for a unified interstellar order, ensuring cooperation and stability among its members.",
                       "area": "society",
-                      "base_factor": 0.01,
-                      "base_weight": 0.84999996,
+                      "base_factor": 2.0,
+                      "base_weight": 170.0,
                       "category": "Statecraft",
                       "cost": 2500,
                       "feature_unlocks": [
@@ -5691,10 +5796,12 @@
                         }
                       ],
                       "weight_modifiers": [
+                        "(×<b style='color:lime'>2.0</b>) Is a member of the galactic community",
                         "(×<b style='color:lime'>2.0</b>) Has Fanatic Xenophile Ethic",
                         "(×<b style='color:lime'>1.25</b>) Has Xenophile Ethic",
                         "(×<b style='color:red'>0.5</b>) Has Xenophobe Ethic",
-                        "(×<b style='color:red'>0.25</b>) Has Fanatic Xenophobe Ethic"
+                        "(×<b style='color:red'>0.25</b>) Has Fanatic Xenophobe Ethic",
+                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Government Civic: Inward Perfection"
                       ],
                       "potential": [],
                       "children": [
@@ -5729,10 +5836,11 @@
                           "weight_modifiers": [
                             "(×<b style='color:lime'>1.25</b>) Has Xenophile Ethic",
                             "(×<b style='color:lime'>2.0</b>) Has Fanatic Xenophile Ethic",
+                            "(×<b style='color:lime'>2.0</b>) Is a member of the galactic community",
                             "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                           ],
                           "potential": [
-                            "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [
                             {
@@ -5770,10 +5878,11 @@
                               "weight_modifiers": [
                                 "(×<b style='color:lime'>1.25</b>) Has Xenophile Ethic",
                                 "(×<b style='color:lime'>2.0</b>) Has Fanatic Xenophile Ethic",
+                                "(×<b style='color:lime'>2.0</b>) Is a member of the galactic community",
                                 "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                               ],
                               "potential": [
-                                "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
                               ],
                               "children": [],
                               "is_event": false,
@@ -6147,7 +6256,7 @@
                       ],
                       "weight_modifiers": [],
                       "potential": [
-                        "All must be false\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   Has Government Civic: Rogue Servitor\n    •   Is Wilderness Empire"
+                        "All must be false\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   Has Government Civic: Rogue Servitor\n    •   Has Origin Wilderness"
                       ],
                       "children": [],
                       "is_event": false,
@@ -6801,8 +6910,8 @@
           "name": "Neural Implants",
           "description": "Cognition is little but the processing of sensory input. It can be altered.",
           "area": "society",
-          "base_factor": 2.0,
-          "base_weight": 180.0,
+          "base_factor": 1.0,
+          "base_weight": 90.0,
           "category": "Statecraft",
           "cost": 3000,
           "feature_unlocks": [
@@ -6816,9 +6925,13 @@
           "prerequisites": [],
           "tier": 1,
           "prerequisites_names": [],
-          "weight_modifiers": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>1.5</b>) Has a number of pop greater than or equal to 1000<br/>    •   One must be true<br/>    •   Pop is enslaved<br/>    •   Is TODO",
+            "(×<b style='color:lime'>2.0</b>) Has a number of pop greater than or equal to 2000<br/>    •   One must be true<br/>    •   Pop is enslaved<br/>    •   Is TODO",
+            "(×<b style='color:lime'>2.0</b>) Has a number of pop greater than or equal to 3000<br/>    •   One must be true<br/>    •   Pop is enslaved<br/>    •   Is TODO"
+          ],
           "potential": [
-            "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
             "One must be true\n    •   Has policy Slavery Allowed\n    •   Has Gestalt Consciousness Ethic"
           ],
           "children": [
@@ -7125,7 +7238,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7190,7 +7303,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -7253,7 +7366,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7315,7 +7428,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -7378,7 +7491,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7533,8 +7646,8 @@
                       "name": "Psi Jump Drive",
                       "description": "The Psi Jump Drive harnesses the psi energies emitted by the crew to force the vessel through the very fabric of reality, instantly \"jumping\" vast distances.",
                       "area": "society",
-                      "base_factor": 5.0,
-                      "base_weight": 125.0,
+                      "base_factor": 0.1,
+                      "base_weight": 2.5,
                       "category": "Psionics",
                       "cost": 40000,
                       "feature_unlocks": [
@@ -7559,6 +7672,7 @@
                         "(×<b style='color:red'>0.0</b>) Has DLC Utopia",
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                        "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                         "(×<b style='color:lime'>1.5</b>) Has the jaunted_traveler_secret_revealed country flag"
                       ],
                       "potential": [
@@ -7670,8 +7784,8 @@
           "name": "Archaeostudies",
           "description": "This new field of studies focuses on the practical applications of ancient artifacts. We are far from being the first galactic civilization to tread these stars. With a bit of work, their legacies could secure our future.",
           "area": "society",
-          "base_factor": 0.3,
-          "base_weight": 21.0,
+          "base_factor": 1.0,
+          "base_weight": 70.0,
           "category": "Archaeostudies",
           "cost": 4000,
           "feature_unlocks": [
@@ -7685,6 +7799,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack",
+            "(×<b style='color:red'>0.3</b>) Has a Number of archaeological sites lower than 3<br/>    •   Site is completed",
             "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has the origin_shoulders_closure country flag<br/>    •   Has completed Precursor technology"
           ],
           "potential": [
@@ -7696,8 +7811,8 @@
               "name": "Ancient Refinery",
               "description": "This millennia-old processing equipment has an efficiency rate above 100%. Its functioning remains alien, but its production gains are substantial.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7717,12 +7832,13 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
               "potential": [
                 "Has DLC Ancient Relics Story Pack",
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [],
               "is_event": false,
@@ -7733,8 +7849,8 @@
               "name": "Ancient Macro Batteries",
               "description": "These cannons of gargantuan size deliver relatively slow but devastating projectiles, and can fire pretty much anything, from scrap metal, to asteroid chunks.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7760,6 +7876,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7775,8 +7892,8 @@
               "name": "Ancient Cavitation Collapser",
               "description": "This high energy weapon causes brutal micro collapsing events on impact, generating tremendous heat and force inside its targets armor.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7799,6 +7916,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7814,8 +7932,8 @@
               "name": "Ancient Defensive Web Slinger",
               "description": "When it comes to tracking and shooting down missiles, these antique batteries are the best of the best, making use of a predictive algorithm written in long forgotten code to weave a fiery defensive web.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7836,6 +7954,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7851,8 +7970,8 @@
               "name": "Ancient Nano-Missile Cloud Launcher",
               "description": "Particle charges, once stabilized thanks to ancient technology, allow us to create swarms of tiny missiles that still carry a respectable payload, and should be able to overwhelm most point-defense systems.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7873,6 +7992,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7888,8 +8008,8 @@
               "name": "Ancient Pulse Armor",
               "description": "Ionized plates of armor can carry a reactive charge to alleviate the energy of impacts, using magnetic repulsion and field projection principles.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7915,6 +8035,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7930,8 +8051,8 @@
               "name": "Ancient Rampart",
               "description": "Defense platforms are a cost effective way to ensure our safety, but they need to be monitored from an operation center. Fortifying our Starbase to ensure its survivability in the event of an attack, and maximizing our capacity to network independent orbital defenses would give us more time to dispatch reinforcements.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7951,6 +8072,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -7966,8 +8088,8 @@
               "name": "Ancient Shield Overcharger",
               "description": "Supercharging shields can be done safely thanks to ancient stabilizer coils and dampeners. In addition to the production of a stronger force field, this also has the added benefit of outright vaporizing certain incoming projectiles.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -7987,6 +8109,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8002,8 +8125,8 @@
               "name": "Ancient Saturator Artillery",
               "description": "This cannon fires a barrage of ancient miniscule ionized spheres that charge upon contact with most force fields, giving them high levels of shield penetration. Any theory that these spheres could have been used for jewelry purposes were dismissed when a critical incident melted an entire laboratory.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -8024,6 +8147,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8039,8 +8163,8 @@
               "name": "Ancient Driller Drones",
               "description": "These high velocity drones have been equipped with antique mining lasers that virtually ignore any plating protecting their target. A tech too good to be wasted on astro mining.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -8061,6 +8185,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8076,8 +8201,8 @@
               "name": "Ancient Suspension Field",
               "description": "Projected farther than regular shields, the suspension field technology uses ancient artifacts to slow time at the point of impact to afford the shields a longer opportunity to dispel the incoming attack's energy.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 12000,
               "feature_unlocks": [
@@ -8103,6 +8228,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8118,8 +8244,8 @@
               "name": "Ancient Ruination Glare",
               "description": "Tremendous medium range firepower will enable our titans to break through enemy lines. These ancient cannons were once the foundation upon which a galactic empire was built.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 3.5,
+              "base_factor": 1.0,
+              "base_weight": 35.0,
               "category": "Archaeostudies",
               "cost": 20000,
               "feature_unlocks": [
@@ -8139,6 +8265,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8154,8 +8281,8 @@
               "name": "Ancient Target Scrambler",
               "description": "Ping repeaters and optic diffusers with the right wavelengths can produce destructive interference and effectively scramble hostile targeting systems.",
               "area": "society",
-              "base_factor": 0.1,
-              "base_weight": 2.0,
+              "base_factor": 1.0,
+              "base_weight": 20.0,
               "category": "Archaeostudies",
               "cost": 20000,
               "feature_unlocks": [
@@ -8175,6 +8302,7 @@
                 }
               ],
               "weight_modifiers": [
+                "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
                 "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
                 "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
               ],
@@ -8237,15 +8365,48 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Is Lithoid Empire<br/>    •   All must be true<br/>\t    •   Is individualist Machine Empire<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
             "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
           ],
           "potential": [
-            "Is NOT Wilderness Empire"
+            "Does NOT have Origin Wilderness"
           ],
           "children": [],
           "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_alien_life_studies",
+          "name": "Xenology",
+          "description": "Studying the fauna of other worlds gives insight into alien behaviors, allowing us to identify and domesticate docile entities.",
+          "area": "society",
+          "base_factor": 1.0,
+          "base_weight": 95.0,
+          "category": "Biology",
+          "cost": 2500,
+          "feature_unlocks": [
+            "<b>Building</b>: Alien Zoo"
+          ],
+          "is_dangerous": false,
+          "is_rare": false,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 1,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
+            "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has Fanatic Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Fanatic Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Isolated Valley<br/>\t\t    •   Has deposit Avian Reserve<br/>\t\t    •   Any owned Population Group:<br/>\t\t\t    •   One must be true<br/>\t\t\t\t    •   Pop is NOT Sapient<br/>\t\t\t\t    •   Is livestock<br/>\t\t\t\t    •   Is TODO",
+            "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Government Civic: Genesis Guides<br/>    •   Has Government Civic: Genesis Symbiotes<br/>    •   Has Government Civic: Genesis Architects<br/>    •   Has Government Civic: Astrogenesis Technologies",
+            "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
+          ],
+          "potential": [
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+          ],
+          "children": [],
+          "is_event": false,
+          "is_gestalt": false,
           "source": "vanilla"
         },
         {
@@ -8364,7 +8525,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Is Wilderness Empire"
+            "Has Origin Wilderness"
           ],
           "children": [],
           "is_event": false,
@@ -8391,7 +8552,7 @@
           "weight_modifiers": [],
           "potential": [
             "Has DLC Grand Archive",
-            "One must be true\n    •   Number of aquired specimen is greater than 0\n    •   Is Galactic Curators Empire\n    •   Is Beastmasters Empire"
+            "One must be true\n    •   Number of aquired specimen is greater than 0\n    •   One must be true\n\t    •   Has Government Civic: Galactic Curators\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Antiquarian Expertise\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
           ],
           "children": [],
           "is_event": false,
@@ -8478,6 +8639,34 @@
           "source": "vanilla"
         },
         {
+          "key": "tech_ascension_theory",
+          "name": "Ascension Theory",
+          "description": "Our history is a repeating cycle of dramatic technological, political, and cultural leaps; these leaps are often preceded by periods of upheaval and followed by times of relative stability. By identifying the core, recurring premises of these leaps, we may be able to effectively short-circuit the cycle for our own benefit.",
+          "area": "society",
+          "base_factor": 0.5,
+          "base_weight": 20.0,
+          "category": "Statecraft",
+          "cost": 20000,
+          "feature_unlocks": [
+            "<b>Feature : </b>Unity Ambitions",
+            "Ascension Perks Unlocked +1"
+          ],
+          "is_dangerous": false,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 4,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Has the Curator Insight modifier<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Statecraft 1",
+            "(×<b style='color:red'>0.0</b>) Number of open ascension perk slots is lower than 6"
+          ],
+          "potential": [],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
           "key": "tech_archeology_lab_ancrel",
           "name": "Curator Archaeology Lab",
           "description": "A shipboard lab with advanced archaeological equipment, including a vast database supplied by the Curator Order where new discoveries can easily be cross-referenced.",
@@ -8540,8 +8729,8 @@
           "name": "Devolving Beam",
           "description": "A colossal mind-wiping cannon which unleashes a planet-wide wave of energy, returning most sentient life to a pre-sapient state. We estimate that with additional tuning, it might also be used to wipe clean memory banks and disable robotic units.",
           "area": "society",
-          "base_factor": 0.1,
-          "base_weight": 2.0,
+          "base_factor": 0.5,
+          "base_weight": 10.0,
           "category": "Archaeostudies",
           "cost": 48000,
           "feature_unlocks": [
@@ -8554,6 +8743,7 @@
           "tier": 5,
           "prerequisites_names": [],
           "weight_modifiers": [
+            "(×<b style='color:red'>0.1</b>) Number of buildings lower than 1<br/>    •   Type is Faculty of Archaeostudies<br/>    •   Is NOT disabled<br/>    •   Is NOT in construction",
             "(×<b style='color:red'>0.1</b>) Does NOT have Archaeo-Engineers Ascension Perk",
             "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack"
           ],

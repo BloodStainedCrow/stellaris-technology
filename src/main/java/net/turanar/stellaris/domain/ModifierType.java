@@ -21,7 +21,8 @@ public enum ModifierType {
     has_cosmic_storms_dlc("Has DLC Cosmic Storms"),
     has_biogenesis_dlc("Has DLC Biogenesis"),
 
-
+    num_ascension_perk_slots("Number of open ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
+    num_ascension_perk("Number of filled ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
     has_ascension_perk("Has %s Ascension Perk"),
     has_authority("Has %s Authority"),
     has_blocker("Has £blocker£ Tile Blocker: %s"),
@@ -99,23 +100,46 @@ public enum ModifierType {
     has_completed_precursor_research("Has completed Precursor technology|Has NOT completed Precursor technology", DefaultParser.SIMPLE_BOOLEAN),
     has_crisis_level("Has Crisis level: %s"),
 
-    // What is the difference?!?
-    // TODO(Tim Aschhoff): Explain these better
-    has_void_dweller_origin("Has Void Dweller Origin|Does NOT have Void Dweller Origin", DefaultParser.SIMPLE_BOOLEAN),
-    is_void_dweller_empire("Is Void Dweller Empire|Is NOT Void Dweller Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_individual_machine("Is individualist Machine Empire|Is NOT individualist Machine Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_lithoid_empire("Is Lithoid Empire|Is NOT Lithoid Empire", DefaultParser.SIMPLE_BOOLEAN),
-    // TODO(Tim Aschhoff): Do I want to make it clearer what these are (i.e. origin vs civic)?
-    is_natural_design_empire("Is Natural Design Empire|Is NOT Natural Design Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_wilderness_empire("Is Wilderness Empire|Is NOT Wilderness Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_beastmasters_empire("Is Beastmasters Empire|Is NOT Beastmasters Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_anglers_empire("Is Anglers Empire|Is NOT Anglers Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_catalytic_empire("Is Cataclytic Empire|Is NOT Cataclytic Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_memorialist_empire("Is Memorialist Empire|Is NOT Memorialist Empire", DefaultParser.SIMPLE_BOOLEAN),
-    is_galactic_curators_empire("Is Galactic Curators Empire|Is NOT Galactic Curators Empire", DefaultParser.SIMPLE_BOOLEAN),
+    has_void_dweller_origin(DefaultParser.SCRIPTED),
+    is_void_dweller_empire(DefaultParser.SCRIPTED),
+    is_individual_machine(DefaultParser.SCRIPTED),
+    is_lithoid_empire(DefaultParser.SCRIPTED),
+    is_natural_design_empire(DefaultParser.SCRIPTED),
+    is_wilderness_empire(DefaultParser.SCRIPTED),
+    is_beastmasters_empire(DefaultParser.SCRIPTED),
+    is_anglers_empire(DefaultParser.SCRIPTED),
+    is_catalytic_empire(DefaultParser.SCRIPTED),
+    is_memorialist_empire(DefaultParser.SCRIPTED),
+    is_galactic_curators_empire(DefaultParser.SCRIPTED),
+    is_astrometeorologist_empire(DefaultParser.SCRIPTED),
+    is_storm_callers_empire(DefaultParser.SCRIPTED),
+    is_eager_explorer_empire(DefaultParser.SCRIPTED),
+    is_dimensional_worship_empire(DefaultParser.SCRIPTED),
+    is_guided_sapience_empire(DefaultParser.SCRIPTED),
 
+    founder_species("Founder Species:", DefaultParser.CONDITIONAL),
+    is_archetype("Is archetype %s"),
+    is_lithoid("Is Lithoid|Is NOT Lithoid", DefaultParser.SIMPLE_BOOLEAN),
 
-    has_encountered_any_fauna("Has encountered any space fauna|Has NOT encountered any space fauna", DefaultParser.SIMPLE_BOOLEAN),
+    has_federation("Is part of a Federation|Is NOT part of a Federation", DefaultParser.SIMPLE_BOOLEAN),
+    federation("Federation:", DefaultParser.CONDITIONAL),
+    has_federation_law("Has Federation Law %s"),
+    has_federation_perk("Has Federation Perk %s"),
+    any_member("Any Member:", DefaultParser.CONDITIONAL),
+
+    is_diplomatic(DefaultParser.SCRIPTED),
+
+    has_menace_perk("Has Crisis perk %s"),
+
+    is_lithoid_devouring_swarm(DefaultParser.SCRIPTED),
+
+    has_encountered_any_fauna(DefaultParser.SCRIPTED),
+    has_encountered_tiyanki("Has encountered Tiyanki|Has NOT encountered Tiyanki", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_space_amoeba("Has encountered Space Amoeba|Has NOT encountered Space Amoeba", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_crystalline_entity("Has encountered Crystalline Entity|Has NOT encountered Crystalline Entity", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_voidworm("Has encountered Voidworms|Has NOT encountered Voidworms", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_cutholoid("Has encountered Cuthuloids|Has NOT encountered Cuthuloids", DefaultParser.SIMPLE_BOOLEAN),
+
 
     acquired_specimen_count("Number of aquired specimen is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_cosmic_storms_encountered("Number of Cosmic Storms encountered is %s %s", DefaultParser.SIMPLE_OPERATION),
@@ -133,8 +157,57 @@ public enum ModifierType {
 
     can_research_technology("Can research technology: %s"),
 
+    is_galactic_community_member("Is a member of the galactic community|Is NOT a member of the galactic community", DefaultParser.SIMPLE_BOOLEAN),
+
     // TODO(Tim Aschhoff): This is not very clear what this means
     exists("%s exists"),
+
+    num_buildings(p -> {
+        List<String> conditions = new ArrayList<>();
+        String op = null, rhs = null;
+
+        for(PairContext prop : p.value().map().pair()) {
+            if (prop.BAREWORD().getText().equals("value")) {
+                op = op(prop);
+                rhs = gs(prop);
+            } else {
+                Modifier m = visitCondition(prop);
+                conditions.add(m.toString());
+            }
+
+        }
+
+        String retval = String.format("Number of buildings %s %s", op, rhs);
+        for(int i = 0; i < conditions.size(); i++) {
+            retval = retval + "\n" + LS + conditions.get(i).replaceAll(LS, "\t" + LS);
+        }
+        return retval;
+    }),
+    disabled("Is disabled|Is NOT disabled", DefaultParser.SIMPLE_BOOLEAN),
+    in_construction("Is in construction|Is NOT in construction", DefaultParser.SIMPLE_BOOLEAN),
+    type("Type is %s"),
+
+    count_archaeological_site(p -> {
+        String op = null, rhs = null;
+        String limits = "";
+
+        for(PairContext prop : p.value().map().pair()) {
+            if (prop.BAREWORD().getText().equals("count")) {
+                op = op(prop);
+                rhs = gs(prop);
+            } else if(prop.BAREWORD().getText().equals("limit")) {
+                for(PairContext l : prop.value().map().pair()) {
+                    Modifier m = visitCondition(l);
+                    limits += "\n" + LS + m.toString();
+                }
+            }
+
+        }
+
+        String retval = String.format("Has a Number of archaeological sites %s %s", op, rhs);
+        return retval + limits;
+    }),
+    is_site_completed("Site is completed|Site is NOT completed", DefaultParser.SIMPLE_BOOLEAN),
 
     // TODO(Tim Aschhoff):
     has_disconnected_drone_citizenship_type("Is TODO|Is NOT TODO", DefaultParser.SIMPLE_BOOLEAN),
@@ -157,7 +230,7 @@ public enum ModifierType {
     is_organic_species("Is Organic|Is NOT Organic", DefaultParser.SIMPLE_BOOLEAN),
 
     // FXIME(Tim Aschhoff) Explain this
-    has_storm_attraction_civic("Has any Storm Attraction civic", DefaultParser.SIMPLE_BOOLEAN),
+    has_storm_attraction_civic(DefaultParser.SCRIPTED),
 
     is_inside_nebula("Is in nebula|Is NOT in nebula", DefaultParser.SIMPLE_BOOLEAN),
 
@@ -166,7 +239,18 @@ public enum ModifierType {
     // TODO(Tim Aschhoff): Make sure the definition for this does not change (i.e. if the federation perk changes)
     has_make_spiritualist_perk("Is a Member of a spiritualist Federation with perk 'A Union of Faith'|Is NOT a Member of a spiritualist Federation with perk 'A Union of Faith'", DefaultParser.SIMPLE_BOOLEAN),
 
-    is_homicidal("Is homocidal|Is NOT homocidal", DefaultParser.SIMPLE_BOOLEAN),
+    is_homicidal(DefaultParser.SCRIPTED),
+    
+    has_any_dna(DefaultParser.SCRIPTED),
+    has_dna((p) -> {
+        String dna_source = null;
+        for(PairContext prop : p.value().map().pair()) {
+            if (prop.BAREWORD().getText().equals("ship_category")) {
+                dna_source = i18n(gs(prop));
+            }
+        }
+        return "Has " + dna_source + " dna";
+    }),
 
     has_trait((p) -> {
         String expertise = i18n(gs(p));
@@ -301,6 +385,22 @@ public enum ModifierType {
         return "Has a number of pop " + count + limits;
     }),
 
+    count_owned_pop_amount((p) -> {return count_owned_pops.parser.apply(p);}),
+
+    calc_true_if((p) -> {
+        String limits = "";
+        String count = "";
+        for(PairContext prop : p.value().map().pair()) {
+            if(prop.BAREWORD().getText().equals("amount")) {
+                count = op(prop) + " " + gs(prop);
+            } else {
+                Modifier m = visitCondition(prop);
+                limits += "\n" + LS + m.toString();
+            }
+        }
+        return "Number of conditions true " + count + limits;
+    }),
+
     NOT((p) -> {
         if(p.value().map().pair().size() > 1) return NOR.parser.apply(p);
         Modifier m = visitCondition(p.value().map().pair().get(0));
@@ -365,6 +465,8 @@ public enum ModifierType {
             if(conditions.size() < 2) {
                 retval = conditions.get(0);
                 return retval;
+            } else if (retval == null) {
+                retval = "All must be true";
             }
 
             for(int i = 0; i < conditions.size(); i++) {

@@ -114,7 +114,7 @@ public class TechnologyVisitor {
                         }
 
                         if (gs(val) == null) {
-                            System.err.print(val.BAREWORD());
+                            System.err.println(val.BAREWORD());
                         } else {
                             retval
                                 .prerequisites
@@ -122,7 +122,6 @@ public class TechnologyVisitor {
                                 .replaceAll("\"",""));
                         }
                     });
-                    System.err.println();
             }
         }
         return retval;

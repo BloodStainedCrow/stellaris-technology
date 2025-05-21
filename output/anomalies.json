@@ -148,38 +148,6 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_alien_life_studies",
-    "name": "Xenology",
-    "description": "Studying the fauna of other worlds gives insight into alien behaviors, allowing us to identify and domesticate docile entities.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "Biology",
-    "cost": 2500,
-    "feature_unlocks": [
-      "<b>Building</b>: Alien Zoo"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [],
-    "tier": 1,
-    "prerequisites_names": [],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
-      "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has Fanatic Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Fanatic Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
-      "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Isolated Valley<br/>\t\t    •   Has deposit Avian Reserve<br/>\t\t    •   Any owned Population Group:<br/>\t\t\t    •   One must be true<br/>\t\t\t\t    •   Pop is NOT Sapient<br/>\t\t\t\t    •   Is livestock<br/>\t\t\t\t    •   Is TODO",
-      "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
-    ],
-    "potential": [
-      "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
-    ],
-    "children": [],
-    "is_event": true,
-    "is_gestalt": false,
-    "source": "vanilla"
-  },
-  {
     "key": "tech_alien_topography",
     "name": "Alien Topography",
     "description": "Civilizations flourish in locations that promotes growth, and by analyzing where the majority of pre-FTL settlements thrive we can gain more out of our colonies.",
@@ -226,33 +194,6 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_ascension_theory",
-    "name": "Ascension Theory",
-    "description": "Our history is a repeating cycle of dramatic technological, political, and cultural leaps; these leaps are often preceded by periods of upheaval and followed by times of relative stability. By identifying the core, recurring premises of these leaps, we may be able to effectively short-circuit the cycle for our own benefit.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "Statecraft",
-    "cost": 20000,
-    "feature_unlocks": [
-      "<b>Feature : </b>Unity Ambitions",
-      "Ascension Perks Unlocked +1"
-    ],
-    "is_dangerous": false,
-    "is_rare": true,
-    "is_start_tech": false,
-    "prerequisites": [],
-    "tier": 4,
-    "prerequisites_names": [],
-    "weight_modifiers": [
-      "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Has the Curator Insight modifier<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Statecraft 1"
-    ],
     "potential": [],
     "children": [],
     "is_event": true,
@@ -363,68 +304,6 @@
       "Has Galactic Nemesis Ascension Perk",
       "Has the can_build_star_eaters country flag"
     ],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_climate_restoration",
-    "name": "Climate Restoration",
-    "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
-    "area": "society",
-    "base_factor": 1.0,
-    "base_weight": 45.0,
-    "category": "New Worlds",
-    "cost": 16000,
-    "feature_unlocks": [],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_terrestrial_sculpting"
-    ],
-    "tier": 4,
-    "prerequisites_names": [
-      {
-        "name": "Terrestrial Sculpting",
-        "key": "tech_terrestrial_sculpting"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-    ],
-    "potential": [],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_climate_restoration",
-    "name": "Climate Restoration",
-    "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
-    "area": "society",
-    "base_factor": 1.0,
-    "base_weight": 45.0,
-    "category": "New Worlds",
-    "cost": 16000,
-    "feature_unlocks": [],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_terrestrial_sculpting"
-    ],
-    "tier": 4,
-    "prerequisites_names": [
-      {
-        "name": "Terrestrial Sculpting",
-        "key": "tech_terrestrial_sculpting"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-    ],
-    "potential": [],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -999,72 +878,6 @@
     "potential": [
       "Has DLC Utopia"
     ],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_ecological_adaptation",
-    "name": "Ecological Adaptation",
-    "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
-    "area": "society",
-    "base_factor": 1.0,
-    "base_weight": 60.0,
-    "category": "New Worlds",
-    "cost": 10000,
-    "feature_unlocks": [
-      "<b>Feature : </b>Ecological Adaptation"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_terrestrial_sculpting"
-    ],
-    "tier": 3,
-    "prerequisites_names": [
-      {
-        "name": "Terrestrial Sculpting",
-        "key": "tech_terrestrial_sculpting"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-    ],
-    "potential": [],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_ecological_adaptation",
-    "name": "Ecological Adaptation",
-    "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
-    "area": "society",
-    "base_factor": 1.0,
-    "base_weight": 60.0,
-    "category": "New Worlds",
-    "cost": 10000,
-    "feature_unlocks": [
-      "<b>Feature : </b>Ecological Adaptation"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_terrestrial_sculpting"
-    ],
-    "tier": 3,
-    "prerequisites_names": [
-      {
-        "name": "Terrestrial Sculpting",
-        "key": "tech_terrestrial_sculpting"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-    ],
-    "potential": [],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1806,7 +1619,7 @@
     "weight_modifiers": [],
     "potential": [
       "Has DLC Utopia",
-      "Is NOT Wilderness Empire"
+      "Does NOT have Origin Wilderness"
     ],
     "children": [],
     "is_event": true,
@@ -2235,109 +2048,6 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_terrestrial_sculpting",
-    "name": "Terrestrial Sculpting",
-    "description": "There is no simple solution to the problem of macro-scale reshaping of planetary crusts - only bigger trowels and orbitally-deployed drills.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "New Worlds",
-    "cost": 6000,
-    "feature_unlocks": [
-      "<b>Edict</b>: Terraforming Gases",
-      "<b>Feature : </b>Terraforming"
-    ],
-    "is_dangerous": false,
-    "is_rare": false,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_colonization_1"
-    ],
-    "tier": 2,
-    "prerequisites_names": [
-      {
-        "name": "New Worlds Protocol",
-        "key": "tech_colonization_1"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
-      "(×<b style='color:lime'>1.25</b>) Has trait Aquatic",
-      "(×<b style='color:lime'>1.25</b>) Has trait Waterproof",
-      "(×<b style='color:lime'>1.25</b>) Has Origin Life-Seeded",
-      "(+) Has Origin Wilderness"
-    ],
-    "potential": [],
-    "children": [
-      {
-        "key": "tech_ecological_adaptation",
-        "name": "Ecological Adaptation",
-        "description": "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process.",
-        "area": "society",
-        "base_factor": 1.0,
-        "base_weight": 60.0,
-        "category": "New Worlds",
-        "cost": 10000,
-        "feature_unlocks": [
-          "<b>Feature : </b>Ecological Adaptation"
-        ],
-        "is_dangerous": false,
-        "is_rare": false,
-        "is_start_tech": false,
-        "prerequisites": [
-          "tech_terrestrial_sculpting"
-        ],
-        "tier": 3,
-        "prerequisites_names": [
-          {
-            "name": "Terrestrial Sculpting",
-            "key": "tech_terrestrial_sculpting"
-          }
-        ],
-        "weight_modifiers": [
-          "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-        ],
-        "potential": [],
-        "children": [],
-        "is_event": true,
-        "source": "vanilla"
-      },
-      {
-        "key": "tech_climate_restoration",
-        "name": "Climate Restoration",
-        "description": "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds.",
-        "area": "society",
-        "base_factor": 1.0,
-        "base_weight": 45.0,
-        "category": "New Worlds",
-        "cost": 16000,
-        "feature_unlocks": [],
-        "is_dangerous": false,
-        "is_rare": false,
-        "is_start_tech": false,
-        "prerequisites": [
-          "tech_terrestrial_sculpting"
-        ],
-        "tier": 4,
-        "prerequisites_names": [
-          {
-            "name": "Terrestrial Sculpting",
-            "key": "tech_terrestrial_sculpting"
-          }
-        ],
-        "weight_modifiers": [
-          "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
-        ],
-        "potential": [],
-        "children": [],
-        "is_event": true,
-        "source": "vanilla"
-      }
-    ],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
     "key": "tech_thrusters_bio_integration",
     "name": "Thruster Bio-integration",
     "description": "Artificial thrusters can be integrated into spaceborne organisms with appropriate considerations for energy supply and connections to neural motor centers.",
@@ -2727,13 +2437,13 @@
     "tier": 1,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+) All must be true<br/>    •   null<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Is NOT homocidal<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
+      "(+) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
     ],
     "potential": [
       "Has DLC Galactic Paragons",
-      "null\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+      "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
       "Does NOT have Gestalt Consciousness Ethic",
-      "Is NOT homocidal"
+      "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   Has Government Civic: Determined Exterminator\n    •   Has Government Civic: Devouring Swarm\n    •   Has Crisis perk Ever Hungry"
     ],
     "children": [],
     "is_event": true,

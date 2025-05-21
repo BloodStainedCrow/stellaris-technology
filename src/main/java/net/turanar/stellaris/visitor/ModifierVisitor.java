@@ -38,7 +38,10 @@ public class ModifierVisitor {
                 case "factor": tech.base_factor = Float.valueOf(gs(p)); break;
                 case "modifier":
                     WeightModifier m = visitModifier(p);
-                    if(m.pair == null && m.factor != null) tech.base_factor = m.factor;
+                    if(m.pair == null && m.factor != null) {
+                        assert(tech.base_factor == 1.0f);
+                        tech.base_factor = m.factor;
+                    }
                     else retval.add(m);
                     break;
             }

@@ -178,8 +178,8 @@
                               "name": "Jump Drive",
                               "description": "A groundbreaking technological marvel, the Jump Drive shreds the local space-time continuum and rearranges it on the quantum level to be identical to that of the target destination - and thus the ship appears to near-instantly \"jump\" from system to system.",
                               "area": "physics",
-                              "base_factor": 5.0,
-                              "base_weight": 150.0,
+                              "base_factor": 0.1,
+                              "base_weight": 3.0,
                               "category": "Particles",
                               "cost": 32000,
                               "feature_unlocks": [
@@ -203,6 +203,7 @@
                               "weight_modifiers": [
                                 "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                                "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition"
                               ],
                               "potential": [],
@@ -1099,8 +1100,8 @@
               "name": "Hyperlane Breach Points",
               "description": "We have identified the existence of points in space where a ship expends less energy to \"breach\" their way into a hyperlane. This will lead to a new generation of hyper drives.",
               "area": "physics",
-              "base_factor": 5.0,
-              "base_weight": 375.0,
+              "base_factor": 1.0,
+              "base_weight": 75.0,
               "category": "Particles",
               "cost": 5000,
               "feature_unlocks": [
@@ -1125,6 +1126,7 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                 "(×<b style='color:lime'>10.0</b>) Has the chosen_empire country flag"
               ],
               "potential": [],
@@ -1134,8 +1136,8 @@
                   "name": "Hyperspace Slipstreams",
                   "description": "A new generation of hyper drives capable of accessing the subspace slipstreams that are present within hyperspace. This leads to dramatically improved drive performance.",
                   "area": "physics",
-                  "base_factor": 5.0,
-                  "base_weight": 250.0,
+                  "base_factor": 1.0,
+                  "base_weight": 50.0,
                   "category": "Particles",
                   "cost": 12000,
                   "feature_unlocks": [
@@ -1159,7 +1161,8 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk"
+                    "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
                   ],
                   "potential": [],
                   "children": [
@@ -1168,8 +1171,8 @@
                       "name": "Gateway Activation",
                       "description": "The ability to reactivate the derelict Gateway stations that can be found scattered throughout the galaxy has the potential to dramatically shorten travel times.",
                       "area": "physics",
-                      "base_factor": 5.0,
-                      "base_weight": 175.0,
+                      "base_factor": 0.5,
+                      "base_weight": 17.5,
                       "category": "Particles",
                       "cost": 24000,
                       "feature_unlocks": [
@@ -1192,6 +1195,7 @@
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                         "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                        "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   One must be true<br/>\t    •   Has encountered a Gateway<br/>\t    •   Has encountered a bypass_lgate<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Gateway Activation",
                         "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Controls a system with a Gateway<br/>    •   Controls a system with a bypass_lgate"
                       ],
@@ -1202,8 +1206,8 @@
                           "name": "Gateway Construction",
                           "description": "The construction of new Gateway stations enables us to build a fast-travel network that could revolutionize interstellar travel.",
                           "area": "physics",
-                          "base_factor": 5.0,
-                          "base_weight": 100.0,
+                          "base_factor": 0.5,
+                          "base_weight": 10.0,
                           "category": "Particles",
                           "cost": 48000,
                           "feature_unlocks": [
@@ -1231,6 +1235,7 @@
                             "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                             "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                             "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                            "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                             "(×<b style='color:lime'>4.0</b>) Controls a system with a Gateway"
                           ],
                           "potential": [],
@@ -1251,8 +1256,8 @@
                   "name": "Hyper Relays",
                   "description": "Hyper Relays form a chain of structures built outside the gravity well of systems, allowing fast travel from relay to relay rather than requiring transit to established hyperlane entrances.",
                   "area": "physics",
-                  "base_factor": 5.0,
-                  "base_weight": 350.0,
+                  "base_factor": 0.5,
+                  "base_weight": 35.0,
                   "category": "Particles",
                   "cost": 6000,
                   "feature_unlocks": [
@@ -1279,7 +1284,8 @@
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
                     "(×<b style='color:lime'>1.5</b>) Has encountered a bypass_relay_bypass",
                     "(×<b style='color:lime'>1.25</b>) Has Technology: Speculative Hyperlane Breaching",
-                    "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk"
+                    "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
                   ],
                   "potential": [
                     "Has DLC Overlord"
@@ -1293,8 +1299,8 @@
                   "name": "Wormhole Stabilization",
                   "description": "A naturally occurring subspace wormhole is a fickle thing, and its fluctuating energy levels typically make it impossible to travel safely between its linked apertures. There are ways to temporarily stabilize its matrix, however.",
                   "area": "physics",
-                  "base_factor": 2.0,
-                  "base_weight": 130.0,
+                  "base_factor": 0.5,
+                  "base_weight": 32.5,
                   "category": "Particles",
                   "cost": 8000,
                   "feature_unlocks": [
@@ -1317,6 +1323,8 @@
                     "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                     "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
+                    "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Wormhole Stabilization",
                     "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
                     "(×<b style='color:lime'>4.0</b>) Controls a system with a Natural Wormhole",
                     "(×<b style='color:lime'>10.0</b>) Has the chosen_empire country flag"
@@ -1388,7 +1396,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2264,7 +2272,7 @@
           "weight_modifiers": [],
           "potential": [
             "Has DLC Grand Archive",
-            "One must be true\n    •   Has encountered any space fauna\n    •   Is Beastmasters Empire"
+            "One must be true\n    •   One must be true\n\t    •   Has encountered Tiyanki\n\t    •   Has encountered Space Amoeba\n\t    •   Has encountered Crystalline Entity\n\t    •   Has encountered Voidworms\n\t    •   Has encountered Cuthuloids\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
           ],
           "children": [
             {
@@ -2380,8 +2388,8 @@
               "name": "Artificial Breeding",
               "description": "In a carefully controlled environment, we can incubate the Genetic Material collected from culled Space Fauna and produce new members of each species under our command.",
               "area": "society",
-              "base_factor": 2.0,
-              "base_weight": 170.0,
+              "base_factor": 1.0,
+              "base_weight": 85.0,
               "category": "Biology",
               "cost": 4000,
               "feature_unlocks": [
@@ -2402,10 +2410,12 @@
                   "key": "tech_gravity_wells"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Any Member:<br/>\t    •   Has Technology: Artificial Breeding<br/>    •   Does NOT have Federation Law None"
+              ],
               "potential": [
                 "Has DLC Grand Archive",
-                "One must be true\n    •   Is Beastmasters Empire\n    •   Can research technology: Genome Mapping"
+                "One must be true\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers\n    •   Can research technology: Genome Mapping"
               ],
               "children": [
                 {
@@ -2512,7 +2522,9 @@
                     }
                   ],
                   "weight_modifiers": [],
-                  "potential": [],
+                  "potential": [
+                    "One must be true\n    •   Has Space Amoeba dna\n    •   Has Tiyanki dna\n    •   Has Crystalline Entity dna\n    •   Has Voidworm dna\n    •   Has Cutholoid dna"
+                  ],
                   "children": [
                     {
                       "key": "tech_controlled_mutations_2",
@@ -2578,7 +2590,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2770,7 +2782,7 @@
                 "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
               ],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [
                 {
@@ -2807,7 +2819,7 @@
                     "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [
                     {
@@ -2843,7 +2855,7 @@
                         "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
                       ],
                       "potential": [
-                        "Is NOT Wilderness Empire"
+                        "Does NOT have Origin Wilderness"
                       ],
                       "children": [],
                       "is_event": false,
@@ -3446,7 +3458,7 @@
                     "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -3487,7 +3499,7 @@
                     "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Computing 1<br/>    •   Any Leader in council has trait Curator 1"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire",
+                    "Does NOT have Origin Wilderness",
                     "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator"
                   ],
                   "children": [],
@@ -3843,8 +3855,8 @@
               "name": "Speculative Hyperlane Breaching",
               "description": "Solitary Science Ships can break out of the naturally-occurring hyperlanes and attempt to navigate to known but otherwise unreachable destinations.",
               "area": "physics",
-              "base_factor": 5.0,
-              "base_weight": 375.0,
+              "base_factor": 0.5,
+              "base_weight": 37.5,
               "category": "Field Manipulation",
               "cost": 6000,
               "feature_unlocks": [
@@ -3864,7 +3876,8 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk"
+                "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+                "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
               ],
               "potential": [],
               "children": [],
@@ -4040,7 +4053,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Existential Threat<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Existential Threat",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -4198,8 +4211,8 @@
           "name": "Quantum Catapult",
           "description": "A Quantum Catapult harnesses the power of a Neutron Star or Pulsar to twist the fabric of space, skipping a fleet across great distances.",
           "area": "physics",
-          "base_factor": 5.0,
-          "base_weight": 250.0,
+          "base_factor": 0.25,
+          "base_weight": 12.5,
           "category": "Particles",
           "cost": 16000,
           "feature_unlocks": [
@@ -4222,7 +4235,8 @@
             "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Has Megastructure Quantum Catapult Single Array<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Ruined Quantum Catapult<br/>    •   Has Megastructure Ruined Quantum Catapult",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
             "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
-            "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk"
+            "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+            "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
           ],
           "potential": [
             "Has DLC Overlord",
@@ -4330,8 +4344,8 @@
           "name": "Dyson Swarm",
           "description": "An array of interlinked satellites, the Dyson Swarm is designed to improve the output of stellar deposits.",
           "area": "physics",
-          "base_factor": 2.0,
-          "base_weight": 140.0,
+          "base_factor": 0.5,
+          "base_weight": 35.0,
           "category": "Computing",
           "cost": 6000,
           "feature_unlocks": [
@@ -4349,7 +4363,8 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Computing 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Dyson Swarm: Array<br/>    •   Has Megastructure Dyson Swarm: Constellation<br/>    •   Has Megastructure Dyson Swarm",
-            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
+            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
+            "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Dyson Swarm"
           ],
           "potential": [
             "Has DLC Machine Age"

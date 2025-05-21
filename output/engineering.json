@@ -322,7 +322,7 @@
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Materialist Ethic<br/>    •   Has Fanatic Materialist Ethic"
                   ],
                   "potential": [
-                    "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                    "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                   ],
                   "children": [
                     {
@@ -355,7 +355,7 @@
                         "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed"
                       ],
                       "potential": [
-                        "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                        "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                       ],
                       "children": [
                         {
@@ -393,7 +393,7 @@
                             "(×<b style='color:lime'>2.0</b>) Has Origin Mechanist"
                           ],
                           "potential": [
-                            "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                            "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [
                             {
@@ -433,16 +433,16 @@
                                 "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Industry 1"
                               ],
                               "potential": [
-                                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                               ],
                               "children": [],
                               "is_event": false,
-                              "is_gestalt": true,
+                              "is_gestalt": false,
                               "source": "vanilla"
                             }
                           ],
                           "is_event": false,
-                          "is_gestalt": true,
+                          "is_gestalt": false,
                           "source": "vanilla"
                         },
                         {
@@ -488,7 +488,7 @@
                         }
                       ],
                       "is_event": false,
-                      "is_gestalt": true,
+                      "is_gestalt": false,
                       "source": "vanilla"
                     },
                     {
@@ -529,7 +529,7 @@
                         "(×<b style='color:lime'>2.0</b>) Has Origin Mechanist"
                       ],
                       "potential": [
-                        "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                        "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                       ],
                       "children": [
                         {
@@ -576,7 +576,7 @@
                             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Industry 1"
                           ],
                           "potential": [
-                            "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                            "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [
                             {
@@ -610,26 +610,26 @@
                                 "(×<b style='color:red'>0.33</b>) Has trait Necrophage"
                               ],
                               "potential": [
-                                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   Is individualist Machine Empire"
+                                "All must be false\n    •   Has Gestalt Consciousness Ethic\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                               ],
                               "children": [],
                               "is_event": false,
-                              "is_gestalt": true,
+                              "is_gestalt": false,
                               "source": "vanilla"
                             }
                           ],
                           "is_event": false,
-                          "is_gestalt": true,
+                          "is_gestalt": false,
                           "source": "vanilla"
                         }
                       ],
                       "is_event": false,
-                      "is_gestalt": true,
+                      "is_gestalt": false,
                       "source": "vanilla"
                     }
                   ],
                   "is_event": false,
-                  "is_gestalt": true,
+                  "is_gestalt": false,
                   "source": "vanilla"
                 },
                 {
@@ -661,7 +661,7 @@
                   ],
                   "weight_modifiers": [],
                   "potential": [
-                    "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                    "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                   ],
                   "children": [
                     {
@@ -696,7 +696,7 @@
                       ],
                       "weight_modifiers": [],
                       "potential": [
-                        "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                        "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                       ],
                       "children": [
                         {
@@ -733,7 +733,7 @@
                             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Industry 1"
                           ],
                           "potential": [
-                            "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                            "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [],
                           "is_event": false,
@@ -774,7 +774,7 @@
                             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Industry 1"
                           ],
                           "potential": [
-                            "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                            "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [],
                           "is_event": false,
@@ -823,7 +823,7 @@
                   ],
                   "weight_modifiers": [],
                   "potential": [
-                    "One must be true\n    •   All must be true\n\t    •   Does NOT have Machine Intelligence Authority\n\t    •   Is NOT individualist Machine Empire\n    •   Has Government Civic: Driven Assimilator"
+                    "One must be true\n    •   All must be true\n\t    •   Does NOT have Machine Intelligence Authority\n\t    •   All must be false\n\t\t    •   Founder Species:\n\t\t\t    •   Is archetype Machine\n\t\t    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Government Civic: Driven Assimilator"
                   ],
                   "children": [],
                   "is_event": false,
@@ -1410,7 +1410,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) Number of Cosmic Storms encountered is lower than 1",
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
           ],
           "potential": [
             "Has DLC Cosmic Storms"
@@ -1445,7 +1445,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) Number of Cosmic Storms encountered is lower than 1",
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
               ],
               "potential": [
                 "Has DLC Cosmic Storms"
@@ -1478,7 +1478,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.0</b>) Number of Cosmic Storms encountered is lower than 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
                   ],
                   "potential": [
                     "Has DLC Cosmic Storms"
@@ -1511,7 +1511,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.5</b>) Number of Cosmic Storms encountered is lower than 3",
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
                       ],
                       "potential": [
                         "Has DLC Cosmic Storms"
@@ -1553,7 +1553,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.5</b>) Number of Cosmic Storms encountered is lower than 3",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
                   ],
                   "potential": [
                     "Has DLC Cosmic Storms"
@@ -1589,7 +1589,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.0</b>) Number of Cosmic Storms encountered is lower than 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
                   ],
                   "potential": [
                     "Has DLC Cosmic Storms"
@@ -1623,7 +1623,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.5</b>) Number of Cosmic Storms encountered is lower than 3",
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
                       ],
                       "potential": [
                         "Has DLC Cosmic Storms"
@@ -1747,11 +1747,11 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.5</b>) Number of Cosmic Storms encountered is lower than 4",
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   Has any Storm Attraction civic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Origin Storm Chasers<br/>    •   One must be true<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Astrometeorology<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Climate Modeling<br/>\t\t    •   Has Government Civic: Weather Exploitation<br/>\t    •   One must be true<br/>\t\t    •   Has Government Civic: Storm Devotion<br/>\t\t    •   Has Government Civic: Storm Influencers"
               ],
               "potential": [
                 "Has DLC Cosmic Storms",
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [],
               "is_event": false,
@@ -1878,7 +1878,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Is NOT Wilderness Empire"
+            "Does NOT have Origin Wilderness"
           ],
           "children": [
             {
@@ -1950,7 +1950,7 @@
                 "(×<b style='color:red'>0.0</b>) Has Government Civic: Agrarian Idyll"
               ],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [],
               "is_event": false,
@@ -1981,7 +1981,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+            "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [
             {
@@ -2011,7 +2011,7 @@
               ],
               "weight_modifiers": [],
               "potential": [
-                "One must be true\n    •   Has Machine Intelligence Authority\n    •   Is individualist Machine Empire"
+                "One must be true\n    •   Has Machine Intelligence Authority\n    •   All must be true\n\t    •   Founder Species:\n\t\t    •   Is archetype Machine\n\t    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [],
               "is_event": false,
@@ -2043,7 +2043,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Existential Threat<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Existential Threat",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2105,7 +2105,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:red'>0.0</b>) Has Hive Mind Authority",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -2168,7 +2168,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Existential Threat<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Existential Threat",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2611,7 +2611,7 @@
             "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
           ],
           "potential": [
-            "Is NOT Wilderness Empire"
+            "Does NOT have Origin Wilderness"
           ],
           "children": [
             {
@@ -2648,7 +2648,7 @@
                 "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
               ],
               "potential": [
-                "Is NOT Wilderness Empire"
+                "Does NOT have Origin Wilderness"
               ],
               "children": [
                 {
@@ -2685,7 +2685,7 @@
                     "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire"
+                    "Does NOT have Origin Wilderness"
                   ],
                   "children": [],
                   "is_event": false,
@@ -2786,7 +2786,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2848,7 +2848,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -4692,8 +4692,8 @@
                               "name": "Science Nexus",
                               "description": "The research labs and databanks of a Science Nexus generate an immense flow of raw, undiluted science.",
                               "area": "physics",
-                              "base_factor": 1.1,
-                              "base_weight": 22.0,
+                              "base_factor": 0.25,
+                              "base_weight": 5.0,
                               "category": "Computing",
                               "cost": 48000,
                               "feature_unlocks": [
@@ -4721,7 +4721,9 @@
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
                                 "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
-                                "(×<b style='color:lime'>9.0</b>) Has Technological Ascendancy Ascension Perk"
+                                "(×<b style='color:lime'>9.0</b>) Has Technological Ascendancy Ascension Perk",
+                                "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Science Nexus",
+                                "(×<b style='color:lime'>1.1</b>) One must be true<br/>    •   Has Government Civic: Dimensional Worship<br/>    •   Has Government Civic: Dimensional Enterprise"
                               ],
                               "potential": [
                                 "Has DLC Utopia"
@@ -5034,8 +5036,8 @@
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition"
                   ],
                   "potential": [
-                    "Is NOT Wilderness Empire",
-                    "One must be true\n    •   Has Void Dweller Origin\n    •   Has Origin Knights of the Toxic God\n    •   Has DLC Utopia"
+                    "Does NOT have Origin Wilderness",
+                    "One must be true\n    •   One must be true\n\t    •   Has Origin Void Dwellers\n\t    •   Has Origin Voidforged\n    •   Has Origin Knights of the Toxic God\n    •   Has DLC Utopia"
                   ],
                   "children": [
                     {
@@ -5071,11 +5073,11 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.0</b>) No Owned Planet<br/>    •   Is Orbital Habitat",
-                        "(×<b style='color:lime'>10.0</b>) Is Void Dweller Empire"
+                        "(×<b style='color:lime'>10.0</b>) One must be true<br/>    •   Has Voidborne Ascension Perk<br/>    •   One must be true<br/>\t    •   Has Origin Void Dwellers<br/>\t    •   Has Origin Voidforged"
                       ],
                       "potential": [
-                        "Is NOT Wilderness Empire",
-                        "One must be true\n    •   Has Void Dweller Origin\n    •   Has DLC Utopia"
+                        "Does NOT have Origin Wilderness",
+                        "One must be true\n    •   One must be true\n\t    •   Has Origin Void Dwellers\n\t    •   Has Origin Voidforged\n    •   Has DLC Utopia"
                       ],
                       "children": [
                         {
@@ -5111,11 +5113,11 @@
                           ],
                           "weight_modifiers": [
                             "(×<b style='color:red'>0.0</b>) No Owned Planet<br/>    •   Is Orbital Habitat",
-                            "(×<b style='color:lime'>10.0</b>) Is Void Dweller Empire"
+                            "(×<b style='color:lime'>10.0</b>) One must be true<br/>    •   Has Voidborne Ascension Perk<br/>    •   One must be true<br/>\t    •   Has Origin Void Dwellers<br/>\t    •   Has Origin Voidforged"
                           ],
                           "potential": [
-                            "Is NOT Wilderness Empire",
-                            "One must be true\n    •   Is Void Dweller Empire\n    •   Has DLC Utopia"
+                            "Does NOT have Origin Wilderness",
+                            "One must be true\n    •   One must be true\n\t    •   Has Voidborne Ascension Perk\n\t    •   One must be true\n\t\t    •   Has Origin Void Dwellers\n\t\t    •   Has Origin Voidforged\n    •   Has DLC Utopia"
                           ],
                           "children": [],
                           "is_event": false,
@@ -6275,8 +6277,8 @@
           "name": "Arc Furnace",
           "description": "Utilizing the raw power of a molten planet, the Arc Furnace unlocks otherwise inaccessible minerals and improves system-wide mining operations.",
           "area": "engineering",
-          "base_factor": 2.0,
-          "base_weight": 140.0,
+          "base_factor": 0.5,
+          "base_weight": 35.0,
           "category": "Materials",
           "cost": 6000,
           "feature_unlocks": [
@@ -6295,7 +6297,8 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Materials 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Arc Furnace: Equatorial Band<br/>    •   Has Megastructure Arc Furnace: Borehole Pumps<br/>    •   Has Megastructure Arc Furnace: Mohole Extractors<br/>    •   Has Megastructure Arc Furnace",
-            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
+            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
+            "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Arc Furnace"
           ],
           "potential": [
             "Has DLC Machine Age"
