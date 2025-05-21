@@ -168,7 +168,7 @@
     "weight_modifiers": [
       "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
       "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has Fanatic Xenophile Ethic<br/>    •   All must be true<br/>\t    •   Has Fanatic Xenophobe Ethic<br/>\t    •   NOT AI Personality is Xenophobic Isolationists",
-      "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Isolated Valley<br/>\t\t    •   Has deposit Avian Reserve<br/>\t\t    •   Any owned Population Group:<br/>\t\t\t    •   One must be true<br/>\t\t\t\t    •   Pop is NOT Sapient<br/>\t\t\t\t    •   Is livestock<br/>\t\t\t\t    •   has_disconnected_drone_citizenship_type=yes",
+      "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Isolated Valley<br/>\t\t    •   Has deposit Avian Reserve<br/>\t\t    •   Any owned Population Group:<br/>\t\t\t    •   One must be true<br/>\t\t\t\t    •   Pop is NOT Sapient<br/>\t\t\t\t    •   Is livestock<br/>\t\t\t\t    •   Is TODO",
       "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
     ],
     "potential": [

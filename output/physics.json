@@ -2405,7 +2405,7 @@
               "weight_modifiers": [],
               "potential": [
                 "Has DLC Grand Archive",
-                "One must be true\n    •   Is Beastmasters Empire\n    •   can_research_technology=tech_genome_mapping"
+                "One must be true\n    •   Is Beastmasters Empire\n    •   Can research technology: Genome Mapping"
               ],
               "children": [
                 {
@@ -4156,8 +4156,8 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   exists=astral_rift<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
-            "(×<b style='color:lime'>2.0</b>) Any System within borders<br/>    •   One must be true<br/>\t    •   exists=astral_rift<br/>\t    •   Any Planet<br/>\t\t    •   Is astral scar"
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   ASTRAL_RIFT exists<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
+            "(×<b style='color:lime'>2.0</b>) Any System within borders<br/>    •   One must be true<br/>\t    •   ASTRAL_RIFT exists<br/>\t    •   Any Planet<br/>\t\t    •   Is astral scar"
           ],
           "potential": [
             "Has DLC Astral Planes"
