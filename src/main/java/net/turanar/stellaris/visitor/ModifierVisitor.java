@@ -38,6 +38,11 @@ public class ModifierVisitor {
                 case "factor": tech.base_factor = Float.valueOf(gs(p)); break;
                 case "modifier":
                     WeightModifier m = visitModifier(p);
+                    if (m == null) {
+                        System.err.println("Failed to read modifier!!!!");
+                        break;
+                    }
+
                     if(m.pair == null && m.factor != null) {
                         assert(tech.base_factor == 1.0f);
                         tech.base_factor = m.factor;
@@ -66,7 +71,10 @@ public class ModifierVisitor {
                             retval.factor = Float.valueOf(gs(p));
                         }
                         break;
-                    case "add": retval.add = Integer.valueOf(gs(p)); break;
+                    case "add": 
+                        retval.add = Integer.valueOf(gs(p));
+                        System.err.println("retval.add:" + retval.add);
+                        break;
                     default:
                         retval.type = ModifierType.valueOf(p.BAREWORD().getText());
                         retval.pair = p;
@@ -75,6 +83,12 @@ public class ModifierVisitor {
                 System.err.println(e.getMessage());
             }
         });
+
+        // FIXME(Tim Aschhoff): Janky hack
+        if (retval.factor == null && retval.add == null) {
+            return null;
+        }
+
         return retval;
     }
 }

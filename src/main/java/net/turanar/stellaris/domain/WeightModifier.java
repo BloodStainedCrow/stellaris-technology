@@ -3,13 +3,34 @@ package net.turanar.stellaris.domain;
 public class WeightModifier extends Modifier {
     @Override
     public String toString() {
-        String format = "(×%s)";
-        if(add != null && add > 0) format = "(+%s)";
-        if(type != null) format += " %s";
+        String format;
+        String mod;
 
-        String s_factor = "";
-        if (factor != null && factor>= 1.0f) s_factor = "<b style='color:lime'>" + factor + "</b>";
-        if (factor != null && factor < 1.0f) s_factor = "<b style='color:red'>" + factor + "</b>";
-        return String.format(format, s_factor, type != null ? type.parse(pair).replaceAll("\\n","<br/>") : "");
+        if (add != null ) {
+            assert(factor == null);
+            if (add > 0) {
+                format = "(+%s)";
+                mod = "<b style='color:lime'>" + add + "</b>";
+            } else {
+                format = "(%s)";
+                mod = "<b style='color:red'>" + add + "</b>";
+            }
+        } else if (factor != null) {
+            format = "(×%s)";
+
+            if (factor >= 1.0f) {
+                mod = "<b style='color:lime'>" + factor + "</b>";
+            } else {
+                mod = "<b style='color:red'>" + factor + "</b>";
+            }
+        } else {
+            System.err.println(this.pair.getText());
+            System.exit(1);
+            return "";
+        }
+
+         if(type != null) format += " %s";
+
+        return String.format(format, mod, type != null ? type.parse(pair).replaceAll("\\n","<br/>") : "");
     }
 }

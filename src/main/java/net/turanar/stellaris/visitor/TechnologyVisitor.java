@@ -95,7 +95,8 @@ public class TechnologyVisitor {
                 case "weight":
                     retval.base_weight = Float.valueOf(gs(pair)); break;
                 case "weight_modifier":
-                    retval.weight_modifiers = modVisitor.visitPair(retval, pair); break;
+                    retval.weight_modifiers = modVisitor.visitPair(retval, pair); 
+                    break;
                 case "feature_flags":
                     pair.value().array().value().forEach(val -> {
                         retval.feature_unlocks.add("<b>Feature : </b>" + i18n("feature_" + gs(val)));

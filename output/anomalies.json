@@ -780,7 +780,7 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+) Has the crystal_armor_1_weight country flag"
+      "(+<b style='color:lime'>5</b>) Has the crystal_armor_1_weight country flag"
     ],
     "potential": [],
     "children": [],
@@ -2437,7 +2437,7 @@
     "tier": 1,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
+      "(+<b style='color:lime'>100</b>) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
     ],
     "potential": [
       "Has DLC Galactic Paragons",

@@ -1343,9 +1343,8 @@
                 }
               ],
               "weight_modifiers": [
-                "(×)",
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Crystalline Caverns<br/>\t\t    •   Has deposit Crystal Forest<br/>\t\t    •   Has deposit Crystal Reef<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £rare_crystals£ +1<br/>\t\t    •   Has deposit £rare_crystals£ +2<br/>\t\t    •   Has deposit £rare_crystals£ +3<br/>\t\t    •   Has deposit £rare_crystals£ +4<br/>\t\t    •   Has deposit £rare_crystals£ +5",
-                "(+) Has the tech_mine_rare_crystals_culling_boost country flag"
+                "(+<b style='color:lime'>1</b>) Has the tech_mine_rare_crystals_culling_boost country flag"
               ],
               "potential": [],
               "children": [],

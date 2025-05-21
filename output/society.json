@@ -4533,7 +4533,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has trait Aquatic",
                 "(×<b style='color:lime'>1.25</b>) Has trait Waterproof",
                 "(×<b style='color:lime'>1.25</b>) Has Origin Life-Seeded",
-                "(+) Has Origin Wilderness"
+                "(+<b style='color:lime'>5</b>) Has Origin Wilderness"
               ],
               "potential": [],
               "children": [
