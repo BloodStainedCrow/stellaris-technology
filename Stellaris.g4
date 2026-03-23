@@ -9,7 +9,7 @@ map
    ;
 
 pair
-   : BAREWORD SPECIFIER value
+   : (BAREWORD | NUMBER) SPECIFIER value
    ;
 
 var

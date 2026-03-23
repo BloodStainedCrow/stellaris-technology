@@ -135,11 +135,12 @@ public class StellarisParser extends Parser {
 			setState(16);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==VARIABLE || _la==BAREWORD) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << VARIABLE) | (1L << NUMBER) | (1L << BAREWORD))) != 0)) {
 				{
 				setState(14);
 				_errHandler.sync(this);
 				switch (_input.LA(1)) {
+				case NUMBER:
 				case BAREWORD:
 					{
 					setState(12);
@@ -213,7 +214,7 @@ public class StellarisParser extends Parser {
 			setState(25);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==BAREWORD) {
+			while (_la==NUMBER || _la==BAREWORD) {
 				{
 				{
 				setState(22);
@@ -240,11 +241,12 @@ public class StellarisParser extends Parser {
 	}
 
 	public static class PairContext extends ParserRuleContext {
-		public TerminalNode BAREWORD() { return getToken(StellarisParser.BAREWORD, 0); }
 		public TerminalNode SPECIFIER() { return getToken(StellarisParser.SPECIFIER, 0); }
 		public ValueContext value() {
 			return getRuleContext(ValueContext.class,0);
 		}
+		public TerminalNode BAREWORD() { return getToken(StellarisParser.BAREWORD, 0); }
+		public TerminalNode NUMBER() { return getToken(StellarisParser.NUMBER, 0); }
 		public PairContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -267,11 +269,20 @@ public class StellarisParser extends Parser {
 	public final PairContext pair() throws RecognitionException {
 		PairContext _localctx = new PairContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_pair);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(30);
-			match(BAREWORD);
+			_la = _input.LA(1);
+			if ( !(_la==NUMBER || _la==BAREWORD) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			setState(31);
 			match(SPECIFIER);
 			setState(32);
@@ -562,20 +573,20 @@ public class StellarisParser extends Parser {
 		"\3\2\3\2\3\3\3\3\7\3\32\n\3\f\3\16\3\35\13\3\3\3\3\3\3\4\3\4\3\4\3\4\3"+
 		"\5\3\5\3\5\3\5\3\6\3\6\6\6+\n\6\r\6\16\6,\3\6\3\6\3\7\3\7\3\7\3\7\3\7"+
 		"\3\7\3\7\3\7\3\7\3\7\3\7\5\7<\n\7\3\7\3\7\3\7\3\7\3\7\3\7\5\7D\n\7\3\7"+
-		"\2\2\b\2\4\6\b\n\f\2\2\2N\2\22\3\2\2\2\4\27\3\2\2\2\6 \3\2\2\2\b$\3\2"+
-		"\2\2\n(\3\2\2\2\fC\3\2\2\2\16\21\5\6\4\2\17\21\5\b\5\2\20\16\3\2\2\2\20"+
-		"\17\3\2\2\2\21\24\3\2\2\2\22\20\3\2\2\2\22\23\3\2\2\2\23\25\3\2\2\2\24"+
-		"\22\3\2\2\2\25\26\7\2\2\3\26\3\3\2\2\2\27\33\7\3\2\2\30\32\5\6\4\2\31"+
-		"\30\3\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34\3\2\2\2\34\36\3\2\2\2\35"+
-		"\33\3\2\2\2\36\37\7\4\2\2\37\5\3\2\2\2 !\7\16\2\2!\"\7\13\2\2\"#\5\f\7"+
-		"\2#\7\3\2\2\2$%\7\t\2\2%&\7\13\2\2&\'\7\f\2\2\'\t\3\2\2\2(*\7\3\2\2)+"+
-		"\5\f\7\2*)\3\2\2\2+,\3\2\2\2,*\3\2\2\2,-\3\2\2\2-.\3\2\2\2./\7\4\2\2/"+
-		"\13\3\2\2\2\60D\7\f\2\2\61D\7\b\2\2\62D\7\r\2\2\63D\7\17\2\2\64D\7\t\2"+
-		"\2\65D\7\n\2\2\66D\7\16\2\2\67D\5\4\3\28D\5\n\6\29;\7\5\2\2:<\7\6\2\2"+
-		";:\3\2\2\2;<\3\2\2\2<=\3\2\2\2=>\7\16\2\2>?\7\7\2\2?@\5\f\7\2@A\7\7\2"+
-		"\2AD\3\2\2\2BD\5\6\4\2C\60\3\2\2\2C\61\3\2\2\2C\62\3\2\2\2C\63\3\2\2\2"+
-		"C\64\3\2\2\2C\65\3\2\2\2C\66\3\2\2\2C\67\3\2\2\2C8\3\2\2\2C9\3\2\2\2C"+
-		"B\3\2\2\2D\r\3\2\2\2\b\20\22\33,;C";
+		"\2\2\b\2\4\6\b\n\f\2\3\4\2\f\f\16\16\2N\2\22\3\2\2\2\4\27\3\2\2\2\6 \3"+
+		"\2\2\2\b$\3\2\2\2\n(\3\2\2\2\fC\3\2\2\2\16\21\5\6\4\2\17\21\5\b\5\2\20"+
+		"\16\3\2\2\2\20\17\3\2\2\2\21\24\3\2\2\2\22\20\3\2\2\2\22\23\3\2\2\2\23"+
+		"\25\3\2\2\2\24\22\3\2\2\2\25\26\7\2\2\3\26\3\3\2\2\2\27\33\7\3\2\2\30"+
+		"\32\5\6\4\2\31\30\3\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34\3\2\2\2\34"+
+		"\36\3\2\2\2\35\33\3\2\2\2\36\37\7\4\2\2\37\5\3\2\2\2 !\t\2\2\2!\"\7\13"+
+		"\2\2\"#\5\f\7\2#\7\3\2\2\2$%\7\t\2\2%&\7\13\2\2&\'\7\f\2\2\'\t\3\2\2\2"+
+		"(*\7\3\2\2)+\5\f\7\2*)\3\2\2\2+,\3\2\2\2,*\3\2\2\2,-\3\2\2\2-.\3\2\2\2"+
+		"./\7\4\2\2/\13\3\2\2\2\60D\7\f\2\2\61D\7\b\2\2\62D\7\r\2\2\63D\7\17\2"+
+		"\2\64D\7\t\2\2\65D\7\n\2\2\66D\7\16\2\2\67D\5\4\3\28D\5\n\6\29;\7\5\2"+
+		"\2:<\7\6\2\2;:\3\2\2\2;<\3\2\2\2<=\3\2\2\2=>\7\16\2\2>?\7\7\2\2?@\5\f"+
+		"\7\2@A\7\7\2\2AD\3\2\2\2BD\5\6\4\2C\60\3\2\2\2C\61\3\2\2\2C\62\3\2\2\2"+
+		"C\63\3\2\2\2C\64\3\2\2\2C\65\3\2\2\2C\66\3\2\2\2C\67\3\2\2\2C8\3\2\2\2"+
+		"C9\3\2\2\2CB\3\2\2\2D\r\3\2\2\2\b\20\22\33,;C";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
