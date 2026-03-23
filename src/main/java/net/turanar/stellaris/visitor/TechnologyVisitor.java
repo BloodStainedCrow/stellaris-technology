@@ -1,9 +1,10 @@
 package net.turanar.stellaris.visitor;
 
-import net.turanar.stellaris.domain.Area;
-import net.turanar.stellaris.domain.Category;
-import net.turanar.stellaris.domain.Technology;
+import net.turanar.stellaris.antlr.StellarisLexer;
+import net.turanar.stellaris.domain.*;
 import net.turanar.stellaris.antlr.StellarisParser;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -111,6 +112,30 @@ public class TechnologyVisitor {
                     pair.value().array().value().forEach(val -> {
                         if (val == null) {
                             System.err.println("VAL IS NULL!");
+                            return;
+                        }
+
+                        // if we have "OR = { tech_1 tech_2 }" among values, move them to "potential"
+                        if (val.pair() != null) {
+                           StellarisParser.PairContext subPair = val.pair();
+                           if (!subPair.BAREWORD().getText().equals("OR") || subPair.value().array() == null) {
+                               System.err.println("only OR is supported for prerequisites: " + subPair.BAREWORD().getText());
+                           }
+
+                           // Create: OR = { has_technology = "tech_1" has_technology = "tech_2" }
+                           StringBuilder sb = new StringBuilder("OR = { ");
+                           for (StellarisParser.ValueContext subVal : subPair.value().array().value()) {
+                               sb.append("has_technology = ").append(gs(subVal).replaceAll("\"","")).append(" ");
+                           }
+                           sb.append("}");
+                           StellarisLexer lexer = new StellarisLexer(CharStreams.fromString(sb.toString()));
+                           CommonTokenStream tokens = new CommonTokenStream(lexer);
+                           StellarisParser parser = new StellarisParser(tokens);
+
+                           Modifier newMod = new Modifier();
+                           newMod.type = ModifierType.OR;
+                           newMod.pair = parser.pair();
+                           retval.potential.add(newMod);
                             return;
                         }
 

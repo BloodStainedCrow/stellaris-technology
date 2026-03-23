@@ -31,6 +31,7 @@ value
    | map
    | array
    | '[[' '!'? BAREWORD ']' value ']'
+   | pair
    ;
 
 BOOLEAN

@@ -575,7 +575,9 @@
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_energy_lance_2",
@@ -652,7 +654,9 @@
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
                             "(×<b style='color:red'>0.5</b>) Does NOT have Technology: Red Lasers"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Space Torpedoes\n    •   Has Technology: Harbingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_energy_torpedoes_2",
@@ -862,7 +866,9 @@
                                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                              ],
                               "children": [
                                 {
                                   "key": "tech_arc_emitter_2",

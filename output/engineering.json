@@ -3715,7 +3715,9 @@
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_mass_accelerator_2",
@@ -4687,7 +4689,9 @@
                             "(×<b style='color:lime'>1.5</b>) Any Neighbor Country<br/>    •   Has Technology: Mega-Engineering",
                             "(×<b style='color:lime'>20.0</b>) One must be true<br/>    •   Has any Megastructure<br/>    •   Has Origin Shattered Ring"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_science_nexus",
@@ -4986,6 +4990,7 @@
                             "(×<b style='color:lime'>1.25</b>) Has Technology: Titans"
                           ],
                           "potential": [
+                            "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Advanced Harbinger Development",
                             "Has DLC Federations"
                           ],
                           "children": [],

@@ -1935,6 +1935,7 @@
                         "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   is_fanatic_militarist=yes<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                       ],
                       "potential": [
+                        "One must be true\n    •   Has Technology: Improved Mauler Development\n    •   Has Technology: Improved Stinger Development\n    •   Has Technology: Improved Weaver Development\n    •   Has Technology: Improved Harbinger Development",
                         "Country uses biological ships"
                       ],
                       "children": [
@@ -1965,6 +1966,7 @@
                             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   is_fanatic_militarist=yes<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                           ],
                           "potential": [
+                            "One must be true\n    •   Has Technology: Advanced Mauler Development\n    •   Has Technology: Advanced Stinger Development\n    •   Has Technology: Advanced Weaver Development\n    •   Has Technology: Advanced Harbinger Development",
                             "Country uses biological ships"
                           ],
                           "children": [],
