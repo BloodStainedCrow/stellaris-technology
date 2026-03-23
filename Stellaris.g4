@@ -30,7 +30,17 @@ value
    | BAREWORD
    | map
    | array
-   | '[[' '!'? BAREWORD ']' value ']'
+
+    /* Sections that look like:
+     [[POP_GROUP]
+        ...
+     ]
+     or (yes, no "]" at the end of the word):
+     [[HOUSING
+        ...
+     ]
+    */
+   | '[[' '!'? BAREWORD ']'? value ']'
    | pair
    ;
 
