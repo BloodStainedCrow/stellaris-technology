@@ -11,15 +11,18 @@ import static net.turanar.stellaris.Global.*;
 
 public enum ModifierType {
     host_has_dlc("Has DLC %s"),
-    has_grand_archive_dlc("Has DLC Grand Archive"),
-    has_astral_planes_dlc("Has DLC Astral Planes"),
-    has_first_contact_dlc("Has DLC First Contact"),
-    has_paragon_dlc("Has DLC Galactic Paragons"),
-    has_nemesis("Has DLC Nemesis"),
-    has_machine_age_dlc("Has DLC Machine Age"),
-    has_overlord_dlc("Has DLC Overlord"),
-    has_cosmic_storms_dlc("Has DLC Cosmic Storms"),
-    has_biogenesis_dlc("Has DLC Biogenesis"),
+    has_grand_archive_dlc(DefaultParser.SCRIPTED),
+    has_astral_planes_dlc(DefaultParser.SCRIPTED),
+    has_first_contact_dlc(DefaultParser.SCRIPTED),
+    has_paragon_dlc(DefaultParser.SCRIPTED),
+    has_nemesis(DefaultParser.SCRIPTED),
+    has_machine_age_dlc(DefaultParser.SCRIPTED),
+    has_overlord_dlc(DefaultParser.SCRIPTED),
+    has_cosmic_storms_dlc(DefaultParser.SCRIPTED),
+    has_biogenesis_dlc(DefaultParser.SCRIPTED),
+    has_shroud_dlc(DefaultParser.SCRIPTED),
+    has_infernals(DefaultParser.SCRIPTED),
+    has_utopia(DefaultParser.SCRIPTED),
 
     num_ascension_perk_slots("Number of open ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_ascension_perk("Number of filled ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
@@ -456,9 +459,17 @@ public enum ModifierType {
                 return ModifierType.NOT.parse(q);
             }
 
-            for(PairContext prop : q.value().map().pair()) {
-                Modifier m = visitCondition(prop);
-                conditions.add(m.toString());
+            if (q.value().map() == null) {
+                for (ValueContext element : q.value().array().value()) {
+                    if (element.BAREWORD() != null && element.BAREWORD().getText().equals("optimize_memory")) continue;
+                    Modifier m = visitCondition(element.pair());
+                    conditions.add(m.toString());
+                }
+            } else {
+                for(PairContext prop : q.value().map().pair()) {
+                    Modifier m = visitCondition(prop);
+                    conditions.add(m.toString());
+                }
             }
             String retval = format;
 

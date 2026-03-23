@@ -1792,7 +1792,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [
                     {
@@ -1832,7 +1832,7 @@
                         "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                       ],
                       "potential": [
-                        "Has DLC First Contact"
+                        "Has DLC First Contact Story Pack"
                       ],
                       "children": [
                         {
@@ -1871,7 +1871,7 @@
                             "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                           ],
                           "potential": [
-                            "Has DLC First Contact"
+                            "Has DLC First Contact Story Pack"
                           ],
                           "children": [
                             {
@@ -3790,7 +3790,7 @@
                 "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
               ],
               "potential": [
-                "Has DLC First Contact"
+                "Has DLC First Contact Story Pack"
               ],
               "children": [
                 {
@@ -3829,7 +3829,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [],
                   "is_event": false,
@@ -3866,7 +3866,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [],
                   "is_event": false,
@@ -4145,7 +4145,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has DLC First Contact"
+            "Has DLC First Contact Story Pack"
           ],
           "children": [],
           "is_event": false,
@@ -4423,7 +4423,7 @@
             "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Dyson Swarm"
           ],
           "potential": [
-            "Has DLC Machine Age"
+            "Has DLC The Machine Age"
           ],
           "children": [],
           "is_event": false,
@@ -4449,7 +4449,7 @@
             "(×<b style='color:lime'>5.0</b>) Has Technology: Theoretical Infinity Thesis"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Does NOT have the cosmogenesis_aborted country flag"
           ],
@@ -4477,7 +4477,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has the synth_queen_knowledge country flag"
           ],
           "children": [],
@@ -4508,7 +4508,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -4540,7 +4540,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -4572,7 +4572,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],

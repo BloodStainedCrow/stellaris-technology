@@ -168,7 +168,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -193,7 +193,9 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -272,7 +274,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -306,7 +308,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -337,7 +341,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -452,7 +458,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -512,7 +518,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country does NOT use biological ships"
     ],
     "children": [],
@@ -537,7 +543,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country does NOT use biological ships"
     ],
     "children": [],
@@ -562,7 +568,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -587,7 +593,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -612,7 +618,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -637,7 +643,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -662,7 +668,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -687,7 +693,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country does NOT use biological ships"
     ],
     "children": [],
@@ -712,7 +718,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country uses biological ships"
     ],
     "children": [],
@@ -737,7 +743,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country uses biological ships"
     ],
     "children": [],
@@ -762,7 +768,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country uses biological ships"
     ],
     "children": [],
@@ -787,7 +793,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Country uses biological ships"
     ],
     "children": [],
@@ -814,7 +820,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -1000,7 +1006,9 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1349,7 +1357,9 @@
     "tier": 3,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1406,7 +1416,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
     ],
     "children": [],
     "is_event": true,
@@ -1430,7 +1440,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
     ],
     "children": [],
     "is_event": true,
@@ -1479,7 +1489,9 @@
     "tier": 1,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1506,7 +1518,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1531,7 +1543,9 @@
     "tier": 3,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1698,7 +1712,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
     ],
     "children": [],
     "is_event": true,
@@ -1750,7 +1764,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1775,7 +1789,9 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1826,7 +1842,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1852,7 +1868,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1902,7 +1918,9 @@
     "tier": 3,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1964,7 +1982,9 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -1992,7 +2012,9 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -2017,7 +2039,9 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -2078,7 +2102,9 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -2190,7 +2216,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2533,7 +2559,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2585,7 +2611,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2627,7 +2653,7 @@
       "(×<b style='color:lime'>2.0</b>) Has Gestalt Consciousness Ethic"
     ],
     "potential": [
-      "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
+      "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
     ],
     "children": [],
     "is_event": true,
@@ -2685,7 +2711,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2943,7 +2969,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2997,7 +3023,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -3057,7 +3083,9 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"

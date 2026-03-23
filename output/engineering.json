@@ -4431,7 +4431,7 @@
                     "(×<b style='color:lime'>6.0</b>) Has Eternal Vigilance Ascension Perk"
                   ],
                   "potential": [
-                    "Has DLC Biogenesis"
+                    "Has DLC BioGenesis"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6033,7 +6033,7 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has the Colossus Project country flag",
-                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   has_shroud_dlc=yes\n\t\t    •   has_psionic_ascension=yes",
+                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   Has DLC Shadows of the Shroud\n\t\t    •   has_psionic_ascension=yes",
                     "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
                   ],
                   "children": [],
@@ -6109,7 +6109,7 @@
                     "Has DLC Apocalypse",
                     "Has the Colossus Project country flag",
                     "One must be true\n    •   Has Spiritualist Ethic\n    •   is_fanatic_spiritualist=yes",
-                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   has_shroud_dlc=yes\n\t    •   has_psionic_ascension=yes"
+                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   Has DLC Shadows of the Shroud\n\t    •   has_psionic_ascension=yes"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6276,7 +6276,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has the advanced_identity_creation country flag"
           ],
           "children": [],
@@ -6301,7 +6301,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has the advanced_identity_creation country flag"
           ],
           "children": [],
@@ -6336,7 +6336,7 @@
             "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Arc Furnace"
           ],
           "potential": [
-            "Has DLC Machine Age"
+            "Has DLC The Machine Age"
           ],
           "children": [],
           "is_event": false,

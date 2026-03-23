@@ -4471,7 +4471,9 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>3.0</b>) Any System within borders<br/>    •   Any Planet<br/>\t    •   Is Volcanic World"
                   ],
-                  "potential": [],
+                  "potential": [
+                    "Has DLC Infernals Species Pack"
+                  ],
                   "children": [],
                   "is_event": false,
                   "source": "vanilla"
@@ -7538,7 +7540,7 @@
             "(×<b style='color:red'>0.0</b>) Has Origin Endbringers"
           ],
           "potential": [
-            "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Currently active resolution is Extradimensional Experimentation\n    •   Has Relic Psionic Archive",
+            "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Currently active resolution is Extradimensional Experimentation\n    •   Has Relic Psionic Archive",
             "Does NOT have Origin MINDWARDEN_plural"
           ],
           "children": [
@@ -7568,7 +7570,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   has_utopia=yes<br/>    •   has_shroud_dlc=yes",
+                "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has DLC Utopia<br/>    •   Has DLC Shadows of the Shroud",
                 "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                 "(×<b style='color:lime'>2.0</b>) Has Spiritualist Ethic",
                 "(×<b style='color:lime'>3.0</b>) Has Fanatic Spiritualist Ethic",
@@ -7576,7 +7578,7 @@
                 "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
               ],
               "potential": [
-                "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
+                "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -7614,7 +7616,7 @@
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
                   ],
                   "potential": [
-                    "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
+                    "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
                   ],
                   "children": [
                     {
@@ -7645,14 +7647,14 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   has_utopia=yes<br/>    •   has_shroud_dlc=yes",
+                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has DLC Utopia<br/>    •   Has DLC Shadows of the Shroud",
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                         "(×<b style='color:lime'>1.5</b>) Has the jaunted_traveler_secret_revealed country flag"
                       ],
                       "potential": [
-                        "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
+                        "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
                       ],
                       "children": [
                         {
@@ -7685,8 +7687,8 @@
                             "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                           ],
                           "potential": [
-                            "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic",
-                            "Has DLC First Contact"
+                            "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic",
+                            "Has DLC First Contact Story Pack"
                           ],
                           "children": [],
                           "is_event": false,
@@ -8367,7 +8369,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -8399,7 +8401,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -8462,7 +8464,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -8683,7 +8685,9 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) Has Origin MINDWARDEN_plural"
           ],
-          "potential": [],
+          "potential": [
+            "Has DLC Shadows of the Shroud"
+          ],
           "children": [],
           "is_event": false,
           "source": "vanilla"
