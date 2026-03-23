@@ -8544,6 +8544,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
+            "(×<b style='color:lime'>Number of acquired specimens</b>)",
             "(×<b style='color:lime'>2.0</b>) Any Neighbor Country<br/>    •   Has Technology: Galactic Archivism",
             "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Has the Curator Insight modifier"
           ],

@@ -56,14 +56,16 @@ public class ModifierVisitor {
 
     public WeightModifier visitModifier(StellarisParser.PairContext ctx) {
         WeightModifier retval = new WeightModifier();
-        ctx.value().map().pair().forEach(p -> {
+        for (StellarisParser.PairContext p : ctx.value().map().pair()) {
             try {
-                switch(p.BAREWORD().getText()) {
+                switch (p.BAREWORD().getText()) {
                     case "factor":
-                        if (gs(p).startsWith("value:")) {
+                        if (gs(p).startsWith("value:") || gs(p).startsWith("trigger:")) {
                             // FIXME(Tim Aschhoff): This value is hardcoded for now
                             if (gs(p).equals("value:tech_weight_likelihood")) {
                                 retval.factor = 1.25f;
+                            } else if (gs(p).equals("trigger:acquired_specimen_count")) {
+                                retval = new CustomWeightModifier("<b style='color:lime'>Number of acquired specimens</b>");
                             } else {
                                 System.err.println("Please handle defines! No value for define " + gs(p));
                             }
@@ -71,7 +73,7 @@ public class ModifierVisitor {
                             retval.factor = Float.valueOf(gs(p));
                         }
                         break;
-                    case "add": 
+                    case "add":
                         retval.add = Integer.valueOf(gs(p));
                         System.err.println("retval.add:" + retval.add);
                         break;
@@ -82,10 +84,10 @@ public class ModifierVisitor {
             } catch (IllegalArgumentException e) {
                 System.err.println(e.getMessage());
             }
-        });
+        }
 
         // FIXME(Tim Aschhoff): Janky hack
-        if (retval.factor == null && retval.add == null) {
+        if (retval.factor == null && retval.add == null && !(retval instanceof CustomWeightModifier)) {
             return null;
         }
 
