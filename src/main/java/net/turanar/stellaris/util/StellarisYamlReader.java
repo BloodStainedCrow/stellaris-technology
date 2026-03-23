@@ -22,7 +22,7 @@ public class StellarisYamlReader extends Reader {
                     int end = line.lastIndexOf('"');
                     if(!(end == start+1)) {
                         String fixed = line.substring(start + 1,end);
-                        fixed = fixed.replaceAll("\"", "\\\\\"");
+                        fixed = fixed.replaceAll("(?<!\\\\)\"", "\\\\\""); // do not escape already escaped quotes
                         line = line.substring(0, start + 1) + fixed + line.substring(end);
                     }
                 }
@@ -31,6 +31,10 @@ public class StellarisYamlReader extends Reader {
                 line = line.replaceAll("£\\w+  |§[A-Z!]","");
                 line = line.replaceAll("(?<=\\w):\\d+ ?(?=\")", ": ");
                 line = line.replaceAll("^[ \\t]+"," ");
+                line = line.replaceAll("\\t"," ");
+                if (!line.startsWith(" ") && !line.startsWith("l_english:")) {
+                    line = " " + line; // fix unindented lines in the middle of the l_english block
+                }
                 retval.append(line).append(System.lineSeparator());
             }
             this.reader = new StringReader(retval.toString());

@@ -59,11 +59,10 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Industry",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Core Drilling Array",
-                "£minerals£ Minerals from Starbase Constructions +10%",
-                "£minerals£ Minerals from [miner.GetIcon] [GetMinerPlural] +20%"
+                "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -89,11 +88,10 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Industry",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Seismic Tunneling Yard",
-                    "£minerals£ Minerals from Starbase Constructions +10%",
-                    "£minerals£ Minerals from [miner.GetIcon] [GetMinerPlural] +20%"
+                    "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -119,11 +117,10 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Industry",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Deep Crust Extraction Grid",
-                        "£minerals£ Minerals from Starbase Constructions +10%",
-                        "£minerals£ Minerals from [miner.GetIcon] [GetMinerPlural] +20%"
+                        "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -153,10 +150,10 @@
                   "name": "Mineral Purification",
                   "description": "Optimal processing of mined materials have allowed us to reach new levels of efficiency.",
                   "area": "engineering",
-                  "base_factor": 1.0,
-                  "base_weight": 90.0,
+                  "base_factor": 2.0,
+                  "base_weight": 180.0,
                   "category": "Industry",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "<b>Building</b>: Lithic Macerator",
                     "<b>Building</b>: Mineral Purification Plants",
@@ -176,7 +173,9 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                    "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
+                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Mining District is greater than 0<br/>    •   Number of Astro-Mining Bay is greater than 0<br/>    •   Number of Hollow Mountain is greater than 0<br/>    •   Number of Magma Conduit is greater than 0<br/>    •   has_any_mining_zone=yes"
                   ],
                   "potential": [],
                   "children": [
@@ -188,7 +187,7 @@
                       "base_factor": 2.0,
                       "base_weight": 140.0,
                       "category": "Industry",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Building</b>: Lithic Baths",
                         "<b>Building</b>: Mineral Purification Hubs",
@@ -224,7 +223,7 @@
                           "description": "Changes in how mineral deposits are evaluated relative to each other lead to more efficient boring patterns.",
                           "area": "engineering",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Industry",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -269,10 +268,10 @@
               "base_factor": 1.5,
               "base_weight": 150.0,
               "category": "Industry",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
-                "Army Damage +5%",
-                "[GetWorker] Pop Resource Output +5%"
+                "Army Damage +10%",
+                "Job Efficiency for Workers & $pop_cat_simple_drone_plural$ +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -298,7 +297,7 @@
                   "base_factor": 1.5,
                   "base_weight": 135.0,
                   "category": "Industry",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "<b>Building</b>: Robot Assembly Plants",
                     "<b>Feature : </b>Robot Workers"
@@ -333,7 +332,7 @@
                       "base_factor": 1.0,
                       "base_weight": 85.0,
                       "category": "Industry",
-                      "cost": 4000,
+                      "cost": 2000,
                       "feature_unlocks": [
                         "<b>Feature : </b>Robomodding",
                         "Habitability +5%"
@@ -366,8 +365,9 @@
                           "base_factor": 1.0,
                           "base_weight": 65.0,
                           "category": "Industry",
-                          "cost": 8000,
+                          "cost": 4000,
                           "feature_unlocks": [
+                            "Machine Modification Points +3",
                             "Mechanical Modification Points +3"
                           ],
                           "is_dangerous": false,
@@ -404,8 +404,9 @@
                               "base_factor": 0.5,
                               "base_weight": 22.5,
                               "category": "Industry",
-                              "cost": 16000,
+                              "cost": 8000,
                               "feature_unlocks": [
+                                "Machine Modification Points +1",
                                 "Mechanical Modification Points +1"
                               ],
                               "is_dangerous": false,
@@ -453,7 +454,7 @@
                           "base_factor": 0.5,
                           "base_weight": 22.5,
                           "category": "Industry",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Building</b>: Robot Assembly Complex"
                           ],
@@ -499,7 +500,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Industry",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Army</b>: Robotic Assault Army",
                         "<b>Feature : </b>Droid Workers"
@@ -540,10 +541,10 @@
                           "base_factor": 0.5,
                           "base_weight": 20.0,
                           "category": "Industry",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Feature : </b>Synthetic Workers",
-                            "Robot Upkeep -15%"
+                            "Job Efficiency for Mechanical and Machine Pops +10%"
                           ],
                           "is_dangerous": true,
                           "is_rare": true,
@@ -587,7 +588,7 @@
                               "base_factor": 1.0,
                               "base_weight": 35.0,
                               "category": "Industry",
-                              "cost": 24000,
+                              "cost": 12000,
                               "feature_unlocks": [
                                 "<b>Feature : </b>Synth Leaders"
                               ],
@@ -640,7 +641,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Industry",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Feature : </b>Robomodding",
                     "Habitability +5%",
@@ -672,9 +673,10 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Industry",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
-                        "Machine Modification Points +3"
+                        "Machine Modification Points +3",
+                        "Mechanical Modification Points +3"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -707,9 +709,10 @@
                           "base_factor": 0.5,
                           "base_weight": 22.5,
                           "category": "Industry",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
-                            "Machine Modification Points +1"
+                            "Machine Modification Points +1",
+                            "Mechanical Modification Points +1"
                           ],
                           "is_dangerous": false,
                           "is_rare": true,
@@ -748,7 +751,7 @@
                           "base_factor": 0.5,
                           "base_weight": 22.5,
                           "category": "Industry",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Building</b>: Machine Assembly Complex"
                           ],
@@ -799,8 +802,10 @@
                   "base_factor": 1.5,
                   "base_weight": 105.0,
                   "category": "Industry",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
+                    "Army Damage +10%",
+                    "Army Health +10%",
                     "Habitability +5%"
                   ],
                   "is_dangerous": false,
@@ -843,7 +848,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Materials",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Building</b>: Civilian Fabricators",
                 "<b>Building</b>: Recirculation Center"
@@ -877,7 +882,7 @@
                   "base_factor": 2.0,
                   "base_weight": 130.0,
                   "category": "Materials",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Building</b>: Civilian Repli-Complexes",
                     "<b>Building</b>: Distributed Design Center",
@@ -923,7 +928,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Materials",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Building</b>: Alloy Mega-Forges",
                 "<b>Building</b>: Alloy Reclamation Plant",
@@ -956,7 +961,7 @@
                   "base_factor": 2.0,
                   "base_weight": 130.0,
                   "category": "Materials",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Building</b>: Alloy Nano-Plants",
                     "<b>Building</b>: Metallurgical Research Lab",
@@ -1001,7 +1006,7 @@
               "base_factor": 2.0,
               "base_weight": 170.0,
               "category": "Materials",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Building</b>: Exotic Gas Filters",
                 "<b>Building</b>: Exotic Gas Refineries"
@@ -1035,7 +1040,7 @@
               "base_factor": 2.0,
               "base_weight": 170.0,
               "category": "Materials",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Building</b>: Crystal Bed",
                 "<b>Building</b>: Kha'lanka Crystal Plant",
@@ -1097,10 +1102,10 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Industry",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Starbase Building</b>: Nebula Refinery",
-                "Mining Station Output +10%"
+                "Resources Produced from Mining Stations +10%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1126,9 +1131,9 @@
                   "base_factor": 1.0,
                   "base_weight": 90.0,
                   "category": "Industry",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
-                    "Mining Station Output +10%"
+                    "Resources Produced from Mining Stations +10%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1154,9 +1159,9 @@
                       "base_factor": 1.0,
                       "base_weight": 85.0,
                       "category": "Industry",
-                      "cost": 4000,
+                      "cost": 2000,
                       "feature_unlocks": [
-                        "Mining Station Output +10%"
+                        "Resources Produced from Mining Stations +10%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -1182,9 +1187,9 @@
                           "base_factor": 1.0,
                           "base_weight": 70.0,
                           "category": "Industry",
-                          "cost": 6000,
+                          "cost": 3000,
                           "feature_unlocks": [
-                            "Mining Station Output +10%"
+                            "Resources Produced from Mining Stations +10%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -1210,9 +1215,9 @@
                               "base_factor": 1.0,
                               "base_weight": 65.0,
                               "category": "Industry",
-                              "cost": 8000,
+                              "cost": 4000,
                               "feature_unlocks": [
-                                "Mining Station Output +10%"
+                                "Resources Produced from Mining Stations +10%"
                               ],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -1257,7 +1262,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "Materials",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Building</b>: Betharian Power Plant"
               ],
@@ -1290,7 +1295,7 @@
               "base_factor": 2.0,
               "base_weight": 170.0,
               "category": "Materials",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Building</b>: Gas Extraction Wells",
                 "<b>Reveals Ressource</b>: Exotic Gases"
@@ -1324,7 +1329,7 @@
               "base_factor": 2.0,
               "base_weight": 170.0,
               "category": "Materials",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Building</b>: Crystal Mines",
                 "<b>Reveals Ressource</b>: Rare Crystals"
@@ -1359,7 +1364,7 @@
               "base_factor": 0.5,
               "base_weight": 15.0,
               "category": "Materials",
-              "cost": 32000,
+              "cost": 16000,
               "feature_unlocks": [
                 "<b>Reveals Ressource</b>: Living Metal"
               ],
@@ -1377,7 +1382,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) No Planet within borders<br/>    •   Has deposit £sr_living_metal£ +1"
+                "(×<b style='color:red'>0.0</b>) No Planet within borders<br/>    •   Has deposit £sr_living_metal£ Living Metal +1"
               ],
               "potential": [],
               "children": [],
@@ -1460,7 +1465,7 @@
                   "category": "Voidcraft",
                   "cost": 0,
                   "feature_unlocks": [
-                    "Negative Effects from Cosmic Storms on Ship Weapons: -50%"
+                    "Negative Effects from Cosmic Storms on Ship Weapons: -45%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1493,7 +1498,7 @@
                       "category": "Voidcraft",
                       "cost": 0,
                       "feature_unlocks": [
-                        "Negative Effects from Cosmic Storms on Ship Weapons: -100%"
+                        "Negative Effects from Cosmic Storms on Ship Weapons: -90%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -1571,7 +1576,7 @@
                   "category": "Materials",
                   "cost": 0,
                   "feature_unlocks": [
-                    "Negative Effects from Cosmic Storms on Ship Defenses: -50%"
+                    "Negative Effects from Cosmic Storms on Ship Defenses: -45%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1604,8 +1609,8 @@
                       "category": "Materials",
                       "cost": 0,
                       "feature_unlocks": [
-                        "Negative Effects from Cosmic Storms on Ship Defenses: -100%",
-                        "Negative Effects from Cosmic Storms on Ship Defenses: -50%"
+                        "Negative Effects from Cosmic Storms on Ship Defenses: -45%",
+                        "Negative Effects from Cosmic Storms on Ship Defenses: -90%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -1761,103 +1766,6 @@
           "source": "vanilla"
         },
         {
-          "key": "tech_assembly_pattern",
-          "name": "Assembly Patterns",
-          "description": "Rapid iteration in construction simulations determines the optimal component assembly patterns for each building project ahead of time.",
-          "area": "engineering",
-          "base_factor": 1.0,
-          "base_weight": 90.0,
-          "category": "Industry",
-          "cost": 3000,
-          "feature_unlocks": [
-            "<b>Building</b>: Automation Building",
-            "Planetary Infrastructure Build Speed +25%"
-          ],
-          "is_dangerous": false,
-          "is_rare": false,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 1,
-          "prerequisites_names": [],
-          "weight_modifiers": [
-            "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
-          ],
-          "potential": [],
-          "children": [
-            {
-              "key": "tech_construction_templates",
-              "name": "Construction Templates",
-              "description": "Standardized pre-fab templates massively reduce on-site facility construction times.",
-              "area": "engineering",
-              "base_factor": 0.5,
-              "base_weight": 30.0,
-              "category": "Industry",
-              "cost": 10000,
-              "feature_unlocks": [
-                "<b>Building</b>: Optimization Building",
-                "Empire Size from Districts -10%",
-                "Planetary Infrastructure Build Speed +50%",
-                "Resource Silos Capacity: +5000"
-              ],
-              "is_dangerous": false,
-              "is_rare": true,
-              "is_start_tech": false,
-              "prerequisites": [
-                "tech_assembly_pattern"
-              ],
-              "tier": 3,
-              "prerequisites_names": [
-                {
-                  "name": "Assembly Patterns",
-                  "key": "tech_assembly_pattern"
-                }
-              ],
-              "weight_modifiers": [
-                "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Industry 1<br/>    •   Any Leader in council has trait Curator 1",
-                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
-              ],
-              "potential": [],
-              "children": [
-                {
-                  "key": "tech_repeatable_reduced_building_time",
-                  "name": "Assembly Algorithms",
-                  "description": "The application of game and puzzle theory has the potential to greatly optimize modular assembly and construction.",
-                  "area": "engineering",
-                  "base_factor": 0.5,
-                  "base_weight": 12.5,
-                  "category": "Industry",
-                  "cost": 50000,
-                  "feature_unlocks": [
-                    "Planetary Infrastructure Build Speed +10%"
-                  ],
-                  "is_dangerous": false,
-                  "is_rare": false,
-                  "is_start_tech": false,
-                  "prerequisites": [
-                    "tech_construction_templates"
-                  ],
-                  "tier": 5,
-                  "prerequisites_names": [
-                    {
-                      "name": "Construction Templates",
-                      "key": "tech_construction_templates"
-                    }
-                  ],
-                  "weight_modifiers": [],
-                  "potential": [],
-                  "children": [],
-                  "is_event": false,
-                  "source": "vanilla"
-                }
-              ],
-              "is_event": false,
-              "source": "vanilla"
-            }
-          ],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
           "key": "tech_housing_1",
           "name": "Weather Control Systems",
           "description": "The ability to alter a planet's weather patterns to suppress destructive weather phenomena will make residential buildings easier to maintain and open up new areas for habitation.",
@@ -1865,9 +1773,9 @@
           "base_factor": 1.5,
           "base_weight": 112.5,
           "category": "Industry",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
-            "Urban District Housing: +500"
+            "Urban District Housing: +100"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -1888,7 +1796,7 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Statecraft",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "<b>Building</b>: Organic Paradise",
                 "<b>Building</b>: Paradise Dome",
@@ -1926,11 +1834,11 @@
               "base_factor": 1.5,
               "base_weight": 97.5,
               "category": "Industry",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "<b>Building</b>: Expanded Warren",
                 "<b>Starbase Module</b>: Habitation Module",
-                "Urban District Housing: +500"
+                "Urban District Housing: +200"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1967,7 +1875,7 @@
           "base_factor": 1.5,
           "base_weight": 112.5,
           "category": "Industry",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
             "<b>Building</b>: Upgraded Drone Storage",
             "Mechanical Pop Assembly Speed +10%"
@@ -1991,7 +1899,7 @@
               "base_factor": 1.5,
               "base_weight": 75.0,
               "category": "Industry",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "Mechanical Pop Assembly Speed +10%"
               ],
@@ -2023,6 +1931,108 @@
           "source": "vanilla"
         },
         {
+          "key": "tech_assembly_pattern",
+          "name": "Assembly Patterns",
+          "description": "Rapid iteration in construction simulations determines the optimal component assembly patterns for each building project ahead of time.",
+          "area": "engineering",
+          "base_factor": 1.0,
+          "base_weight": 70.0,
+          "category": "Industry",
+          "cost": 3000,
+          "feature_unlocks": [
+            "<b>Building</b>: Automation Building",
+            "<b>Building</b>: Automation Building: Farmer",
+            "<b>Building</b>: Automation Building: Miner",
+            "<b>Building</b>: Automation Building: Technician",
+            "Planetary Infrastructure Build Speed +25%"
+          ],
+          "is_dangerous": false,
+          "is_rare": false,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 2,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
+          ],
+          "potential": [],
+          "children": [
+            {
+              "key": "tech_construction_templates",
+              "name": "Construction Templates",
+              "description": "Standardized pre-fab templates massively reduce on-site facility construction times.",
+              "area": "engineering",
+              "base_factor": 0.5,
+              "base_weight": 20.0,
+              "category": "Industry",
+              "cost": 10000,
+              "feature_unlocks": [
+                "<b>Building</b>: Optimization Building",
+                "<b>Building</b>: Optimization Building: Farmer",
+                "<b>Building</b>: Optimization Building: Miner",
+                "<b>Building</b>: Optimization Building: Technician",
+                "Planetary Infrastructure Build Speed +50%",
+                "Resource Silos Capacity: +5000"
+              ],
+              "is_dangerous": false,
+              "is_rare": true,
+              "is_start_tech": false,
+              "prerequisites": [
+                "tech_assembly_pattern"
+              ],
+              "tier": 4,
+              "prerequisites_names": [
+                {
+                  "name": "Assembly Patterns",
+                  "key": "tech_assembly_pattern"
+                }
+              ],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Industry 1<br/>    •   Any Leader in council has trait Curator 1",
+                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
+              ],
+              "potential": [],
+              "children": [
+                {
+                  "key": "tech_repeatable_reduced_building_time",
+                  "name": "Assembly Algorithms",
+                  "description": "The application of game and puzzle theory has the potential to greatly optimize modular assembly and construction.",
+                  "area": "engineering",
+                  "base_factor": 0.5,
+                  "base_weight": 7.5,
+                  "category": "Industry",
+                  "cost": 50000,
+                  "feature_unlocks": [
+                    "Planetary Infrastructure Build Speed +10%"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_construction_templates"
+                  ],
+                  "tier": 5,
+                  "prerequisites_names": [
+                    {
+                      "name": "Construction Templates",
+                      "key": "tech_construction_templates"
+                    }
+                  ],
+                  "weight_modifiers": [],
+                  "potential": [],
+                  "children": [],
+                  "is_event": false,
+                  "source": "vanilla"
+                }
+              ],
+              "is_event": false,
+              "source": "vanilla"
+            }
+          ],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
           "key": "tech_fe_forge_1",
           "name": "Hyper-Forge",
           "description": "This forge's production speed is limited only by the quantity of resources loaded into it.",
@@ -2034,7 +2044,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Hyper-Forge"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -2061,7 +2071,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Auto-Forge"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2074,7 +2084,9 @@
                   "key": "tech_fe_forge_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2096,13 +2108,14 @@
           "feature_unlocks": [
             "<b>Building</b>: Robot Manufacturing Nexus"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
           "tier": 5,
           "prerequisites_names": [],
           "weight_modifiers": [
+            "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
@@ -2124,7 +2137,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Robot Quantum Production Hub"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2137,7 +2150,10 @@
                   "key": "tech_fe_assembly_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2159,7 +2175,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Affluence Emporium"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -2186,7 +2202,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Affluence Center"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2199,7 +2215,10 @@
                   "key": "tech_fe_affluence_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+                "(×<b style='color:red'>0.0</b>) Country does NOT use Consumer Goods"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2217,15 +2236,21 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "Materials",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [
             "<b>Component</b>: Large Nanocomposite Armor",
             "<b>Component</b>: Large Nanocomposite Carapace",
+            "<b>Component</b>: Large Nanocomposite Ferrodermis",
             "<b>Component</b>: Medium Nanocomposite Armor",
             "<b>Component</b>: Medium Nanocomposite Carapace",
+            "<b>Component</b>: Medium Nanocomposite Ferrodermis",
             "<b>Component</b>: Nanocomposite Carapace",
+            "<b>Component</b>: Regenerative Large Nanocomposite Armor",
+            "<b>Component</b>: Regenerative Medium Nanocomposite Armor",
+            "<b>Component</b>: Regenerative Small Nanocomposite Armor",
             "<b>Component</b>: Small Nanocomposite Armor",
-            "<b>Component</b>: Small Nanocomposite Carapace"
+            "<b>Component</b>: Small Nanocomposite Carapace",
+            "<b>Component</b>: Small Nanocomposite Ferrodermis"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -2244,15 +2269,22 @@
               "base_factor": 1.25,
               "base_weight": 118.75,
               "category": "Materials",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Ceramo Chitin Carapace",
                 "<b>Component</b>: Large Ceramo Chitin Carapace",
+                "<b>Component</b>: Large Ceramo Chitin Ferrodermis",
                 "<b>Component</b>: Large Ceramo-Metal Armor",
                 "<b>Component</b>: Medium Ceramo Chitin Carapace",
+                "<b>Component</b>: Medium Ceramo Chitin Ferrodermis",
                 "<b>Component</b>: Medium Ceramo-Metal Armor",
+                "<b>Component</b>: Regenerative Large Ceramo-Metal Armor",
+                "<b>Component</b>: Regenerative Medium Ceramo-Metal Armor",
+                "<b>Component</b>: Regenerative Small Ceramo-Metal Armor",
                 "<b>Component</b>: Small Ceramo Chitin Carapace",
-                "<b>Component</b>: Small Ceramo-Metal Armor"
+                "<b>Component</b>: Small Ceramo Chitin Ferrodermis",
+                "<b>Component</b>: Small Ceramo-Metal Armor",
+                "Army Health +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -2280,9 +2312,9 @@
                   "base_factor": 2.0,
                   "base_weight": 170.0,
                   "category": "Materials",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
-                    "[foundry.GetIcon] [GetAlloyProducer] Output +10%"
+                    "Resources Produced from [GetFoundrySwapPluralWithIcon] +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2313,7 +2345,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Materials",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Component</b>: Reactive Armor",
                         "<b>Component</b>: Reactive Scales"
@@ -2347,7 +2379,7 @@
                           "base_factor": 1.0,
                           "base_weight": 20.0,
                           "category": "Materials",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
                             "<b>Component</b>: Living Reactive Armor",
                             "<b>Component</b>: Living Reactive Scales"
@@ -2388,9 +2420,9 @@
                       "base_factor": 2.0,
                       "base_weight": 90.0,
                       "category": "Materials",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
-                        "[foundry.GetIcon] [GetAlloyProducer] Output +10%"
+                        "Resources Produced from [GetFoundrySwapPluralWithIcon] +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2433,15 +2465,22 @@
                   "base_factor": 1.25,
                   "base_weight": 93.75,
                   "category": "Materials",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Component</b>: Large Plasteel Armor",
                     "<b>Component</b>: Large Plasteel Carapace",
+                    "<b>Component</b>: Large Plasteel Ferrodermis",
                     "<b>Component</b>: Medium Plasteel Armor",
                     "<b>Component</b>: Medium Plasteel Carapace",
+                    "<b>Component</b>: Medium Plasteel Ferrodermis",
                     "<b>Component</b>: Plasteel Carapace",
+                    "<b>Component</b>: Regenerative Large Plasteel Armor",
+                    "<b>Component</b>: Regenerative Medium Plasteel Armor",
+                    "<b>Component</b>: Regenerative Small Plasteel Armor",
                     "<b>Component</b>: Small Plasteel Armor",
-                    "<b>Component</b>: Small Plasteel Carapace"
+                    "<b>Component</b>: Small Plasteel Carapace",
+                    "<b>Component</b>: Small Plasteel Ferrodermis",
+                    "Army Health +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2469,15 +2508,22 @@
                       "base_factor": 1.25,
                       "base_weight": 75.0,
                       "category": "Materials",
-                      "cost": 10000,
+                      "cost": 5000,
                       "feature_unlocks": [
                         "<b>Component</b>: Durasteel Carapace",
                         "<b>Component</b>: Large Durasteel Armor",
                         "<b>Component</b>: Large Durasteel Carapace",
+                        "<b>Component</b>: Large Durasteel Ferrodermis",
                         "<b>Component</b>: Medium Durasteel Armor",
                         "<b>Component</b>: Medium Durasteel Carapace",
+                        "<b>Component</b>: Medium Durasteel Ferrodermis",
+                        "<b>Component</b>: Regenerative Large Durasteel Armor",
+                        "<b>Component</b>: Regenerative Medium Durasteel Armor",
+                        "<b>Component</b>: Regenerative Small Durasteel Armor",
                         "<b>Component</b>: Small Durasteel Armor",
-                        "<b>Component</b>: Small Durasteel Carapace"
+                        "<b>Component</b>: Small Durasteel Carapace",
+                        "<b>Component</b>: Small Durasteel Ferrodermis",
+                        "Army Health +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2505,15 +2551,22 @@
                           "base_factor": 1.25,
                           "base_weight": 50.0,
                           "category": "Materials",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Large Neutronium Armor",
                             "<b>Component</b>: Large Neutronium Carapace",
+                            "<b>Component</b>: Large Neutronium Ferrodermis",
                             "<b>Component</b>: Medium Neutronium Armor",
                             "<b>Component</b>: Medium Neutronium Carapace",
+                            "<b>Component</b>: Medium Neutronium Ferrodermis",
                             "<b>Component</b>: Neutronium Carapace",
+                            "<b>Component</b>: Regenerative Large Neutronium Armor",
+                            "<b>Component</b>: Regenerative Medium Neutronium Armor",
+                            "<b>Component</b>: Regenerative Small Neutronium Armor",
                             "<b>Component</b>: Small Neutronium Armor",
-                            "<b>Component</b>: Small Neutronium Carapace"
+                            "<b>Component</b>: Small Neutronium Carapace",
+                            "<b>Component</b>: Small Neutronium Ferrodermis",
+                            "Army Health +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2546,7 +2599,7 @@
                       "description": "Compressing suitable materials into ultra-dense forms is a cheap and efficient way to improve their ability to absorb weapons-grade impacts.",
                       "area": "engineering",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Materials",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -2586,12 +2639,12 @@
         {
           "key": "tech_engineering_1",
           "name": "Nanomechanics",
-          "description": "Further breakthroughs in mechanical engineering required us to descend to the nanometric scale. We are now able to manipulate physical systems in  never-before-seen ways.",
+          "description": "Further breakthroughs in mechanical engineering required us to descend to the nanometric scale. We are now able to manipulate physical systems in never-before-seen ways.",
           "area": "engineering",
           "base_factor": 1.0,
           "base_weight": 90.0,
           "category": "Materials",
-          "cost": 3000,
+          "cost": 1500,
           "feature_unlocks": [
             "<b>Building</b>: Materials Workshop"
           ],
@@ -2621,7 +2674,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Materials",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Building</b>: Applied Mechanics Institute"
               ],
@@ -2658,7 +2711,7 @@
                   "base_factor": 1.0,
                   "base_weight": 50.0,
                   "category": "Materials",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Building</b>: Advanced Engineering Complex"
                   ],
@@ -2706,7 +2759,7 @@
           "base_factor": 1.0,
           "base_weight": 60.0,
           "category": "Materials",
-          "cost": 10000,
+          "cost": 5000,
           "feature_unlocks": [
             "<b>Component</b>: Composite Mandibles"
           ],
@@ -2733,7 +2786,7 @@
               "base_factor": 1.0,
               "base_weight": 40.0,
               "category": "Materials",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "<b>Component</b>: Crystalline Mandibles"
               ],
@@ -2777,7 +2830,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Quantum Drilling Plant"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -2804,7 +2857,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Quantum Drilling Hub"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2817,7 +2870,9 @@
                   "key": "tech_fe_mine_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2839,7 +2894,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Dimensional Replicator"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -2866,7 +2921,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Dimensional Fabricator"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2879,7 +2934,9 @@
                   "key": "tech_fe_fabricator_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2919,7 +2976,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Propulsion",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Component</b>: Barb Cannons",
                 "<b>Component</b>: Flak Cannons"
@@ -2951,7 +3008,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Propulsion",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "<b>Component</b>: Barb Artillery",
                     "<b>Component</b>: Flak Artillery"
@@ -3016,7 +3073,7 @@
               "base_factor": 1.25,
               "base_weight": 118.75,
               "category": "Propulsion",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Afterburners",
                 "<b>Component</b>: Maneuvering Tentacles"
@@ -3048,7 +3105,7 @@
                   "base_factor": 1.25,
                   "base_weight": 75.0,
                   "category": "Propulsion",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Component</b>: Advanced Afterburners",
                     "<b>Component</b>: Enhanced Maneuvering Tentacles"
@@ -3089,7 +3146,7 @@
               "base_factor": 1.25,
               "base_weight": 106.25,
               "category": "Propulsion",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Component</b>: Ion Stellar Motor Organs",
                 "<b>Component</b>: Ion Thrusters"
@@ -3120,7 +3177,7 @@
                   "base_factor": 1.25,
                   "base_weight": 81.25,
                   "category": "Propulsion",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Component</b>: Plasma Stellar Motor Organs",
                     "<b>Component</b>: Plasma Thrusters"
@@ -3151,7 +3208,7 @@
                       "base_factor": 1.25,
                       "base_weight": 56.25,
                       "category": "Propulsion",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "<b>Component</b>: Impulse Stellar Motor Organs",
                         "<b>Component</b>: Impulse Thrusters"
@@ -3187,7 +3244,7 @@
                             "<b>Component</b>: Dark Matter Stellar Motor Organs",
                             "<b>Component</b>: Dark Matter Thrusters"
                           ],
-                          "is_dangerous": false,
+                          "is_dangerous": true,
                           "is_rare": true,
                           "is_start_tech": false,
                           "prerequisites": [
@@ -3256,7 +3313,7 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Propulsion",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Fusion Missiles",
                 "<b>Component</b>: Volatile Miasma Launcher"
@@ -3295,7 +3352,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Propulsion",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Component</b>: Antimatter Launcher",
                     "<b>Component</b>: Antimatter Missiles"
@@ -3329,7 +3386,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Propulsion",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Marauder Launcher",
                         "<b>Component</b>: Quantum Launcher",
@@ -3364,7 +3421,7 @@
                           "base_factor": 1.0,
                           "base_weight": 40.0,
                           "category": "Propulsion",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Marauder Missiles"
                           ],
@@ -3395,68 +3452,6 @@
                       ],
                       "is_event": false,
                       "source": "vanilla"
-                    },
-                    {
-                      "key": "tech_repeatable_weapon_type_explosive_damage",
-                      "name": "Thermodynamic Yield Control",
-                      "description": "With the chemical reaction tightly controlled by missile-board microprocessors, warhead detonations can be tuned for maximum effect for local conditions at the time of impact.",
-                      "area": "engineering",
-                      "base_factor": 0.5,
-                      "base_weight": 12.5,
-                      "category": "Propulsion",
-                      "cost": 50000,
-                      "feature_unlocks": [
-                        "Explosive Weapon Damage +5%"
-                      ],
-                      "is_dangerous": false,
-                      "is_rare": false,
-                      "is_start_tech": false,
-                      "prerequisites": [
-                        "tech_missiles_3"
-                      ],
-                      "tier": 5,
-                      "prerequisites_names": [
-                        {
-                          "name": "Antimatter Missiles",
-                          "key": "tech_missiles_3"
-                        }
-                      ],
-                      "weight_modifiers": [],
-                      "potential": [],
-                      "children": [],
-                      "is_event": false,
-                      "source": "vanilla"
-                    },
-                    {
-                      "key": "tech_repeatable_weapon_type_explosive_fire_rate",
-                      "name": "Miniaturized Pre-Igniters",
-                      "description": "Advances in miniaturization allow for more rapid loading and discharging of rocket-propelled payloads.",
-                      "area": "engineering",
-                      "base_factor": 0.5,
-                      "base_weight": 12.5,
-                      "category": "Propulsion",
-                      "cost": 50000,
-                      "feature_unlocks": [
-                        "Explosive Weapon Fire Rate +5%"
-                      ],
-                      "is_dangerous": false,
-                      "is_rare": false,
-                      "is_start_tech": false,
-                      "prerequisites": [
-                        "tech_missiles_3"
-                      ],
-                      "tier": 5,
-                      "prerequisites_names": [
-                        {
-                          "name": "Antimatter Missiles",
-                          "key": "tech_missiles_3"
-                        }
-                      ],
-                      "weight_modifiers": [],
-                      "potential": [],
-                      "children": [],
-                      "is_event": false,
-                      "source": "vanilla"
                     }
                   ],
                   "is_event": false,
@@ -3478,7 +3473,7 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "Propulsion",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Component</b>: Large Mass Driver",
             "<b>Component</b>: Large Shard Accelerator",
@@ -3507,7 +3502,7 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Propulsion",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Bio-Coil Shard Accelerator",
                 "<b>Component</b>: Large Bio-Coil Shard Accelerator",
@@ -3515,7 +3510,8 @@
                 "<b>Component</b>: Medium Bio-Coil Shard Accelerator",
                 "<b>Component</b>: Medium Coilgun",
                 "<b>Component</b>: Small Bio-Coil Shard Accelerator",
-                "<b>Component</b>: Small Coilgun"
+                "<b>Component</b>: Small Coilgun",
+                "Army Damage +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3544,7 +3540,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Propulsion",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Component</b>: Large Railgun",
                     "<b>Component</b>: Large Shard Rail Accelerator",
@@ -3552,7 +3548,8 @@
                     "<b>Component</b>: Medium Shard Rail Accelerator",
                     "<b>Component</b>: Shard Rail Accelerator",
                     "<b>Component</b>: Small Railgun",
-                    "<b>Component</b>: Small Shard Rail Accelerator"
+                    "<b>Component</b>: Small Shard Rail Accelerator",
+                    "Army Damage +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3581,7 +3578,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Propulsion",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Advanced Shard Rail Accelerator",
                         "<b>Component</b>: Large Advanced Railgun",
@@ -3589,7 +3586,8 @@
                         "<b>Component</b>: Medium Advanced Railgun",
                         "<b>Component</b>: Medium Advanced Shard Rail Accelerator",
                         "<b>Component</b>: Small Advanced Railgun",
-                        "<b>Component</b>: Small Advanced Shard Rail Accelerator"
+                        "<b>Component</b>: Small Advanced Shard Rail Accelerator",
+                        "Army Damage +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3618,7 +3616,7 @@
                           "base_factor": 1.0,
                           "base_weight": 50.0,
                           "category": "Propulsion",
-                          "cost": 12000,
+                          "cost": 6000,
                           "feature_unlocks": [
                             "<b>Component</b>: Chitin Battery",
                             "<b>Component</b>: Kinetic Battery"
@@ -3650,10 +3648,11 @@
                               "base_factor": 1.0,
                               "base_weight": 40.0,
                               "category": "Propulsion",
-                              "cost": 20000,
+                              "cost": 10000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Chitin Artillery",
-                                "<b>Component</b>: Kinetic Artillery"
+                                "<b>Component</b>: Kinetic Artillery",
+                                "<b>Component</b>: Reshaping Projectile Accelerator"
                               ],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -3694,7 +3693,7 @@
                           "base_factor": 1.0,
                           "base_weight": 40.0,
                           "category": "Propulsion",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Mega Bombard",
                             "<b>Component</b>: Mega Cannon"
@@ -3726,7 +3725,7 @@
                               "base_factor": 1.0,
                               "base_weight": 35.0,
                               "category": "Propulsion",
-                              "cost": 24000,
+                              "cost": 12000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Giga Bombard",
                                 "<b>Component</b>: Giga Cannon"
@@ -3770,7 +3769,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Propulsion",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Component</b>: Large Gauss Cannon",
                             "<b>Component</b>: Large Shard Gauss Accelerator",
@@ -3778,7 +3777,8 @@
                             "<b>Component</b>: Medium Shard Gauss Accelerator",
                             "<b>Component</b>: Shard Gauss Accelerator",
                             "<b>Component</b>: Small Gauss Cannon",
-                            "<b>Component</b>: Small Shard Gauss Accelerator"
+                            "<b>Component</b>: Small Shard Gauss Accelerator",
+                            "Army Damage +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -3812,7 +3812,7 @@
                       "description": "Ultra-dense slugs can punch through even the strongest of projected shields.",
                       "area": "engineering",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Propulsion",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -3843,7 +3843,7 @@
                       "description": "Minor technical advances combine with improved shipboard routines for handling munitions to provide a noticeable boost in fire rate.",
                       "area": "engineering",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Propulsion",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -3880,7 +3880,7 @@
                   "base_factor": 1.0,
                   "base_weight": 75.0,
                   "category": "Propulsion",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Component</b>: Large Autocannon",
                     "<b>Component</b>: Large Quill Battery",
@@ -3888,7 +3888,8 @@
                     "<b>Component</b>: Medium Quill Battery",
                     "<b>Component</b>: Small Autocannon",
                     "<b>Component</b>: Small Quill Battery",
-                    "<b>Component</b>: Thorn Cannon"
+                    "<b>Component</b>: Thorn Cannon",
+                    "Army Damage +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3918,7 +3919,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Propulsion",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Large Ripper Autocannon",
                         "<b>Component</b>: Large Ripper Quill Battery",
@@ -3926,7 +3927,8 @@
                         "<b>Component</b>: Medium Ripper Quill Battery",
                         "<b>Component</b>: Ripper Thorn Cannon",
                         "<b>Component</b>: Small Ripper Autocannon",
-                        "<b>Component</b>: Small Ripper Quill Battery"
+                        "<b>Component</b>: Small Ripper Quill Battery",
+                        "Army Damage +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3955,7 +3957,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Propulsion",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Component</b>: Acidstorm Thorn Cannon",
                             "<b>Component</b>: Large Stormfire Autocannon",
@@ -3963,7 +3965,8 @@
                             "<b>Component</b>: Medium Stormfire Autocannon",
                             "<b>Component</b>: Medium Stormfire Quill Battery",
                             "<b>Component</b>: Small Stormfire Autocannon",
-                            "<b>Component</b>: Small Stormfire Quill Battery"
+                            "<b>Component</b>: Small Stormfire Quill Battery",
+                            "Army Damage +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -4011,7 +4014,7 @@
           "base_factor": 1.0,
           "base_weight": 75.0,
           "category": "Propulsion",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
             "<b>Component</b>: Bio-Swarmer Missiles",
             "<b>Component</b>: Spore Launcher",
@@ -4037,7 +4040,7 @@
               "base_factor": 1.0,
               "base_weight": 40.0,
               "category": "Propulsion",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "<b>Component</b>: Barbed Spore Launcher",
                 "<b>Component</b>: Bio-Whirlwind Missiles",
@@ -4098,7 +4101,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Voidcraft",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Component</b>: Basic Fighter Wing",
                 "<b>Component</b>: Basic Strike Craft",
@@ -4130,7 +4133,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Voidcraft",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Component</b>: Cyber Flagella",
                     "<b>Component</b>: Improved Fighter Wing",
@@ -4160,7 +4163,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Voidcraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Component</b>: Advanced Fighter Wing",
                         "<b>Component</b>: Advanced Strike Craft",
@@ -4188,7 +4191,7 @@
                           "description": "Increasing the speed at which fighter pilots can process and act upon enemy positioning data elevates strike craft a few steps up the food chain.",
                           "area": "society",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Military Theory",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -4219,7 +4222,7 @@
                           "description": "By collecting and analyzing the performance data of the pilots that came before, we have exponentially improved our pilot training methods. Each one will be quicker than the one that came before.",
                           "area": "society",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Military Theory",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -4264,7 +4267,7 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Voidcraft",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "<b>Starbase Upgrade</b>: Starhold"
               ],
@@ -4288,7 +4291,7 @@
                 "(×<b style='color:lime'>3.0</b>) Number of years since game start is greater than 35",
                 "(×<b style='color:lime'>4.0</b>) Number of years since game start is greater than 40",
                 "(×<b style='color:lime'>5.0</b>) Number of Starport is greater than or equal to 3",
-                "(×<b style='color:lime'>1.25</b>) Has Unyielding Traditions Tradition",
+                "(×<b style='color:lime'>1.25</b>) Has Fortification Traditions Tradition",
                 "(×<b style='color:lime'>10.0</b>) Has the Impenetrable Border Agenda modifier"
               ],
               "potential": [],
@@ -4301,7 +4304,7 @@
                   "base_factor": 0.5,
                   "base_weight": 37.5,
                   "category": "Voidcraft",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "Defense Platform Hull Points +10%"
                   ],
@@ -4329,7 +4332,7 @@
                       "description": "Additional layers of armor plating within the structure itself improves the resilience of Military Stations.",
                       "area": "engineering",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Voidcraft",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -4360,7 +4363,7 @@
                       "description": "Cross-linking weapon systems to fire in staggered volleys improves the actual damage output of Military Stations over time.",
                       "area": "engineering",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Voidcraft",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -4397,7 +4400,7 @@
                   "base_factor": 0.25,
                   "base_weight": 12.5,
                   "category": "Military Theory",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Mega-Structure</b>: Deep Space Citadel",
                     "Deep Space Citadel System Capacity +1"
@@ -4416,8 +4419,8 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4440,7 +4443,7 @@
                   "base_factor": 0.5,
                   "base_weight": 35.0,
                   "category": "Voidcraft",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "Starbase Building Cost -25%",
                     "Starbase Module Cost -25%"
@@ -4471,7 +4474,7 @@
                       "base_factor": 0.5,
                       "base_weight": 25.0,
                       "category": "Voidcraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "Starbase Upgrade Cost -15%",
                         "Starbase Upgrade Speed +25%"
@@ -4497,7 +4500,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Voidcraft 1<br/>    •   Any Leader in council has trait Curator 1",
                         "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)",
-                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                       ],
                       "potential": [],
                       "children": [],
@@ -4516,7 +4519,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Voidcraft",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -4566,7 +4569,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Voidcraft",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Starbase Upgrade</b>: Star Fortress"
                   ],
@@ -4590,7 +4593,7 @@
                     "(×<b style='color:lime'>3.0</b>) Number of years since game start is greater than 65",
                     "(×<b style='color:lime'>4.0</b>) Number of years since game start is greater than 70",
                     "(×<b style='color:lime'>5.0</b>) Number of Starhold is greater than or equal to 3",
-                    "(×<b style='color:lime'>1.25</b>) Has Unyielding Traditions Tradition",
+                    "(×<b style='color:lime'>1.25</b>) Has Fortification Traditions Tradition",
                     "(×<b style='color:lime'>5.0</b>) Has the Impenetrable Border Agenda modifier"
                   ],
                   "potential": [],
@@ -4603,7 +4606,7 @@
                       "base_factor": 1.0,
                       "base_weight": 40.0,
                       "category": "Voidcraft",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Starbase Upgrade</b>: Citadel"
                       ],
@@ -4627,7 +4630,7 @@
                         "(×<b style='color:lime'>3.0</b>) Number of years since game start is greater than 95",
                         "(×<b style='color:lime'>4.0</b>) Number of years since game start is greater than 100",
                         "(×<b style='color:lime'>5.0</b>) Number of Star Fortress is greater than or equal to 3",
-                        "(×<b style='color:lime'>1.25</b>) Has Unyielding Traditions Tradition",
+                        "(×<b style='color:lime'>1.25</b>) Has Fortification Traditions Tradition",
                         "(×<b style='color:lime'>5.0</b>) Has the Impenetrable Border Agenda modifier"
                       ],
                       "potential": [],
@@ -4640,7 +4643,7 @@
                           "base_factor": 0.25,
                           "base_weight": 5.0,
                           "category": "Voidcraft",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
                             "<b>Feature : </b>Megastructure Restoration",
                             "Arc Furnace Capacity +2",
@@ -4694,7 +4697,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Computing",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Science Nexus",
                                 "<b>Mega-Structure</b>: Science Nexus Hub",
@@ -4720,9 +4723,7 @@
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
                                 "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
-                                "(×<b style='color:lime'>9.0</b>) Has Technological Ascendancy Ascension Perk",
-                                "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Science Nexus",
-                                "(×<b style='color:lime'>1.1</b>) One must be true<br/>    •   Has Government Civic: Dimensional Worship<br/>    •   Has Government Civic: Dimensional Enterprise"
+                                "(×<b style='color:lime'>9.0</b>) Has Technological Ascendancy Ascension Perk"
                               ],
                               "potential": [
                                 "Has DLC Utopia"
@@ -4739,7 +4740,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Computing",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Sentry Aerials",
                                 "<b>Mega-Structure</b>: Sentry Array",
@@ -4782,7 +4783,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Military Theory",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Strategic Coordination Center",
                                 "<b>Mega-Structure</b>: Strategic Coordination Center Site",
@@ -4803,8 +4804,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4826,7 +4827,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Military Theory",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Mega Shipyard",
                                 "<b>Mega-Structure</b>: Mega Shipyard Core",
@@ -4847,8 +4848,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4870,7 +4871,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Statecraft",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Interstellar Assembly",
                                 "<b>Mega-Structure</b>: Interstellar Assembly Site",
@@ -4892,8 +4893,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Xenophobe Ethic<br/>    •   Has Fanatic Xenophobe Ethic",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   Has Fanatic Xenophile Ethic",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Xenophobe Ethic<br/>    •   is_fanatic_xenophobe=yes",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   is_fanatic_xenophile=yes",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4914,7 +4915,7 @@
                               "base_factor": 0.25,
                               "base_weight": 5.0,
                               "category": "Statecraft",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Mega-Structure</b>: Art Installation: Maturity",
                                 "<b>Mega-Structure</b>: Art Installation: Nascency",
@@ -4936,8 +4937,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4963,7 +4964,7 @@
                           "base_factor": 0.25,
                           "base_weight": 5.0,
                           "category": "Voidcraft",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
                             "<b>Starbase Building</b>: Colossal Assembly Yards"
                           ],
@@ -5007,7 +5008,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Voidcraft",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Building</b>: Habitat Administration"
                   ],
@@ -5047,7 +5048,7 @@
                       "base_factor": 1.0,
                       "base_weight": 35.0,
                       "category": "Voidcraft",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Building</b>: Habitat Central Control",
                         "Habitat Max Districts +1"
@@ -5087,7 +5088,7 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "Voidcraft",
-                          "cost": 40000,
+                          "cost": 20000,
                           "feature_unlocks": [
                             "<b>Building</b>: Habitat System Control",
                             "Habitat Max Districts +1"
@@ -5146,7 +5147,7 @@
           "base_factor": 1000.0,
           "base_weight": 0.0,
           "category": "Voidcraft",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Ship Size</b>: Corvette"
           ],
@@ -5169,22 +5170,17 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Propulsion",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Advanced Combat Computer",
-                "<b>Component</b>: Advanced Neural Implants",
                 "<b>Component</b>: Advanced Neurochips",
-                "<b>Component</b>: Autonomous Neural Implants",
                 "<b>Component</b>: Autonomous Neurochips",
                 "<b>Component</b>: Autonomous Ship Intellect",
                 "<b>Component</b>: Bio-Torpedoes",
                 "<b>Component</b>: Combat Computer",
                 "<b>Component</b>: NEUROCHIPS",
-                "<b>Component</b>: Neural Implants",
-                "<b>Component</b>: Precognitive Combat Instincts",
                 "<b>Component</b>: Precognitive Interface",
                 "<b>Component</b>: Sapient Combat Computer",
-                "<b>Component</b>: Sapient Neural Implants",
                 "<b>Component</b>: Sapient Neurochips",
                 "<b>Component</b>: Space Torpedoes",
                 "<b>Ship Size</b>: Frigate",
@@ -5220,7 +5216,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Propulsion",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Component</b>: Armored Torpedoes",
                     "<b>Component</b>: Carapace Bio-Torpedoes"
@@ -5254,7 +5250,7 @@
                       "base_factor": 1.0,
                       "base_weight": 40.0,
                       "category": "Propulsion",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Component</b>: Devastator Bio-Torpedoes",
                         "<b>Component</b>: Devastator Torpedoes"
@@ -5299,10 +5295,10 @@
               "base_factor": 1.0,
               "base_weight": 85.0,
               "category": "Voidcraft",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Ship Size</b>: Destroyer",
-                "Fleet Command Limit +10"
+                "Fleet Command Limit +20"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -5337,7 +5333,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Voidcraft",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "Destroyer Hull Points +10%",
                     "Destroyer Hull Points: +10%",
@@ -5371,7 +5367,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Voidcraft",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "Destroyer Hull Points +10%",
                         "Destroyer Hull Points: +10%",
@@ -5413,10 +5409,10 @@
                   "base_factor": 1.0,
                   "base_weight": 65.0,
                   "category": "Voidcraft",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Ship Size</b>: Cruiser",
-                    "Fleet Command Limit +10"
+                    "Fleet Command Limit +40"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -5451,10 +5447,10 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Voidcraft",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "<b>Ship Size</b>: Battleship",
-                        "Fleet Command Limit +10"
+                        "Fleet Command Limit +60"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -5489,7 +5485,7 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "Voidcraft",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "Battleship Hull Points +10%",
                             "Battleship Hull Points: +10%",
@@ -5523,7 +5519,7 @@
                               "base_factor": 1.0,
                               "base_weight": 30.0,
                               "category": "Voidcraft",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [
                                 "Battleship Hull Points +10%",
                                 "Battleship Hull Points: +10%",
@@ -5565,7 +5561,7 @@
                           "base_factor": 1.0,
                           "base_weight": 40.0,
                           "category": "Voidcraft",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "Battleship Build Cost -5%",
                             "Battleship Build Cost: -5%\nBattleship Build Speed: +25%",
@@ -5605,7 +5601,7 @@
                       "base_factor": 1.0,
                       "base_weight": 60.0,
                       "category": "Voidcraft",
-                      "cost": 10000,
+                      "cost": 5000,
                       "feature_unlocks": [
                         "Cruiser Build Cost -5%",
                         "Cruiser Build Cost: -5%\nCruiser Build Speed: +25%",
@@ -5641,7 +5637,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Voidcraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "Cruiser Hull Points +10%",
                         "Cruiser Hull Points: +10%",
@@ -5675,7 +5671,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Voidcraft",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "Cruiser Hull Points +10%",
                             "Cruiser Hull Points: +10%",
@@ -5721,7 +5717,7 @@
                   "base_factor": 1.0,
                   "base_weight": 75.0,
                   "category": "Voidcraft",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "Destroyer Build Cost -5%",
                     "Destroyer Build Cost: -5%\nDestroyer Build Speed: +25%",
@@ -5761,12 +5757,12 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Voidcraft",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "Corvette Hull Points +10%",
+                "Corvette Hull Points: +10%\nFrigate Hull Points: +10%",
                 "Frigate Hull Points +10%",
-                "Offspring Corvette Hull Points +10%",
-                "mod_tech_corvette_hull_effect"
+                "Offspring Corvette Hull Points +10%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -5794,12 +5790,12 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Voidcraft",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "Corvette Hull Points +10%",
+                    "Corvette Hull Points: +10%\nFrigate Hull Points: +10%",
                     "Frigate Hull Points +10%",
-                    "Offspring Corvette Hull Points +10%",
-                    "mod_tech_corvette_hull_effect"
+                    "Offspring Corvette Hull Points +10%"
                   ],
                   "is_dangerous": false,
                   "is_rare": true,
@@ -5836,13 +5832,13 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Voidcraft",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "Corvette Build Cost -5%",
+                "Corvette Build Cost: -5%\nCorvette Build Speed: +25%\nFrigate Build Cost: -5%\nFrigate Build Speed: +25%",
                 "Corvette Build Speed +25%",
                 "Frigate Build Speed +25%",
-                "Offspring Corvette Build Speed +25%",
-                "mod_tech_corvette_build_speed_effect"
+                "Offspring Corvette Build Speed +25%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -5877,13 +5873,13 @@
           "base_factor": 1.0,
           "base_weight": 30.0,
           "category": "Voidcraft",
-          "cost": 32000,
+          "cost": 16000,
           "feature_unlocks": [
             "<b>Component</b>: Ion Cannon",
             "<b>Component</b>: Perdition Beam",
             "<b>Ship Size</b>: Titan",
             "<b>Starbase Upgrade</b>: Ion Cannon",
-            "Fleet Command Limit +10"
+            "Fleet Command Limit +80"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -5911,7 +5907,7 @@
               "base_factor": 1.0,
               "base_weight": 25.0,
               "category": "Voidcraft",
-              "cost": 40000,
+              "cost": 20000,
               "feature_unlocks": [
                 "Titan Hull Points +10%"
               ],
@@ -5942,7 +5938,7 @@
                   "base_factor": 1.0,
                   "base_weight": 20.0,
                   "category": "Voidcraft",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "Titan Hull Points +10%"
                   ],
@@ -5980,7 +5976,7 @@
               "base_factor": 1.0,
               "base_weight": 0.0,
               "category": "Voidcraft",
-              "cost": 48000,
+              "cost": 24000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": true,
@@ -6008,7 +6004,7 @@
                   "base_factor": 0.5,
                   "base_weight": 10.0,
                   "category": "Particles",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Component</b>: Neutron Sweep"
                   ],
@@ -6032,8 +6028,8 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has the Colossus Project country flag",
-                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   Has Fanatic Spiritualist Ethic\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   One must be true\n\t\t\t    •   Has Mind over Matter Ascension Perk\n\t\t\t    •   Has Origin Teachers of the Shroud",
-                    "All must be false\n    •   Has Pacifist Ethic\n    •   Has Fanatic Pacifist Ethic"
+                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   has_shroud_dlc=yes\n\t\t    •   has_psionic_ascension=yes",
+                    "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6047,7 +6043,7 @@
                   "base_factor": 0.5,
                   "base_weight": 10.0,
                   "category": "Field Manipulation",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Component</b>: Global Pacifier"
                   ],
@@ -6066,7 +6062,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Field Manipulation 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes"
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
@@ -6084,7 +6080,7 @@
                   "base_factor": 0.5,
                   "base_weight": 10.0,
                   "category": "Psionics",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Component</b>: Divine Enforcer"
                   ],
@@ -6107,8 +6103,44 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has the Colossus Project country flag",
-                    "One must be true\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic",
-                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   Has DLC Utopia\n\t    •   One must be true\n\t\t    •   Has Mind over Matter Ascension Perk\n\t\t    •   Has Origin Teachers of the Shroud"
+                    "One must be true\n    •   Has Spiritualist Ethic\n    •   is_fanatic_spiritualist=yes",
+                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   has_shroud_dlc=yes\n\t    •   has_psionic_ascension=yes"
+                  ],
+                  "children": [],
+                  "is_event": false,
+                  "source": "vanilla"
+                },
+                {
+                  "key": "tech_pk_smelter",
+                  "name": "Planet Smelting",
+                  "description": "Focusing a searing energy beam into the planet's mantle, the Smelter destabilizes its core, triggering tectonic chaos and rendering the surface violently unstable.",
+                  "area": "engineering",
+                  "base_factor": 0.5,
+                  "base_weight": 10.0,
+                  "category": "Voidcraft",
+                  "cost": 24000,
+                  "feature_unlocks": [
+                    "<b>Component</b>: Planet Smelter"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": true,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_colossus"
+                  ],
+                  "tier": 5,
+                  "prerequisites_names": [
+                    {
+                      "name": "Colossi",
+                      "key": "tech_colossus"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Voidcraft 1"
+                  ],
+                  "potential": [
+                    "Has DLC Apocalypse",
+                    "Has the Colossus Project country flag"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6122,7 +6154,7 @@
                   "base_factor": 0.5,
                   "base_weight": 10.0,
                   "category": "Voidcraft",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Component</b>: World Cracker"
                   ],
@@ -6145,7 +6177,7 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has the Colossus Project country flag",
-                    "All must be false\n    •   Has Pacifist Ethic\n    •   Has Fanatic Pacifist Ethic"
+                    "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6159,7 +6191,7 @@
                   "base_factor": 0.5,
                   "base_weight": 10.0,
                   "category": "Voidcraft",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Component</b>: Nanobot Diffuser"
                   ],
@@ -6229,7 +6261,7 @@
           "base_factor": 1.0,
           "base_weight": 40.0,
           "category": "Industry",
-          "cost": 20000,
+          "cost": 10000,
           "feature_unlocks": [],
           "is_dangerous": false,
           "is_rare": false,
@@ -6254,7 +6286,7 @@
           "base_factor": 1.0,
           "base_weight": 40.0,
           "category": "Industry",
-          "cost": 20000,
+          "cost": 10000,
           "feature_unlocks": [],
           "is_dangerous": false,
           "is_rare": false,
@@ -6279,7 +6311,7 @@
           "base_factor": 0.5,
           "base_weight": 35.0,
           "category": "Materials",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Mega-Structure</b>: Arc Furnace",
             "<b>Mega-Structure</b>: Arc Furnace: Borehole Pumps",
@@ -6296,7 +6328,6 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Materials 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Arc Furnace: Equatorial Band<br/>    •   Has Megastructure Arc Furnace: Borehole Pumps<br/>    •   Has Megastructure Arc Furnace: Mohole Extractors<br/>    •   Has Megastructure Arc Furnace",
-            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Arc Furnace"
           ],
           "potential": [
@@ -6314,7 +6345,7 @@
           "base_factor": 0.5,
           "base_weight": 35.0,
           "category": "Materials",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Building</b>: Nanite Transmuter"
           ],
@@ -6330,6 +6361,54 @@
           "potential": [
             "Has DLC Distant Stars Story Pack"
           ],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_repeatable_weapon_type_explosive_damage",
+          "name": "Thermodynamic Yield Control",
+          "description": "With the chemical reaction tightly controlled by missile-board microprocessors, warhead detonations can be tuned for maximum effect for local conditions at the time of impact.",
+          "area": "engineering",
+          "base_factor": 0.5,
+          "base_weight": 7.5,
+          "category": "Propulsion",
+          "cost": 50000,
+          "feature_unlocks": [
+            "Explosive Weapon Damage +5%"
+          ],
+          "is_dangerous": false,
+          "is_rare": false,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 5,
+          "prerequisites_names": [],
+          "weight_modifiers": [],
+          "potential": [],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_repeatable_weapon_type_explosive_fire_rate",
+          "name": "Miniaturized Pre-Igniters",
+          "description": "Advances in miniaturization allow for more rapid loading and discharging of rocket-propelled payloads.",
+          "area": "engineering",
+          "base_factor": 0.5,
+          "base_weight": 7.5,
+          "category": "Propulsion",
+          "cost": 50000,
+          "feature_unlocks": [
+            "Explosive Weapon Fire Rate +5%"
+          ],
+          "is_dangerous": false,
+          "is_rare": false,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 5,
+          "prerequisites_names": [],
+          "weight_modifiers": [],
+          "potential": [],
           "children": [],
           "is_event": false,
           "source": "vanilla"
@@ -6379,12 +6458,9 @@
           "tier": 0,
           "prerequisites_names": [],
           "weight_modifiers": [],
-          "potential": [
-            "Has Gestalt Consciousness Ethic"
-          ],
+          "potential": [],
           "children": [],
           "is_event": false,
-          "is_gestalt": true,
           "source": "vanilla"
         },
         {
@@ -6443,9 +6519,9 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "Voidcraft",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [
-            "<b>Army</b>: Assault Army",
+            "<b>Army</b>: Assault Army\nThese armies can be embarked and used for invasion on other planets.",
             "<b>Army</b>: Combat Android Army",
             "<b>Army</b>: Giant Undead Army",
             "<b>Army</b>: Hunter-Killer Army",

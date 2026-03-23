@@ -26,9 +26,11 @@ value
    | DATE
    | STRING
    | VARIABLE
+   | MATH
    | BAREWORD
    | map
    | array
+   | '[[' '!'? BAREWORD ']' value ']'
    ;
 
 BOOLEAN
@@ -40,6 +42,10 @@ BOOLEAN
 
 VARIABLE
    : '@'([A-Za-z][A-Za-z_0-9.%-]*)
+   ;
+
+MATH
+   : '@' '\\'? '['(~[\]])*']'
    ;
 
 SPECIFIER

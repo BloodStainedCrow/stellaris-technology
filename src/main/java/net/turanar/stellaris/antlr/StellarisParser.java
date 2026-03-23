@@ -17,8 +17,8 @@ public class StellarisParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, T__1=2, BOOLEAN=3, VARIABLE=4, SPECIFIER=5, NUMBER=6, DATE=7, 
-		BAREWORD=8, STRING=9, WS=10, LINE_COMMENT=11;
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, BOOLEAN=6, VARIABLE=7, MATH=8, 
+		SPECIFIER=9, NUMBER=10, DATE=11, BAREWORD=12, STRING=13, WS=14, LINE_COMMENT=15;
 	public static final int
 		RULE_file = 0, RULE_map = 1, RULE_pair = 2, RULE_var = 3, RULE_array = 4, 
 		RULE_value = 5;
@@ -31,14 +31,14 @@ public class StellarisParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'{'", "'}'"
+			null, "'{'", "'}'", "'[['", "'!'", "']'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, null, null, "BOOLEAN", "VARIABLE", "SPECIFIER", "NUMBER", "DATE", 
-			"BAREWORD", "STRING", "WS", "LINE_COMMENT"
+			null, null, null, null, null, null, "BOOLEAN", "VARIABLE", "MATH", "SPECIFIER", 
+			"NUMBER", "DATE", "BAREWORD", "STRING", "WS", "LINE_COMMENT"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -385,7 +385,7 @@ public class StellarisParser extends Parser {
 				setState(42); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << BOOLEAN) | (1L << VARIABLE) | (1L << NUMBER) | (1L << DATE) | (1L << BAREWORD) | (1L << STRING))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << BOOLEAN) | (1L << VARIABLE) | (1L << MATH) | (1L << NUMBER) | (1L << DATE) | (1L << BAREWORD) | (1L << STRING))) != 0) );
 			setState(44);
 			match(T__1);
 			}
@@ -407,12 +407,16 @@ public class StellarisParser extends Parser {
 		public TerminalNode DATE() { return getToken(StellarisParser.DATE, 0); }
 		public TerminalNode STRING() { return getToken(StellarisParser.STRING, 0); }
 		public TerminalNode VARIABLE() { return getToken(StellarisParser.VARIABLE, 0); }
+		public TerminalNode MATH() { return getToken(StellarisParser.MATH, 0); }
 		public TerminalNode BAREWORD() { return getToken(StellarisParser.BAREWORD, 0); }
 		public MapContext map() {
 			return getRuleContext(MapContext.class,0);
 		}
 		public ArrayContext array() {
 			return getRuleContext(ArrayContext.class,0);
+		}
+		public ValueContext value() {
+			return getRuleContext(ValueContext.class,0);
 		}
 		public ValueContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -436,10 +440,11 @@ public class StellarisParser extends Parser {
 	public final ValueContext value() throws RecognitionException {
 		ValueContext _localctx = new ValueContext(_ctx, getState());
 		enterRule(_localctx, 10, RULE_value);
+		int _la;
 		try {
-			setState(54);
+			setState(64);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
@@ -479,21 +484,53 @@ public class StellarisParser extends Parser {
 				enterOuterAlt(_localctx, 6);
 				{
 				setState(51);
-				match(BAREWORD);
+				match(MATH);
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
 				setState(52);
-				map();
+				match(BAREWORD);
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
 				setState(53);
+				map();
+				}
+				break;
+			case 9:
+				enterOuterAlt(_localctx, 9);
+				{
+				setState(54);
 				array();
+				}
+				break;
+			case 10:
+				enterOuterAlt(_localctx, 10);
+				{
+				setState(55);
+				match(T__2);
+				setState(57);
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+				if (_la==T__3) {
+					{
+					setState(56);
+					match(T__3);
+					}
+				}
+
+				setState(59);
+				match(BAREWORD);
+				setState(60);
+				match(T__4);
+				setState(61);
+				value();
+				setState(62);
+				match(T__4);
 				}
 				break;
 			}
@@ -510,22 +547,25 @@ public class StellarisParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\r;\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21E\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2\3\2\7\2\21\n\2\f\2\16\2\24\13\2"+
 		"\3\2\3\2\3\3\3\3\7\3\32\n\3\f\3\16\3\35\13\3\3\3\3\3\3\4\3\4\3\4\3\4\3"+
 		"\5\3\5\3\5\3\5\3\6\3\6\6\6+\n\6\r\6\16\6,\3\6\3\6\3\7\3\7\3\7\3\7\3\7"+
-		"\3\7\3\7\3\7\5\79\n\7\3\7\2\2\b\2\4\6\b\n\f\2\2\2?\2\22\3\2\2\2\4\27\3"+
-		"\2\2\2\6 \3\2\2\2\b$\3\2\2\2\n(\3\2\2\2\f8\3\2\2\2\16\21\5\6\4\2\17\21"+
-		"\5\b\5\2\20\16\3\2\2\2\20\17\3\2\2\2\21\24\3\2\2\2\22\20\3\2\2\2\22\23"+
-		"\3\2\2\2\23\25\3\2\2\2\24\22\3\2\2\2\25\26\7\2\2\3\26\3\3\2\2\2\27\33"+
-		"\7\3\2\2\30\32\5\6\4\2\31\30\3\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34"+
-		"\3\2\2\2\34\36\3\2\2\2\35\33\3\2\2\2\36\37\7\4\2\2\37\5\3\2\2\2 !\7\n"+
-		"\2\2!\"\7\7\2\2\"#\5\f\7\2#\7\3\2\2\2$%\7\6\2\2%&\7\7\2\2&\'\7\b\2\2\'"+
-		"\t\3\2\2\2(*\7\3\2\2)+\5\f\7\2*)\3\2\2\2+,\3\2\2\2,*\3\2\2\2,-\3\2\2\2"+
-		"-.\3\2\2\2./\7\4\2\2/\13\3\2\2\2\609\7\b\2\2\619\7\5\2\2\629\7\t\2\2\63"+
-		"9\7\13\2\2\649\7\6\2\2\659\7\n\2\2\669\5\4\3\2\679\5\n\6\28\60\3\2\2\2"+
-		"8\61\3\2\2\28\62\3\2\2\28\63\3\2\2\28\64\3\2\2\28\65\3\2\2\28\66\3\2\2"+
-		"\28\67\3\2\2\29\r\3\2\2\2\7\20\22\33,8";
+		"\3\7\3\7\3\7\3\7\3\7\3\7\5\7<\n\7\3\7\3\7\3\7\3\7\3\7\5\7C\n\7\3\7\2\2"+
+		"\b\2\4\6\b\n\f\2\2\2L\2\22\3\2\2\2\4\27\3\2\2\2\6 \3\2\2\2\b$\3\2\2\2"+
+		"\n(\3\2\2\2\fB\3\2\2\2\16\21\5\6\4\2\17\21\5\b\5\2\20\16\3\2\2\2\20\17"+
+		"\3\2\2\2\21\24\3\2\2\2\22\20\3\2\2\2\22\23\3\2\2\2\23\25\3\2\2\2\24\22"+
+		"\3\2\2\2\25\26\7\2\2\3\26\3\3\2\2\2\27\33\7\3\2\2\30\32\5\6\4\2\31\30"+
+		"\3\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34\3\2\2\2\34\36\3\2\2\2\35\33"+
+		"\3\2\2\2\36\37\7\4\2\2\37\5\3\2\2\2 !\7\16\2\2!\"\7\13\2\2\"#\5\f\7\2"+
+		"#\7\3\2\2\2$%\7\t\2\2%&\7\13\2\2&\'\7\f\2\2\'\t\3\2\2\2(*\7\3\2\2)+\5"+
+		"\f\7\2*)\3\2\2\2+,\3\2\2\2,*\3\2\2\2,-\3\2\2\2-.\3\2\2\2./\7\4\2\2/\13"+
+		"\3\2\2\2\60C\7\f\2\2\61C\7\b\2\2\62C\7\r\2\2\63C\7\17\2\2\64C\7\t\2\2"+
+		"\65C\7\n\2\2\66C\7\16\2\2\67C\5\4\3\28C\5\n\6\29;\7\5\2\2:<\7\6\2\2;:"+
+		"\3\2\2\2;<\3\2\2\2<=\3\2\2\2=>\7\16\2\2>?\7\7\2\2?@\5\f\7\2@A\7\7\2\2"+
+		"AC\3\2\2\2B\60\3\2\2\2B\61\3\2\2\2B\62\3\2\2\2B\63\3\2\2\2B\64\3\2\2\2"+
+		"B\65\3\2\2\2B\66\3\2\2\2B\67\3\2\2\2B8\3\2\2\2B9\3\2\2\2C\r\3\2\2\2\b"+
+		"\20\22\33,;B";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

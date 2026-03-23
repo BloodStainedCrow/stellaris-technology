@@ -45,7 +45,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
             "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [
@@ -57,7 +57,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "Biology",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Building</b>: Gene Clinics"
               ],
@@ -85,7 +85,7 @@
                 "(×<b style='color:lime'>2.0</b>) Has the payback_researching_gene_clinics country flag"
               ],
               "potential": [
-                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
                 "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
@@ -97,7 +97,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Biology",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Building</b>: Cyto-Revitalization Centers"
                   ],
@@ -172,7 +172,7 @@
               "base_factor": 0.1,
               "base_weight": 10.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Bio-Reactor"
               ],
@@ -204,7 +204,7 @@
                   "base_factor": 0.1,
                   "base_weight": 8.5,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Advanced Bio-Reactor"
                   ],
@@ -243,11 +243,10 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Soil Reclamation Center",
-                "£food£ Food from Starbase Constructions +10%",
-                "£food£ Food from [farmer.GetIcon] [GetFarmerPlural] +20%"
+                "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -263,12 +262,13 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                 "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
+                "(×<b style='color:lime'>2.0</b>) Country uses biological ships",
+                "(×<b style='color:lime'>5.0</b>) Any Owned Planet<br/>    •   One must be true<br/>\t    •   has_any_capped_planet_farming_district=yes<br/>\t    •   has_any_agriculture_zone=yes"
               ],
               "potential": [],
               "children": [
@@ -277,10 +277,10 @@
                   "name": "Food Processing",
                   "description": "Improved food processing techniques will lead to better preservation methods and less spoilage.",
                   "area": "society",
-                  "base_factor": 1.0,
-                  "base_weight": 95.0,
+                  "base_factor": 0.5,
+                  "base_weight": 47.5,
                   "category": "Biology",
-                  "cost": 2500,
+                  "cost": 1250,
                   "feature_unlocks": [
                     "<b>Building</b>: Contour Megaplantation",
                     "<b>Building</b>: Food Processing Facilities",
@@ -300,12 +300,12 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                    "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
+                    "(×<b style='color:lime'>5.0</b>) Any Owned Planet<br/>    •   One must be true<br/>\t    •   has_any_capped_planet_farming_district=yes<br/>\t    •   has_any_agriculture_zone=yes",
+                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
                     "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Government Civic: Agrarian Idyll<br/>    •   One must be true<br/>\t    •   Has Government Civic: Anglers<br/>\t    •   Has Government Civic: Trawling Operations<br/>\t    •   Has Government Civic: Marine Machines<br/>\t    •   Has Government Civic: Maritime Robotics",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Catalytic Processing<br/>    •   Has Government Civic: Catalytic Recyclers<br/>    •   Has Government Civic: Organic Reprocessing<br/>    •   Has Government Civic: Organic Retrofitting",
-                    "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                    "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
+                    "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
                   ],
                   "potential": [],
                   "children": [
@@ -317,7 +317,7 @@
                       "base_factor": 2.0,
                       "base_weight": 130.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Food Processing Centers",
                         "<b>Building</b>: Sylviculture Plantation",
@@ -337,8 +337,8 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
@@ -360,13 +360,12 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Automated Agri-Complex",
                     "<b>Edict</b>: Expanded Breeding Program",
                     "<b>Edict</b>: Nutritional Plenitude",
-                    "£food£ Food from Starbase Constructions +10%",
-                    "£food£ Food from [farmer.GetIcon] [GetFarmerPlural] +20%"
+                    "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -382,8 +381,8 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                     "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -401,11 +400,10 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Cultivation Grid",
-                        "£food£ Food from Starbase Constructions +10%",
-                        "£food£ Food from [farmer.GetIcon] [GetFarmerPlural] +20%"
+                        "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -421,8 +419,8 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -440,10 +438,9 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "Biology",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
-                            "£food£ Food from Starbase Constructions +10%",
-                            "£food£ Food from £job£ Jobs +15%"
+                            "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": true,
@@ -459,8 +456,8 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1",
                             "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
@@ -486,7 +483,7 @@
                       "description": "Transgenic crops offer the nutritional elements of several standard food crops in one convenient package.",
                       "area": "society",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Biology",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -533,7 +530,7 @@
           "base_factor": 0.0,
           "base_weight": 0.0,
           "category": "Biology",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Component</b>: Combat Mandibles"
           ],
@@ -556,12 +553,12 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Biology",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Corrosive Fluids",
                 "<b>Component</b>: Juvenile Growth Gland",
                 "<b>Component</b>: Metabolic Recycler",
-                "Fleet Command Limit +5"
+                "Fleet Command Limit +20"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -596,7 +593,7 @@
                   "base_factor": 1.0,
                   "base_weight": 90.0,
                   "category": "Biology",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "<b>Component</b>: Accelerated Juvenile Growth Gland",
                     "<b>Component</b>: Caustic Fluids",
@@ -643,7 +640,7 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Biology",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "Elder Mauler Build Speed +25%",
                 "Elder Offspring Mauler Build Speed +25%",
@@ -687,7 +684,7 @@
           "base_factor": 1.0,
           "base_weight": 100.0,
           "category": "Biology",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [],
           "is_dangerous": false,
           "is_rare": false,
@@ -708,7 +705,7 @@
               "base_factor": 1.0,
               "base_weight": 85.0,
               "category": "Biology",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -736,7 +733,7 @@
                   "base_factor": 1.0,
                   "base_weight": 65.0,
                   "category": "Biology",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -764,7 +761,7 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Biology",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -794,7 +791,7 @@
                           "base_factor": 1.0,
                           "base_weight": 30.0,
                           "category": "Biology",
-                          "cost": 32000,
+                          "cost": 16000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -877,7 +874,7 @@
           "base_factor": 1.0,
           "base_weight": 100.0,
           "category": "Biology",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [],
           "is_dangerous": false,
           "is_rare": false,
@@ -898,7 +895,7 @@
               "base_factor": 1.0,
               "base_weight": 85.0,
               "category": "Biology",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -926,7 +923,7 @@
                   "base_factor": 1.0,
                   "base_weight": 65.0,
                   "category": "Biology",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -954,7 +951,7 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Biology",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -984,7 +981,7 @@
                           "base_factor": 1.0,
                           "base_weight": 30.0,
                           "category": "Biology",
-                          "cost": 32000,
+                          "cost": 16000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -1067,7 +1064,7 @@
           "base_factor": 1.5,
           "base_weight": 150.0,
           "category": "Biology",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [
             "Pop Growth Speed +10%"
           ],
@@ -1097,7 +1094,7 @@
               "base_factor": 1.5,
               "base_weight": 112.5,
               "category": "Biology",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "Leader Lifespan +10"
               ],
@@ -1134,7 +1131,7 @@
                   "base_factor": 0.5,
                   "base_weight": 30.0,
                   "category": "Biology",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Policy</b>: Selected Lineages"
                   ],
@@ -1154,8 +1151,8 @@
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                     "(×<b style='color:red'>0.0</b>) Has Fanatic Egalitarian Ethic",
-                    "(×<b style='color:red'>0.25</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   Has Fanatic Egalitarian Ethic",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic",
+                    "(×<b style='color:red'>0.25</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   is_fanatic_egalitarian=yes",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                     "(×<b style='color:red'>0.5</b>) Any owned Species:<br/>    •   Is NOT Organic"
                   ],
@@ -1171,7 +1168,7 @@
                       "base_factor": 0.5,
                       "base_weight": 17.5,
                       "category": "Biology",
-                      "cost": 24000,
+                      "cost": 12000,
                       "feature_unlocks": [
                         "<b>Policy</b>: Capacity Boosters"
                       ],
@@ -1190,8 +1187,8 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
-                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   Has Fanatic Egalitarian Ethic",
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic",
+                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   is_fanatic_egalitarian=yes",
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:red'>0.5</b>) Any owned Species:<br/>    •   Is NOT Organic"
                       ],
@@ -1215,7 +1212,7 @@
                   "description": "Regimens of periodic cell revitalization treatments keep the leader class spry and active beyond traditionally expected lifespans.",
                   "area": "society",
                   "base_factor": 0.5,
-                  "base_weight": 12.5,
+                  "base_weight": 7.5,
                   "category": "Biology",
                   "cost": 50000,
                   "feature_unlocks": [
@@ -1254,9 +1251,10 @@
               "base_factor": 0.5,
               "base_weight": 37.5,
               "category": "Biology",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
-                "<b>Feature : </b>Chemical Bliss"
+                "<b>Feature : </b>Chemical Bliss",
+                "Army Morale +10%"
               ],
               "is_dangerous": false,
               "is_rare": true,
@@ -1272,7 +1270,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b>) All must be false<br/>    •   Has Egalitarian Ethic<br/>    •   Has Fanatic Egalitarian Ethic",
+                "(×<b style='color:lime'>1.25</b>) All must be false<br/>    •   Has Egalitarian Ethic<br/>    •   is_fanatic_egalitarian=yes",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
               ],
               "potential": [
@@ -1287,7 +1285,7 @@
                   "base_factor": 0.5,
                   "base_weight": 20.0,
                   "category": "Statecraft",
-                  "cost": 20000,
+                  "cost": 10000,
                   "feature_unlocks": [
                     "<b>Edict</b>: Tracking Implants"
                   ],
@@ -1311,7 +1309,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Has the Curator Insight modifier<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Statecraft 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes"
                   ],
                   "potential": [],
                   "children": [],
@@ -1331,7 +1329,7 @@
               "base_factor": 2.0,
               "base_weight": 130.0,
               "category": "Biology",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "<b>Feature : </b>Genetic Modification",
                 "<b>Feature : </b>Self-Modification",
@@ -1352,7 +1350,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
-                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   Has Fanatic Xenophile Ethic",
+                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   is_fanatic_xenophile=yes",
                 "(×<b style='color:lime'>1.25</b>) Has trait Necrophage",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                 "(×<b style='color:red'>0.0</b>) No owned Species:<br/>    •   Is Organic"
@@ -1370,7 +1368,7 @@
                   "base_factor": 1.5,
                   "base_weight": 75.0,
                   "category": "Biology",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Building</b>: House of Apotheosis",
                     "<b>Feature : </b>Habitability Modification"
@@ -1414,7 +1412,7 @@
                   "base_factor": 1.0,
                   "base_weight": 50.0,
                   "category": "Biology",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": true,
@@ -1453,7 +1451,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Biology",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "<b>Army</b>: Gene Warrior Army"
                   ],
@@ -1503,7 +1501,7 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Biology",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "<b>Feature : </b>Uplift"
               ],
@@ -1545,7 +1543,7 @@
                   "base_factor": 0.5,
                   "base_weight": 22.5,
                   "category": "Biology",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "<b>Army</b>: Xenomorph Army"
                   ],
@@ -1594,10 +1592,9 @@
               "base_factor": 1.5,
               "base_weight": 112.5,
               "category": "Biology",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
-                "<b>Building</b>: Clone Vats",
-                "Clone Vats Planet Limit +1"
+                "<b>Building</b>: Clone Vats"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1634,7 +1631,7 @@
                   "base_factor": 0.5,
                   "base_weight": 35.0,
                   "category": "Biology",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Army</b>: Clone Army"
                   ],
@@ -1688,7 +1685,7 @@
           "base_factor": 1.0,
           "base_weight": 100.0,
           "category": "Biology",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [],
           "is_dangerous": false,
           "is_rare": false,
@@ -1716,9 +1713,9 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Biology",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
-                "Fleet Command Limit +10"
+                "Fleet Command Limit +40"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1753,7 +1750,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Biology",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Component</b>: Chitin Growth Regulators",
                     "<b>Component</b>: Incubation Matrix",
@@ -1792,7 +1789,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Biology",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Component</b>: Accelerated Juvenile Growth Gland",
                         "<b>Component</b>: Crystalline Growth Regulators",
@@ -1839,9 +1836,9 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Biology",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
-                    "Fleet Command Limit +10"
+                    "Fleet Command Limit +40"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1876,7 +1873,7 @@
                       "base_factor": 1.0,
                       "base_weight": 40.0,
                       "category": "Biology",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "Elder Offspring Stinger Build Speed +25%",
                         "Elder Stinger Build Speed +25%",
@@ -1916,7 +1913,7 @@
                       "base_factor": 3.0,
                       "base_weight": 120.0,
                       "category": "Biology",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Starbase Building</b>: Growth Chamber",
                         "<b>Starbase Building</b>: Orbital Growth Chamber"
@@ -1935,7 +1932,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   is_fanatic_militarist=yes<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                       ],
                       "potential": [
                         "Country uses biological ships"
@@ -1949,7 +1946,7 @@
                           "base_factor": 3.0,
                           "base_weight": 105.0,
                           "category": "Biology",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -1965,7 +1962,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   Has Fanatic Militarist Ethic<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
+                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   One must be true<br/>\t    •   Has Militarist Ethic<br/>\t    •   is_fanatic_militarist=yes<br/>    •   Has Hive Mind Authority<br/>    •   Has Origin Wilderness"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -1986,7 +1983,7 @@
                       "base_factor": 1.0,
                       "base_weight": 40.0,
                       "category": "Biology",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Component</b>: Heat Exhaust Spiracles",
                         "<b>Component</b>: Juvenile Growth Gland",
@@ -2025,7 +2022,7 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "Biology",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "<b>Component</b>: Accelerated Juvenile Growth Gland",
                             "<b>Component</b>: Improved Rangefinder Cluster",
@@ -2076,7 +2073,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Biology",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "Elder Harbinger Build Speed +25%",
                     "Elder Offspring Harbinger Build Speed +25%",
@@ -2120,7 +2117,7 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -2148,7 +2145,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2176,7 +2173,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2204,7 +2201,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Biology",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2234,7 +2231,7 @@
                               "base_factor": 1.0,
                               "base_weight": 30.0,
                               "category": "Biology",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -2317,7 +2314,7 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -2345,7 +2342,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2373,7 +2370,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2401,7 +2398,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Biology",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2431,7 +2428,7 @@
                               "base_factor": 1.0,
                               "base_weight": 30.0,
                               "category": "Biology",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -2514,7 +2511,7 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -2542,7 +2539,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2570,7 +2567,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2598,7 +2595,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Biology",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2628,7 +2625,7 @@
                               "base_factor": 1.0,
                               "base_weight": 30.0,
                               "category": "Biology",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -2711,7 +2708,7 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Biology",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -2739,7 +2736,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2767,7 +2764,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2795,7 +2792,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Biology",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2825,7 +2822,7 @@
                               "base_factor": 1.0,
                               "base_weight": 30.0,
                               "category": "Biology",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -2908,7 +2905,7 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Biology",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "Elder Offspring Weaver Build Speed +25%",
                 "Elder Weaver Build Speed +25%",
@@ -2948,12 +2945,12 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Biology",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "<b>Component</b>: Basic Symbiotic Amplifier",
                 "<b>Component</b>: Developmental Pheromones",
                 "<b>Component</b>: Juvenile Growth Gland",
-                "Fleet Command Limit +5"
+                "Fleet Command Limit +20"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -2988,7 +2985,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Biology",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Component</b>: Accelerated Juvenile Growth Gland",
                     "<b>Component</b>: Exotic Developmental Pheromones",
@@ -3039,7 +3036,7 @@
           "base_factor": 1.0,
           "base_weight": 90.0,
           "category": "Biology",
-          "cost": 3000,
+          "cost": 1500,
           "feature_unlocks": [
             "<b>Building</b>: Xenobiological Lab"
           ],
@@ -3070,7 +3067,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Biology",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Building</b>: Neurogenetics Institute"
               ],
@@ -3108,7 +3105,7 @@
                   "base_factor": 1.0,
                   "base_weight": 50.0,
                   "category": "Biology",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Building</b>: Life Systems Complex"
                   ],
@@ -3161,7 +3158,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Molecular-Revitalization Institute"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -3189,7 +3186,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Bioregeneration Institute"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -3202,70 +3199,9 @@
                   "key": "tech_fe_clinic_1"
                 }
               ],
-              "weight_modifiers": [],
-              "potential": [],
-              "children": [],
-              "is_event": false,
-              "source": "vanilla"
-            }
-          ],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
-          "key": "tech_fe_nourishment_1",
-          "name": "Nourishment Complex",
-          "description": "Replication technology swiftly conjures up novel flavors on command.",
-          "area": "society",
-          "base_factor": 1.0,
-          "base_weight": 20.0,
-          "category": "Biology",
-          "cost": 70000,
-          "feature_unlocks": [
-            "<b>Building</b>: Nourishment Complex"
-          ],
-          "is_dangerous": false,
-          "is_rare": true,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 5,
-          "prerequisites_names": [],
-          "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
-            "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
-            "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000",
-            "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
-          ],
-          "potential": [],
-          "children": [
-            {
-              "key": "tech_fe_nourishment_2",
-              "name": "Nourishment Center",
-              "description": "Every conceivable flavor can be replicated within these walls.",
-              "area": "society",
-              "base_factor": 1.0,
-              "base_weight": 20.0,
-              "category": "Biology",
-              "cost": 70000,
-              "feature_unlocks": [
-                "<b>Building</b>: Nourishment Center"
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
               ],
-              "is_dangerous": false,
-              "is_rare": true,
-              "is_start_tech": false,
-              "prerequisites": [
-                "tech_fe_nourishment_1"
-              ],
-              "tier": 5,
-              "prerequisites_names": [
-                {
-                  "name": "Nourishment Complex",
-                  "key": "tech_fe_nourishment_1"
-                }
-              ],
-              "weight_modifiers": [],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -3305,10 +3241,10 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "Military Theory",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "Defense Army Damage +33%",
-                "Naval Capacity from Soldier Jobs: +2"
+                "Naval Capacity per 100 Soldier Jobs: +1"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3324,7 +3260,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
               ],
               "potential": [],
               "children": [
@@ -3336,7 +3272,7 @@
                   "base_factor": 2.0,
                   "base_weight": 170.0,
                   "category": "Military Theory",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Bone Fortress",
                     "<b>Building</b>: Fortress",
@@ -3356,7 +3292,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
                     "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
                   ],
                   "potential": [],
@@ -3380,7 +3316,7 @@
           "base_factor": 3.0,
           "base_weight": 300.0,
           "category": "Military Theory",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [
             "<b>Edict</b>: Fleet Supremacy",
             "Fleet Command Limit +20"
@@ -3392,7 +3328,7 @@
           "tier": 1,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
           ],
           "potential": [],
           "children": [
@@ -3404,9 +3340,9 @@
               "base_factor": 3.0,
               "base_weight": 210.0,
               "category": "Military Theory",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
-                "Fleet Command Limit +20"
+                "Fleet Command Limit +40"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3422,7 +3358,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
               ],
               "potential": [],
               "children": [
@@ -3434,9 +3370,9 @@
                   "base_factor": 3.0,
                   "base_weight": 180.0,
                   "category": "Military Theory",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
-                    "Fleet Command Limit +20"
+                    "Fleet Command Limit +60"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3452,7 +3388,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                   ],
                   "potential": [],
                   "children": [
@@ -3464,9 +3400,9 @@
                       "base_factor": 3.0,
                       "base_weight": 135.0,
                       "category": "Military Theory",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
-                        "Fleet Command Limit +20"
+                        "Fleet Command Limit +80"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3482,7 +3418,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                       ],
                       "potential": [],
                       "children": [
@@ -3494,9 +3430,9 @@
                           "base_factor": 3.0,
                           "base_weight": 60.0,
                           "category": "Military Theory",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
-                            "Fleet Command Limit +20"
+                            "Fleet Command Limit +100"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -3512,7 +3448,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                           ],
                           "potential": [],
                           "children": [
@@ -3522,11 +3458,11 @@
                               "description": "Improving the support staff available to our commanders will increase the number of ships they can lead in a single fleet.",
                               "area": "society",
                               "base_factor": 0.5,
-                              "base_weight": 12.5,
+                              "base_weight": 7.5,
                               "category": "Military Theory",
                               "cost": 50000,
                               "feature_unlocks": [
-                                "Fleet Command Limit +10"
+                                "Fleet Command Limit +20"
                               ],
                               "is_dangerous": false,
                               "is_rare": false,
@@ -3575,7 +3511,7 @@
           "base_factor": 3.0,
           "base_weight": 285.0,
           "category": "Military Theory",
-          "cost": 2500,
+          "cost": 1250,
           "feature_unlocks": [
             "Naval Capacity +25"
           ],
@@ -3586,7 +3522,7 @@
           "tier": 1,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
           ],
           "potential": [],
           "children": [
@@ -3598,9 +3534,9 @@
               "base_factor": 10.0,
               "base_weight": 750.0,
               "category": "Military Theory",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
-                "Naval Capacity +25"
+                "Naval Capacity +50"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3616,7 +3552,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
               ],
               "potential": [],
               "children": [
@@ -3628,9 +3564,9 @@
                   "base_factor": 3.0,
                   "base_weight": 195.0,
                   "category": "Military Theory",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
-                    "Naval Capacity +25"
+                    "Naval Capacity +75"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3646,7 +3582,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                   ],
                   "potential": [],
                   "children": [
@@ -3658,9 +3594,9 @@
                       "base_factor": 3.0,
                       "base_weight": 105.0,
                       "category": "Military Theory",
-                      "cost": 24000,
+                      "cost": 12000,
                       "feature_unlocks": [
-                        "Naval Capacity +25"
+                        "Naval Capacity +100"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3676,7 +3612,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                       ],
                       "potential": [],
                       "children": [
@@ -3686,7 +3622,7 @@
                           "description": "Improved fleet management procedures will free up the resources needed to maintain a bigger fleet.",
                           "area": "society",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Military Theory",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -3735,7 +3671,7 @@
           "base_factor": 1.5,
           "base_weight": 112.5,
           "category": "Military Theory",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
             "<b>Army</b>: Advanced War Android Army",
             "<b>Army</b>: Battle Frame Army"
@@ -3759,7 +3695,7 @@
               "base_factor": 1.0,
               "base_weight": 40.0,
               "category": "Biology",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "<b>Army</b>: Mega War Android",
                 "<b>Army</b>: Mega-Warform"
@@ -3801,7 +3737,7 @@
           "base_factor": 3.0,
           "base_weight": 225.0,
           "category": "Military Theory",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
             "<b>Starbase Building</b>: Fleet Academy",
             "<b>Starbase Building</b>: Naval Logistics Office"
@@ -3813,7 +3749,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
           ],
           "potential": [],
           "children": [
@@ -3825,7 +3761,7 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Military Theory",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "Ship Build Speed +10%",
                 "Ship Upkeep -5%"
@@ -3844,7 +3780,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
               ],
               "potential": [],
               "children": [
@@ -3856,7 +3792,7 @@
                   "base_factor": 3.0,
                   "base_weight": 150.0,
                   "category": "Military Theory",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Component</b>: Command Center",
                     "<b>Starbase Building</b>: Command Center",
@@ -3876,7 +3812,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
                   ],
                   "potential": [],
                   "children": [],
@@ -3899,7 +3835,7 @@
           "base_factor": 1.0,
           "base_weight": 60.0,
           "category": "Military Theory",
-          "cost": 10000,
+          "cost": 5000,
           "feature_unlocks": [
             "<b>Building</b>: Military Academy",
             "Max Occupation Garrisons +2"
@@ -3911,7 +3847,7 @@
           "tier": 3,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
           ],
           "potential": [],
           "children": [
@@ -3923,7 +3859,7 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Military Theory",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "Assault Army Damage +15%",
                 "Assault Army Morale +15%"
@@ -3942,7 +3878,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
               ],
               "potential": [],
               "children": [
@@ -3952,7 +3888,7 @@
                   "description": "Iterating on the standard conditioning regimen for ground troops has proven to make them more effective in direct combat.",
                   "area": "society",
                   "base_factor": 0.5,
-                  "base_weight": 12.5,
+                  "base_weight": 7.5,
                   "category": "Military Theory",
                   "cost": 50000,
                   "feature_unlocks": [
@@ -3983,7 +3919,7 @@
                   "description": "Careful tuning of pain receptors allow soldiers to fight through what would previously have been debilitating injuries.",
                   "area": "society",
                   "base_factor": 0.5,
-                  "base_weight": 12.5,
+                  "base_weight": 7.5,
                   "category": "Military Theory",
                   "cost": 50000,
                   "feature_unlocks": [
@@ -4028,7 +3964,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Aspis Bastion"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -4055,7 +3991,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Aegis Complex"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -4068,7 +4004,9 @@
                   "key": "tech_fe_fortress_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -4110,7 +4048,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "New Worlds",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "Habitability +5%"
               ],
@@ -4138,7 +4076,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "New Worlds",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "Habitability +5%"
                   ],
@@ -4166,7 +4104,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "New Worlds",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "Habitability +5%"
                       ],
@@ -4194,7 +4132,7 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "New Worlds",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "Habitability +5%"
                           ],
@@ -4229,7 +4167,7 @@
                       "base_factor": 0.5,
                       "base_weight": 32.5,
                       "category": "New Worlds",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "Tomb World Habitability +20%"
                       ],
@@ -4250,7 +4188,9 @@
                         "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: New Worlds 1<br/>    •   Any Leader in council has trait Curator 1",
                         "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Tomb World"
                       ],
-                      "potential": [],
+                      "potential": [
+                        "Does NOT have Origin Wilderness"
+                      ],
                       "children": [],
                       "is_event": false,
                       "source": "vanilla"
@@ -4271,7 +4211,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4305,7 +4245,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4339,7 +4279,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4373,7 +4313,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4407,7 +4347,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4441,7 +4381,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "New Worlds",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4475,7 +4415,7 @@
               "base_factor": 2.0,
               "base_weight": 150.0,
               "category": "New Worlds",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4493,11 +4433,48 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
                 "(×<b style='color:lime'>4.0</b>) Has Mastery of Nature Ascension Perk",
-                "(×<b style='color:red'>0.0</b>) No Owned Planet<br/>    •   Has deposit £blocker£ Active Volcano",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   Has deposit £blocker£ Active Volcano<br/>    •   Any System within borders<br/>\t    •   Any Planet<br/>\t\t    •   Is Volcanic World",
                 "(×<b style='color:red'>0.0</b>) Number of owned planets is lower than 2"
               ],
               "potential": [],
-              "children": [],
+              "children": [
+                {
+                  "key": "tech_volcanic_terraforming",
+                  "name": "Volcanic Terraforming",
+                  "description": "Advances in material technology and deep-shaft mining techniques allow geo-engineering at previously unthinkable depths and temperatures. We can terraform a Volcanic World into a temperate planet.",
+                  "area": "society",
+                  "base_factor": 1.0,
+                  "base_weight": 70.0,
+                  "category": "New Worlds",
+                  "cost": 2500,
+                  "feature_unlocks": [],
+                  "is_dangerous": false,
+                  "is_rare": true,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_volcano",
+                    "tech_terrestrial_sculpting"
+                  ],
+                  "tier": 2,
+                  "prerequisites_names": [
+                    {
+                      "name": "Terrestrial Sculpting",
+                      "key": "tech_terrestrial_sculpting"
+                    },
+                    {
+                      "name": "Deep Crust Engineering",
+                      "key": "tech_volcano"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:lime'>3.0</b>) Any System within borders<br/>    •   Any Planet<br/>\t    •   Is Volcanic World"
+                  ],
+                  "potential": [],
+                  "children": [],
+                  "is_event": false,
+                  "source": "vanilla"
+                }
+              ],
               "is_event": false,
               "source": "vanilla"
             },
@@ -4509,7 +4486,7 @@
               "base_factor": 1.5,
               "base_weight": 105.0,
               "category": "New Worlds",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Edict</b>: Terraforming Gases",
                 "<b>Feature : </b>Terraforming"
@@ -4545,7 +4522,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "New Worlds",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Feature : </b>Ecological Adaptation"
                   ],
@@ -4578,7 +4555,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "New Worlds",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -4613,7 +4590,7 @@
               "base_factor": 2.0,
               "base_weight": 150.0,
               "category": "New Worlds",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4647,7 +4624,7 @@
               "base_factor": 2.0,
               "base_weight": 150.0,
               "category": "New Worlds",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [],
               "is_dangerous": false,
               "is_rare": false,
@@ -4685,7 +4662,7 @@
           "base_factor": 1.0,
           "base_weight": 75.0,
           "category": "New Worlds",
-          "cost": 5000,
+          "cost": 2500,
           "feature_unlocks": [
             "Starbase Capacity +2"
           ],
@@ -4711,7 +4688,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Military Theory",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "Claim Influence Cost -10%",
                 "War Exhaustion Gain -10%"
@@ -4746,7 +4723,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Military Theory",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "Claim Influence Cost -10%",
                     "War Exhaustion Gain -10%"
@@ -4772,49 +4749,7 @@
                     "(×<b style='color:red'>0.0</b>) Number of communications is lower than 1"
                   ],
                   "potential": [],
-                  "children": [
-                    {
-                      "key": "tech_existential_campaigns",
-                      "name": "Existential Campaigns",
-                      "description": "When survival itself is at stake, the very concept of war loses its meaning. These campaigns are waged not for dominion, but to secure the continued existence of our civilization.",
-                      "area": "society",
-                      "base_factor": 1.0,
-                      "base_weight": 20.0,
-                      "category": "Military Theory",
-                      "cost": 48000,
-                      "feature_unlocks": [
-                        "Unlocks Casus Belli: Existential Expulsion"
-                      ],
-                      "is_dangerous": true,
-                      "is_rare": true,
-                      "is_start_tech": false,
-                      "prerequisites": [
-                        "tech_galactic_campaigns"
-                      ],
-                      "tier": 5,
-                      "prerequisites_names": [
-                        {
-                          "name": "Galactic Campaigns",
-                          "key": "tech_galactic_campaigns"
-                        }
-                      ],
-                      "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Government Civic: Fanatic Purifiers<br/>    •   Has Government Civic: Devouring Swarm<br/>    •   Has Government Civic: Determined Exterminator",
-                        "(×<b style='color:lime'>2.0</b>) Has Fanatic Militarist Ethic",
-                        "(×<b style='color:lime'>1.5</b>) Has Militarist Ethic",
-                        "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 2",
-                        "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 3",
-                        "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 4",
-                        "(×<b style='color:red'>0.0</b>) Number of communications is lower than 1",
-                        "(×<b style='color:red'>0.5</b>) Has Pacifist Ethic",
-                        "(×<b style='color:red'>0.0</b>) Has Fanatic Pacifist Ethic"
-                      ],
-                      "potential": [],
-                      "children": [],
-                      "is_event": false,
-                      "source": "vanilla"
-                    }
-                  ],
+                  "children": [],
                   "is_event": false,
                   "source": "vanilla"
                 }
@@ -4830,7 +4765,7 @@
               "base_factor": 1.0,
               "base_weight": 40.0,
               "category": "New Worlds",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "Starbase Capacity +2"
               ],
@@ -4864,7 +4799,7 @@
               "description": "The immense logistical support networks needed to maintain an upgraded Starbase can be further improved, allowing us to support more of these stations.",
               "area": "society",
               "base_factor": 0.5,
-              "base_weight": 12.5,
+              "base_weight": 7.5,
               "category": "New Worlds",
               "cost": 50000,
               "feature_unlocks": [
@@ -4903,7 +4838,6 @@
           "category": "Statecraft",
           "cost": 0,
           "feature_unlocks": [
-            "<b>Building</b>: Sensorium Site",
             "<b>Building</b>: Synaptic Nodes"
           ],
           "is_dangerous": false,
@@ -4926,9 +4860,8 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Statecraft",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
-                "<b>Building</b>: Sensorium Center",
                 "<b>Building</b>: Synaptic Clusters",
                 "<b>Edict</b>: Synaptic Reinforcement",
                 "<b>Starbase Building</b>: Synaptic Relays"
@@ -4959,10 +4892,9 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Statecraft",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
-                    "<b>Building</b>: Confluence of Thought",
-                    "<b>Building</b>: Sensorium Complex"
+                    "<b>Building</b>: Confluence of Thought"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -5030,7 +4962,7 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Statecraft",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "<b>Building</b>: Avatar Forest",
                 "<b>Building</b>: Commensal Valley"
@@ -5059,7 +4991,7 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Statecraft",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
                     "<b>Building</b>: Avatar Cortex",
                     "<b>Building</b>: Commensal Biome"
@@ -5127,7 +5059,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Statecraft",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Building</b>: Hyper-Entertainment Forums"
               ],
@@ -5191,7 +5123,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Statecraft",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Starbase Building</b>: Offworld Trading Company"
               ],
@@ -5212,7 +5144,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition"
               ],
               "potential": [
-                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -5223,7 +5155,7 @@
                   "base_factor": 2.0,
                   "base_weight": 130.0,
                   "category": "Statecraft",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Building</b>: Commerce Megaplexes",
                     "<b>Starbase Building</b>: Hyperlane Registrar",
@@ -5265,247 +5197,6 @@
           "source": "vanilla"
         },
         {
-          "key": "tech_cultural_heritage",
-          "name": "Sociocultural History",
-          "description": "An understanding of a shared past is necessary in order to make any significant strides into the future.",
-          "area": "society",
-          "base_factor": 1.0,
-          "base_weight": 0.0,
-          "category": "Statecraft",
-          "cost": 0,
-          "feature_unlocks": [
-            "<b>Building</b>: Autochthon Monument",
-            "<b>Building</b>: Corporate Culture Site",
-            "<b>Building</b>: Sacrificial Temple",
-            "<b>Building</b>: Sanctuary of Repose",
-            "<b>Building</b>: Simulation Site",
-            "<b>Building</b>: Temple",
-            "<b>Edict</b>: Sacrifice: Bounty",
-            "<b>Edict</b>: Sacrifice: Harmony",
-            "<b>Edict</b>: Sacrifice: Togetherness",
-            "<b>Edict</b>: Sacrifices"
-          ],
-          "is_dangerous": false,
-          "is_rare": false,
-          "is_start_tech": true,
-          "prerequisites": [],
-          "tier": 0,
-          "prerequisites_names": [],
-          "weight_modifiers": [],
-          "potential": [
-            "One must be true\n    •   Does NOT have Hive Mind Authority\n    •   One must be true\n\t    •   Has Government Civic: Memorialists\n\t    •   Has Government Civic: Memorialist\n\t    •   Has Government Civic: Memorialist"
-          ],
-          "children": [
-            {
-              "key": "tech_heritage_site",
-              "name": "Heritage Sites",
-              "description": "Physical reminders of how far we have come both instill a reverence for past achievements and bolster ambitions for the future.",
-              "area": "society",
-              "base_factor": 1.0,
-              "base_weight": 90.0,
-              "category": "Statecraft",
-              "cost": 3000,
-              "feature_unlocks": [
-                "<b>Building</b>: Advanced Sanctuary",
-                "<b>Building</b>: Business Management Nexus",
-                "<b>Building</b>: Heritage Site",
-                "<b>Building</b>: Hunting Expanse",
-                "<b>Building</b>: Pillar of Quietus",
-                "<b>Building</b>: Primal Stadium",
-                "<b>Building</b>: Simulation Center",
-                "<b>Building</b>: Symbiosis Expanse",
-                "<b>Building</b>: Wildlife Expanse"
-              ],
-              "is_dangerous": false,
-              "is_rare": false,
-              "is_start_tech": false,
-              "prerequisites": [
-                "tech_cultural_heritage"
-              ],
-              "tier": 1,
-              "prerequisites_names": [
-                {
-                  "name": "Sociocultural History",
-                  "key": "tech_cultural_heritage"
-                }
-              ],
-              "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
-              ],
-              "potential": [],
-              "children": [
-                {
-                  "key": "tech_hypercomms_forum",
-                  "name": "Local Hypercommunication",
-                  "description": "Not all research into faster-than-light communication channels produces useful results, but some outcomes may find new purpose in bringing our people together.",
-                  "area": "society",
-                  "base_factor": 1.0,
-                  "base_weight": 65.0,
-                  "category": "Statecraft",
-                  "cost": 8000,
-                  "feature_unlocks": [
-                    "<b>Building</b>: Galactic Memorial",
-                    "<b>Building</b>: Hunting Nexus",
-                    "<b>Building</b>: Hypercomms Forum",
-                    "<b>Building</b>: Primal Colosseum",
-                    "<b>Building</b>: Sanctuary Nexus",
-                    "<b>Building</b>: Simulation Complex",
-                    "<b>Building</b>: Symbiosis Nexus",
-                    "<b>Building</b>: Synergy Forum",
-                    "<b>Building</b>: Wildlife Nexus"
-                  ],
-                  "is_dangerous": false,
-                  "is_rare": false,
-                  "is_start_tech": false,
-                  "prerequisites": [
-                    "tech_heritage_site",
-                    "tech_colonial_centralization"
-                  ],
-                  "tier": 3,
-                  "prerequisites_names": [
-                    {
-                      "name": "Heritage Sites",
-                      "key": "tech_heritage_site"
-                    },
-                    {
-                      "name": "Colonial Centralization",
-                      "key": "tech_colonial_centralization"
-                    }
-                  ],
-                  "weight_modifiers": [],
-                  "potential": [],
-                  "children": [],
-                  "is_event": false,
-                  "source": "vanilla"
-                }
-              ],
-              "is_event": false,
-              "source": "vanilla"
-            },
-            {
-              "key": "tech_holographic_rituals",
-              "name": "Holographic Rituals",
-              "description": "Seeing is believing, and belief begets reality.",
-              "area": "society",
-              "base_factor": 1.0,
-              "base_weight": 75.0,
-              "category": "Statecraft",
-              "cost": 5000,
-              "feature_unlocks": [
-                "<b>Building</b>: Grim Holotemple",
-                "<b>Building</b>: Holotemple"
-              ],
-              "is_dangerous": false,
-              "is_rare": false,
-              "is_start_tech": false,
-              "prerequisites": [
-                "tech_cultural_heritage"
-              ],
-              "tier": 2,
-              "prerequisites_names": [
-                {
-                  "name": "Sociocultural History",
-                  "key": "tech_cultural_heritage"
-                }
-              ],
-              "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
-              ],
-              "potential": [
-                "One must be true\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
-              ],
-              "children": [
-                {
-                  "key": "tech_consecration_fields",
-                  "name": "Consecration Fields",
-                  "description": "Through our understanding of physics and field manipulation, our holy places shall we seen and felt by all.",
-                  "area": "society",
-                  "base_factor": 1.0,
-                  "base_weight": 60.0,
-                  "category": "Statecraft",
-                  "cost": 10000,
-                  "feature_unlocks": [
-                    "<b>Building</b>: Sacred Nexus",
-                    "<b>Building</b>: Temple of Grand Sacrifice"
-                  ],
-                  "is_dangerous": false,
-                  "is_rare": false,
-                  "is_start_tech": false,
-                  "prerequisites": [
-                    "tech_holographic_rituals",
-                    "tech_colonial_centralization"
-                  ],
-                  "tier": 3,
-                  "prerequisites_names": [
-                    {
-                      "name": "Holographic Rituals",
-                      "key": "tech_holographic_rituals"
-                    },
-                    {
-                      "name": "Colonial Centralization",
-                      "key": "tech_colonial_centralization"
-                    }
-                  ],
-                  "weight_modifiers": [],
-                  "potential": [
-                    "One must be true\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
-                  ],
-                  "children": [
-                    {
-                      "key": "tech_transcendent_faith",
-                      "name": "Metacognitive Faith",
-                      "description": "Leaving our planetary cradle has opened us up to a new understanding of faith, and its place in a wider context.",
-                      "area": "society",
-                      "base_factor": 1.0,
-                      "base_weight": 40.0,
-                      "category": "Statecraft",
-                      "cost": 20000,
-                      "feature_unlocks": [
-                        "<b>Building</b>: Citadel of Faith"
-                      ],
-                      "is_dangerous": false,
-                      "is_rare": false,
-                      "is_start_tech": false,
-                      "prerequisites": [
-                        "tech_consecration_fields",
-                        "tech_galactic_administration"
-                      ],
-                      "tier": 4,
-                      "prerequisites_names": [
-                        {
-                          "name": "Consecration Fields",
-                          "key": "tech_consecration_fields"
-                        },
-                        {
-                          "name": "Galactic Administration",
-                          "key": "tech_galactic_administration"
-                        }
-                      ],
-                      "weight_modifiers": [],
-                      "potential": [
-                        "One must be true\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
-                      ],
-                      "children": [],
-                      "is_event": false,
-                      "is_gestalt": false,
-                      "source": "vanilla"
-                    }
-                  ],
-                  "is_event": false,
-                  "is_gestalt": false,
-                  "source": "vanilla"
-                }
-              ],
-              "is_event": false,
-              "is_gestalt": false,
-              "source": "vanilla"
-            }
-          ],
-          "is_event": false,
-          "is_hive_empire": false,
-          "source": "vanilla"
-        },
-        {
           "key": "tech_planetary_government",
           "name": "Planetary Government",
           "description": "Once a colony has been firmly established and pioneers turn into citizens, the need for a strong local government providing stability trumps the colonial need for flexibility.",
@@ -5513,7 +5204,7 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "Statecraft",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Building</b>: Administrative Array",
             "<b>Building</b>: Administrative Offices",
@@ -5521,9 +5212,15 @@
             "<b>Building</b>: Planetary Administration",
             "<b>Building</b>: Planetary Root Bundle",
             "<b>Building</b>: Precinct Houses",
+            "<b>Building</b>: Sacrificial Temple",
             "<b>Building</b>: Sentinel Posts",
             "<b>Building</b>: State Academy",
-            "<b>Building</b>: Uplink Node"
+            "<b>Building</b>: Temple",
+            "<b>Building</b>: Uplink Node",
+            "<b>Edict</b>: Sacrifice: Bounty",
+            "<b>Edict</b>: Sacrifice: Harmony",
+            "<b>Edict</b>: Sacrifice: Togetherness",
+            "<b>Edict</b>: Sacrifices"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -5542,11 +5239,11 @@
               "base_factor": 4.0,
               "base_weight": 400.0,
               "category": "Statecraft",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Feature : </b>Additional Edicts (Campaigns)",
                 "Grants a small amount of £unity£ Unity",
-                "Monthly Unity +5%"
+                "Monthly Unity +2%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -5562,7 +5259,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.75</b>) All must be false<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic"
+                "(×<b style='color:red'>0.75</b>) NOT One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes"
               ],
               "potential": [],
               "children": [
@@ -5574,7 +5271,7 @@
                   "base_factor": 4.0,
                   "base_weight": 300.0,
                   "category": "New Worlds",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Building</b>: Center of Guidance",
                     "<b>Building</b>: Hall of Judgment",
@@ -5610,7 +5307,7 @@
                       "base_factor": 4.0,
                       "base_weight": 280.0,
                       "category": "New Worlds",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "Colony Development Speed +25%",
                         "Habitat Max Districts +1",
@@ -5646,7 +5343,7 @@
                           "base_factor": 4.0,
                           "base_weight": 140.0,
                           "category": "New Worlds",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "Colony Development Speed +25%",
                             "Habitat Max Districts +1",
@@ -5694,7 +5391,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Statecraft",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "Available Envoys +1",
                         "Monthly Influence +1"
@@ -5730,7 +5427,7 @@
                           "base_factor": 1.0,
                           "base_weight": 50.0,
                           "category": "Statecraft",
-                          "cost": 12000,
+                          "cost": 6000,
                           "feature_unlocks": [
                             "Available Envoys +1",
                             "mod_country_external_leader_pool_add +1",
@@ -5778,7 +5475,7 @@
                       "base_factor": 2.0,
                       "base_weight": 170.0,
                       "category": "Statecraft",
-                      "cost": 2500,
+                      "cost": 1250,
                       "feature_unlocks": [
                         "Unlocks Diplomacy: Form Federation"
                       ],
@@ -5800,10 +5497,11 @@
                         "(×<b style='color:lime'>2.0</b>) Has Fanatic Xenophile Ethic",
                         "(×<b style='color:lime'>1.25</b>) Has Xenophile Ethic",
                         "(×<b style='color:red'>0.5</b>) Has Xenophobe Ethic",
-                        "(×<b style='color:red'>0.25</b>) Has Fanatic Xenophobe Ethic",
-                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Government Civic: Inward Perfection"
+                        "(×<b style='color:red'>0.25</b>) Has Fanatic Xenophobe Ethic"
                       ],
-                      "potential": [],
+                      "potential": [
+                        "One must be true\n    •   days_passed=0\n    •   Any Country Relation\n\t    •   can_form_federation_with_empire=yes\n    •   Has Diplomacy Traditions Tradition"
+                      ],
                       "children": [
                         {
                           "key": "tech_xeno_diplomacy",
@@ -5813,7 +5511,7 @@
                           "base_factor": 2.0,
                           "base_weight": 170.0,
                           "category": "Statecraft",
-                          "cost": 5000,
+                          "cost": 2500,
                           "feature_unlocks": [
                             "<b>Building</b>: Corporate Embassy",
                             "<b>Building</b>: Disinformation Center",
@@ -5840,7 +5538,7 @@
                             "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                           ],
                           "potential": [
-                            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [
                             {
@@ -5851,7 +5549,7 @@
                               "base_factor": 2.0,
                               "base_weight": 130.0,
                               "category": "Statecraft",
-                              "cost": 10000,
+                              "cost": 5000,
                               "feature_unlocks": [
                                 "<b>Building</b>: Grand Embassy Complex",
                                 "<b>Starbase Building</b>: Orbital Embassy Complex",
@@ -5882,7 +5580,7 @@
                                 "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                               ],
                               "potential": [
-                                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+                                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
                               ],
                               "children": [],
                               "is_event": false,
@@ -5906,10 +5604,10 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Statecraft",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Starbase Building</b>: Deep Space Black Site",
-                        "Faction Resource Output +10%"
+                        "Faction Resource Output +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -5929,7 +5627,7 @@
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 5",
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 6",
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 7",
-                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic"
+                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes"
                       ],
                       "potential": [
                         "Does NOT have Gestalt Consciousness Ethic"
@@ -5947,7 +5645,7 @@
                       "base_factor": 2.0,
                       "base_weight": 140.0,
                       "category": "Statecraft",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -5981,7 +5679,7 @@
                           "base_factor": 1.0,
                           "base_weight": 50.0,
                           "category": "Statecraft",
-                          "cost": 12000,
+                          "cost": 6000,
                           "feature_unlocks": [
                             "Restored Node Additional Skill +2",
                             "mod_country_councilor_exp_gain +25%"
@@ -6017,7 +5715,7 @@
                               "base_factor": 1.0,
                               "base_weight": 35.0,
                               "category": "Statecraft",
-                              "cost": 24000,
+                              "cost": 12000,
                               "feature_unlocks": [
                                 "Effective Councilor Skill +1",
                                 "Restored Node Additional Skill +2"
@@ -6067,7 +5765,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Statecraft",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -6101,7 +5799,7 @@
                           "base_factor": 1.0,
                           "base_weight": 50.0,
                           "category": "Statecraft",
-                          "cost": 12000,
+                          "cost": 6000,
                           "feature_unlocks": [
                             "Restored Node Additional Skill +2",
                             "mod_country_councilor_exp_gain +25%"
@@ -6137,7 +5835,7 @@
                               "base_factor": 1.0,
                               "base_weight": 35.0,
                               "category": "Statecraft",
-                              "cost": 24000,
+                              "cost": 12000,
                               "feature_unlocks": [
                                 "Effective Councilor Skill +1",
                                 "Restored Node Additional Skill +2"
@@ -6187,7 +5885,7 @@
                       "base_factor": 1.5,
                       "base_weight": 97.5,
                       "category": "Statecraft",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Ministry of Production",
                         "<b>Building</b>: Resource Processing Center",
@@ -6230,10 +5928,11 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Statecraft",
-                      "cost": 8000,
+                      "cost": 5000,
                       "feature_unlocks": [
                         "<b>Building</b>: Alpha Hub",
                         "<b>Building</b>: Auto-Curating Vault",
+                        "<b>Building</b>: Creativity Exhibition Vault",
                         "<b>Building</b>: Vault of Acquisitions"
                       ],
                       "is_dangerous": false,
@@ -6256,7 +5955,7 @@
                       ],
                       "weight_modifiers": [],
                       "potential": [
-                        "All must be false\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic\n    •   Has Government Civic: Rogue Servitor\n    •   Has Origin Wilderness"
+                        "All must be false\n    •   One must be true\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   Has Origin Wilderness"
                       ],
                       "children": [],
                       "is_event": false,
@@ -6270,7 +5969,7 @@
                       "base_factor": 4.0,
                       "base_weight": 200.0,
                       "category": "Statecraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Root Nexus",
                         "<b>Building</b>: Primary Nexus",
@@ -6304,7 +6003,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Statecraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "mod_country_external_leader_pool_add +1",
                         "£commander£ Commander Capacity +1",
@@ -6329,7 +6028,7 @@
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 8",
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 9",
                         "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 10",
-                        "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic"
+                        "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes"
                       ],
                       "potential": [
                         "Does NOT have Gestalt Consciousness Ethic"
@@ -6347,7 +6046,7 @@
                       "base_factor": 0.5,
                       "base_weight": 22.5,
                       "category": "Statecraft",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "<b>Building</b>: Galactic Stock Exchange",
                         "<b>Starbase Building</b>: Orbital Stock Exchange"
@@ -6394,7 +6093,7 @@
                   "base_factor": 1.0,
                   "base_weight": 95.0,
                   "category": "Statecraft",
-                  "cost": 2500,
+                  "cost": 1250,
                   "feature_unlocks": [
                     "Edict Fund +20"
                   ],
@@ -6427,7 +6126,7 @@
                       "base_factor": 1.0,
                       "base_weight": 85.0,
                       "category": "Statecraft",
-                      "cost": 4000,
+                      "cost": 2000,
                       "feature_unlocks": [
                         "<b>Building</b>: Administrative Park",
                         "<b>Building</b>: Network Junction",
@@ -6463,7 +6162,7 @@
                           "base_factor": 1.0,
                           "base_weight": 90.0,
                           "category": "Computing",
-                          "cost": 2500,
+                          "cost": 1250,
                           "feature_unlocks": [
                             "Encryption +2"
                           ],
@@ -6494,7 +6193,7 @@
                               "base_factor": 1.0,
                               "base_weight": 70.0,
                               "category": "Computing",
-                              "cost": 5000,
+                              "cost": 2500,
                               "feature_unlocks": [
                                 "Encryption +2"
                               ],
@@ -6525,7 +6224,7 @@
                                   "base_factor": 1.0,
                                   "base_weight": 50.0,
                                   "category": "Computing",
-                                  "cost": 20000,
+                                  "cost": 10000,
                                   "feature_unlocks": [
                                     "Encryption +2"
                                   ],
@@ -6567,7 +6266,7 @@
                           "base_factor": 1.0,
                           "base_weight": 90.0,
                           "category": "Computing",
-                          "cost": 2500,
+                          "cost": 1250,
                           "feature_unlocks": [
                             "<b>Edict</b>: Bureau of Espionage",
                             "<b>Edict</b>: Covert Analysis Algorithm",
@@ -6601,7 +6300,7 @@
                               "base_factor": 1.0,
                               "base_weight": 70.0,
                               "category": "Computing",
-                              "cost": 5000,
+                              "cost": 2500,
                               "feature_unlocks": [
                                 "Codebreaking +2"
                               ],
@@ -6632,7 +6331,7 @@
                                   "base_factor": 1.0,
                                   "base_weight": 50.0,
                                   "category": "Computing",
-                                  "cost": 20000,
+                                  "cost": 10000,
                                   "feature_unlocks": [
                                     "Codebreaking +2"
                                   ],
@@ -6674,7 +6373,7 @@
                           "base_factor": 1.0,
                           "base_weight": 65.0,
                           "category": "Statecraft",
-                          "cost": 8000,
+                          "cost": 4000,
                           "feature_unlocks": [
                             "<b>Building</b>: Administrative Complex",
                             "<b>Building</b>: System Conflux",
@@ -6709,7 +6408,7 @@
                               "description": "Restructuring the managerial web linking core worlds to the capital can help alleviate the administrative stressors and information chokepoints that frequently arise within a budding empire.",
                               "area": "society",
                               "base_factor": 0.5,
-                              "base_weight": 12.5,
+                              "base_weight": 7.5,
                               "category": "New Worlds",
                               "cost": 50000,
                               "feature_unlocks": [
@@ -6750,7 +6449,7 @@
                       "base_factor": 1.0,
                       "base_weight": 85.0,
                       "category": "Statecraft",
-                      "cost": 4000,
+                      "cost": 2000,
                       "feature_unlocks": [
                         "<b>Starbase Building</b>: Orbital Filing System",
                         "Edict Fund +20"
@@ -6787,6 +6486,148 @@
                   "source": "vanilla"
                 },
                 {
+                  "key": "tech_cultural_heritage",
+                  "name": "Sociocultural History",
+                  "description": "An understanding of a shared past is necessary in order to make any significant strides into the future.",
+                  "area": "society",
+                  "base_factor": 2.0,
+                  "base_weight": 190.0,
+                  "category": "Statecraft",
+                  "cost": 1250,
+                  "feature_unlocks": [
+                    "<b>Building</b>: Autochthon Monument",
+                    "<b>Building</b>: Corporate Culture Site",
+                    "<b>Building</b>: Sanctuary of Repose",
+                    "<b>Building</b>: Sensorium Site",
+                    "<b>Building</b>: Simulation Site"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_planetary_unification"
+                  ],
+                  "tier": 1,
+                  "prerequisites_names": [
+                    {
+                      "name": "Planetary Unification",
+                      "key": "tech_planetary_unification"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:red'>0.5</b>) Number of owned planets is lower than 2",
+                    "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 2",
+                    "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 3",
+                    "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 4",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Memorialists<br/>    •   Has Government Civic: Memorialist<br/>    •   Has Government Civic: Memorialist"
+                  ],
+                  "potential": [
+                    "Does NOT have Origin Wilderness"
+                  ],
+                  "children": [
+                    {
+                      "key": "tech_heritage_site",
+                      "name": "Heritage Sites",
+                      "description": "Physical reminders of how far we have come both instill a reverence for past achievements and bolster ambitions for the future.",
+                      "area": "society",
+                      "base_factor": 2.0,
+                      "base_weight": 150.0,
+                      "category": "Statecraft",
+                      "cost": 2500,
+                      "feature_unlocks": [
+                        "<b>Building</b>: Advanced Sanctuary",
+                        "<b>Building</b>: Business Management Nexus",
+                        "<b>Building</b>: Heritage Site",
+                        "<b>Building</b>: Hunting Expanse",
+                        "<b>Building</b>: Pillar of Quietus",
+                        "<b>Building</b>: Primal Stadium",
+                        "<b>Building</b>: Sensorium Center",
+                        "<b>Building</b>: Simulation Center",
+                        "<b>Building</b>: Symbiosis Expanse",
+                        "<b>Building</b>: Wildlife Expanse"
+                      ],
+                      "is_dangerous": false,
+                      "is_rare": false,
+                      "is_start_tech": false,
+                      "prerequisites": [
+                        "tech_cultural_heritage"
+                      ],
+                      "tier": 2,
+                      "prerequisites_names": [
+                        {
+                          "name": "Sociocultural History",
+                          "key": "tech_cultural_heritage"
+                        }
+                      ],
+                      "weight_modifiers": [
+                        "(×<b style='color:red'>0.5</b>) Number of owned planets is lower than 2",
+                        "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 2",
+                        "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 3",
+                        "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 4",
+                        "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Memorialists<br/>    •   Has Government Civic: Memorialist<br/>    •   Has Government Civic: Memorialist"
+                      ],
+                      "potential": [],
+                      "children": [
+                        {
+                          "key": "tech_hypercomms_forum",
+                          "name": "Local Hypercommunication",
+                          "description": "Not all research into faster-than-light communication channels produces useful results, but some outcomes may find new purpose in bringing our people together.",
+                          "area": "society",
+                          "base_factor": 2.0,
+                          "base_weight": 120.0,
+                          "category": "Statecraft",
+                          "cost": 5000,
+                          "feature_unlocks": [
+                            "<b>Building</b>: Galactic Memorial",
+                            "<b>Building</b>: Hunting Nexus",
+                            "<b>Building</b>: Hypercomms Forum",
+                            "<b>Building</b>: Primal Colosseum",
+                            "<b>Building</b>: Sanctuary Nexus",
+                            "<b>Building</b>: Sensorium Complex",
+                            "<b>Building</b>: Simulation Complex",
+                            "<b>Building</b>: Symbiosis Nexus",
+                            "<b>Building</b>: Synergy Forum",
+                            "<b>Building</b>: Wildlife Nexus"
+                          ],
+                          "is_dangerous": false,
+                          "is_rare": false,
+                          "is_start_tech": false,
+                          "prerequisites": [
+                            "tech_heritage_site",
+                            "tech_colonial_centralization"
+                          ],
+                          "tier": 3,
+                          "prerequisites_names": [
+                            {
+                              "name": "Heritage Sites",
+                              "key": "tech_heritage_site"
+                            },
+                            {
+                              "name": "Colonial Centralization",
+                              "key": "tech_colonial_centralization"
+                            }
+                          ],
+                          "weight_modifiers": [
+                            "(×<b style='color:red'>0.5</b>) Number of owned planets is lower than 2",
+                            "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 2",
+                            "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 3",
+                            "(×<b style='color:lime'>1.5</b>) Number of owned planets is greater than 4",
+                            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Memorialists<br/>    •   Has Government Civic: Memorialist<br/>    •   Has Government Civic: Memorialist"
+                          ],
+                          "potential": [],
+                          "children": [],
+                          "is_event": false,
+                          "source": "vanilla"
+                        }
+                      ],
+                      "is_event": false,
+                      "source": "vanilla"
+                    }
+                  ],
+                  "is_event": false,
+                  "source": "vanilla"
+                },
+                {
                   "key": "tech_capital_productivity_1",
                   "name": "Improved Production",
                   "description": "As our planets become more developed, we can gain significant improvements to our throughput.",
@@ -6794,9 +6635,9 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Statecraft",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
-                    "Capital Buildings:\n  Job Efficiency: +10%"
+                    "Capital Buildings:\n  Job Efficiency: +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -6824,9 +6665,9 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Statecraft",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
-                        "Upgraded Capital Buildings:\n  Job Efficiency: +20%"
+                        "Upgraded Capital Buildings:\n  Job Efficiency: +10%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -6859,9 +6700,9 @@
                           "base_factor": 1.0,
                           "base_weight": 70.0,
                           "category": "Statecraft",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
-                            "Major Capital Buildings:\n  Job Efficiency: +30%"
+                            "Major Capital Buildings:\n  Job Efficiency: +15%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -6900,6 +6741,124 @@
               ],
               "is_event": false,
               "source": "vanilla"
+            },
+            {
+              "key": "tech_holographic_rituals",
+              "name": "Holographic Rituals",
+              "description": "Seeing is believing, and belief begets reality.",
+              "area": "society",
+              "base_factor": 1.0,
+              "base_weight": 75.0,
+              "category": "Statecraft",
+              "cost": 2500,
+              "feature_unlocks": [
+                "<b>Building</b>: Grim Holotemple",
+                "<b>Building</b>: Holotemple"
+              ],
+              "is_dangerous": false,
+              "is_rare": false,
+              "is_start_tech": false,
+              "prerequisites": [
+                "tech_planetary_government"
+              ],
+              "tier": 2,
+              "prerequisites_names": [
+                {
+                  "name": "Planetary Government",
+                  "key": "tech_planetary_government"
+                }
+              ],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+              ],
+              "potential": [
+                "One must be true\n    •   One must be true\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
+              ],
+              "children": [
+                {
+                  "key": "tech_consecration_fields",
+                  "name": "Consecration Fields",
+                  "description": "Through our understanding of physics and field manipulation, our holy places shall we seen and felt by all.",
+                  "area": "society",
+                  "base_factor": 1.0,
+                  "base_weight": 60.0,
+                  "category": "Statecraft",
+                  "cost": 5000,
+                  "feature_unlocks": [
+                    "<b>Building</b>: Sacred Nexus",
+                    "<b>Building</b>: Temple of Grand Sacrifice"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_holographic_rituals",
+                    "tech_colonial_centralization"
+                  ],
+                  "tier": 3,
+                  "prerequisites_names": [
+                    {
+                      "name": "Holographic Rituals",
+                      "key": "tech_holographic_rituals"
+                    },
+                    {
+                      "name": "Colonial Centralization",
+                      "key": "tech_colonial_centralization"
+                    }
+                  ],
+                  "weight_modifiers": [],
+                  "potential": [
+                    "One must be true\n    •   One must be true\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
+                  ],
+                  "children": [
+                    {
+                      "key": "tech_transcendent_faith",
+                      "name": "Metacognitive Faith",
+                      "description": "Leaving our planetary cradle has opened us up to a new understanding of faith, and its place in a wider context.",
+                      "area": "society",
+                      "base_factor": 1.0,
+                      "base_weight": 40.0,
+                      "category": "Statecraft",
+                      "cost": 10000,
+                      "feature_unlocks": [
+                        "<b>Building</b>: Citadel of Faith"
+                      ],
+                      "is_dangerous": false,
+                      "is_rare": false,
+                      "is_start_tech": false,
+                      "prerequisites": [
+                        "tech_consecration_fields",
+                        "tech_galactic_administration"
+                      ],
+                      "tier": 4,
+                      "prerequisites_names": [
+                        {
+                          "name": "Consecration Fields",
+                          "key": "tech_consecration_fields"
+                        },
+                        {
+                          "name": "Galactic Administration",
+                          "key": "tech_galactic_administration"
+                        }
+                      ],
+                      "weight_modifiers": [],
+                      "potential": [
+                        "One must be true\n    •   One must be true\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
+                      ],
+                      "children": [],
+                      "is_event": false,
+                      "is_gestalt": false,
+                      "source": "vanilla"
+                    }
+                  ],
+                  "is_event": false,
+                  "is_gestalt": false,
+                  "source": "vanilla"
+                }
+              ],
+              "is_event": false,
+              "is_gestalt": false,
+              "source": "vanilla"
             }
           ],
           "is_event": false,
@@ -6913,8 +6872,9 @@
           "base_factor": 1.0,
           "base_weight": 90.0,
           "category": "Statecraft",
-          "cost": 3000,
+          "cost": 1500,
           "feature_unlocks": [
+            "<b>Army</b>: Abominations",
             "<b>Army</b>: Slave Army",
             "<b>Building</b>: Slave Processing Facility",
             "<b>Starbase Building</b>: Orbital Slave Processing Hub"
@@ -6931,7 +6891,7 @@
             "(×<b style='color:lime'>2.0</b>) Has a number of pop greater than or equal to 3000<br/>    •   One must be true<br/>    •   Pop is enslaved<br/>    •   Is TODO"
           ],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
             "One must be true\n    •   Has policy Slavery Allowed\n    •   Has Gestalt Consciousness Ethic"
           ],
           "children": [
@@ -6943,7 +6903,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Statecraft",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Decision</b>: Create Thrall-World"
               ],
@@ -6986,7 +6946,7 @@
           "base_factor": 1.5,
           "base_weight": 105.0,
           "category": "Statecraft",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Edict</b>: Networked Amenities",
             "Amenities +5%",
@@ -7011,10 +6971,10 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Statecraft",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "<b>Starbase Building</b>: Orbital Maintenance Drops",
-                "Resources from £job£ Jobs +5%"
+                "Resources from £job£ Jobs +2%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -7046,9 +7006,9 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Statecraft",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
-                "Resources from £job£ Jobs +5%"
+                "Resources from £job£ Jobs +2%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -7085,7 +7045,7 @@
           "base_factor": 1.5,
           "base_weight": 112.5,
           "category": "Statecraft",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Edict</b>: Networked Amenities",
             "Amenities +5%",
@@ -7110,7 +7070,7 @@
               "base_factor": 0.5,
               "base_weight": 35.0,
               "category": "Statecraft",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Decision</b>: Create Penal Colony"
               ],
@@ -7129,7 +7089,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Statecraft 1<br/>    •   Any Leader in council has trait Curator 1",
-                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   Has Fanatic Authoritarian Ethic",
+                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes",
                 "(×<b style='color:red'>0.0</b>) Number of owned planets is lower than 2"
               ],
               "potential": [
@@ -7148,7 +7108,7 @@
               "base_factor": 1.5,
               "base_weight": 105.0,
               "category": "Statecraft",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Decision</b>: Create Resort World"
               ],
@@ -7184,9 +7144,9 @@
               "base_factor": 1.5,
               "base_weight": 75.0,
               "category": "Statecraft",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
-                "Resources from £job£ Jobs +5%"
+                "Resources from £job£ Jobs +2%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -7230,7 +7190,7 @@
             "<b>Building</b>: Fractal Coordination Point",
             "<b>Building</b>: Omnivident Administration"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -7260,7 +7220,7 @@
                 "<b>Building</b>: Omniscient Administration",
                 "<b>Building</b>: Quantic Coordination Point"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -7273,7 +7233,9 @@
                   "key": "tech_fe_administration_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -7295,7 +7257,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Virtual Bliss Plaza"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -7323,7 +7285,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Omni-Bliss Nexus"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -7336,7 +7298,9 @@
                   "key": "tech_fe_entertainment_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -7358,7 +7322,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Justice Complex"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -7385,7 +7349,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Ziggurat of Justice"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -7398,7 +7362,9 @@
                   "key": "tech_fe_security_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -7420,7 +7386,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Galactic Commerce Hub"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -7448,7 +7414,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Interstellar Commerce Nexus"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -7461,7 +7427,9 @@
                   "key": "tech_fe_market_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -7483,7 +7451,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Sky Dome"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -7510,7 +7478,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Empyrean Dome"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -7523,7 +7491,9 @@
                   "key": "tech_fe_dome_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -7536,14 +7506,16 @@
         {
           "key": "tech_psionic_theory",
           "name": "Psionic Theory",
-          "description": "The mind is in many ways a reflection of the universe itself, a microcosmos. All species may not reach this insight, but their minds are tools greater than any other.",
+          "description": "The mind is in many ways a reflection of the universe itself, a microcosmos. Not all beings will reach this level of insight, but their minds are tools greater than any other.",
           "area": "society",
-          "base_factor": 0.5,
-          "base_weight": 32.5,
+          "base_factor": 2.0,
+          "base_weight": 130.0,
           "category": "Psionics",
-          "cost": 8000,
+          "cost": 4000,
           "feature_unlocks": [
-            "Empire Size from Pops -10%"
+            "<b>Building</b>: Shroud Observatory",
+            "Army Morale Damage Taken -10%",
+            "Empire Size from Pops -5%"
           ],
           "is_dangerous": false,
           "is_rare": true,
@@ -7553,28 +7525,30 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
-            "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Has Spiritualist Ethic<br/>    •   Has Fanatic Spiritualist Ethic",
+            "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Has Spiritualist Ethic<br/>    •   is_fanatic_spiritualist=yes",
             "(×<b style='color:lime'>2.0</b>) Has Fanatic Spiritualist Ethic",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait Chosen One 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
-            "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   Has trait Psionic",
-            "(×<b style='color:lime'>1.25</b>) No owned Population Group:<br/>    •   Has trait Psionic",
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait [GetChosenName] 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
+            "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   is_psionic_species=yes",
+            "(×<b style='color:lime'>1.25</b>) No owned Population Group:<br/>    •   is_psionic_species=yes",
             "(×<b style='color:lime'>2.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
-            "(×<b style='color:red'>0.0</b>) All must be true<br/>    •   One must be true<br/>\t    •   Has Materialist Ethic<br/>\t    •   Has Fanatic Materialist Ethic<br/>    •   All must be false<br/>\t    •   Any Leader in council has trait Expertise: Psionics at level 1, 2 or 3<br/>\t    •   has_councilor={COUNCILOR=\"councilor_shroudwalker_teacher\"}<br/>\t    •   Any owned Population Group:<br/>\t\t    •   One must be true<br/>\t\t\t    •   Has trait Psionic<br/>\t\t\t    •   Has trait Latent Psionic"
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>    •   One must be true<br/>\t    •   Has Materialist Ethic<br/>\t    •   Has Fanatic Materialist Ethic<br/>    •   All must be false<br/>\t    •   Any Leader in council has trait Expertise: Psionics at level 1, 2 or 3<br/>\t    •   has_councilor={COUNCILOR=\"councilor_shroudwalker_teacher\"}<br/>\t    •   Any owned Population Group:<br/>\t\t    •   has_psionic_species_trait=yes",
+            "(×<b style='color:red'>0.0</b>) Has Origin Endbringers"
           ],
           "potential": [
-            "One must be true\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Currently active resolution is Extradimensional Experimentation\n    •   Has Relic Psionic Archive"
+            "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Currently active resolution is Extradimensional Experimentation\n    •   Has Relic Psionic Archive",
+            "Does NOT have Origin MINDWARDEN_plural"
           ],
           "children": [
             {
               "key": "tech_telepathy",
               "name": "Telepathy",
-              "description": "Once fully adapted to the basics of Psionics, the mind is capable of connecting to other individuals, becoming something greater.",
+              "description": "$tech_telepathy_desc.1$ the mind is capable of connecting to other individuals, becoming something greater.",
               "area": "society",
               "base_factor": 0.5,
               "base_weight": 25.0,
               "category": "Psionics",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Army</b>: Psionic Army"
               ],
@@ -7592,7 +7566,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) Does NOT have Mind over Matter Ascension Perk",
+                "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   has_utopia=yes<br/>    •   has_shroud_dlc=yes",
                 "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                 "(×<b style='color:lime'>2.0</b>) Has Spiritualist Ethic",
                 "(×<b style='color:lime'>3.0</b>) Has Fanatic Spiritualist Ethic",
@@ -7600,7 +7574,7 @@
                 "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
               ],
               "potential": [
-                "Does NOT have Gestalt Consciousness Ethic"
+                "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -7611,7 +7585,7 @@
                   "base_factor": 0.5,
                   "base_weight": 20.0,
                   "category": "Psionics",
-                  "cost": 20000,
+                  "cost": 10000,
                   "feature_unlocks": [
                     "<b>Component</b>: Precognitive Combat Instincts",
                     "<b>Component</b>: Precognitive Interface"
@@ -7638,7 +7612,7 @@
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
                   ],
                   "potential": [
-                    "Does NOT have Gestalt Consciousness Ethic"
+                    "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
                   ],
                   "children": [
                     {
@@ -7649,7 +7623,7 @@
                       "base_factor": 0.1,
                       "base_weight": 2.5,
                       "category": "Psionics",
-                      "cost": 40000,
+                      "cost": 20000,
                       "feature_unlocks": [
                         "<b>Component</b>: Psi Jump Drive",
                         "<b>Component</b>: Psionic Jump Organ",
@@ -7669,14 +7643,14 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) Has DLC Utopia",
+                        "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   has_utopia=yes<br/>    •   has_shroud_dlc=yes",
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                         "(×<b style='color:lime'>1.5</b>) Has the jaunted_traveler_secret_revealed country flag"
                       ],
                       "potential": [
-                        "Does NOT have Gestalt Consciousness Ethic"
+                        "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic"
                       ],
                       "children": [
                         {
@@ -7687,7 +7661,7 @@
                           "base_factor": 1.0,
                           "base_weight": 25.0,
                           "category": "Psionics",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
                             "<b>Component</b>: Psi-Phase Field Generator"
                           ],
@@ -7709,7 +7683,7 @@
                             "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                           ],
                           "potential": [
-                            "Does NOT have Gestalt Consciousness Ethic",
+                            "One must be true\n    •   has_shroud_dlc=yes\n    •   Does NOT have Gestalt Consciousness Ethic",
                             "Has DLC First Contact"
                           ],
                           "children": [],
@@ -7723,48 +7697,6 @@
                       "source": "vanilla"
                     }
                   ],
-                  "is_event": false,
-                  "is_gestalt": false,
-                  "source": "vanilla"
-                },
-                {
-                  "key": "tech_thought_enforcement",
-                  "name": "Thought Enforcement",
-                  "description": "Telepaths can monitor the citizenry for incorrect thoughts, but with some study they could also correct thought aberrations that they find.",
-                  "area": "society",
-                  "base_factor": 0.5,
-                  "base_weight": 20.0,
-                  "category": "Psionics",
-                  "cost": 20000,
-                  "feature_unlocks": [
-                    "<b>Edict</b>: Thought Enforcement"
-                  ],
-                  "is_dangerous": false,
-                  "is_rare": true,
-                  "is_start_tech": false,
-                  "prerequisites": [
-                    "tech_telepathy"
-                  ],
-                  "tier": 4,
-                  "prerequisites_names": [
-                    {
-                      "name": "Telepathy",
-                      "key": "tech_telepathy"
-                    }
-                  ],
-                  "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) Does NOT have Mind over Matter Ascension Perk",
-                    "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
-                    "(×<b style='color:lime'>2.0</b>) Has Authoritarian Ethic",
-                    "(×<b style='color:lime'>3.0</b>) Has Fanatic Authoritarian Ethic",
-                    "(×<b style='color:lime'>2.0</b>) Has Government Civic: Police State",
-                    "(×<b style='color:lime'>3.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
-                  ],
-                  "potential": [
-                    "Does NOT have Gestalt Consciousness Ethic"
-                  ],
-                  "children": [],
                   "is_event": false,
                   "is_gestalt": false,
                   "source": "vanilla"
@@ -7787,7 +7719,7 @@
           "base_factor": 1.0,
           "base_weight": 70.0,
           "category": "Archaeostudies",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Building</b>: Faculty of Archaeostudies"
           ],
@@ -7814,7 +7746,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Building</b>: Ancient Refinery"
               ],
@@ -7852,7 +7784,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Macro Shard Batteries",
                 "<b>Component</b>: Large Ancient Macro Batteries",
@@ -7895,7 +7827,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Collapser Beam",
                 "<b>Component</b>: Large Ancient Cavitation Collapser",
@@ -7935,7 +7867,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Defensive Web Slinger",
                 "<b>Component</b>: Ancient Web Slinger"
@@ -7973,7 +7905,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Nano-Missile Cloud Launcher",
                 "<b>Component</b>: Ancient Nano-Talon Cloud Launcher"
@@ -8011,9 +7943,9 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
-                "<b>Component</b>: Ancient Energised Carapace",
+                "<b>Component</b>: Ancient Energized Carapace",
                 "<b>Component</b>: Large Ancient Pulse Armor",
                 "<b>Component</b>: Large Pulse Carapace",
                 "<b>Component</b>: Medium Ancient Pulse Armor",
@@ -8054,7 +7986,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Starbase Module</b>: Ancient Rampart"
               ],
@@ -8091,7 +8023,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Starbase Building</b>: Ancient Shield Overcharger"
               ],
@@ -8128,7 +8060,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Fragmentor Artillery",
                 "<b>Component</b>: Ancient Saturator Artillery"
@@ -8166,7 +8098,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Driller Beasts",
                 "<b>Component</b>: Ancient Driller Drones"
@@ -8204,7 +8136,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 12000,
+              "cost": 6000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Suspension Epidermis",
                 "<b>Component</b>: Large Ancient Suspension Field",
@@ -8247,7 +8179,7 @@
               "base_factor": 1.0,
               "base_weight": 35.0,
               "category": "Archaeostudies",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Ruination Glare"
               ],
@@ -8284,7 +8216,7 @@
               "base_factor": 1.0,
               "base_weight": 20.0,
               "category": "Archaeostudies",
-              "cost": 20000,
+              "cost": 10000,
               "feature_unlocks": [
                 "<b>Component</b>: Ancient Target Scrambler"
               ],
@@ -8364,8 +8296,8 @@
           "tier": 0,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Number of Agriculture District is greater than 0<br/>\t\t    •   Number of Agricultural Segment is greater than 0",
-            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
             "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
           ],
@@ -8384,7 +8316,7 @@
           "base_factor": 1.0,
           "base_weight": 95.0,
           "category": "Biology",
-          "cost": 2500,
+          "cost": 1250,
           "feature_unlocks": [
             "<b>Building</b>: Alien Zoo"
           ],
@@ -8402,7 +8334,7 @@
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
           ],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic"
+            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [],
           "is_event": false,
@@ -8474,6 +8406,37 @@
           "source": "vanilla"
         },
         {
+          "key": "tech_fe_nourishment_1",
+          "name": "Nourishment Complex",
+          "description": "Replication technology swiftly conjures up novel flavors on command.",
+          "area": "society",
+          "base_factor": 1.0,
+          "base_weight": 20.0,
+          "category": "Biology",
+          "cost": 70000,
+          "feature_unlocks": [
+            "<b>Building</b>: Nourishment Complex"
+          ],
+          "is_dangerous": true,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 5,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
+            "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
+            "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000",
+            "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
+          ],
+          "potential": [],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
           "key": "tech_lathe_cogitator",
           "name": "Synaptic Cogitator",
           "description": "Calculating hyperspatial supply chains is complex. Rerouting some processing power to the task will help even the largest fleet to delve deeper into enemy territory.",
@@ -8513,7 +8476,7 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "New Worlds",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Feature : </b>Terraforming"
           ],
@@ -8532,6 +8495,33 @@
           "source": "vanilla"
         },
         {
+          "key": "tech_volcanic_forge",
+          "name": "Volcanic Forge",
+          "description": "When deployed, this facility slowly transforms a planet into a volcanic paradise, surfacing useful resources along the way. Thermoforgers can accelerate the transformation.",
+          "area": "society",
+          "base_factor": 1.0,
+          "base_weight": 85.0,
+          "category": "New Worlds",
+          "cost": 2500,
+          "feature_unlocks": [
+            "<b>Building</b>: Volcanic Forge",
+            "<b>Building</b>: Volcanic Foundry"
+          ],
+          "is_dangerous": false,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 2,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition"
+          ],
+          "potential": [],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
           "key": "tech_galactic_archivism",
           "name": "Galactic Archivism",
           "description": "The history of our galaxy warrants proper preservation in order to learn from those who came before us. An archive on the grandest scale would fit such a purpose.",
@@ -8539,7 +8529,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Statecraft",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Mega-Structure</b>: Grand Archive"
           ],
@@ -8549,7 +8539,10 @@
           "prerequisites": [],
           "tier": 2,
           "prerequisites_names": [],
-          "weight_modifiers": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>2.0</b>) Any Neighbor Country<br/>    •   Has Technology: Galactic Archivism",
+            "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Has the Curator Insight modifier"
+          ],
           "potential": [
             "Has DLC Grand Archive",
             "One must be true\n    •   Number of aquired specimen is greater than 0\n    •   One must be true\n\t    •   Has Government Civic: Galactic Curators\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Antiquarian Expertise\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
@@ -8566,7 +8559,7 @@
           "base_factor": 1.0,
           "base_weight": 65.0,
           "category": "Statecraft",
-          "cost": 8000,
+          "cost": 4000,
           "feature_unlocks": [
             "<b>Building</b>: Xeno-Outreach Agency"
           ],
@@ -8593,7 +8586,7 @@
           "base_factor": 1.0,
           "base_weight": 65.0,
           "category": "Statecraft",
-          "cost": 8000,
+          "cost": 4000,
           "feature_unlocks": [
             "<b>Building</b>: Executive Retreat"
           ],
@@ -8620,7 +8613,7 @@
           "base_factor": 1.5,
           "base_weight": 97.5,
           "category": "Statecraft",
-          "cost": 8000,
+          "cost": 4000,
           "feature_unlocks": [
             "Agriculture District Housing: +200"
           ],
@@ -8646,7 +8639,7 @@
           "base_factor": 0.5,
           "base_weight": 20.0,
           "category": "Statecraft",
-          "cost": 20000,
+          "cost": 10000,
           "feature_unlocks": [
             "<b>Feature : </b>Unity Ambitions",
             "Ascension Perks Unlocked +1"
@@ -8667,6 +8660,33 @@
           "source": "vanilla"
         },
         {
+          "key": "tech_psionic_suppression",
+          "name": "Psionic Suppression",
+          "description": "Devices that attenuate psionic energy are as difficult to construct as they are to understand. Such is the complexity of dealing with extradimensional forces.",
+          "area": "society",
+          "base_factor": 1.0,
+          "base_weight": 85.0,
+          "category": "Psionics",
+          "cost": 2000,
+          "feature_unlocks": [
+            "<b>Building</b>: Psionic Suppressor",
+            "<b>Mega-Structure</b>: SHROUD_SEAL"
+          ],
+          "is_dangerous": false,
+          "is_rare": false,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 2,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:red'>0.0</b>) Has Origin MINDWARDEN_plural"
+          ],
+          "potential": [],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
           "key": "tech_archeology_lab_ancrel",
           "name": "Curator Archaeology Lab",
           "description": "A shipboard lab with advanced archaeological equipment, including a vast database supplied by the Curator Order where new discoveries can easily be cross-referenced.",
@@ -8674,7 +8694,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Archaeostudies",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "Archaeology Skill +2"
           ],
@@ -8704,7 +8724,7 @@
           "base_factor": 0.5,
           "base_weight": 35.0,
           "category": "Archaeostudies",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Feature : </b>Reverse-Engineer Minor Artifacts"
           ],
@@ -8732,7 +8752,7 @@
           "base_factor": 0.5,
           "base_weight": 10.0,
           "category": "Archaeostudies",
-          "cost": 48000,
+          "cost": 24000,
           "feature_unlocks": [
             "<b>Component</b>: Devolving Beam"
           ],

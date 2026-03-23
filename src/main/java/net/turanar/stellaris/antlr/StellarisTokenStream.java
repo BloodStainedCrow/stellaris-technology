@@ -17,6 +17,7 @@ public class StellarisTokenStream extends CommonTokenStream {
             List<String> output = new ArrayList<>();
             List<String> lines = Files.readAllLines(path);
             for(String line : lines) {
+                line = line.replace("\uFEFF", "");
                 line = line.replaceAll("\"(north|east|west|south|mid|bow|stern|core|ship|bot_1|bot_2|bot_3)\"","$1");
                 line = line.replaceAll("\"(\\d)\"","fix_$1");
                 line = line.replaceAll("hidden:","");
