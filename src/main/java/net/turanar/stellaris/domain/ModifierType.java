@@ -9,6 +9,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import static net.turanar.stellaris.Global.*;
 
@@ -26,6 +27,7 @@ public enum ModifierType {
     has_shroud_dlc(DefaultParser.SCRIPTED),
     has_infernals(DefaultParser.SCRIPTED),
     has_utopia(DefaultParser.SCRIPTED),
+    has_ancrel(DefaultParser.SCRIPTED),
 
     num_ascension_perk_slots("Number of open ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_ascension_perk("Number of filled ascension perk slots is %s %s", DefaultParser.SIMPLE_OPERATION),
@@ -65,7 +67,7 @@ public enum ModifierType {
     is_hive_empire(DefaultParser.SCRIPTED),
     is_megacorp(DefaultParser.SCRIPTED),
     allows_slavery(DefaultParser.SCRIPTED),
-    has_ancrel(DefaultParser.SCRIPTED),
+    has_psionic_ascension(DefaultParser.SCRIPTED),
 
     is_ai("Is [|NOT ]AI", DefaultParser.SIMPLE_BOOLEAN),
 
@@ -80,6 +82,7 @@ public enum ModifierType {
     has_level("Skill level is %s %s", DefaultParser.SIMPLE_OPERATION),
 
     any_neighbor_country("Any Neighbor Country", DefaultParser.CONDITIONAL),
+    any_country("Any Country", DefaultParser.CONDITIONAL),
     any_owned_planet("Any Owned Planet", DefaultParser.CONDITIONAL),
     any_planet_within_border("Any Planet within borders", DefaultParser.CONDITIONAL),
     any_planet("Any Planet", DefaultParser.CONDITIONAL),
@@ -147,7 +150,7 @@ public enum ModifierType {
     has_encountered_cutholoid("Has [|NOT ]encountered Cuthuloids", DefaultParser.SIMPLE_BOOLEAN),
 
 
-    acquired_specimen_count("Number of aquired specimen is %s %s", DefaultParser.SIMPLE_OPERATION),
+    acquired_specimen_count("Number of acquired specimens is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_cosmic_storms_encountered("Number of Cosmic Storms encountered is %s %s", DefaultParser.SIMPLE_OPERATION),
 
     country_uses_bio_ships("Country [uses|does NOT use] biological ships", DefaultParser.SIMPLE_BOOLEAN),
@@ -158,6 +161,7 @@ public enum ModifierType {
     has_relic("Has Relic %s"),
 
     country_uses_consumer_goods("Country [uses|does NOT use] Consumer Goods", DefaultParser.SIMPLE_BOOLEAN),
+    country_uses_food("Country [uses|does NOT use] Food", DefaultParser.SIMPLE_BOOLEAN),
 
     is_active_resolution("Currently active resolution is %s"),
 
@@ -172,7 +176,7 @@ public enum ModifierType {
         List<String> conditions = new ArrayList<>();
         String op = null, rhs = null;
 
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if (prop.BAREWORD().getText().equals("value")) {
                 op = op(prop);
                 rhs = gs(prop);
@@ -197,12 +201,12 @@ public enum ModifierType {
         String op = null, rhs = null;
         String limits = "";
 
-        for(PairContext prop : p.value().map().pair()) {
+        for (PairContext prop : mapPairs(p.value())) {
             if (prop.BAREWORD().getText().equals("count")) {
                 op = op(prop);
                 rhs = gs(prop);
             } else if(prop.BAREWORD().getText().equals("limit")) {
-                for(PairContext l : prop.value().map().pair()) {
+                for (PairContext l : mapPairs(prop.value())) {
                     Modifier m = visitCondition(l);
                     limits += "\n" + LS + m.toString();
                 }
@@ -250,7 +254,7 @@ public enum ModifierType {
     has_any_dna(DefaultParser.SCRIPTED),
     has_dna((p) -> {
         String dna_source = null;
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if (prop.BAREWORD().getText().equals("ship_category")) {
                 dna_source = i18n(gs(prop));
             }
@@ -267,7 +271,7 @@ public enum ModifierType {
     research_leader((p) -> {
         String area = "";
         List<String> conditions = new ArrayList<>();
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             Modifier m = visitCondition(prop);
             if(m.type.equals(ModifierType.area)) area = m.toString();
             else conditions.add(m.toString());
@@ -282,7 +286,7 @@ public enum ModifierType {
     has_resource((p) -> {
         String type = "";
         String count = "";
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("type")) {
                 type = gs(prop);
             } else if (prop.BAREWORD().getText().equals("amount")) {
@@ -295,7 +299,7 @@ public enum ModifierType {
     count_starbase_sizes((p) -> {
         String retval = "Number of %s is %s %s";
         String size = null, operator = null, count = null;
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("starbase_size")) {
                 size = i18n(gs(prop));
             } else if (prop.BAREWORD().getText().equals("count")) {
@@ -309,7 +313,7 @@ public enum ModifierType {
     has_trait_in_council((p) -> {
         String retval = "Any Leader in council has trait %s %s";
         String trait = null, level = null;
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("TRAIT")) {
 
                 String traitPreTranslation = gs(prop);
@@ -333,7 +337,7 @@ public enum ModifierType {
     has_tier1or2or3_in_council((p) -> {
         String retval = "Any Leader in council has trait %s at level 1, 2 or 3";
         String trait = null;
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("TRAIT")) {
 
                 String traitPreTranslation = gs(prop);
@@ -355,7 +359,7 @@ public enum ModifierType {
     num_districts((p)->{
         String type = "";
         String count = "";
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("type")) {
                 type = i18n(gs(prop));
             } else if (prop.BAREWORD().getText().equals("value")) {
@@ -367,7 +371,7 @@ public enum ModifierType {
 
     is_specialist_subject_type((p)->{
         String type = "";
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("TYPE")) {
                 type = i18n(gs(prop));
             }
@@ -378,9 +382,9 @@ public enum ModifierType {
     count_owned_pops((p) -> {
         String limits = "";
         String count = "";
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("limit")) {
-                for(PairContext l : prop.value().map().pair()) {
+                for(PairContext l : mapPairs(prop.value())) {
                     Modifier m = visitCondition(l);
                     limits += "\n" + LS + m.toString();
                 }
@@ -396,7 +400,7 @@ public enum ModifierType {
     calc_true_if((p) -> {
         String limits = "";
         String count = "";
-        for(PairContext prop : p.value().map().pair()) {
+        for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("amount")) {
                 count = op(prop) + " " + gs(prop);
             } else {
@@ -408,9 +412,9 @@ public enum ModifierType {
     }),
 
     NOT((p) -> {
-        if(p.value().map().pair().size() > 1) return NOR.parser.apply(p);
-        Modifier m = visitCondition(p.value().map().pair().get(0));
-        if(m.type.equals(OR)) return NOR.parser.apply(p.value().map().pair().get(0));
+        if(mapPairs(p.value()).size() > 1) return NOR.parser.apply(p);
+        Modifier m = visitCondition(mapPairs(p.value()).get(0));
+        if(m.type.equals(OR)) return NOR.parser.apply(mapPairs(p.value()).get(0));
 
         String retval = m.toString();
         if(retval.startsWith("Has")) {
@@ -453,7 +457,7 @@ public enum ModifierType {
         CONDITIONAL((format, p) -> {
             List<String> conditions = new ArrayList<>();
 
-            for(PairContext prop : p.value().map().pair()) {
+            for(PairContext prop : mapPairs(p.value())) {
                 Modifier m = visitCondition(prop);
                 conditions.add(m.toString());
             }
@@ -473,17 +477,9 @@ public enum ModifierType {
                 return ModifierType.NOT.parse(q);
             }
 
-            if (q.value().map() == null) {
-                for (ValueContext element : q.value().array().value()) {
-                    if (element.BAREWORD() != null && element.BAREWORD().getText().equals("optimize_memory")) continue;
-                    Modifier m = visitCondition(element.pair());
-                    conditions.add(m.toString());
-                }
-            } else {
-                for(PairContext prop : q.value().map().pair()) {
-                    Modifier m = visitCondition(prop);
-                    conditions.add(m.toString());
-                }
+            for(PairContext prop : mapPairs(q.value())) {
+                Modifier m = visitCondition(prop);
+                conditions.add(m.toString());
             }
             String retval = format;
 

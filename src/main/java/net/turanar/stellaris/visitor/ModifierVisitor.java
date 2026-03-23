@@ -56,8 +56,9 @@ public class ModifierVisitor {
 
     public WeightModifier visitModifier(StellarisParser.PairContext ctx) {
         WeightModifier retval = new WeightModifier();
-        for (StellarisParser.PairContext p : ctx.value().map().pair()) {
-            try {
+        List<StellarisParser.PairContext> conditions = new ArrayList<>();
+        try {
+            for (StellarisParser.PairContext p : ctx.value().map().pair()) {
                 switch (p.BAREWORD().getText()) {
                     case "factor":
                         if (gs(p).startsWith("value:") || gs(p).startsWith("trigger:")) {
@@ -78,12 +79,28 @@ public class ModifierVisitor {
                         System.err.println("retval.add:" + retval.add);
                         break;
                     default:
-                        retval.type = ModifierType.valueOf(p.BAREWORD().getText());
-                        retval.pair = p;
+                        conditions.add(p);
                 }
-            } catch (IllegalArgumentException e) {
-                System.err.println(e.getMessage());
             }
+
+            // Handle collected conditions
+            if (conditions.size() == 1) {
+                StellarisParser.PairContext p = conditions.get(0);
+                retval.type = ModifierType.valueOf(p.BAREWORD().getText());
+                retval.pair = p;
+            } else if (conditions.size() > 1) {
+                // Create an AND clause with multiple conditions as children
+                retval.type = ModifierType.AND;
+                retval.pair = ctx; // Use the parent context
+                for (StellarisParser.PairContext p : conditions) {
+                    Modifier child = new Modifier();
+                    child.type = ModifierType.valueOf(p.BAREWORD().getText());
+                    child.pair = p;
+                    retval.children.add(child);
+                }
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
         }
 
         // FIXME(Tim Aschhoff): Janky hack

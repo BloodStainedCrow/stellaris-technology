@@ -262,13 +262,13 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                 "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                 "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                 "(×<b style='color:lime'>2.0</b>) Country uses biological ships",
-                "(×<b style='color:lime'>5.0</b>) Any Owned Planet<br/>    •   One must be true<br/>\t    •   has_any_capped_planet_farming_district=yes<br/>\t    •   has_any_agriculture_zone=yes"
+                "(×<b style='color:lime'>5.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Country uses biological ships<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Machine Intelligence Authority<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; NOT Founder Species :<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be false<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes"
               ],
               "potential": [],
               "children": [
@@ -277,8 +277,8 @@
                   "name": "Food Processing",
                   "description": "Improved food processing techniques will lead to better preservation methods and less spoilage.",
                   "area": "society",
-                  "base_factor": 0.5,
-                  "base_weight": 47.5,
+                  "base_factor": 1.0,
+                  "base_weight": 95.0,
                   "category": "Biology",
                   "cost": 1250,
                   "feature_unlocks": [
@@ -300,9 +300,11 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
+                    "(×<b style='color:lime'>2.0</b>) Country uses Food",
+                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has Prosperity Traditions Tradition<br/>&nbsp;&nbsp;•&nbsp; Country uses Food",
                     "(×<b style='color:lime'>5.0</b>) Any Owned Planet<br/>    •   One must be true<br/>\t    •   has_any_capped_planet_farming_district=yes<br/>\t    •   has_any_agriculture_zone=yes",
-                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
+                    "(×<b style='color:red'>0.5</b>) Country does NOT use Food",
                     "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Government Civic: Agrarian Idyll<br/>    •   One must be true<br/>\t    •   Has Government Civic: Anglers<br/>\t    •   Has Government Civic: Trawling Operations<br/>\t    •   Has Government Civic: Marine Machines<br/>\t    •   Has Government Civic: Maritime Robotics",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Catalytic Processing<br/>    •   Has Government Civic: Catalytic Recyclers<br/>    •   Has Government Civic: Organic Reprocessing<br/>    •   Has Government Civic: Organic Retrofitting",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
@@ -337,7 +339,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                         "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -381,7 +383,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                     "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                     "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
@@ -419,7 +421,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                         "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                         "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
@@ -456,7 +458,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+                            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                             "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
                             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1",
                             "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
@@ -1154,7 +1156,7 @@
                     "(×<b style='color:red'>0.25</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   is_fanatic_egalitarian=yes",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                    "(×<b style='color:red'>0.5</b>) Any owned Species:<br/>    •   Is NOT Organic"
+                    "(×<b style='color:red'>0.5</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; All must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; Any owned Species:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is NOT Organic"
                   ],
                   "potential": [
                     "Does NOT have Machine Intelligence Authority"
@@ -1190,7 +1192,7 @@
                         "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Egalitarian Ethic<br/>    •   is_fanatic_egalitarian=yes",
                         "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                        "(×<b style='color:red'>0.5</b>) Any owned Species:<br/>    •   Is NOT Organic"
+                        "(×<b style='color:red'>0.5</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; All must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; Any owned Species:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is NOT Organic"
                       ],
                       "potential": [
                         "Does NOT have Machine Intelligence Authority",
@@ -1309,7 +1311,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Has the Curator Insight modifier<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Statecraft 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Authoritarian Ethic<br/>    •   is_fanatic_authoritarian=yes"
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Materialist Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Fanatic Materialist Ethic<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Authoritarian Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_fanatic_authoritarian=yes"
                   ],
                   "potential": [],
                   "children": [],
@@ -1351,9 +1353,9 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
                 "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   is_fanatic_xenophile=yes",
-                "(×<b style='color:lime'>1.25</b>) Has trait Necrophage",
+                "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has Origin Necrophage<br/>&nbsp;&nbsp;•&nbsp; Has trait Necrophage",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:red'>0.0</b>) No owned Species:<br/>    •   Is Organic"
+                "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; All must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; No owned Species:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Organic"
               ],
               "potential": [
                 "One must be true\n    •   Does NOT have Machine Intelligence Authority\n    •   Has Government Civic: Driven Assimilator\n    •   Has Government Civic: Rogue Servitor",
@@ -1388,7 +1390,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
-                    "(×<b style='color:lime'>1.25</b>) Has trait Necrophage",
+                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has Origin Necrophage<br/>&nbsp;&nbsp;•&nbsp; Has trait Necrophage",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                     "(×<b style='color:red'>0.5</b>) All must be true<br/>    •   Founder Species:<br/>\t    •   Is archetype Machine<br/>    •   Does NOT have Gestalt Consciousness Ethic",
                     "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic"
@@ -1469,7 +1471,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) Does NOT have Biomorphosis Ascension Perk",
+                    "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has DLC Utopia<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Biomorphosis Ascension Perk",
                     "(×<b style='color:lime'>1.25</b>) Has Hive Mind Authority",
                     "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
@@ -3168,7 +3170,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:red'>0.0</b>) Has Machine Intelligence Authority",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -3203,6 +3205,73 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
+              "potential": [],
+              "children": [],
+              "is_event": false,
+              "source": "vanilla"
+            }
+          ],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_fe_nourishment_1",
+          "name": "Nourishment Complex",
+          "description": "Replication technology swiftly conjures up novel flavors on command.",
+          "area": "society",
+          "base_factor": 1.0,
+          "base_weight": 20.0,
+          "category": "Biology",
+          "cost": 70000,
+          "feature_unlocks": [
+            "<b>Building</b>: Nourishment Complex"
+          ],
+          "is_dangerous": true,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 5,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
+            "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
+            "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000",
+            "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
+          ],
+          "potential": [],
+          "children": [
+            {
+              "key": "tech_fe_nourishment_2",
+              "name": "Nourishment Center",
+              "description": "Every conceivable flavor can be replicated within these walls.",
+              "area": "society",
+              "base_factor": 1.0,
+              "base_weight": 20.0,
+              "category": "Biology",
+              "cost": 70000,
+              "feature_unlocks": [
+                "<b>Building</b>: Nourishment Center"
+              ],
+              "is_dangerous": true,
+              "is_rare": true,
+              "is_start_tech": false,
+              "prerequisites": [
+                "tech_fe_nourishment_1"
+              ],
+              "tier": 5,
+              "prerequisites_names": [
+                {
+                  "name": "Nourishment Complex",
+                  "key": "tech_fe_nourishment_1"
+                }
+              ],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
+                "(×<b style='color:red'>0.0</b>) Country does NOT use Food",
+                "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
               ],
               "potential": [],
               "children": [],
@@ -3974,7 +4043,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7202,7 +7271,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7269,7 +7338,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Calamity<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Calamity",
             "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -7334,7 +7403,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7398,7 +7467,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Danger<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Danger",
             "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
@@ -7463,7 +7532,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -7512,8 +7581,8 @@
           "name": "Psionic Theory",
           "description": "The mind is in many ways a reflection of the universe itself, a microcosmos. Not all beings will reach this level of insight, but their minds are tools greater than any other.",
           "area": "society",
-          "base_factor": 2.0,
-          "base_weight": 130.0,
+          "base_factor": 0.5,
+          "base_weight": 32.5,
           "category": "Psionics",
           "cost": 4000,
           "feature_unlocks": [
@@ -7528,14 +7597,15 @@
           "tier": 3,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) Has Gestalt Consciousness Ethic",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; Has Gestalt Consciousness Ethic",
             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Has Spiritualist Ethic<br/>    •   is_fanatic_spiritualist=yes",
             "(×<b style='color:lime'>2.0</b>) Has Fanatic Spiritualist Ethic",
+            "(×<b style='color:lime'>2.0</b>) Any Country<br/>    •   Has Origin MINDWARDEN_plural<br/>    •   NOT is_same_value=prev",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait [GetChosenName] 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
             "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   is_psionic_species=yes",
-            "(×<b style='color:lime'>1.25</b>) No owned Population Group:<br/>    •   is_psionic_species=yes",
-            "(×<b style='color:lime'>2.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
+            "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_latent_psionic_species=yes<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_psionic_species=yes",
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
             "(×<b style='color:red'>0.0</b>) All must be true<br/>    •   One must be true<br/>\t    •   Has Materialist Ethic<br/>\t    •   Has Fanatic Materialist Ethic<br/>    •   All must be false<br/>\t    •   Any Leader in council has trait Expertise: Psionics at level 1, 2 or 3<br/>\t    •   has_councilor={COUNCILOR=\"councilor_shroudwalker_teacher\"}<br/>\t    •   Any owned Population Group:<br/>\t\t    •   has_psionic_species_trait=yes",
             "(×<b style='color:red'>0.0</b>) Has Origin Endbringers"
           ],
@@ -7570,11 +7640,11 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has DLC Utopia<br/>    •   Has DLC Shadows of the Shroud",
+                "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Utopia<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Mind Over Matter Ascension Perk<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Teachers of the Shroud<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Endbringers<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_chosen_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Shroud-Forged<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the finish_shroud_forged_liberation_flag country flag",
                 "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                 "(×<b style='color:lime'>2.0</b>) Has Spiritualist Ethic",
                 "(×<b style='color:lime'>3.0</b>) Has Fanatic Spiritualist Ethic",
-                "(×<b style='color:lime'>3.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
+                "(×<b style='color:lime'>3.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
                 "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
               ],
               "potential": [
@@ -7612,7 +7682,7 @@
                     "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                     "(×<b style='color:lime'>2.0</b>) Has Spiritualist Ethic",
                     "(×<b style='color:lime'>3.0</b>) Has Fanatic Spiritualist Ethic",
-                    "(×<b style='color:lime'>3.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
+                    "(×<b style='color:lime'>3.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3"
                   ],
                   "potential": [
@@ -7701,6 +7771,50 @@
                       "source": "vanilla"
                     }
                   ],
+                  "is_event": false,
+                  "is_gestalt": false,
+                  "source": "vanilla"
+                },
+                {
+                  "key": "tech_thought_enforcement",
+                  "name": "Thought Enforcement",
+                  "description": "Telepaths can monitor the citizenry for incorrect thoughts, but with some study they could also correct thought aberrations that they find.",
+                  "area": "society",
+                  "base_factor": 0.5,
+                  "base_weight": 20.0,
+                  "category": "Psionics",
+                  "cost": 10000,
+                  "feature_unlocks": [
+                    "<b>Edict</b>: Thought Enforcement",
+                    "<b>Edict</b>: Thought Pre-Emption"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": true,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_telepathy"
+                  ],
+                  "tier": 4,
+                  "prerequisites_names": [
+                    {
+                      "name": "Telepathy",
+                      "key": "tech_telepathy"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Mind Over Matter Ascension Perk<br/>    •   Has Origin Teachers of the Shroud<br/>    •   Has Origin Endbringers<br/>    •   is_chosen_empire=yes<br/>    •   All must be true<br/>\t    •   Has Origin Shroud-Forged<br/>\t    •   Has the finish_shroud_forged_liberation_flag country flag",
+                    "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Spiritualist Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_fanatic_spiritualist=yes<br/>&nbsp;&nbsp;•&nbsp; Has Authoritarian Ethic",
+                    "(×<b style='color:lime'>3.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Spiritualist Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_fanatic_spiritualist=yes<br/>&nbsp;&nbsp;•&nbsp; Has Fanatic Authoritarian Ethic",
+                    "(×<b style='color:lime'>2.0</b>) Has Government Civic: Police State",
+                    "(×<b style='color:lime'>3.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; Has Gestalt Consciousness Ethic"
+                  ],
+                  "potential": [
+                    "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
+                  ],
+                  "children": [],
                   "is_event": false,
                   "is_gestalt": false,
                   "source": "vanilla"
@@ -8300,7 +8414,7 @@
           "tier": 0,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.01</b>) All must be false<br/>    •   Has the non_lithoid_subspecies country flag<br/>    •   Has Government Civic: Rogue Servitor<br/>    •   Has Government Civic: Driven Assimilator<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   has_any_capped_planet_farming_district=yes<br/>\t\t    •   has_any_agriculture_zone=yes",
+            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
             "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
             "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
@@ -8405,37 +8519,6 @@
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
-          "children": [],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
-          "key": "tech_fe_nourishment_1",
-          "name": "Nourishment Complex",
-          "description": "Replication technology swiftly conjures up novel flavors on command.",
-          "area": "society",
-          "base_factor": 1.0,
-          "base_weight": 20.0,
-          "category": "Biology",
-          "cost": 70000,
-          "feature_unlocks": [
-            "<b>Building</b>: Nourishment Complex"
-          ],
-          "is_dangerous": true,
-          "is_rare": true,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 5,
-          "prerequisites_names": [],
-          "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
-            "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
-            "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000",
-            "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
-          ],
-          "potential": [],
           "children": [],
           "is_event": false,
           "source": "vanilla"
@@ -8550,7 +8633,7 @@
           ],
           "potential": [
             "Has DLC Grand Archive",
-            "One must be true\n    •   Number of aquired specimen is greater than 0\n    •   One must be true\n\t    •   Has Government Civic: Galactic Curators\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Antiquarian Expertise\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
+            "One must be true\n    •   Number of acquired specimens is greater than 0\n    •   One must be true\n\t    •   Has Government Civic: Galactic Curators\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Caretaker Network\n\t    •   Has Government Civic: Antiquarian Expertise\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
           ],
           "children": [],
           "is_event": false,

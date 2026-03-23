@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @Component
 public class Global {
@@ -104,5 +107,19 @@ public class Global {
 
     public static String f(String f, String... objects) {
         return String.format(f, objects);
+    }
+
+    public static List<StellarisParser.PairContext> mapPairs(StellarisParser.ValueContext ctx) {
+        if (ctx.map() != null) {
+            return ctx.map().pair();
+        } else {
+            return ctx.array().value().stream().map(valueContext -> {
+                if (valueContext.pair() == null &&
+                        (valueContext.BAREWORD() == null || !valueContext.BAREWORD().getText().equals("optimize_memory"))) {
+                    System.err.println("non-pair value where map expected: " + valueContext.getText());
+                }
+                return valueContext.pair();
+            }).filter(Objects::nonNull).collect(Collectors.toList());
+        }
     }
 }

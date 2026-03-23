@@ -1,5 +1,7 @@
 package net.turanar.stellaris.domain;
 
+import static net.turanar.stellaris.Global.LS;
+
 public class WeightModifier extends Modifier {
     @Override
     public String toString() {
@@ -31,6 +33,22 @@ public class WeightModifier extends Modifier {
 
          if(type != null) format += " %s";
 
-        return String.format(format, mod, type != null ? type.parse(pair).replaceAll("\\n","<br/>") : "");
+        String typeStr = "";
+        if (type != null) {
+            if (type == ModifierType.AND && !children.isEmpty()) {
+                // Render AND clause with children
+                StringBuilder sb = new StringBuilder("All must be true");
+                for (Modifier child : children) {
+                    sb.append("<br/>")
+                            .append(LS.replace("  ", "&nbsp;"))
+                            .append(child.toString().replace(LS, "&nbsp;&nbsp;" + LS.replace("  ", "&nbsp;"))
+                                    .replace("\n", "<br/>"));
+                }
+                typeStr = sb.toString();
+            } else {
+                typeStr = type.parse(pair).replace("\n", "<br/>");
+            }
+        }
+        return String.format(format, mod, typeStr);
     }
 }

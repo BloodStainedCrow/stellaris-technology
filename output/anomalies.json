@@ -1281,40 +1281,6 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_fe_nourishment_2",
-    "name": "Nourishment Center",
-    "description": "Every conceivable flavor can be replicated within these walls.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "Biology",
-    "cost": 70000,
-    "feature_unlocks": [
-      "<b>Building</b>: Nourishment Center"
-    ],
-    "is_dangerous": true,
-    "is_rare": true,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_fe_nourishment_1"
-    ],
-    "tier": 5,
-    "prerequisites_names": [
-      {
-        "name": "Nourishment Complex",
-        "key": "tech_fe_nourishment_1"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk",
-      "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
-    ],
-    "potential": [],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
     "key": "tech_gargantuan_evolution",
     "name": "Gargantuan Evolution",
     "description": "Voidspawn eggs have evolved to withstand the harsh conditions of space by absorbing and conserving energy from their nearest star.",
@@ -2615,49 +2581,6 @@
     ],
     "children": [],
     "is_event": true,
-    "source": "vanilla"
-  },
-  {
-    "key": "tech_thought_enforcement",
-    "name": "Thought Enforcement",
-    "description": "Telepaths can monitor the citizenry for incorrect thoughts, but with some study they could also correct thought aberrations that they find.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "Psionics",
-    "cost": 10000,
-    "feature_unlocks": [
-      "<b>Edict</b>: Thought Enforcement",
-      "<b>Edict</b>: Thought Pre-Emption"
-    ],
-    "is_dangerous": false,
-    "is_rare": true,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_telepathy"
-    ],
-    "tier": 4,
-    "prerequisites_names": [
-      {
-        "name": "Telepathy",
-        "key": "tech_telepathy"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
-      "(×<b style='color:lime'>2.0</b>) Has Authoritarian Ethic",
-      "(×<b style='color:lime'>3.0</b>) Has Fanatic Authoritarian Ethic",
-      "(×<b style='color:lime'>2.0</b>) Has Government Civic: Police State",
-      "(×<b style='color:lime'>3.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
-      "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
-      "(×<b style='color:lime'>2.0</b>) Has Gestalt Consciousness Ethic"
-    ],
-    "potential": [
-      "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
-    ],
-    "children": [],
-    "is_event": true,
-    "is_gestalt": false,
     "source": "vanilla"
   },
   {
