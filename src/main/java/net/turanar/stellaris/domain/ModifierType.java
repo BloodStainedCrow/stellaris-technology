@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static net.turanar.stellaris.Global.*;
 
 public enum ModifierType {
@@ -64,12 +67,12 @@ public enum ModifierType {
     allows_slavery(DefaultParser.SCRIPTED),
     has_ancrel(DefaultParser.SCRIPTED),
 
-    is_ai("Is AI|Is NOT AI", DefaultParser.SIMPLE_BOOLEAN),
+    is_ai("Is [|NOT ]AI", DefaultParser.SIMPLE_BOOLEAN),
 
-    is_enslaved("Pop is enslaved|Pop is NOT enslaved", DefaultParser.SIMPLE_BOOLEAN),
-    is_sapient("Pop is Sapient|Pop is NOT Sapient", DefaultParser.SIMPLE_BOOLEAN),
-    has_any_megastructure_in_empire("Has any Megastructure|Does NOT have any Megastructure",DefaultParser.SIMPLE_BOOLEAN),
-    always("Always|Never", DefaultParser.SIMPLE_BOOLEAN),
+    is_enslaved("Pop is [|NOT ]enslaved", DefaultParser.SIMPLE_BOOLEAN),
+    is_sapient("Pop is [|NOT ]Sapient", DefaultParser.SIMPLE_BOOLEAN),
+    has_any_megastructure_in_empire("[Has|Does NOT have] any Megastructure", DefaultParser.SIMPLE_BOOLEAN),
+    always("[Always|Never]", DefaultParser.SIMPLE_BOOLEAN),
 
     years_passed("Number of years since game start is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_owned_planets("Number of owned planets is %s %s", DefaultParser.SIMPLE_OPERATION),
@@ -88,7 +91,7 @@ public enum ModifierType {
     owner_species("Founder Species :", DefaultParser.CONDITIONAL),
     no_scope("", DefaultParser.CONDITIONAL),
 
-    is_astral_scar("Is astral scar|Is NOT astral scar", DefaultParser.SIMPLE_BOOLEAN),
+    is_astral_scar("Is [|NOT ]astral scar", DefaultParser.SIMPLE_BOOLEAN),
 
     NOR("All must be false", DefaultParser.CONDITIONAL),
     OR("One must be true", DefaultParser.CONDITIONAL),
@@ -100,7 +103,7 @@ public enum ModifierType {
 
     has_ai_personality((p) -> f("AI Personality is %s", i18n("personality_" + gs(p).toLowerCase()))),
 
-    has_completed_precursor_research("Has completed Precursor technology|Has NOT completed Precursor technology", DefaultParser.SIMPLE_BOOLEAN),
+    has_completed_precursor_research("Has [|NOT ]completed Precursor technology", DefaultParser.SIMPLE_BOOLEAN),
     has_crisis_level("Has Crisis level: %s"),
 
     has_void_dweller_origin(DefaultParser.SCRIPTED),
@@ -122,9 +125,9 @@ public enum ModifierType {
 
     founder_species("Founder Species:", DefaultParser.CONDITIONAL),
     is_archetype("Is archetype %s"),
-    is_lithoid("Is Lithoid|Is NOT Lithoid", DefaultParser.SIMPLE_BOOLEAN),
+    is_lithoid("Is [|NOT ]Lithoid", DefaultParser.SIMPLE_BOOLEAN),
 
-    has_federation("Is part of a Federation|Is NOT part of a Federation", DefaultParser.SIMPLE_BOOLEAN),
+    has_federation("Is [|NOT ]part of a Federation", DefaultParser.SIMPLE_BOOLEAN),
     federation("Federation:", DefaultParser.CONDITIONAL),
     has_federation_law("Has Federation Law %s"),
     has_federation_perk("Has Federation Perk %s"),
@@ -137,30 +140,30 @@ public enum ModifierType {
     is_lithoid_devouring_swarm(DefaultParser.SCRIPTED),
 
     has_encountered_any_fauna(DefaultParser.SCRIPTED),
-    has_encountered_tiyanki("Has encountered Tiyanki|Has NOT encountered Tiyanki", DefaultParser.SIMPLE_BOOLEAN),
-    has_encountered_space_amoeba("Has encountered Space Amoeba|Has NOT encountered Space Amoeba", DefaultParser.SIMPLE_BOOLEAN),
-    has_encountered_crystalline_entity("Has encountered Crystalline Entity|Has NOT encountered Crystalline Entity", DefaultParser.SIMPLE_BOOLEAN),
-    has_encountered_voidworm("Has encountered Voidworms|Has NOT encountered Voidworms", DefaultParser.SIMPLE_BOOLEAN),
-    has_encountered_cutholoid("Has encountered Cuthuloids|Has NOT encountered Cuthuloids", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_tiyanki("Has [|NOT ]encountered Tiyanki", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_space_amoeba("Has [|NOT ]encountered Space Amoeba", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_crystalline_entity("Has [|NOT ]encountered Crystalline Entities", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_voidworm("Has [|NOT ]encountered Voidworms", DefaultParser.SIMPLE_BOOLEAN),
+    has_encountered_cutholoid("Has [|NOT ]encountered Cuthuloids", DefaultParser.SIMPLE_BOOLEAN),
 
 
     acquired_specimen_count("Number of aquired specimen is %s %s", DefaultParser.SIMPLE_OPERATION),
     num_cosmic_storms_encountered("Number of Cosmic Storms encountered is %s %s", DefaultParser.SIMPLE_OPERATION),
 
-    country_uses_bio_ships("Country uses biological ships|Country does NOT use biological ships", DefaultParser.SIMPLE_BOOLEAN),
+    country_uses_bio_ships("Country [uses|does NOT use] biological ships", DefaultParser.SIMPLE_BOOLEAN),
 
     has_origin("Has Origin %s"),
 
     has_megastructure("Has Megastructure %s"),
     has_relic("Has Relic %s"),
 
-    country_uses_consumer_goods("Country uses Consumer Goods|Country does NOT use Consumer Goods", DefaultParser.SIMPLE_BOOLEAN),
+    country_uses_consumer_goods("Country [uses|does NOT use] Consumer Goods", DefaultParser.SIMPLE_BOOLEAN),
 
     is_active_resolution("Currently active resolution is %s"),
 
     can_research_technology("Can research technology: %s"),
 
-    is_galactic_community_member("Is a member of the galactic community|Is NOT a member of the galactic community", DefaultParser.SIMPLE_BOOLEAN),
+    is_galactic_community_member("Is [|NOT ]a member of the galactic community", DefaultParser.SIMPLE_BOOLEAN),
 
     // TODO(Tim Aschhoff): This is not very clear what this means
     exists("%s exists"),
@@ -186,8 +189,8 @@ public enum ModifierType {
         }
         return retval;
     }),
-    disabled("Is disabled|Is NOT disabled", DefaultParser.SIMPLE_BOOLEAN),
-    in_construction("Is in construction|Is NOT in construction", DefaultParser.SIMPLE_BOOLEAN),
+    disabled("Is [|NOT ]disabled", DefaultParser.SIMPLE_BOOLEAN),
+    in_construction("Is [|NOT ]in construction", DefaultParser.SIMPLE_BOOLEAN),
     type("Type is %s"),
 
     count_archaeological_site(p -> {
@@ -210,37 +213,37 @@ public enum ModifierType {
         String retval = String.format("Has a Number of archaeological sites %s %s", op, rhs);
         return retval + limits;
     }),
-    is_site_completed("Site is completed|Site is NOT completed", DefaultParser.SIMPLE_BOOLEAN),
+    is_site_completed("Site is [|NOT ]completed", DefaultParser.SIMPLE_BOOLEAN),
 
     // TODO(Tim Aschhoff):
-    has_disconnected_drone_citizenship_type("Is TODO|Is NOT TODO", DefaultParser.SIMPLE_BOOLEAN),
+    has_disconnected_drone_citizenship_type("Is [|NOT ]TODO", DefaultParser.SIMPLE_BOOLEAN),
 
     any_owned_pop_group("Any owned Population Group:", DefaultParser.CONDITIONAL),
-    // is_sapient("Is Sapient|Is NOT Sapient", DefaultParser.SIMPLE_BOOLEAN),
-    // is_enslaved("Is enslaved|Is NOT enslaved", DefaultParser.SIMPLE_BOOLEAN),
-    is_livestock("Is livestock|Is NOT livestock", DefaultParser.SIMPLE_BOOLEAN),
+    // is_sapient("Is [|NOT ]Sapient", DefaultParser.SIMPLE_BOOLEAN),
+    // is_enslaved("Is [|NOT ]enslaved", DefaultParser.SIMPLE_BOOLEAN),
+    is_livestock("Is [|NOT ]livestock", DefaultParser.SIMPLE_BOOLEAN),
     pop_group_has_trait("Has trait %s"),
 
     any_owned_leader("Any owned Leader:", DefaultParser.CONDITIONAL),
-    is_ruler("Is Ruler|Is NOT Ruler", DefaultParser.SIMPLE_BOOLEAN),
-    is_councilor("Is Councilor|Is NOT Councilor", DefaultParser.SIMPLE_BOOLEAN),
+    is_ruler("Is [|NOT ]Ruler", DefaultParser.SIMPLE_BOOLEAN),
+    is_councilor("Is [|NOT ]Councilor", DefaultParser.SIMPLE_BOOLEAN),
     // TODO(Tim Aschhoff) Confirm this is correct!
     has_base_skill("Skill level is %s %s", DefaultParser.SIMPLE_OPERATION),
 
     mid_game_years_passed("Number of midgame years passed %s %s", DefaultParser.SIMPLE_OPERATION),
 
     any_owned_species("Any owned Species:", DefaultParser.CONDITIONAL),
-    is_organic_species("Is Organic|Is NOT Organic", DefaultParser.SIMPLE_BOOLEAN),
+    is_organic_species("Is [|NOT ]Organic", DefaultParser.SIMPLE_BOOLEAN),
 
     // FXIME(Tim Aschhoff) Explain this
     has_storm_attraction_civic(DefaultParser.SCRIPTED),
 
-    is_inside_nebula("Is in nebula|Is NOT in nebula", DefaultParser.SIMPLE_BOOLEAN),
+    is_inside_nebula("Is [|NOT ]in nebula", DefaultParser.SIMPLE_BOOLEAN),
 
     perc_communications_with_playable("Percentage of playable empires met is %s %s%%", DefaultParser.SIMPLE_OPERATION),
 
     // TODO(Tim Aschhoff): Make sure the definition for this does not change (i.e. if the federation perk changes)
-    has_make_spiritualist_perk("Is a Member of a spiritualist Federation with perk 'A Union of Faith'|Is NOT a Member of a spiritualist Federation with perk 'A Union of Faith'", DefaultParser.SIMPLE_BOOLEAN),
+    has_make_spiritualist_perk("Is [|NOT ]a Member of a spiritualist Federation with perk 'A Union of Faith'", DefaultParser.SIMPLE_BOOLEAN),
 
     is_homicidal(DefaultParser.SCRIPTED),
     
@@ -429,12 +432,23 @@ public enum ModifierType {
     })
     ;
 
+    private static final Pattern SIMPLE_BOOLEAN_PATTERN = Pattern.compile("\\[([^]]*)\\|([^]]*)]");
+
     private static enum DefaultParser {
         SIMPLE((format,p) -> String.format(format,i18n(gs(p.value())))),
         SIMPLE_OPERATION((format,p) -> String.format(format, op(p), gs(p))),
         SIMPLE_BOOLEAN((format,p) -> {
-            String[] sentence = format.split("\\|");
-            if(gs(p).equals("yes")) return sentence[0]; else return sentence[1];
+            Matcher matcher = SIMPLE_BOOLEAN_PATTERN.matcher(format);
+            boolean found = matcher.find();
+            assert found;
+            String yes = matcher.group(1);
+            String no = matcher.group(2);
+            matcher.reset();
+            if (gs(p).equals("yes")) {
+                return matcher.replaceFirst(yes);
+            } else {
+                return matcher.replaceFirst(no);
+            }
         }),
         CONDITIONAL((format, p) -> {
             List<String> conditions = new ArrayList<>();
