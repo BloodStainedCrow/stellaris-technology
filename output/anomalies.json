@@ -1175,46 +1175,6 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_existential_campaigns",
-    "name": "Existential Campaigns",
-    "description": "When survival itself is at stake, the very concept of war loses its meaning. These campaigns are waged not for dominion, but to secure the continued existence of our civilization.",
-    "area": "society",
-    "base_factor": 0.0,
-    "base_weight": 0.0,
-    "category": "Military Theory",
-    "cost": 24000,
-    "feature_unlocks": [
-      "Unlocks Casus Belli: Existential Expulsion"
-    ],
-    "is_dangerous": true,
-    "is_rare": true,
-    "is_start_tech": false,
-    "prerequisites": [
-      "tech_galactic_campaigns"
-    ],
-    "tier": 5,
-    "prerequisites_names": [
-      {
-        "name": "Galactic Campaigns",
-        "key": "tech_galactic_campaigns"
-      }
-    ],
-    "weight_modifiers": [
-      "(×<b style='color:red'>0.0</b>) One must be true<br/>    •   Has Government Civic: Fanatic Purifiers<br/>    •   Has Government Civic: Devouring Swarm<br/>    •   Has Government Civic: Determined Exterminator",
-      "(×<b style='color:lime'>2.0</b>) Has Fanatic Militarist Ethic",
-      "(×<b style='color:lime'>1.5</b>) Has Militarist Ethic",
-      "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 2",
-      "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 3",
-      "(×<b style='color:lime'>2.0</b>) Number of communications is greater than 4",
-      "(×<b style='color:red'>0.0</b>) Number of communications is lower than 1",
-      "(×<b style='color:red'>0.5</b>) Has Pacifist Ethic"
-    ],
-    "potential": [],
-    "children": [],
-    "is_event": true,
-    "source": "vanilla"
-  },
-  {
     "key": "tech_extradimensional_weapon_1",
     "name": "Extradimensional Weaponry",
     "description": "Applying 5th-dimensional energy manipulation principles on lower dimensional planes allows for the creation of powerful energy weapons.",

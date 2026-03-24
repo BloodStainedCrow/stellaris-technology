@@ -4042,8 +4042,8 @@
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1",
                     "(×<b style='color:red'>0.1</b>) Does NOT have Technology: Psionic Theory",
-                    "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   is_psionic_species=yes",
-                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_latent_psionic_species=yes<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_psionic_species=yes",
+                    "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   One must be true<br/>\t    •   Has trait Psionic<br/>\t    •   Has trait Psionic",
+                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_latent_psionic_species=yes<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic",
                     "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
                     "(×<b style='color:lime'>2.0</b>) Any Leader in council has trait Expertise: Psionics 1"
                   ],
@@ -4257,8 +4257,8 @@
           "tier": 3,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
+            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
             "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Has Megastructure Quantum Catapult Single Array<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Ruined Quantum Catapult<br/>    •   Has Megastructure Ruined Quantum Catapult",

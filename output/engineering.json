@@ -1953,7 +1953,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
+            "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
           ],
           "potential": [],
           "children": [
@@ -1989,7 +1989,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Industry 1<br/>    •   Any Leader in council has trait Curator 1",
-                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
+                "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
               ],
               "potential": [],
               "children": [
@@ -4421,8 +4421,8 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4502,7 +4502,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Voidcraft 1<br/>    •   Any Leader in council has trait Curator 1",
                         "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)",
-                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes"
+                        "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
                       ],
                       "potential": [],
                       "children": [],
@@ -4808,8 +4808,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4852,8 +4852,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4897,8 +4897,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Xenophobe Ethic<br/>    •   is_fanatic_xenophobe=yes",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   is_fanatic_xenophile=yes",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Xenophobe Ethic<br/>    •   Has Fanatic Xenophobe Ethic",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Xenophile Ethic<br/>    •   Has Fanatic Xenophile Ethic",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -4941,8 +4941,8 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   is_fanatic_militarist=yes",
-                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes",
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
                                 "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
@@ -6033,8 +6033,8 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has Colossus Project Ascension Perk",
-                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   Has DLC Shadows of the Shroud\n\t\t    •   One must be true\n\t\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t\t    •   Has Origin Teachers of the Shroud\n\t\t\t    •   Has Origin Endbringers\n\t\t\t    •   is_chosen_empire=yes\n\t\t\t    •   All must be true\n\t\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t\t    •   Finished the Forged by the Shroud situation by supporting the Shroud",
-                    "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
+                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   Has Fanatic Spiritualist Ethic\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   Has DLC Shadows of the Shroud\n\t\t    •   One must be true\n\t\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t\t    •   Has Origin Teachers of the Shroud\n\t\t\t    •   Has Origin Endbringers\n\t\t\t    •   is_chosen_empire=yes\n\t\t\t    •   All must be true\n\t\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t\t    •   Finished the Forged by the Shroud situation by supporting the Shroud",
+                    "All must be false\n    •   Has Pacifist Ethic\n    •   Has Fanatic Pacifist Ethic"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6067,7 +6067,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Expertise: Field Manipulation 1",
-                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   is_fanatic_pacifist=yes"
+                    "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic"
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
@@ -6108,7 +6108,7 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has Colossus Project Ascension Perk",
-                    "One must be true\n    •   Has Spiritualist Ethic\n    •   is_fanatic_spiritualist=yes",
+                    "One must be true\n    •   Has Spiritualist Ethic\n    •   Has Fanatic Spiritualist Ethic",
                     "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   Has DLC Shadows of the Shroud\n\t    •   One must be true\n\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t    •   Has Origin Teachers of the Shroud\n\t\t    •   Has Origin Endbringers\n\t\t    •   is_chosen_empire=yes\n\t\t    •   All must be true\n\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t    •   Finished the Forged by the Shroud situation by supporting the Shroud"
                   ],
                   "children": [],
@@ -6146,7 +6146,7 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has Colossus Project Ascension Perk",
-                    "One must be true\n    •   Has Origin Red Giant\n    •   is_world_forger_empire=yes\n    •   is_infernal_empire=yes\n    •   Has Galactic Hyperthermia Ascension Perk"
+                    "One must be true\n    •   Has Origin Red Giant\n    •   One must be true\n\t    •   Has Government Civic: Planet Forgers\n\t    •   Has Government Civic: Volcanic Nesting\n\t    •   Has Government Civic: Thermal Optimizers\n\t    •   Has Government Civic: Planetary Architects\n    •   Founder Species :\n\t    •   Has trait Thermophile\n    •   Has Galactic Hyperthermia Ascension Perk"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6183,7 +6183,7 @@
                   "potential": [
                     "Has DLC Apocalypse",
                     "Has Colossus Project Ascension Perk",
-                    "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
+                    "All must be false\n    •   Has Pacifist Ethic\n    •   Has Fanatic Pacifist Ethic"
                   ],
                   "children": [],
                   "is_event": false,

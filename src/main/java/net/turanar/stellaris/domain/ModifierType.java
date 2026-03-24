@@ -78,8 +78,14 @@ public enum ModifierType {
     is_authoritarian(DefaultParser.SCRIPTED),
     is_militarist(DefaultParser.SCRIPTED),
     is_xenophobe(DefaultParser.SCRIPTED),
-
     is_spiritualist(DefaultParser.SCRIPTED),
+    is_fanatic_xenophile(DefaultParser.SCRIPTED),
+    is_fanatic_pacifist(DefaultParser.SCRIPTED),
+    is_fanatic_egalitarian(DefaultParser.SCRIPTED),
+    is_fanatic_authoritarian(DefaultParser.SCRIPTED),
+    is_fanatic_militarist(DefaultParser.SCRIPTED),
+    is_fanatic_xenophobe(DefaultParser.SCRIPTED),
+    is_fanatic_spiritualist(DefaultParser.SCRIPTED),
     is_gestalt(DefaultParser.SCRIPTED),
     is_mechanical_empire(DefaultParser.SCRIPTED),
     is_regular_empire(DefaultParser.SCRIPTED),
@@ -88,6 +94,7 @@ public enum ModifierType {
     is_megacorp(DefaultParser.SCRIPTED),
     allows_slavery(DefaultParser.SCRIPTED),
     has_psionic_ascension(DefaultParser.SCRIPTED),
+    is_cloning_authority(DefaultParser.SCRIPTED),
 
     is_ai("Is [|NOT ]AI", DefaultParser.SIMPLE_BOOLEAN),
 
@@ -145,6 +152,9 @@ public enum ModifierType {
     is_eager_explorer_empire(DefaultParser.SCRIPTED),
     is_dimensional_worship_empire(DefaultParser.SCRIPTED),
     is_guided_sapience_empire(DefaultParser.SCRIPTED),
+    is_world_forger_empire(DefaultParser.SCRIPTED),
+    is_entropy_drinkers_empire(DefaultParser.SCRIPTED),
+    is_infernal_empire(DefaultParser.SCRIPTED),
 
     founder_species("Founder Species:", DefaultParser.CONDITIONAL),
     is_archetype("Is archetype %s"),
@@ -271,6 +281,8 @@ public enum ModifierType {
 
     is_homicidal(DefaultParser.SCRIPTED),
     can_get_planet_smelter(DefaultParser.SCRIPTED),
+    has_encountered_psionic_auras(DefaultParser.SCRIPTED),
+    is_psionic_species(DefaultParser.SCRIPTED),
     
     has_any_dna(DefaultParser.SCRIPTED),
     has_dna((p) -> {
