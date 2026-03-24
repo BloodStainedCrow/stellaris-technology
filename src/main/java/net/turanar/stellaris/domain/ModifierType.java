@@ -265,6 +265,9 @@ public enum ModifierType {
     is_councilor("Is [|NOT ]Councilor", DefaultParser.SIMPLE_BOOLEAN),
     // TODO(Tim Aschhoff) Confirm this is correct!
     has_base_skill("Skill level is %s %s", DefaultParser.SIMPLE_OPERATION),
+    has_councilor(p -> f("Has Councilor %s", gs(p.value().map().pair().stream()
+            .filter(sp -> sp.BAREWORD().getText().equals("COUNCILOR")).findFirst().get()))
+    ),
 
     mid_game_years_passed("Number of midgame years passed %s %s", DefaultParser.SIMPLE_OPERATION),
 
@@ -275,6 +278,10 @@ public enum ModifierType {
     has_storm_attraction_civic(DefaultParser.SCRIPTED),
 
     is_inside_nebula("Is [|NOT ]in nebula", DefaultParser.SIMPLE_BOOLEAN),
+    has_any_capped_planet_farming_district("[Has|Does NOT have] limited amount of farming districts", DefaultParser.SIMPLE_BOOLEAN),
+    has_any_agriculture_zone("[Has|Does NOT have] an agriculture zone", DefaultParser.SIMPLE_BOOLEAN),
+    has_any_mining_zone("[Has|Does NOT have] a mining zone", DefaultParser.SIMPLE_BOOLEAN),
+    has_any_generator_zone("[Has|Does NOT have] a generator zone", DefaultParser.SIMPLE_BOOLEAN),
 
     perc_communications_with_playable("Percentage of playable empires met is %s %s%%", DefaultParser.SIMPLE_OPERATION),
 
@@ -285,7 +292,9 @@ public enum ModifierType {
     can_get_planet_smelter(DefaultParser.SCRIPTED),
     has_encountered_psionic_auras(DefaultParser.SCRIPTED),
     is_psionic_species(DefaultParser.SCRIPTED),
-    
+    is_latent_psionic_species(DefaultParser.SCRIPTED),
+    has_psionic_species_trait(DefaultParser.SCRIPTED),
+
     has_any_dna(DefaultParser.SCRIPTED),
     has_dna((p) -> {
         String dna_source = null;

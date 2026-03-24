@@ -1636,7 +1636,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
                     "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
-                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Generator District is greater than 0<br/>    •   Number of Reactor District is greater than 0<br/>    •   Number of Photosynthesis Field is greater than 0<br/>    •   Number of Geothermal Powerplant is greater than 0<br/>    •   has_any_generator_zone=yes"
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Generator District is greater than 0<br/>    •   Number of Reactor District is greater than 0<br/>    •   Number of Photosynthesis Field is greater than 0<br/>    •   Number of Geothermal Powerplant is greater than 0<br/>    •   Has a generator zone"
                   ],
                   "potential": [],
                   "children": [
@@ -4043,7 +4043,7 @@
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1",
                     "(×<b style='color:red'>0.1</b>) Does NOT have Technology: Psionic Theory",
                     "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   One must be true<br/>\t    •   Has trait Psionic<br/>\t    •   Has trait Psionic",
-                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_latent_psionic_species=yes<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic",
+                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic",
                     "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
                     "(×<b style='color:lime'>2.0</b>) Any Leader in council has trait Expertise: Psionics 1"
                   ],
