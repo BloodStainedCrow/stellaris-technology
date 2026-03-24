@@ -155,6 +155,7 @@ public enum ModifierType {
     is_world_forger_empire(DefaultParser.SCRIPTED),
     is_entropy_drinkers_empire(DefaultParser.SCRIPTED),
     is_infernal_empire(DefaultParser.SCRIPTED),
+    is_chosen_empire(DefaultParser.SCRIPTED),
 
     founder_species("Founder Species:", DefaultParser.CONDITIONAL),
     is_archetype("Is archetype %s"),
@@ -198,6 +199,7 @@ public enum ModifierType {
     can_research_technology("Can research technology: %s"),
 
     is_galactic_community_member("Is [|NOT ]a member of the galactic community", DefaultParser.SIMPLE_BOOLEAN),
+    can_form_federation_with_empire("[Can|CANNOT] form a federation with another empire", DefaultParser.SIMPLE_BOOLEAN),
 
     // TODO(Tim Aschhoff): This is not very clear what this means
     exists("%s exists"),
@@ -429,6 +431,14 @@ public enum ModifierType {
     }),
 
     count_owned_pop_amount((p) -> {return count_owned_pops.parser.apply(p);}),
+
+    days_passed(p -> {
+        if (gs(p).equals("0") && p.SPECIFIER().getText().equals("=")) {
+            return "At the start of the game";
+        } else {
+            return DefaultParser.SIMPLE_OPERATION.parser.apply("Number of days passed since the start of the game is %s %s", p);
+        }
+    }),
 
     calc_true_if((p) -> {
         String limits = "";
