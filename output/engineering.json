@@ -174,7 +174,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
+                    "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Mining District is greater than 0<br/>    •   Number of Astro-Mining Bay is greater than 0<br/>    •   Number of Hollow Mountain is greater than 0<br/>    •   Number of Magma Conduit is greater than 0<br/>    •   Has a mining zone"
                   ],
                   "potential": [],
@@ -212,7 +212,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
+                        "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                       ],
                       "potential": [],
@@ -868,7 +868,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
-                "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
               ],
               "potential": [
                 "Country uses Consumer Goods"
@@ -907,7 +907,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
                   ],
                   "potential": [
                     "Country uses Consumer Goods"
@@ -949,7 +949,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
-                "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -987,7 +987,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
                   ],
                   "potential": [],
                   "children": [],
@@ -2300,7 +2300,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -2496,7 +2496,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                   ],
                   "potential": [],
                   "children": [
@@ -2539,7 +2539,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                       ],
                       "potential": [],
                       "children": [
@@ -2582,7 +2582,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                            "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                           ],
                           "potential": [],
                           "children": [],
@@ -2660,7 +2660,7 @@
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-            "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+            "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
           ],
           "potential": [
             "Does NOT have Origin Wilderness"
@@ -2697,7 +2697,7 @@
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [
                 "Does NOT have Origin Wilderness"
@@ -2734,7 +2734,7 @@
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [
                     "Does NOT have Origin Wilderness"
@@ -3258,7 +3258,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                           ],
                           "potential": [],
                           "children": [],
@@ -4324,7 +4324,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                   ],
                   "potential": [],
                   "children": [
@@ -4501,7 +4501,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Voidcraft 1<br/>    •   Any Leader in council has trait Curator 1",
-                        "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)",
+                        "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)",
                         "(×<b style='color:lime'>1.25</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic"
                       ],
                       "potential": [],
@@ -6514,9 +6514,9 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has the encountered_first_lgate country flag",
-            "Does NOT have the completed_lcluster_chain country flag",
-            "Does NOT have the l_cluster_opened global flag"
+            "Encountered an L-Gate",
+            "NOT L-Gates opened by this empire",
+            "NOT L-Gates opened"
           ],
           "children": [],
           "is_event": false,

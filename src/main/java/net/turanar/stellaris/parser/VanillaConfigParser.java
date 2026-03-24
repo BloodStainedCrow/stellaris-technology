@@ -17,6 +17,7 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 import static net.turanar.stellaris.Global.parse;
+import static net.turanar.stellaris.Global.parseWithSubdirectories;
 
 @Component
 public class VanillaConfigParser extends AbstractConfigParser {
@@ -42,8 +43,7 @@ public class VanillaConfigParser extends AbstractConfigParser {
     public void parseGamesObjets(String folder) throws IOException {
         Arrays.stream(GameObject.values()).forEach(type -> {
             try {
-                parse(folder + "/" + type.folder, "txt", path -> {
-                    System.out.println(path);
+                parseWithSubdirectories(folder + "/" + type.folder, "txt", path -> {
                     if (path.getFileName().toString().contains("README")) return;
                     if (!path.getFileName().toString().endsWith(type.filter)) return;
                     unlockVisitor.visitFile(type, factory.getParser(path).file());

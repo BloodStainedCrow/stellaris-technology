@@ -45,7 +45,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic",
             "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [
@@ -85,7 +85,7 @@
                 "(×<b style='color:lime'>2.0</b>) Payback origin and researchingGene Clinics during Out of Warranty event"
               ],
               "potential": [
-                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
+                "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic",
                 "All must be false\n    •   Founder Species:\n\t    •   Is archetype Machine\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
@@ -262,13 +262,13 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
                 "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                 "(×<b style='color:lime'>2.0</b>) Country uses biological ships",
-                "(×<b style='color:lime'>5.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Country uses biological ships<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Machine Intelligence Authority<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; NOT Founder Species :<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be false<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone"
+                "(×<b style='color:lime'>5.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Country uses biological ships<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Machine Intelligence Authority<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; NOT Founder Species :<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be false<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone"
               ],
               "potential": [],
               "children": [
@@ -303,7 +303,7 @@
                     "(×<b style='color:lime'>2.0</b>) Country uses Food",
                     "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Has Prosperity Traditions Tradition<br/>&nbsp;&nbsp;•&nbsp; Country uses Food",
                     "(×<b style='color:lime'>5.0</b>) Any Owned Planet<br/>    •   One must be true<br/>\t    •   Has limited amount of farming districts<br/>\t    •   Has an agriculture zone",
-                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
                     "(×<b style='color:red'>0.5</b>) Country does NOT use Food",
                     "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Has Government Civic: Agrarian Idyll<br/>    •   One must be true<br/>\t    •   Has Government Civic: Anglers<br/>\t    •   Has Government Civic: Trawling Operations<br/>\t    •   Has Government Civic: Marine Machines<br/>\t    •   Has Government Civic: Maritime Robotics",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Government Civic: Catalytic Processing<br/>    •   Has Government Civic: Catalytic Recyclers<br/>    •   Has Government Civic: Organic Reprocessing<br/>    •   Has Government Civic: Organic Retrofitting",
@@ -339,8 +339,8 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
@@ -383,8 +383,8 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                    "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                    "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
                     "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -421,8 +421,8 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                        "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                        "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
                         "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
@@ -458,8 +458,8 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+                            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+                            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
                             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Biology 1<br/>    •   Any Leader in council has trait Curator 1",
                             "(×<b style='color:lime'>1.25</b>) Has Pacifist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Pacifist Ethic",
@@ -839,7 +839,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -1029,7 +1029,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -1530,7 +1530,7 @@
                 "(×<b style='color:red'>0.5</b>) Has Origin Synthetic Fertility",
                 "(×<b style='color:lime'>2.0</b>) All must be true<br/>    •   All must be true<br/>\t    •   Founder Species:<br/>\t\t    •   Is archetype Machine<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Any owned Species:<br/>\t    •   Is Organic",
                 "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Genesis Guides<br/>    •   Has Government Civic: Genesis Symbiotes<br/>    •   Has Government Civic: Genesis Architects<br/>    •   Has Government Civic: Astrogenesis Technologies",
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the found_presapients country flag<br/>    •   Any Planet within borders<br/>\t    •   Any owned Population Group:<br/>\t\t    •   Pop is NOT Sapient<br/>\t\t    •   Does NOT have trait Nascent Stage"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Encountered a pre-sapient species<br/>    •   Any Planet within borders<br/>\t    •   Any owned Population Group:<br/>\t\t    •   Pop is NOT Sapient<br/>\t\t    •   Does NOT have trait Nascent Stage"
               ],
               "potential": [
                 "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   One must be true\n\t    •   Has Government Civic: Natural Design\n\t    •   Has Government Civic: Innate Design\n    •   Has Origin Wilderness",
@@ -2281,7 +2281,7 @@
                                     }
                                   ],
                                   "weight_modifiers": [
-                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                                   ],
                                   "potential": [
                                     "Country uses biological ships"
@@ -2478,7 +2478,7 @@
                                     }
                                   ],
                                   "weight_modifiers": [
-                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                                   ],
                                   "potential": [
                                     "Country uses biological ships"
@@ -2675,7 +2675,7 @@
                                     }
                                   ],
                                   "weight_modifiers": [
-                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                                   ],
                                   "potential": [
                                     "Country uses biological ships"
@@ -2872,7 +2872,7 @@
                                     }
                                   ],
                                   "weight_modifiers": [
-                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                                   ],
                                   "potential": [
                                     "Country uses biological ships"
@@ -3056,7 +3056,7 @@
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-            "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)",
+            "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
           ],
           "potential": [
@@ -3094,7 +3094,7 @@
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)",
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
               ],
               "potential": [
@@ -3132,7 +3132,7 @@
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)",
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
                   ],
                   "potential": [
@@ -3364,7 +3364,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
-                    "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                   ],
                   "potential": [],
                   "children": [],
@@ -5259,7 +5259,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition"
               ],
               "potential": [
-                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
+                "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic"
               ],
               "children": [
                 {
@@ -5545,7 +5545,7 @@
                           "cost": 6000,
                           "feature_unlocks": [
                             "Available Envoys +1",
-                            "mod_country_external_leader_pool_add +1",
+                            "External Recruitable Leaders per Class +1",
                             "£commander£ Commander Capacity +1",
                             "£official£ Official Capacity +1",
                             "£scientist£ Scientist Capacity +1"
@@ -5653,7 +5653,7 @@
                             "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                           ],
                           "potential": [
-                            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
+                            "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic"
                           ],
                           "children": [
                             {
@@ -5695,7 +5695,7 @@
                                 "(×<b style='color:red'>0.01</b>) Has Government Civic: Inward Perfection"
                               ],
                               "potential": [
-                                "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
+                                "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic"
                               ],
                               "children": [],
                               "is_event": false,
@@ -5781,7 +5781,7 @@
                         "(×<b style='color:lime'>1.5</b>) Any owned Leader:<br/>    •   Is Councilor<br/>    •   Is NOT Ruler<br/>    •   Skill level is greater than or equal to 5",
                         "(×<b style='color:lime'>1.5</b>) Any owned Leader:<br/>    •   Is Councilor<br/>    •   Is NOT Ruler<br/>    •   Skill level is greater than or equal to 7",
                         "(×<b style='color:lime'>1.5</b>) Any owned Leader:<br/>    •   Is Councilor<br/>    •   Is NOT Ruler<br/>    •   Skill level is greater than or equal to 9",
-                        "(×<b style='color:lime'>2.0</b>) Has the bio_cloning country flag"
+                        "(×<b style='color:lime'>2.0</b>) Has Cloning ascension authority"
                       ],
                       "potential": [
                         "Has Hive Mind Authority"
@@ -5797,8 +5797,8 @@
                           "category": "Statecraft",
                           "cost": 6000,
                           "feature_unlocks": [
-                            "Restored Node Additional Skill +2",
-                            "mod_country_councilor_exp_gain +25%"
+                            "Councilor Experience Gain +25%",
+                            "Restored Node Additional Skill +2"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -5917,8 +5917,8 @@
                           "category": "Statecraft",
                           "cost": 6000,
                           "feature_unlocks": [
-                            "Restored Node Additional Skill +2",
-                            "mod_country_councilor_exp_gain +25%"
+                            "Councilor Experience Gain +25%",
+                            "Restored Node Additional Skill +2"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -6029,7 +6029,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Nano-Circuit Assembly<br/>    •   Country does NOT use Consumer Goods",
-                        "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
                       ],
                       "potential": [],
                       "children": [],
@@ -6121,7 +6121,7 @@
                       "category": "Statecraft",
                       "cost": 6000,
                       "feature_unlocks": [
-                        "mod_country_external_leader_pool_add +1",
+                        "External Recruitable Leaders per Class +1",
                         "£commander£ Commander Capacity +1",
                         "£official£ Official Capacity +1",
                         "£scientist£ Scientist Capacity +1"
@@ -7010,7 +7010,7 @@
             "(×<b style='color:lime'>2.0</b>) Has a number of pop greater than or equal to 3000<br/>    •   One must be true<br/>    •   Pop is enslaved<br/>    •   Is TODO"
           ],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
+            "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic",
             "One must be true\n    •   Has policy Slavery Allowed\n    •   Has Gestalt Consciousness Ethic"
           ],
           "children": [
@@ -7646,7 +7646,7 @@
             "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; Has Gestalt Consciousness Ethic",
             "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Has Spiritualist Ethic<br/>    •   Has Fanatic Spiritualist Ethic",
             "(×<b style='color:lime'>2.0</b>) Has Fanatic Spiritualist Ethic",
-            "(×<b style='color:lime'>2.0</b>) Any Country<br/>    •   Has Origin MINDWARDEN_plural<br/>    •   NOT is_same_value=prev",
+            "(×<b style='color:lime'>2.0</b>) Any Country<br/>    •   Has Origin Mindwardens<br/>    •   NOT is_same_value=prev",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait [GetChosenName] 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
             "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   One must be true<br/>\t    •   Has trait Psionic<br/>\t    •   Has trait Psionic",
@@ -7657,7 +7657,7 @@
           ],
           "potential": [
             "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Currently active resolution is Extradimensional Experimentation\n    •   Has Relic Psionic Archive",
-            "Does NOT have Origin MINDWARDEN_plural"
+            "Does NOT have Origin Mindwardens"
           ],
           "children": [
             {
@@ -7767,7 +7767,7 @@
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                        "(×<b style='color:lime'>1.5</b>) Has the jaunted_traveler_secret_revealed country flag"
+                        "(×<b style='color:lime'>1.5</b>) The Guest outcome"
                       ],
                       "potential": [
                         "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
@@ -7896,7 +7896,7 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) Does NOT have DLC Ancient Relics Story Pack",
             "(×<b style='color:red'>0.3</b>) Has a Number of archaeological sites lower than 3<br/>    •   Site is completed",
-            "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Has the origin_shoulders_closure country flag<br/>    •   Has completed Precursor technology"
+            "(×<b style='color:lime'>3.0</b>) One must be true<br/>    •   Finished Closure event of On the Shoulders of Giants origin<br/>    •   Has completed Precursor technology"
           ],
           "potential": [
             "Has DLC Ancient Relics Story Pack"
@@ -8460,8 +8460,8 @@
           "tier": 0,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
-            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
+            "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Thermophile<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Non-Lithoid secondary species<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has limited amount of farming districts<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has an agriculture zone",
+            "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   Founder Species :<br/>\t    •   Has trait Thermophile<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   NOT Non-Lithoid secondary species",
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
             "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
           ],
@@ -8498,7 +8498,7 @@
             "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
           ],
           "potential": [
-            "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic"
+            "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic"
           ],
           "children": [],
           "is_event": false,
@@ -8815,7 +8815,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) Has Origin MINDWARDEN_plural"
+            "(×<b style='color:red'>0.0</b>) Has Origin Mindwardens"
           ],
           "potential": [
             "Has DLC Shadows of the Shroud",

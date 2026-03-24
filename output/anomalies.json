@@ -359,7 +359,7 @@
     "potential": [
       "Has DLC Nemesis",
       "Has Galactic Nemesis Ascension Perk",
-      "Has the can_build_star_eaters country flag"
+      "Galactic Nemesis level 5"
     ],
     "children": [],
     "is_event": true,
@@ -998,7 +998,7 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+<b style='color:lime'>5</b>) Has the crystal_armor_1_weight country flag"
+      "(+<b style='color:lime'>5</b>) Crystalline Entities outcome"
     ],
     "potential": [],
     "children": [],
@@ -1417,7 +1417,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Does NOT have the l_cluster_opened global flag"
+      "NOT L-Gates opened"
     ],
     "children": [],
     "is_event": true,
@@ -2960,11 +2960,11 @@
     "tier": 1,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+<b style='color:lime'>100</b>) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t\t    •   Is of country type: exiled<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Government Civic: Scorched World Heralds<br/>\t    •   Has Government Civic: Pyromanic Instinct<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
+      "(+<b style='color:lime'>100</b>) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Empire is The Horde<br/>\t\t    •   Is a Fallen Empire<br/>\t\t    •   Is an Awakened Empire<br/>\t\t    •   Is an Enclave<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Government Civic: Scorched World Heralds<br/>\t    •   Has Government Civic: Pyromanic Instinct<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
     ],
     "potential": [
       "Has DLC Galactic Paragons",
-      "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
+      "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic",
       "Does NOT have Gestalt Consciousness Ethic",
       "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   Has Government Civic: Determined Exterminator\n    •   Has Government Civic: Devouring Swarm\n    •   Has Government Civic: Scorched World Heralds\n    •   Has Government Civic: Pyromanic Instinct\n    •   Has Crisis perk Ever Hungry"
     ],

@@ -23,7 +23,12 @@ public class Global {
 
     public static void parse(String path, String filetype, Consumer<Path> consumer) throws IOException {
         PathMatcher m = FileSystems.getDefault().getPathMatcher("glob:**." + filetype);
-        Files.list(Paths.get(path)).filter(m::matches).forEach(consumer);
+        Files.list(Paths.get(path)).filter(Files::isRegularFile).filter(m::matches).forEach(consumer);
+    }
+
+    public static void parseWithSubdirectories(String path, String filetype, Consumer<Path> consumer) throws IOException {
+        PathMatcher m = FileSystems.getDefault().getPathMatcher("glob:**." + filetype);
+        Files.walk(Paths.get(path)).filter(Files::isRegularFile).filter(m::matches).forEach(consumer);
     }
 
     @Autowired

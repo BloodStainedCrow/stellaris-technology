@@ -29,7 +29,7 @@ public class StellarisYamlReader extends Reader {
 
                 line = line.replace("\uFEFF", "");
                 line = line.replaceAll("£\\w+  |§[A-Z!]","");
-                line = line.replaceAll("(?<=\\w):\\d+ ?(?=\")", ": ");
+                line = line.replaceAll("(?<=[\\w-]):\\d+ ?(?=\")", ": ");
                 line = line.replaceAll("^[ \\t]+"," ");
                 line = line.replaceAll("\\t"," ");
                 if (!line.startsWith(" ") && !line.startsWith("l_english:")) {

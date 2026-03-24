@@ -56,20 +56,71 @@ public enum ModifierType {
                 return i18n("covenant_end_of_the_cycle");
             case "advanced_identity_creation":
                 return "Finished the " + i18n("situation_digitization") + " situation";
+            case "starfire_cannon_unlocked":
+                return "Finished the " + i18n("situation_red_giant_expansion") + " situation";
             case "colossus_project":
                 return has_ascension_perk.parse(p); // technically, only after special project is completed, but whatever
+            case "synth_queen_knowledge":
+                return i18n("situation_synth_queen_player_facing") + " event reward";
+            case "cosmogenesis_aborted":
+                return "Accepted the " + i18n("personality_fallen_empire_materialist") + " demand to stop";
+            case "has_quantum_catapult_insight":
+                return i18n("action_quantum_catapult_insight") + " Astral Action";
+            case "can_build_star_eaters":
+                return i18n("ap_become_the_crisis") + " level 5";
+            case "l_cluster_opened":
+                return i18n("concept_l_gates") + " opened";
+            case "completed_lcluster_chain":
+                return i18n("concept_l_gates") + " opened by this empire";
+            case "encountered_first_lgate":
+                return "Encountered an " + i18n("concept_l_gate");
+            case "chosen_empire":
+                return "Unique empire: " + i18n("NAME_The_Chosen"); // different from is_chosen_empire
+            case "dark_matter_found":
+                return "Dark Matter within borders";
+            case "non_lithoid_subspecies":
+                return "Non-Lithoid secondary species";
+            case "found_presapients":
+                return "Encountered a pre-sapient species";
+            case "bio_cloning":
+                return "Has Cloning ascension authority";
+            case "crystal_armor_1_weight":
+                return i18n("crystalline_entity_plural") + " outcome";
+            case "jaunted_traveler_secret_revealed":
+                return i18n("first_contact.3000.name") + " outcome";
+            case "origin_shoulders_closure":
+                return "Finished " + i18n("origin.1360.name") + " event of " + i18n("origin_shoulders_of_giants") + " origin";
         }
         return f("Has the %s country flag", i18n(gs(p)));
     }),
-    has_global_flag("Has the %s global flag"),
+    has_global_flag((p) -> {
+        if (gs(p).equals("l_cluster_opened")) {
+            return i18n("concept_l_gates") + " opened";
+        }
+        return f("Has the %s global flag", i18n(gs(p)));
+    }),
     has_deposit("Has deposit %s"),
-    is_country_type("Is of country type: %s"),
+    is_country_type((p) -> {
+        switch (gs(p)) {
+            case "default":
+                return "Is normal empire";
+            case "awakened_marauders":
+                return "Empire is The Horde";
+            case "fallen_empire":
+                return "Is a Fallen Empire";
+            case "awakened_fallen_empire":
+                return "Is an Awakened Empire";
+            case "exiled":
+                return "Is an Enclave";
+        }
+        return f("Is of country type: %s", i18n(gs(p)));
+    }),
     is_planet_class("Is %s"),
-    has_communications("Has communication with our Empire"),
+    has_communications((unused) -> "Has communication with our Empire"),
     pop_has_trait("Pop has trait %s"),
     has_policy_flag((p) -> f("Has policy %s", i18n(gs(p) + "_name"))),
-    owns_any_bypass((p) -> f("Controls a system with a %s", i18n("bypass_" + gs(p).toLowerCase()))),
-    has_seen_any_bypass((p) -> f("Has encountered a %s", i18n("bypass_" + gs(p).toLowerCase()))),
+    owns_any_bypass((p) -> f("Controls a system with a %s", bypassI18n(p))),
+    has_seen_any_bypass((p) -> f("Has encountered a %s", bypassI18n(p))),
 
     is_xenophile(DefaultParser.SCRIPTED),
     is_pacifist(DefaultParser.SCRIPTED),
@@ -417,7 +468,7 @@ public enum ModifierType {
         String type = "";
         for(PairContext prop : mapPairs(p.value())) {
             if(prop.BAREWORD().getText().equals("TYPE")) {
-                type = i18n(gs(prop));
+                type = i18n("specialist_" + gs(prop));
             }
         }
         return "Is a " + type + " (specialised subject)";
@@ -488,6 +539,14 @@ public enum ModifierType {
         return retval;
     })
     ;
+
+    private static String bypassI18n(PairContext p) {
+        switch (gs(p)) {
+            case "lgate": return i18n("concept_l_gate");
+            case "relay_bypass": return i18n("hyper_relay");
+            default: return i18n("bypass_" + gs(p).toLowerCase());
+        }
+    }
 
     private static final Pattern SIMPLE_BOOLEAN_PATTERN = Pattern.compile("\\[([^]]*)\\|([^]]*)]");
 

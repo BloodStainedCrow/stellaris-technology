@@ -51,6 +51,7 @@ public class UnlockVisitor {
         }
 
         if(key == null) return tech;
+        if (tech == null) return null;
 
         if(i18n(key).equals(key)) {
             key = i18n(type.locale_prefix + key);
@@ -58,7 +59,7 @@ public class UnlockVisitor {
             key = i18n(key);
         }
 
-        if(tech != null) tech.feature_unlocks.add(clean("<b>" + type.label + "</b>: " + key));
+        tech.feature_unlocks.add(clean("<b>" + type.label + "</b>: " + key));
 
         return tech;
     }

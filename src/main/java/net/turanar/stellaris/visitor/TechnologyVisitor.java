@@ -37,6 +37,8 @@ public class TechnologyVisitor {
                 if(key.equals("ship_anomaly_research_speed_mult")) key = "mod_ship_anomaly_research_speed";
                 if(key.equals("all_technology_research_speed")) key = "all_tech_research_speed";
                 if(key.equals("army_health")) key = "mod_army_health";
+                if(key.equals("external_leader_pool_add")) key = "mod_country_external_leader_pool_size";
+                if(key.equals("councilor_exp_gain")) key = "mod_leader_councilor_exp_gain";
 
                 String effect = i18n(key);
                 if(key.equals("species_leader_exp_gain")) effect = "Species Leader Exp Gain";

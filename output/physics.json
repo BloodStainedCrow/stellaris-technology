@@ -238,7 +238,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [],
                               "children": [],
@@ -1140,7 +1140,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                 "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Has the chosen_empire country flag"
+                "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Unique empire: The Chosen"
               ],
               "potential": [],
               "children": [
@@ -1209,8 +1209,8 @@
                         "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   One must be true<br/>\t    •   Has encountered a Gateway<br/>\t    •   Has encountered a bypass_lgate<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Gateway Activation",
-                        "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Controls a system with a Gateway<br/>    •   Controls a system with a bypass_lgate"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   One must be true<br/>\t    •   Has encountered a Gateway<br/>\t    •   Has encountered a L-Gate<br/>    •   Any Country Relation<br/>\t    •   Is normal empire<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Gateway Activation",
+                        "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Controls a system with a Gateway<br/>    •   Controls a system with a L-Gate"
                       ],
                       "potential": [],
                       "children": [
@@ -1292,10 +1292,10 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
-                    "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Has encountered a bypass_relay_bypass",
+                    "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Has encountered a Hyper Relay",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Hyper Relay<br/>    •   Has Megastructure Ruined Hyper Relay<br/>    •   Has Megastructure Hyper Relay",
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Has encountered a bypass_relay_bypass",
+                    "(×<b style='color:lime'>1.5</b>) Has encountered a Hyper Relay",
                     "(×<b style='color:lime'>1.25</b>) Has Technology: Speculative Hyperlane Breaching",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
@@ -1338,9 +1338,9 @@
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
                     "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is part of a Federation<br/>&nbsp;&nbsp;•&nbsp; Federation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Federation Perk Scientific Inspiration<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Member:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Wormhole Stabilization",
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is normal empire<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
                     "(×<b style='color:lime'>4.0</b>) Controls a system with a Natural Wormhole",
-                    "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Has the chosen_empire country flag"
+                    "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Unique empire: The Chosen"
                   ],
                   "potential": [],
                   "children": [],
@@ -1635,7 +1635,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
+                    "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Generator District is greater than 0<br/>    •   Number of Reactor District is greater than 0<br/>    •   Number of Photosynthesis Field is greater than 0<br/>    •   Number of Geothermal Powerplant is greater than 0<br/>    •   Has a generator zone"
                   ],
                   "potential": [],
@@ -1675,7 +1675,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>2.0</b>) Has Prosperity Traditions Tradition",
-                        "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
                       ],
                       "potential": [],
                       "children": [],
@@ -1755,7 +1755,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -1958,7 +1958,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                   ],
                   "potential": [],
                   "children": [
@@ -2102,7 +2102,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                       ],
                       "potential": [],
                       "children": [
@@ -2139,7 +2139,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                            "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                           ],
                           "potential": [],
                           "children": [
@@ -2175,7 +2175,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [],
                               "children": [],
@@ -2800,7 +2800,7 @@
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [
                 "Does NOT have Origin Wilderness"
@@ -2837,7 +2837,7 @@
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [
                     "Does NOT have Origin Wilderness"
@@ -2873,7 +2873,7 @@
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                       ],
                       "potential": [
                         "Does NOT have Origin Wilderness"
@@ -2917,7 +2917,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -3319,7 +3319,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                       ],
                       "potential": [
                         "Has Gestalt Consciousness Ethic"
@@ -3356,7 +3356,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)",
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)",
                         "(×<b style='color:lime'>2.0</b>) Has Origin Synthetic Fertility"
                       ],
                       "potential": [
@@ -3443,7 +3443,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -3480,7 +3480,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Computing 1<br/>    •   Any Leader in council has trait Curator 1",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [
                     "Does NOT have Origin Wilderness"
@@ -3566,7 +3566,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [],
                   "children": [],
@@ -4002,7 +4002,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the dark_matter_found country flag<br/>    •   Any System within borders<br/>\t    •   Any Planet<br/>\t\t    •   Has £sr_dark_matter£ Dark Matter greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Dark Matter Drawing"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Dark Matter within borders<br/>    •   Any System within borders<br/>\t    •   Any Planet<br/>\t\t    •   Has £sr_dark_matter£ Dark Matter greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Dark Matter Drawing"
                       ],
                       "potential": [],
                       "children": [],
@@ -4198,7 +4198,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   ASTRAL_RIFT exists<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   ASTRAL_RIFT exists<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
             "(×<b style='color:lime'>2.0</b>) Any System within borders<br/>    •   One must be true<br/>\t    •   ASTRAL_RIFT exists<br/>\t    •   Any Planet<br/>\t\t    •   Is astral scar"
           ],
           "potential": [
@@ -4269,7 +4269,7 @@
           ],
           "potential": [
             "Has DLC Overlord",
-            "One must be true\n    •   Has Technology: Mega-Engineering\n    •   Has the has_quantum_catapult_insight country flag\n    •   Has Origin Slingshot to the Stars"
+            "One must be true\n    •   Has Technology: Mega-Engineering\n    •   Gain Quantum Catapult Insight Astral Action\n    •   Has Origin Slingshot to the Stars"
           ],
           "children": [],
           "is_event": false,
@@ -4297,7 +4297,7 @@
           ],
           "potential": [
             "Has Origin Red Giant",
-            "Has the starfire_cannon_unlocked country flag"
+            "Finished the Red Giant Expansion situation"
           ],
           "children": [],
           "is_event": false,
@@ -4451,7 +4451,7 @@
           "potential": [
             "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
-            "Does NOT have the cosmogenesis_aborted country flag"
+            "NOT Accepted the Keepers of Knowledge demand to stop"
           ],
           "children": [],
           "is_event": false,
@@ -4478,7 +4478,7 @@
           "weight_modifiers": [],
           "potential": [
             "Has DLC The Machine Age",
-            "Has the synth_queen_knowledge country flag"
+            "Cetana: The Synthetic Queen event reward"
           ],
           "children": [],
           "is_event": false,

@@ -12,6 +12,8 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+
 import static net.turanar.stellaris.Global.*;
 
 @Configuration
@@ -40,7 +42,7 @@ public class Config {
     public Map<String,String> localisation() throws IOException {
         Map<String,String> retval = new HashMap<>();
 
-        parse("files/localisation/english", "yml", path -> {
+        parseWithSubdirectories("files/localisation/english", "yml", path -> {
             System.err.println(path);
             Yaml yaml = new Yaml();
             Iterable<Object> data = yaml.loadAll(new StellarisYamlReader(path));
@@ -50,7 +52,7 @@ public class Config {
                 return;
             }
             values.forEach((k, v) -> {
-                retval.put(k.toString().toLowerCase(), v.toString());
+                retval.put(Objects.toString(k).toLowerCase(), v.toString());
             });
         });
 
