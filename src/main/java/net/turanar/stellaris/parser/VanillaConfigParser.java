@@ -13,6 +13,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 import static net.turanar.stellaris.Global.parse;
@@ -68,19 +69,21 @@ public class VanillaConfigParser extends AbstractConfigParser {
     }
 
     public void anomalies() throws IOException {
+        TreeMap<String, Technology> anomaliesByKey = this.anomalies.stream()
+                .collect(Collectors.toMap(t -> t.key, t -> t, (t1, t2) -> t1, TreeMap::new));
         technologies.values().stream().filter(t -> t.is_event).forEach(t -> {
-            anomalies.add(t);
-            if(t.children.size() > 0) t.children.forEach(c -> {c.is_event = true; anomalies.add(c);});
-        });
-
-        anomalies.sort((o1, o2) -> {
-            if(o1 == o2) return 0;
-            if(o1.equals(o2)) return 0;
-            return o1.key.compareTo(o2.key);
+            anomaliesByKey.put(t.key, t);
+            if (!t.children.isEmpty()) {
+                for (Technology c : t.children) {
+                    c.is_event = true;
+                    anomaliesByKey.put(c.key, c);
+                }
+                t.children.clear(); // we do not show trees for anomalies
+            }
         });
 
         FileOutputStream fos = new FileOutputStream("output/anomalies.json");
-        fos.write(gson.toJson(anomalies).getBytes());
+        fos.write(gson.toJson(anomaliesByKey.values()).getBytes());
         fos.close();
     }
 

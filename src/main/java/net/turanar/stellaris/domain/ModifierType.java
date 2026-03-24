@@ -40,7 +40,27 @@ public enum ModifierType {
     has_modifier("Has the %s modifier"),
     has_ethic("Has %s Ethic"),
     has_tradition("Has %s Tradition"),
-    has_country_flag("Has the %s country flag"),
+    has_country_flag((p) -> {
+        switch (gs(p)) {
+            case "has_encountered_psionic_auras":
+                return "Has encountered Psionic Auras";
+            case "payback_researching_gene_clinics":
+                return i18n("origin_payback") + " origin and researching" +
+                        i18n("building_medical_2") + " during " +
+                        i18n("payback_out_of_warranty_chain_title") + " event";
+            case "has_market_access":
+                return "Has access to the Galactic Market";
+            case "finish_shroud_forged_liberation_flag":
+                return "Finished the " + i18n("situation_shroud_forged") + " situation by supporting the Shroud";
+            case "covenant_end_of_the_cycle":
+                return i18n("covenant_end_of_the_cycle");
+            case "advanced_identity_creation":
+                return "Finished the " + i18n("situation_digitization") + " situation";
+            case "colossus_project":
+                return has_ascension_perk.parse(p); // technically, only after special project is completed, but whatever
+        }
+        return f("Has the %s country flag", i18n(gs(p)));
+    }),
     has_global_flag("Has the %s global flag"),
     has_deposit("Has deposit %s"),
     is_country_type("Is of country type: %s"),
@@ -250,6 +270,7 @@ public enum ModifierType {
     has_make_spiritualist_perk("Is [|NOT ]a Member of a spiritualist Federation with perk 'A Union of Faith'", DefaultParser.SIMPLE_BOOLEAN),
 
     is_homicidal(DefaultParser.SCRIPTED),
+    can_get_planet_smelter(DefaultParser.SCRIPTED),
     
     has_any_dna(DefaultParser.SCRIPTED),
     has_dna((p) -> {
@@ -417,13 +438,14 @@ public enum ModifierType {
         if(m.type.equals(OR)) return NOR.parser.apply(mapPairs(p.value()).get(0));
 
         String retval = m.toString();
-        if(retval.startsWith("Has")) {
+        if (retval.startsWith("Has encountered")) {
+            return retval.replaceFirst("Has", "Has NOT");
+        } else if (retval.startsWith("Has")) {
             return "Does NOT " + retval.replaceFirst("Has", "have");
-        }
-        else if(retval.startsWith("Is")) {
-            return "Is NOT " + retval.replaceFirst("Is","");
-        }  else if(retval.startsWith("Any")) {
-            return retval.replaceFirst("Any","No");
+        } else if (retval.startsWith("Is")) {
+            return "Is NOT " + retval.replaceFirst("Is", "");
+        } else if (retval.startsWith("Any")) {
+            return retval.replaceFirst("Any", "No");
         } else {
             return "NOT " + retval;
         }

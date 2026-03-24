@@ -213,7 +213,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)",
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                       ],
                       "potential": [],
                       "children": [
@@ -867,7 +867,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
                 "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
               ],
               "potential": [
@@ -948,7 +948,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
                 "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
               ],
               "potential": [],
@@ -1816,7 +1816,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
               ],
               "potential": [
                 "One must be true\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Government Civic: Rogue Servitor"
@@ -2692,7 +2692,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 25",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
@@ -2729,7 +2729,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 25",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
@@ -2770,7 +2770,7 @@
           "tier": 3,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
           ],
@@ -6032,8 +6032,8 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag",
-                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   Has DLC Shadows of the Shroud\n\t\t    •   One must be true\n\t\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t\t    •   Has Origin Teachers of the Shroud\n\t\t\t    •   Has Origin Endbringers\n\t\t\t    •   is_chosen_empire=yes\n\t\t\t    •   All must be true\n\t\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t\t    •   Has the finish_shroud_forged_liberation_flag country flag",
+                    "Has Colossus Project Ascension Perk",
+                    "One must be true\n    •   All must be false\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be false\n\t    •   All must be true\n\t\t    •   Does NOT have DLC Utopia\n\t\t    •   Has Technology: Telepathy\n\t    •   All must be true\n\t\t    •   One must be true\n\t\t\t    •   Has DLC Utopia\n\t\t\t    •   Has DLC Shadows of the Shroud\n\t\t    •   One must be true\n\t\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t\t    •   Has Origin Teachers of the Shroud\n\t\t\t    •   Has Origin Endbringers\n\t\t\t    •   is_chosen_empire=yes\n\t\t\t    •   All must be true\n\t\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t\t    •   Finished the Forged by the Shroud situation by supporting the Shroud",
                     "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
                   ],
                   "children": [],
@@ -6071,7 +6071,7 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag"
+                    "Has Colossus Project Ascension Perk"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6107,9 +6107,9 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag",
+                    "Has Colossus Project Ascension Perk",
                     "One must be true\n    •   Has Spiritualist Ethic\n    •   is_fanatic_spiritualist=yes",
-                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   Has DLC Shadows of the Shroud\n\t    •   One must be true\n\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t    •   Has Origin Teachers of the Shroud\n\t\t    •   Has Origin Endbringers\n\t\t    •   is_chosen_empire=yes\n\t\t    •   All must be true\n\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t    •   Has the finish_shroud_forged_liberation_flag country flag"
+                    "One must be true\n    •   All must be true\n\t    •   Does NOT have DLC Utopia\n\t    •   Has Technology: Telepathy\n    •   All must be true\n\t    •   One must be true\n\t\t    •   Has DLC Utopia\n\t\t    •   Has DLC Shadows of the Shroud\n\t    •   One must be true\n\t\t    •   Has Mind Over Matter Ascension Perk\n\t\t    •   Has Origin Teachers of the Shroud\n\t\t    •   Has Origin Endbringers\n\t\t    •   is_chosen_empire=yes\n\t\t    •   All must be true\n\t\t\t    •   Has Origin Shroud-Forged\n\t\t\t    •   Finished the Forged by the Shroud situation by supporting the Shroud"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6145,7 +6145,8 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag"
+                    "Has Colossus Project Ascension Perk",
+                    "One must be true\n    •   Has Origin Red Giant\n    •   is_world_forger_empire=yes\n    •   is_infernal_empire=yes\n    •   Has Galactic Hyperthermia Ascension Perk"
                   ],
                   "children": [],
                   "is_event": false,
@@ -6181,7 +6182,7 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag",
+                    "Has Colossus Project Ascension Perk",
                     "All must be false\n    •   Has Pacifist Ethic\n    •   is_fanatic_pacifist=yes"
                   ],
                   "children": [],
@@ -6218,7 +6219,7 @@
                   ],
                   "potential": [
                     "Has DLC Apocalypse",
-                    "Has the Colossus Project country flag",
+                    "Has Colossus Project Ascension Perk",
                     "Has Government Civic: Driven Assimilator"
                   ],
                   "children": [],
@@ -6254,56 +6255,6 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [],
-          "children": [],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
-          "key": "tech_identity_fusion",
-          "name": "Identity Fusion",
-          "description": "Merging the identities and memories of two or more Synthetics into a mechanical body will create new, somewhat unique individuals.",
-          "area": "engineering",
-          "base_factor": 1.0,
-          "base_weight": 40.0,
-          "category": "Industry",
-          "cost": 10000,
-          "feature_unlocks": [],
-          "is_dangerous": false,
-          "is_rare": false,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 4,
-          "prerequisites_names": [],
-          "weight_modifiers": [],
-          "potential": [
-            "Has DLC The Machine Age",
-            "Has the advanced_identity_creation country flag"
-          ],
-          "children": [],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
-          "key": "tech_identity_initialization",
-          "name": "Identity Initialization",
-          "description": "We will be able to initialize an identity kernel and provide it with a virtual childhood. While expensive, we can simulate the optimal experiences to generate productive personalities.",
-          "area": "engineering",
-          "base_factor": 1.0,
-          "base_weight": 40.0,
-          "category": "Industry",
-          "cost": 10000,
-          "feature_unlocks": [],
-          "is_dangerous": false,
-          "is_rare": false,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 4,
-          "prerequisites_names": [],
-          "weight_modifiers": [],
-          "potential": [
-            "Has DLC The Machine Age",
-            "Has the advanced_identity_creation country flag"
-          ],
           "children": [],
           "is_event": false,
           "source": "vanilla"

@@ -149,6 +149,10 @@ public class TechnologyVisitor {
                         }
                     });
             }
+            if (retval.potential.stream().anyMatch(m -> m.toString().contains(i18n("situation_digitization")))
+                    && !retval.prerequisites.contains("tech_identity_copy")) {
+                retval.prerequisites.add("tech_identity_copy");
+            }
         }
         return retval;
     }

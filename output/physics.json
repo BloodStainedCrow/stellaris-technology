@@ -1291,7 +1291,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Has encountered a bypass_relay_bypass",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Hyper Relay<br/>    •   Has Megastructure Ruined Hyper Relay<br/>    •   Has Megastructure Hyper Relay",
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
@@ -1673,7 +1673,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>2.0</b>) Has Prosperity Traditions Tradition",
                         "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
                       ],
@@ -1826,7 +1826,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>1.25</b>) Any Leader in council has trait Curator 1",
                         "(×<b style='color:lime'>1.25</b>) Any Leader in council has trait Cunning 1",
                         "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
@@ -2832,7 +2832,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 25",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
@@ -3442,7 +3442,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                 "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
               ],
               "potential": [],

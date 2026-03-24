@@ -82,7 +82,7 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Harmony Traditions Tradition",
                 "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
-                "(×<b style='color:lime'>2.0</b>) Has the payback_researching_gene_clinics country flag"
+                "(×<b style='color:lime'>2.0</b>) Payback origin and researchingGene Clinics during Out of Warranty event"
               ],
               "potential": [
                 "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n\t    •   Is of country type: exiled\n    •   Does NOT have Gestalt Consciousness Ethic",
@@ -120,7 +120,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>1.25</b>) Has Harmony Traditions Tradition",
                     "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample"
                   ],
@@ -341,7 +341,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.01</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Machine Intelligence Authority<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species :<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is Lithoid<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Founder Species:<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Is archetype Machine<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Gestalt Consciousness Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_infernal_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Synthetic Fertility<br/>&nbsp;&nbsp;•&nbsp; All must be false<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the non_lithoid_subspecies country flag<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Rogue Servitor<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Government Civic: Driven Assimilator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Owned Planet<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_capped_planet_farming_district=yes<br/>\t\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; has_any_agriculture_zone=yes",
                         "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Machine Intelligence Authority<br/>    •   Founder Species :<br/>\t    •   Is Lithoid<br/>    •   is_infernal_empire=yes<br/>    •   All must be true<br/>\t    •   All must be true<br/>\t\t    •   Founder Species:<br/>\t\t\t    •   Is archetype Machine<br/>\t\t    •   Does NOT have Gestalt Consciousness Ethic<br/>\t    •   Does NOT have the non_lithoid_subspecies country flag",
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>2.0</b>) Has Relic Javorian Pox Sample",
                         "(×<b style='color:lime'>2.0</b>) Country uses biological ships"
                       ],
@@ -779,7 +779,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
                       ],
                       "potential": [
                         "Country uses biological ships"
@@ -809,7 +809,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -969,7 +969,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
                       ],
                       "potential": [
                         "Country uses biological ships"
@@ -999,7 +999,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -2221,7 +2221,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -2251,7 +2251,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -2418,7 +2418,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -2448,7 +2448,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -2615,7 +2615,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -2645,7 +2645,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -2812,7 +2812,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                           ],
                           "potential": [
                             "Country uses biological ships"
@@ -2842,7 +2842,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market"
                               ],
                               "potential": [
                                 "Country uses biological ships"
@@ -3089,7 +3089,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 5",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
@@ -3127,7 +3127,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 25",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
@@ -5150,7 +5150,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market"
               ],
               "potential": [
                 "Does NOT have Gestalt Consciousness Ethic"
@@ -5248,7 +5248,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition"
                   ],
                   "potential": [
@@ -6842,7 +6842,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market"
               ],
               "potential": [
                 "One must be true\n    •   One must be true\n\t    •   Has Spiritualist Ethic\n\t    •   is_fanatic_spiritualist=yes\n    •   All must be true\n\t    •   Does NOT have Gestalt Consciousness Ethic\n\t    •   Is a Member of a spiritualist Federation with perk 'A Union of Faith'"
@@ -7640,7 +7640,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Utopia<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Mind Over Matter Ascension Perk<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Teachers of the Shroud<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Endbringers<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_chosen_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Shroud-Forged<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has the finish_shroud_forged_liberation_flag country flag",
+                "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Utopia<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has DLC Shadows of the Shroud<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Mind Over Matter Ascension Perk<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Teachers of the Shroud<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Endbringers<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_chosen_empire=yes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; All must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Origin Shroud-Forged<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Finished the Forged by the Shroud situation by supporting the Shroud",
                 "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                 "(×<b style='color:lime'>2.0</b>) Has Spiritualist Ethic",
                 "(×<b style='color:lime'>3.0</b>) Has Fanatic Spiritualist Ethic",
@@ -7802,7 +7802,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Mind Over Matter Ascension Perk<br/>    •   Has Origin Teachers of the Shroud<br/>    •   Has Origin Endbringers<br/>    •   is_chosen_empire=yes<br/>    •   All must be true<br/>\t    •   Has Origin Shroud-Forged<br/>\t    •   Has the finish_shroud_forged_liberation_flag country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Mind Over Matter Ascension Perk<br/>    •   Has Origin Teachers of the Shroud<br/>    •   Has Origin Endbringers<br/>    •   is_chosen_empire=yes<br/>    •   All must be true<br/>\t    •   Has Origin Shroud-Forged<br/>\t    •   Finished the Forged by the Shroud situation by supporting the Shroud",
                     "(×<b style='color:red'>0.5</b>) No Leader in council has trait Expertise: Psionics 1",
                     "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Spiritualist Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_fanatic_spiritualist=yes<br/>&nbsp;&nbsp;•&nbsp; Has Authoritarian Ethic",
                     "(×<b style='color:lime'>3.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; One must be true<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Spiritualist Ethic<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; is_fanatic_spiritualist=yes<br/>&nbsp;&nbsp;•&nbsp; Has Fanatic Authoritarian Ethic",
@@ -8770,7 +8770,8 @@
             "(×<b style='color:red'>0.0</b>) Has Origin MINDWARDEN_plural"
           ],
           "potential": [
-            "Has DLC Shadows of the Shroud"
+            "Has DLC Shadows of the Shroud",
+            "Has encountered Psionic Auras"
           ],
           "children": [],
           "is_event": false,
