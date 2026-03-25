@@ -246,7 +246,7 @@
               "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Soil Reclamation Center",
-                "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
+                "£food£ Produced from £job_farmer£ Farmers +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -367,7 +367,7 @@
                     "<b>Building</b>: Automated Agri-Complex",
                     "<b>Edict</b>: Expanded Breeding Program",
                     "<b>Edict</b>: Nutritional Plenitude",
-                    "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
+                    "£food£ Produced from £job_farmer£ Farmers +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -405,7 +405,7 @@
                       "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Cultivation Grid",
-                        "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
+                        "£food£ Produced from £job_farmer£ Farmers +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -442,7 +442,7 @@
                           "category": "Biology",
                           "cost": 12000,
                           "feature_unlocks": [
-                            "£food£ Produced from [GetFarmerSwapPluralWithIcon] +5%"
+                            "£food£ Produced from £job_farmer£ Farmers +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": true,
@@ -7168,7 +7168,7 @@
           "feature_unlocks": [
             "<b>Edict</b>: Networked Amenities",
             "Amenities +5%",
-            "[GetCrimeDeviancy] -15%"
+            "Crime -15%"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -7648,7 +7648,7 @@
             "(×<b style='color:lime'>2.0</b>) Has Fanatic Spiritualist Ethic",
             "(×<b style='color:lime'>2.0</b>) Any Country<br/>    •   Has Origin Mindwardens<br/>    •   NOT is_same_value=prev",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait [GetChosenName] 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
+            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Psychic 1<br/>    •   Any Leader in council has trait Chosen One 1<br/>    •   Any Leader in council has trait Chosen of the Composer 1<br/>    •   Any Leader in council has trait Chosen of the Instrument 1<br/>    •   Any Leader in council has trait Chosen of the Whisperers 1",
             "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   One must be true<br/>\t    •   Has trait Psionic<br/>\t    •   Has trait Psionic",
             "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic",
             "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
@@ -7663,7 +7663,7 @@
             {
               "key": "tech_telepathy",
               "name": "Telepathy",
-              "description": "$tech_telepathy_desc.1$ the mind is capable of connecting to other individuals, becoming something greater.",
+              "description": "Once fully adapted to the basics of Psionics, the mind is capable of connecting to other individuals, becoming something greater.",
               "area": "society",
               "base_factor": 0.5,
               "base_weight": 25.0,

@@ -62,7 +62,7 @@
               "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Core Drilling Array",
-                "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
+                "£minerals£ Produced from £job_miner£ Miners +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -91,7 +91,7 @@
                   "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Seismic Tunneling Yard",
-                    "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
+                    "£minerals£ Produced from £job_miner£ Miners +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -120,7 +120,7 @@
                       "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Deep Crust Extraction Grid",
-                        "£minerals£ Produced from [GetMinerSwapPluralWithIcon] +5%"
+                        "£minerals£ Produced from £job_miner£ Miners +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -271,7 +271,7 @@
               "cost": 1000,
               "feature_unlocks": [
                 "Army Damage +10%",
-                "Job Efficiency for Workers & $pop_cat_simple_drone_plural$ +5%"
+                "Job Efficiency for Workers & Menial Drones +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -2314,7 +2314,7 @@
                   "category": "Materials",
                   "cost": 2000,
                   "feature_unlocks": [
-                    "Resources Produced from [GetFoundrySwapPluralWithIcon] +5%"
+                    "Resources Produced from £job_foundry£ Metallurgists +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2422,7 +2422,7 @@
                       "category": "Materials",
                       "cost": 8000,
                       "feature_unlocks": [
-                        "Resources Produced from [GetFoundrySwapPluralWithIcon] +5%"
+                        "Resources Produced from £job_foundry£ Metallurgists +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,

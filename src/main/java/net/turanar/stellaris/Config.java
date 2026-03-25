@@ -71,6 +71,28 @@ public class Config {
         return retval;
     }
 
+    @Bean("GLOBAL_SCRIPTED_LOC")
+    public Map<String, String> scriptedLocalization() throws IOException {
+        Map<String, String> retval = new HashMap<>();
+
+        parse("files/common/scripted_loc", "txt", path -> {
+            if (path.getFileName().toString().equals("scripted_loc_ruloc.txt")) return; // broken file
+            factory.getParser(path).file().pair().forEach(pair -> {
+                if (!pair.BAREWORD().getText().equals("defined_text")) return;
+                String name = null;
+                String value = null;
+                for (StellarisParser.PairContext p : pair.value().map().pair()) {
+                    if (p.BAREWORD().getText().equals("name")) name = p.value().getText();
+                    if (p.BAREWORD().getText().equals("default")) value = p.value().getText();
+                }
+                if (name == null || value == null) return;
+                retval.put(name, value);
+            });
+        });
+
+        return retval;
+    }
+
     @Bean("technologies")
     public Map<String, Technology> technologies() {
         return new HashMap<>();

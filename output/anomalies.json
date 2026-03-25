@@ -1881,7 +1881,7 @@
   {
     "key": "tech_psionic_barrier",
     "name": "Psionic Barrier",
-    "description": "$tech_psionic_barrier_desc.1$ psionic specialists$tech_psionic_barrier_desc.2$",
+    "description": "These barriers are generated out of pure psionic energy by a cadre of psionic specialists. They will be able to stop some incoming fire, like our energy deflector systems, but without the prohibitive power consumption.",
     "area": "society",
     "base_factor": 0.0,
     "base_weight": 0.0,
@@ -2002,7 +2002,7 @@
   {
     "key": "tech_psionic_shield",
     "name": "Psionic Shields",
-    "description": "$tech_psionic_shield_desc.1$ psionic specialists$tech_psionic_shield_desc.2$",
+    "description": "These extremely powerful shields are generated out of pure psionic energy by a cadre of psionic specialists. Their powers are further augmented by large arrays of psi emitters.",
     "area": "society",
     "base_factor": 0.0,
     "base_weight": 0.0,
@@ -2502,7 +2502,7 @@
     "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
-      "£alloys£ Produced per 100 [GetFoundrySwapPluralWithIcon] +25%"
+      "£alloys£ Produced per 100 £job_foundry£ Metallurgists +25%"
     ],
     "is_dangerous": false,
     "is_rare": false,

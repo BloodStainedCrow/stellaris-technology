@@ -1486,7 +1486,7 @@
               "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Substation Relay Complex",
-                "£energy£ Produced from [GetTechnicianSwapPluralWithIcon] +5%"
+                "£energy£ Produced from £job_technician£ Technicians +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1517,7 +1517,7 @@
                   "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Plasma Regulation Array",
-                    "£energy£ Produced from [GetTechnicianSwapPluralWithIcon] +5%"
+                    "£energy£ Produced from £job_technician£ Technicians +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1548,7 +1548,7 @@
                       "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Nexus",
-                        "£energy£ Produced from [GetTechnicianSwapPluralWithIcon] +5%"
+                        "£energy£ Produced from £job_technician£ Technicians +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2901,7 +2901,7 @@
               "cost": 1000,
               "feature_unlocks": [
                 "Research Speed +5%",
-                "Upkeep for [GetResearcherPluralWithIcon] +5%"
+                "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3190,7 +3190,7 @@
                   "category": "Computing",
                   "cost": 2000,
                   "feature_unlocks": [
-                    "Resources Produced from [GetFactorySwapPluralWithIcon] +5%"
+                    "Resources Produced from £job_artisan£ Artisans +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3225,7 +3225,7 @@
                       "category": "Computing",
                       "cost": 8000,
                       "feature_unlocks": [
-                        "Resources Produced from [GetFactorySwapPluralWithIcon] +5%"
+                        "Resources Produced from £job_artisan£ Artisans +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3303,7 +3303,7 @@
                       "cost": 8000,
                       "feature_unlocks": [
                         "Research Speed +5%",
-                        "Upkeep for [GetResearcherPluralWithIcon] +5%"
+                        "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3340,7 +3340,7 @@
                       "cost": 8000,
                       "feature_unlocks": [
                         "Research Speed +5%",
-                        "Upkeep for [GetResearcherPluralWithIcon] +5%"
+                        "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3499,7 +3499,7 @@
                   "category": "Computing",
                   "cost": 4000,
                   "feature_unlocks": [
-                    "[GetSpecialist] Pop Resource Output +2%"
+                    "Specialist Pop Resource Output +2%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -4016,7 +4016,7 @@
                 {
                   "key": "tech_mine_zro",
                   "name": "Zro Distillation",
-                  "description": "$tech_mine_zro_desc.1$ ingested $tech_mine_zro_desc.2$ individuals$tech_mine_zro_desc.3$ $ORGANIC_DRUG$ $tech_mine_zro_desc.4$",
+                  "description": "An extremely rare aerosol of exotic particles. It has been deposited on a number of worlds through meteor impacts, but its true origin is a mystery. If ingested by psionically-gifted individuals, Zro acts as a very potent (and addictive) drug that enhances Psi abilities.",
                   "area": "society",
                   "base_factor": 1.0,
                   "base_weight": 60.0,
