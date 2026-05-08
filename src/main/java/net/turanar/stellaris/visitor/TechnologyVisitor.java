@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.List;
+import java.util.function.Consumer;
 
 import static net.turanar.stellaris.Global.*;
 
@@ -110,6 +112,40 @@ public class TechnologyVisitor {
                     visitFeatureUnlocks(retval, pair.value()); break;
                 case "prerequisites":
                     if(pair.value() == null) break;
+
+                    // if we have "OR = { tech_1 tech_2 }" among values, move them to "potential"
+                    Consumer<StellarisParser.PairContext> handleOr = (subPair) -> {
+                        if (!subPair.BAREWORD().getText().equals("OR") || subPair.value().array() == null) {
+                            System.err.println("only OR is supported for prerequisites: " + subPair.BAREWORD().getText());
+                        }
+
+                        // Create: OR = { has_technology = "tech_1" has_technology = "tech_2" }
+                        StringBuilder sb = new StringBuilder("OR = { ");
+                        for (StellarisParser.ValueContext subVal : subPair.value().array().value()) {
+                            sb.append("has_technology = ").append(gs(subVal).replaceAll("\"","")).append(" ");
+                        }
+                        sb.append("}");
+                        StellarisLexer lexer = new StellarisLexer(CharStreams.fromString(sb.toString()));
+                        CommonTokenStream tokens = new CommonTokenStream(lexer);
+                        StellarisParser parser = new StellarisParser(tokens);
+
+                        Modifier newMod = new Modifier();
+                        newMod.type = ModifierType.OR;
+                        newMod.pair = parser.pair();
+                        retval.potential.add(newMod);
+                    };
+
+                    if (pair.value().map() != null) {
+                        List<StellarisParser.PairContext> pairList = pair.value().map().pair();
+                        if (pairList.isEmpty()) {
+                            break;
+                        } else if (pairList.size() == 1) {
+                            handleOr.accept(pairList.get(0));
+                        } else {
+                            System.err.println("Only single OR is supported for prerequisites: " + pairList.size());
+                        }
+                        break;
+                    }
                     if(pair.value().array() == null) break;
                     pair.value().array().value().forEach(val -> {
                         if (val == null) {
@@ -117,27 +153,8 @@ public class TechnologyVisitor {
                             return;
                         }
 
-                        // if we have "OR = { tech_1 tech_2 }" among values, move them to "potential"
                         if (val.pair() != null) {
-                           StellarisParser.PairContext subPair = val.pair();
-                           if (!subPair.BAREWORD().getText().equals("OR") || subPair.value().array() == null) {
-                               System.err.println("only OR is supported for prerequisites: " + subPair.BAREWORD().getText());
-                           }
-
-                           // Create: OR = { has_technology = "tech_1" has_technology = "tech_2" }
-                           StringBuilder sb = new StringBuilder("OR = { ");
-                           for (StellarisParser.ValueContext subVal : subPair.value().array().value()) {
-                               sb.append("has_technology = ").append(gs(subVal).replaceAll("\"","")).append(" ");
-                           }
-                           sb.append("}");
-                           StellarisLexer lexer = new StellarisLexer(CharStreams.fromString(sb.toString()));
-                           CommonTokenStream tokens = new CommonTokenStream(lexer);
-                           StellarisParser parser = new StellarisParser(tokens);
-
-                           Modifier newMod = new Modifier();
-                           newMod.type = ModifierType.OR;
-                           newMod.pair = parser.pair();
-                           retval.potential.add(newMod);
+                            handleOr.accept(val.pair());
                             return;
                         }
 
