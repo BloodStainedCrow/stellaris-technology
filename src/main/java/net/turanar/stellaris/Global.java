@@ -6,28 +6,41 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @Component
 public class Global {
     public static Map<String,String> GLOBAL_VARIABLES;
     public static Map<String,String> GLOBAL_STRINGS;
     public static Map<String, StellarisParser.PairContext> GLOBAL_TRIGGERS;
+    public static Map<String, String> GLOBAL_SCRIPTED_LOC;
     public static String LS = "    •   ";
 
     public static void parse(String path, String filetype, Consumer<Path> consumer) throws IOException {
         PathMatcher m = FileSystems.getDefault().getPathMatcher("glob:**." + filetype);
-        Files.list(Paths.get(path)).filter(m::matches).forEach(consumer);
+        Files.list(Paths.get(path)).filter(Files::isRegularFile).filter(m::matches).forEach(consumer);
+    }
+
+    public static void parseWithSubdirectories(String path, String filetype, Consumer<Path> consumer) throws IOException {
+        PathMatcher m = FileSystems.getDefault().getPathMatcher("glob:**." + filetype);
+        Files.walk(Paths.get(path)).filter(Files::isRegularFile).filter(m::matches).forEach(consumer);
     }
 
     @Autowired
-    public void init(Map<String,String> GLOBAL_VARIABLES, Map<String,String> GLOBAL_STRINGS,  Map<String, StellarisParser.PairContext> GLOBAL_TRIGGERS) {
+    public void init(Map<String,String> GLOBAL_VARIABLES,
+                     Map<String,String> GLOBAL_STRINGS,
+                     Map<String, StellarisParser.PairContext> GLOBAL_TRIGGERS,
+                     Map<String, String> GLOBAL_SCRIPTED_LOC) {
         Global.GLOBAL_VARIABLES = GLOBAL_VARIABLES;
         Global.GLOBAL_STRINGS = GLOBAL_STRINGS;
         Global.GLOBAL_TRIGGERS = GLOBAL_TRIGGERS;
+        Global.GLOBAL_SCRIPTED_LOC = GLOBAL_SCRIPTED_LOC;
     }
 
     public static String i18n(String key) {
@@ -35,6 +48,9 @@ public class Global {
         if(retval == null) return key;
         if(retval.contains("$")) {
             retval = applyTemplate(retval, key);
+        }
+        if (retval.contains("[") && retval.contains("]")) {
+            retval = applyScriptedLoc(retval, key);
         }
         return retval;
     }
@@ -80,10 +96,10 @@ public class Global {
     }
 
     public static String applyTemplate(String retval, String oldval) {
-        Pattern p = Pattern.compile("\\$([a-zA-z0-9_]+)\\$");
+        Pattern p = Pattern.compile("\\$([a-zA-Z0-9_.]+)\\$");
 
         int i = 0;
-        while(retval.contains("$") && i < 2) {
+        while(retval.contains("$") && i < 10) {
             Matcher m2 = p.matcher(retval);
             if(m2.find()) {
                 String newval = m2.group(1);
@@ -102,7 +118,88 @@ public class Global {
         return retval;
     }
 
+    public static String applyScriptedLoc(String retval, String oldval) {
+        Pattern p = Pattern.compile("\\[([a-zA-Z0-9_.]+)]");
+
+        int i = 0;
+        while(retval.contains("[") && i < 10) {
+            Matcher m2 = p.matcher(retval);
+            if (m2.find()) {
+                String newval = m2.group(1);
+                if (newval.equals(oldval)) {
+                    // We are in an infite evaluation loop
+                    return oldval;
+                }
+                switch (newval) {
+                    case "physicist.GetIcon":
+                        retval = m2.replaceFirst("£job_physicist£");
+                        break;
+                    case "biologist.GetIcon":
+                        retval = m2.replaceFirst("£job_biologist£");
+                        break;
+                    case "engineer.GetIcon":
+                        retval = m2.replaceFirst("£job_engineer£");
+                        break;
+                    case "artisan.GetIcon":
+                        retval = m2.replaceFirst("£job_artisan£");
+                        break;
+                    case "artisan.GetNamePlural":
+                        retval = m2.replaceFirst(i18n("job_artisan_plural"));
+                        break;
+                    case "technician.GetIcon":
+                        retval = m2.replaceFirst("£job_technician£");
+                        break;
+                    case "technician.GetNamePlural":
+                        retval = m2.replaceFirst(i18n("job_technician_plural"));
+                        break;
+                    case "foundry.GetIcon":
+                        retval = m2.replaceFirst("£job_foundry£");
+                        break;
+                    case "foundry.GetNamePlural":
+                        retval = m2.replaceFirst(i18n("job_foundry_plural"));
+                        break;
+                    case "miner.GetIcon":
+                        retval = m2.replaceFirst("£job_miner£");
+                        break;
+                    case "miner.GetNamePlural":
+                        retval = m2.replaceFirst(i18n("job_miner_plural"));
+                        break;
+                    case "farmer.GetIcon":
+                        retval = m2.replaceFirst("£job_farmer£");
+                        break;
+                    case "farmer.GetNamePlural":
+                        retval = m2.replaceFirst(i18n("job_farmer_plural"));
+                        break;
+                    default:
+                        if (!GLOBAL_SCRIPTED_LOC.containsKey(newval)) {
+                            System.err.println("Scripted loc not found: " + newval);
+                        }
+                        retval = m2.replaceFirst(i18n(GLOBAL_SCRIPTED_LOC.getOrDefault(newval, newval)));
+                }
+
+                m2.reset();
+            }
+            i++;
+        }
+        return retval;
+    }
+
+
     public static String f(String f, String... objects) {
         return String.format(f, objects);
+    }
+
+    public static List<StellarisParser.PairContext> mapPairs(StellarisParser.ValueContext ctx) {
+        if (ctx.map() != null) {
+            return ctx.map().pair();
+        } else {
+            return ctx.array().value().stream().map(valueContext -> {
+                if (valueContext.pair() == null &&
+                        (valueContext.BAREWORD() == null || !valueContext.BAREWORD().getText().equals("optimize_memory"))) {
+                    System.err.println("non-pair value where map expected: " + valueContext.getText());
+                }
+                return valueContext.pair();
+            }).filter(Objects::nonNull).collect(Collectors.toList());
+        }
     }
 }

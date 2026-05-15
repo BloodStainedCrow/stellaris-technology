@@ -9,7 +9,7 @@ map
    ;
 
 pair
-   : BAREWORD SPECIFIER value
+   : (BAREWORD | NUMBER) SPECIFIER value
    ;
 
 var
@@ -26,9 +26,22 @@ value
    | DATE
    | STRING
    | VARIABLE
+   | MATH
    | BAREWORD
    | map
    | array
+
+    /* Sections that look like:
+     [[POP_GROUP]
+        ...
+     ]
+     or (yes, no "]" at the end of the word):
+     [[HOUSING
+        ...
+     ]
+    */
+   | '[[' '!'? BAREWORD ']'? value ']'
+   | pair
    ;
 
 BOOLEAN
@@ -40,6 +53,10 @@ BOOLEAN
 
 VARIABLE
    : '@'([A-Za-z][A-Za-z_0-9.%-]*)
+   ;
+
+MATH
+   : '@' '\\'? '['(~[\]])*']'
    ;
 
 SPECIFIER

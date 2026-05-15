@@ -55,7 +55,7 @@
               "base_factor": 2.0,
               "base_weight": 190.0,
               "category": "Particles",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Fusion Metabolism",
                 "<b>Component</b>: Fusion Reactor"
@@ -86,7 +86,7 @@
                   "base_factor": 2.0,
                   "base_weight": 150.0,
                   "category": "Particles",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Component</b>: Cold Fusion Metabolism",
                     "<b>Component</b>: Cold Fusion Reactor"
@@ -117,7 +117,7 @@
                       "base_factor": 2.0,
                       "base_weight": 120.0,
                       "category": "Particles",
-                      "cost": 10000,
+                      "cost": 5000,
                       "feature_unlocks": [
                         "<b>Component</b>: Antimatter Metabolism",
                         "<b>Component</b>: Antimatter Reactor",
@@ -150,7 +150,7 @@
                           "base_factor": 2.0,
                           "base_weight": 80.0,
                           "category": "Particles",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Zero Point Metabolism",
                             "<b>Component</b>: Zero Point Reactor"
@@ -181,7 +181,7 @@
                               "base_factor": 0.1,
                               "base_weight": 3.0,
                               "category": "Particles",
-                              "cost": 32000,
+                              "cost": 16000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Jump Drive",
                                 "<b>Component</b>: Jump Organ",
@@ -224,7 +224,7 @@
                                 "<b>Component</b>: Dark Matter Metabolism",
                                 "<b>Component</b>: Dark Matter Reactor"
                               ],
-                              "is_dangerous": false,
+                              "is_dangerous": true,
                               "is_rare": true,
                               "is_start_tech": false,
                               "prerequisites": [
@@ -238,7 +238,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [],
                               "children": [],
@@ -294,7 +294,7 @@
               "base_factor": 1.5,
               "base_weight": 135.0,
               "category": "Particles",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Component</b>: Improved Reactor Booster"
               ],
@@ -327,7 +327,7 @@
                   "base_factor": 1.5,
                   "base_weight": 75.0,
                   "category": "Particles",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Component</b>: Advanced Reactor Booster"
                   ],
@@ -371,7 +371,7 @@
           "base_factor": 1.0,
           "base_weight": 0.0,
           "category": "Particles",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Component</b>: Large Red Beam Projector",
             "<b>Component</b>: Large Red Laser",
@@ -398,7 +398,7 @@
               "base_factor": 1.0,
               "base_weight": 95.0,
               "category": "Particles",
-              "cost": 2500,
+              "cost": 1250,
               "feature_unlocks": [
                 "<b>Component</b>: Blue Eye Beam",
                 "<b>Component</b>: Large Blue Beam Projector",
@@ -406,7 +406,8 @@
                 "<b>Component</b>: Medium Blue Beam Projector",
                 "<b>Component</b>: Medium Blue Laser",
                 "<b>Component</b>: Small Blue Beam Projector",
-                "<b>Component</b>: Small Blue Laser"
+                "<b>Component</b>: Small Blue Laser",
+                "Army Damage +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -435,7 +436,7 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Particles",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Component</b>: Large UV Beam Projector",
                     "<b>Component</b>: Large UV Laser",
@@ -443,7 +444,8 @@
                     "<b>Component</b>: Medium UV Laser",
                     "<b>Component</b>: Small UV Beam Projector",
                     "<b>Component</b>: Small UV Laser",
-                    "<b>Component</b>: UV Eye Beam"
+                    "<b>Component</b>: UV Eye Beam",
+                    "Army Damage +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -472,7 +474,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Particles",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Large X-Ray Beam Projector",
                         "<b>Component</b>: Large X-Ray Laser",
@@ -480,7 +482,8 @@
                         "<b>Component</b>: Medium X-Ray Laser",
                         "<b>Component</b>: Small X-Ray Beam Projector",
                         "<b>Component</b>: Small X-Ray Laser",
-                        "<b>Component</b>: X-Ray Eye Beam"
+                        "<b>Component</b>: X-Ray Eye Beam",
+                        "Army Damage +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -509,7 +512,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Particles",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Component</b>: Gamma Eye Beam",
                             "<b>Component</b>: Large Gamma Beam Projector",
@@ -517,7 +520,8 @@
                             "<b>Component</b>: Medium Gamma Beam Projector",
                             "<b>Component</b>: Medium Gamma Laser",
                             "<b>Component</b>: Small Gamma Beam Projector",
-                            "<b>Component</b>: Small Gamma Laser"
+                            "<b>Component</b>: Small Gamma Laser",
+                            "Army Damage +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -549,7 +553,7 @@
                           "base_factor": 1.0,
                           "base_weight": 40.0,
                           "category": "Particles",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Particle Beam",
                             "<b>Component</b>: Particle Lance"
@@ -571,7 +575,9 @@
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_energy_lance_2",
@@ -581,7 +587,7 @@
                               "base_factor": 1.0,
                               "base_weight": 35.0,
                               "category": "Particles",
-                              "cost": 24000,
+                              "cost": 12000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Tachyon Beam",
                                 "<b>Component</b>: Tachyon Lance"
@@ -625,7 +631,7 @@
                           "base_factor": 1.0,
                           "base_weight": 50.0,
                           "category": "Particles",
-                          "cost": 12000,
+                          "cost": 6000,
                           "feature_unlocks": [
                             "<b>Component</b>: Proton Launchers",
                             "<b>Component</b>: Proton Thrower"
@@ -648,7 +654,9 @@
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
                             "(×<b style='color:red'>0.5</b>) Does NOT have Technology: Red Lasers"
                           ],
-                          "potential": [],
+                          "potential": [
+                            "One must be true\n    •   Has Technology: Space Torpedoes\n    •   Has Technology: Harbingers"
+                          ],
                           "children": [
                             {
                               "key": "tech_energy_torpedoes_2",
@@ -658,7 +666,7 @@
                               "base_factor": 1.0,
                               "base_weight": 40.0,
                               "category": "Particles",
-                              "cost": 20000,
+                              "cost": 10000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Neutron Launchers",
                                 "<b>Component</b>: Neutron Thrower"
@@ -695,7 +703,7 @@
                           "description": "Perfecting the firing cadence of laser weaponry is a task that could keep the engineering elite of any given planet busy for centuries.",
                           "area": "physics",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Particles",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -736,7 +744,7 @@
                   "base_factor": 1.0,
                   "base_weight": 75.0,
                   "category": "Particles",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Component</b>: Medium Disruptor",
                     "<b>Component</b>: Molecular Disruptor",
@@ -770,7 +778,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Particles",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Ion Molecular Disruptor",
                         "<b>Component</b>: Medium Ion Disruptor",
@@ -803,7 +811,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Particles",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Component</b>: Medium Phased Disruptor",
                             "<b>Component</b>: Phased Molecular Disruptor",
@@ -836,7 +844,7 @@
                               "base_factor": 1.0,
                               "base_weight": 40.0,
                               "category": "Particles",
-                              "cost": 20000,
+                              "cost": 10000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Arc Emitter",
                                 "<b>Component</b>: Lightning Emitter"
@@ -858,7 +866,9 @@
                                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "One must be true\n    •   Has Technology: Battleships\n    •   Has Technology: Stingers"
+                              ],
                               "children": [
                                 {
                                   "key": "tech_arc_emitter_2",
@@ -868,7 +878,7 @@
                                   "base_factor": 1.0,
                                   "base_weight": 35.0,
                                   "category": "Particles",
-                                  "cost": 24000,
+                                  "cost": 12000,
                                   "feature_unlocks": [
                                     "<b>Component</b>: Focused Arc Emitter",
                                     "<b>Component</b>: Focused Lightning Emitter"
@@ -919,7 +929,7 @@
                   "base_factor": 1.0,
                   "base_weight": 75.0,
                   "category": "Particles",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Component</b>: Bio-Plasma Thrower",
                     "<b>Component</b>: Large Bio-Plasma Thrower",
@@ -927,7 +937,8 @@
                     "<b>Component</b>: Medium Bio-Plasma Thrower",
                     "<b>Component</b>: Medium Plasma Thrower",
                     "<b>Component</b>: Small Bio-Plasma Thrower",
-                    "<b>Component</b>: Small Plasma Thrower"
+                    "<b>Component</b>: Small Plasma Thrower",
+                    "Army Damage +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -957,7 +968,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Particles",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Bio-Plasma Accelerator",
                         "<b>Component</b>: Large Bio-Plasma Accelerator",
@@ -965,7 +976,8 @@
                         "<b>Component</b>: Medium Bio-Plasma Accelerator",
                         "<b>Component</b>: Medium Plasma Accelerator",
                         "<b>Component</b>: Small Bio-Plasma Accelerator",
-                        "<b>Component</b>: Small Plasma Accelerator"
+                        "<b>Component</b>: Small Plasma Accelerator",
+                        "Army Damage +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -994,7 +1006,7 @@
                           "base_factor": 1.0,
                           "base_weight": 45.0,
                           "category": "Particles",
-                          "cost": 16000,
+                          "cost": 8000,
                           "feature_unlocks": [
                             "<b>Component</b>: Bio-Plasma Cannon",
                             "<b>Component</b>: Large Bio-Plasma Cannon",
@@ -1002,7 +1014,8 @@
                             "<b>Component</b>: Medium Bio-Plasma Cannon",
                             "<b>Component</b>: Medium Plasma Cannon",
                             "<b>Component</b>: Small Bio-Plasma Cannon",
-                            "<b>Component</b>: Small Plasma Cannon"
+                            "<b>Component</b>: Small Plasma Cannon",
+                            "Army Damage +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -1040,7 +1053,7 @@
                   "description": "New developments in tech cooling regularly surface, improving the stability and efficiency of our weapons systems, keeping them from blowing up the ships upon which they are mounted.",
                   "area": "physics",
                   "base_factor": 0.5,
-                  "base_weight": 12.5,
+                  "base_weight": 7.5,
                   "category": "Particles",
                   "cost": 50000,
                   "feature_unlocks": [
@@ -1081,7 +1094,7 @@
           "base_factor": 1000.0,
           "base_weight": 0.0,
           "category": "Particles",
-          "cost": 1500,
+          "cost": 750,
           "feature_unlocks": [
             "<b>Component</b>: Bio-Hyperlane Field I",
             "<b>Component</b>: Hyper Drive I"
@@ -1103,7 +1116,7 @@
               "base_factor": 1.0,
               "base_weight": 75.0,
               "category": "Particles",
-              "cost": 5000,
+              "cost": 2500,
               "feature_unlocks": [
                 "<b>Component</b>: Bio-Hyperlane Field II",
                 "<b>Component</b>: Hyper Drive II",
@@ -1127,7 +1140,7 @@
                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                 "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                "(×<b style='color:lime'>10.0</b>) Has the chosen_empire country flag"
+                "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Unique empire: The Chosen"
               ],
               "potential": [],
               "children": [
@@ -1139,7 +1152,7 @@
                   "base_factor": 1.0,
                   "base_weight": 50.0,
                   "category": "Particles",
-                  "cost": 12000,
+                  "cost": 6000,
                   "feature_unlocks": [
                     "<b>Component</b>: Bio-Hyperlane Field III",
                     "<b>Component</b>: Hyper Drive III",
@@ -1174,7 +1187,7 @@
                       "base_factor": 0.5,
                       "base_weight": 17.5,
                       "category": "Particles",
-                      "cost": 24000,
+                      "cost": 12000,
                       "feature_unlocks": [
                         "<b>Feature : </b>Gateway Travel"
                       ],
@@ -1196,8 +1209,8 @@
                         "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   One must be true<br/>\t    •   Has encountered a Gateway<br/>\t    •   Has encountered a bypass_lgate<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Gateway Activation",
-                        "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Controls a system with a Gateway<br/>    •   Controls a system with a bypass_lgate"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   One must be true<br/>\t    •   Has encountered a Gateway<br/>\t    •   Has encountered a L-Gate<br/>    •   Any Country Relation<br/>\t    •   Is normal empire<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Gateway Activation",
+                        "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Controls a system with a Gateway<br/>    •   Controls a system with a L-Gate"
                       ],
                       "potential": [],
                       "children": [
@@ -1209,7 +1222,7 @@
                           "base_factor": 0.5,
                           "base_weight": 10.0,
                           "category": "Particles",
-                          "cost": 48000,
+                          "cost": 24000,
                           "feature_unlocks": [
                             "<b>Feature : </b>Gateway Construction"
                           ],
@@ -1259,7 +1272,7 @@
                   "base_factor": 0.5,
                   "base_weight": 35.0,
                   "category": "Particles",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Edict</b>: Networked Relays",
                     "<b>Feature : </b>Hyper Relay Construction"
@@ -1278,11 +1291,11 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has the has_market_access country flag",
-                    "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Has encountered a bypass_relay_bypass",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Rare Crystal Mining<br/>    •   Has Technology: Rare Crystal Manufacturing<br/>    •   Has access to the Galactic Market",
+                    "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Particles 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3<br/>    •   Has encountered a Hyper Relay",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Hyper Relay<br/>    •   Has Megastructure Ruined Hyper Relay<br/>    •   Has Megastructure Hyper Relay",
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Has encountered a bypass_relay_bypass",
+                    "(×<b style='color:lime'>1.5</b>) Has encountered a Hyper Relay",
                     "(×<b style='color:lime'>1.25</b>) Has Technology: Speculative Hyperlane Breaching",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
@@ -1302,7 +1315,7 @@
                   "base_factor": 0.5,
                   "base_weight": 32.5,
                   "category": "Particles",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Feature : </b>Wormhole Travel"
                   ],
@@ -1324,10 +1337,10 @@
                     "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                     "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
-                    "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Wormhole Stabilization",
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is part of a Federation<br/>&nbsp;&nbsp;•&nbsp; Federation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Federation Perk Scientific Inspiration<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Member:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Wormhole Stabilization",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is normal empire<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
                     "(×<b style='color:lime'>4.0</b>) Controls a system with a Natural Wormhole",
-                    "(×<b style='color:lime'>10.0</b>) Has the chosen_empire country flag"
+                    "(×<b style='color:lime'>10.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Number of midgame years passed greater than 0<br/>&nbsp;&nbsp;•&nbsp; Unique empire: The Chosen"
                   ],
                   "potential": [],
                   "children": [],
@@ -1346,7 +1359,7 @@
               "base_factor": 4.0,
               "base_weight": 340.0,
               "category": "Particles",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Component</b>: FTL Inhibitor",
                 "<b>Feature : </b>Planetary FTL Inhibitors"
@@ -1365,7 +1378,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b>) Has Unyielding Traditions Tradition"
+                "(×<b style='color:lime'>1.25</b>) Has Fortification Traditions Tradition"
               ],
               "potential": [],
               "children": [],
@@ -1388,7 +1401,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Class-3 Singularity"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -1396,7 +1409,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Risk<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Risk",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -1415,7 +1428,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Class-4 Singularity"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -1428,7 +1441,9 @@
                   "key": "tech_fe_singularity_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -1468,11 +1483,10 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Field Manipulation",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "<b>Building</b>: Substation Relay Complex",
-                "£energy£ Energy Credits from [technician.GetIcon] [GetTechnicianPlural] +20%",
-                "£energy£ Energy from Starbase Constructions +10%"
+                "£energy£ Produced from £job_technician£ Technicians +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1500,11 +1514,10 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Field Manipulation",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
                     "<b>Building</b>: Plasma Regulation Array",
-                    "£energy£ Energy Credits from [technician.GetIcon] [GetTechnicianPlural] +20%",
-                    "£energy£ Energy from Starbase Constructions +10%"
+                    "£energy£ Produced from £job_technician£ Technicians +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1532,11 +1545,10 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Field Manipulation",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Nexus",
-                        "£energy£ Energy Credits from [technician.GetIcon] [GetTechnicianPlural] +20%",
-                        "£energy£ Energy from Starbase Constructions +10%"
+                        "£energy£ Produced from £job_technician£ Technicians +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -1565,7 +1577,7 @@
                       "description": "Minor improvements to transmission efficiency adds up to a sizeable reduction in overall energy loss.",
                       "area": "physics",
                       "base_factor": 0.5,
-                      "base_weight": 12.5,
+                      "base_weight": 7.5,
                       "category": "Field Manipulation",
                       "cost": 50000,
                       "feature_unlocks": [
@@ -1602,7 +1614,7 @@
                   "base_factor": 2.0,
                   "base_weight": 180.0,
                   "category": "Field Manipulation",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "<b>Building</b>: Chloroplastic Lens Array",
                     "<b>Building</b>: Energy Grid",
@@ -1623,7 +1635,8 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                    "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)",
+                    "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Number of Generator District is greater than 0<br/>    •   Number of Reactor District is greater than 0<br/>    •   Number of Photosynthesis Field is greater than 0<br/>    •   Number of Geothermal Powerplant is greater than 0<br/>    •   Has a generator zone"
                   ],
                   "potential": [],
                   "children": [
@@ -1635,7 +1648,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Field Manipulation",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Building</b>: Chloroplastic Cyst",
                         "<b>Building</b>: Energy Nexus",
@@ -1660,9 +1673,9 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>2.0</b>) Has Prosperity Traditions Tradition",
-                        "(×<b style='color:lime'>1.5</b>) Is a prospectorium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Prospectorium (specialised subject)"
                       ],
                       "potential": [],
                       "children": [],
@@ -1716,7 +1729,7 @@
               "base_factor": 1.25,
               "base_weight": 112.5,
               "category": "Field Manipulation",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Component</b>: Improved Energy Epidermis",
                 "<b>Component</b>: Large Improved Deflector Musculature",
@@ -1724,7 +1737,8 @@
                 "<b>Component</b>: Medium Improved Deflector Musculature",
                 "<b>Component</b>: Medium Improved Deflectors",
                 "<b>Component</b>: Small Improved Deflector Musculature",
-                "<b>Component</b>: Small Improved Deflectors"
+                "<b>Component</b>: Small Improved Deflectors",
+                "Army Health +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1740,7 +1754,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -1752,7 +1766,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Field Manipulation",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Component</b>: Basic Cloaking Field Generator",
                     "<b>Edict</b>: Obsidian Veil",
@@ -1777,7 +1791,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [
                     {
@@ -1788,7 +1802,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Field Manipulation",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Component</b>: Advanced Cloaking Field Generator"
                       ],
@@ -1811,12 +1825,13 @@
                         }
                       ],
                       "weight_modifiers": [
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
                         "(×<b style='color:lime'>1.25</b>) Any Leader in council has trait Curator 1",
                         "(×<b style='color:lime'>1.25</b>) Any Leader in council has trait Cunning 1",
                         "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                       ],
                       "potential": [
-                        "Has DLC First Contact"
+                        "Has DLC First Contact Story Pack"
                       ],
                       "children": [
                         {
@@ -1827,7 +1842,7 @@
                           "base_factor": 1.0,
                           "base_weight": 35.0,
                           "category": "Field Manipulation",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "<b>Component</b>: Elite Cloaking Field Generator"
                           ],
@@ -1855,7 +1870,7 @@
                             "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                           ],
                           "potential": [
-                            "Has DLC First Contact"
+                            "Has DLC First Contact Story Pack"
                           ],
                           "children": [
                             {
@@ -1870,7 +1885,7 @@
                               "feature_unlocks": [
                                 "<b>Component</b>: Dark Matter Cloaking Field Generator"
                               ],
-                              "is_dangerous": false,
+                              "is_dangerous": true,
                               "is_rare": true,
                               "is_start_tech": false,
                               "prerequisites": [
@@ -1917,7 +1932,7 @@
                   "base_factor": 1.25,
                   "base_weight": 87.5,
                   "category": "Field Manipulation",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Component</b>: High Energy Skin",
                     "<b>Component</b>: Large Shielded Musculature",
@@ -1925,7 +1940,8 @@
                     "<b>Component</b>: Medium Shielded Musculature",
                     "<b>Component</b>: Medium Shields",
                     "<b>Component</b>: Small Shielded Musculature",
-                    "<b>Component</b>: Small Shields"
+                    "<b>Component</b>: Small Shields",
+                    "Army Health +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -1941,7 +1957,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                   ],
                   "potential": [],
                   "children": [
@@ -1953,7 +1969,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Field Manipulation",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "<b>Component</b>: Shield Capacitor"
                       ],
@@ -1981,7 +1997,7 @@
                           "base_factor": 1.0,
                           "base_weight": 70.0,
                           "category": "Field Manipulation",
-                          "cost": 6000,
+                          "cost": 3000,
                           "feature_unlocks": [
                             "<b>Component</b>: Energy Field Hardener",
                             "<b>Component</b>: Shield Hardener"
@@ -2015,7 +2031,7 @@
                               "base_factor": 1.0,
                               "base_weight": 20.0,
                               "category": "Field Manipulation",
-                              "cost": 48000,
+                              "cost": 24000,
                               "feature_unlocks": [
                                 "<b>Component</b>: Advanced Shield Hardener",
                                 "<b>Component</b>: Improved Energy Field Hardener"
@@ -2060,7 +2076,7 @@
                       "base_factor": 1.25,
                       "base_weight": 62.5,
                       "category": "Field Manipulation",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Component</b>: Advanced Energy Skin",
                         "<b>Component</b>: Large Advanced Shielded Musculature",
@@ -2068,7 +2084,8 @@
                         "<b>Component</b>: Medium Advanced Shielded Musculature",
                         "<b>Component</b>: Medium Advanced Shields",
                         "<b>Component</b>: Small Advanced Shielded Musculature",
-                        "<b>Component</b>: Small Advanced Shields"
+                        "<b>Component</b>: Small Advanced Shields",
+                        "Army Health +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2084,7 +2101,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                       ],
                       "potential": [],
                       "children": [
@@ -2096,7 +2113,7 @@
                           "base_factor": 1.25,
                           "base_weight": 43.75,
                           "category": "Field Manipulation",
-                          "cost": 24000,
+                          "cost": 12000,
                           "feature_unlocks": [
                             "<b>Component</b>: Hyper Energy Skin",
                             "<b>Component</b>: Large Hyper Shielded Musculature",
@@ -2104,7 +2121,8 @@
                             "<b>Component</b>: Medium Hyper Shielded Musculature",
                             "<b>Component</b>: Medium Hyper Shields",
                             "<b>Component</b>: Small Hyper Shielded Musculature",
-                            "<b>Component</b>: Small Hyper Shields"
+                            "<b>Component</b>: Small Hyper Shields",
+                            "Army Health +5%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -2120,7 +2138,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>1.5</b>) Is a bulwark (specialised subject)"
+                            "(×<b style='color:lime'>1.5</b>) Is a Bulwark (specialised subject)"
                           ],
                           "potential": [],
                           "children": [
@@ -2142,7 +2160,7 @@
                                 "<b>Component</b>: Small Dark Matter Deflectors",
                                 "<b>Component</b>: Small Dark Matter-Infused Musculature"
                               ],
-                              "is_dangerous": false,
+                              "is_dangerous": true,
                               "is_rare": true,
                               "is_start_tech": false,
                               "prerequisites": [
@@ -2156,7 +2174,7 @@
                                 }
                               ],
                               "weight_modifiers": [
-                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is of country type: Fallen Empire<br/>    •   Is of country type: Awakened Empire"
+                                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Is a Fallen Empire<br/>    •   Is an Awakened Empire"
                               ],
                               "potential": [],
                               "children": [],
@@ -2173,7 +2191,7 @@
                           "description": "The basic mechanics of ship shields are complex, but they can be adjusted and improved in a multitude of ways.",
                           "area": "physics",
                           "base_factor": 0.5,
-                          "base_weight": 12.5,
+                          "base_weight": 7.5,
                           "category": "Field Manipulation",
                           "cost": 50000,
                           "feature_unlocks": [
@@ -2210,7 +2228,7 @@
                       "base_factor": 0.5,
                       "base_weight": 32.5,
                       "category": "Field Manipulation",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Building</b>: Planetary Shield Canopy",
                         "<b>Building</b>: Planetary Shield Generator",
@@ -2257,7 +2275,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Field Manipulation",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Feature : </b>Gravity Snares",
             "<b>Starbase Module</b>: Orbital Vivarium Tank",
@@ -2272,7 +2290,7 @@
           "weight_modifiers": [],
           "potential": [
             "Has DLC Grand Archive",
-            "One must be true\n    •   One must be true\n\t    •   Has encountered Tiyanki\n\t    •   Has encountered Space Amoeba\n\t    •   Has encountered Crystalline Entity\n\t    •   Has encountered Voidworms\n\t    •   Has encountered Cuthuloids\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
+            "One must be true\n    •   One must be true\n\t    •   Has encountered Tiyanki\n\t    •   Has encountered Space Amoeba\n\t    •   Has encountered Crystalline Entities\n\t    •   Has encountered Voidworms\n\t    •   Has encountered Cuthuloids\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers"
           ],
           "children": [
             {
@@ -2283,7 +2301,7 @@
               "base_factor": 1.0,
               "base_weight": 85.0,
               "category": "Field Manipulation",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "Fauna Capture Amount +1",
                 "Fauna Capture Chance +5%"
@@ -2314,7 +2332,7 @@
                   "base_factor": 1.0,
                   "base_weight": 65.0,
                   "category": "Field Manipulation",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "Fauna Capture Amount +1",
                     "Fauna Capture Chance +5%"
@@ -2347,7 +2365,7 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Field Manipulation",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "Fauna Capture Amount +1",
                         "Fauna Capture Chance +5%"
@@ -2391,7 +2409,7 @@
               "base_factor": 1.0,
               "base_weight": 85.0,
               "category": "Biology",
-              "cost": 4000,
+              "cost": 2000,
               "feature_unlocks": [
                 "<b>Feature : </b>Space Fauna Growth Policies",
                 "<b>Starbase Module</b>: Hatchery",
@@ -2411,7 +2429,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Any Member:<br/>\t    •   Has Technology: Artificial Breeding<br/>    •   Does NOT have Federation Law None"
+                "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is part of a Federation<br/>&nbsp;&nbsp;•&nbsp; Federation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Member:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Artificial Breeding<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Does NOT have Federation Law None"
               ],
               "potential": [
                 "Has DLC Grand Archive",
@@ -2426,7 +2444,7 @@
                   "base_factor": 1.0,
                   "base_weight": 65.0,
                   "category": "Biology",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -2461,7 +2479,7 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Biology",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -2501,9 +2519,9 @@
                   "description": "We can increase the effectiveness of our Space Fauna Ships by modifying their genomes, allowing us to integrate artificial technology into their biomass.",
                   "area": "society",
                   "base_factor": 1.0,
-                  "base_weight": 5000.0,
+                  "base_weight": 2500.0,
                   "category": "Biology",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "<b>Feature : </b>Space Fauna Mutations",
                     "Available Mutation Slots +3"
@@ -2523,7 +2541,7 @@
                   ],
                   "weight_modifiers": [],
                   "potential": [
-                    "One must be true\n    •   Has Space Amoeba dna\n    •   Has Tiyanki dna\n    •   Has Crystalline Entity dna\n    •   Has Voidworm dna\n    •   Has Cutholoid dna"
+                    "One must be true\n    •   One must be true\n\t    •   Has Government Civic: Beastmasters\n\t    •   Has Government Civic: Wild Swarm\n\t    •   Has Government Civic: Biodrones\n\t    •   Has Government Civic: Space Ranchers\n    •   One must be true\n\t    •   Has Space Amoeba dna\n\t    •   Has Tiyanki dna\n\t    •   Has Crystalline Entity dna\n\t    •   Has Voidworm dna\n\t    •   Has Cutholoid dna"
                   ],
                   "children": [
                     {
@@ -2532,9 +2550,9 @@
                       "description": "We can go further. Advanced manipulation of Space Fauna genetics allows for integrating a wider variety of specialized components.",
                       "area": "society",
                       "base_factor": 1.0,
-                      "base_weight": 20000.0,
+                      "base_weight": 10000.0,
                       "category": "Biology",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Component</b>: Elastic Tissue",
                         "Available Mutation Slots +3"
@@ -2582,7 +2600,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Shrinkspace Depot"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -2590,7 +2608,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Concern<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Concern",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -2609,7 +2627,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Extra-Dimensional Depot"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -2622,7 +2640,9 @@
                   "key": "tech_fe_silo_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -2663,7 +2683,7 @@
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Computing",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Component</b>: Barrier Point-Defense",
                 "<b>Component</b>: Barrier Snapper Gun",
@@ -2693,7 +2713,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Computing",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "<b>Component</b>: Guardian Point-Defense",
                     "<b>Component</b>: Guardian Snapper Gun",
@@ -2734,8 +2754,9 @@
           "base_factor": 1000.0,
           "base_weight": 0.0,
           "category": "Computing",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
+            "<b>Building</b>: Experimentation Chambers",
             "<b>Building</b>: Research Labs"
           ],
           "is_dangerous": false,
@@ -2755,7 +2776,7 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Field Manipulation",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Building</b>: Field Dynamics Center"
               ],
@@ -2773,13 +2794,12 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
                 "(×<b style='color:lime'>5.0</b>) Is AI",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 5",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [
                 "Does NOT have Origin Wilderness"
@@ -2793,7 +2813,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Field Manipulation",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Building</b>: Quantum Relations Annex"
                   ],
@@ -2811,12 +2831,12 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has the has_market_access country flag",
+                    "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Mote Stabilization<br/>    •   Has Technology: Volatile Material Plants<br/>    •   Has access to the Galactic Market",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 25",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [
                     "Does NOT have Origin Wilderness"
@@ -2830,7 +2850,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Field Manipulation",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Building</b>: Fundamental Research Nexus"
                       ],
@@ -2852,7 +2872,7 @@
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                         "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                       ],
                       "potential": [
                         "Does NOT have Origin Wilderness"
@@ -2877,10 +2897,10 @@
               "base_factor": 1.0,
               "base_weight": 100.0,
               "category": "Computing",
-              "cost": 2000,
+              "cost": 1000,
               "feature_unlocks": [
                 "Research Speed +5%",
-                "[GetResearcherPluralWithIcon] Upkeep +5%"
+                "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -2896,7 +2916,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -2908,7 +2928,7 @@
                   "base_factor": 1.0,
                   "base_weight": 90.0,
                   "category": "Computing",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "<b>Component</b>: Combat Computer",
                     "<b>Component</b>: Neural Implants",
@@ -2943,7 +2963,7 @@
                       "base_factor": 1.0,
                       "base_weight": 90.0,
                       "category": "Computing",
-                      "cost": 3000,
+                      "cost": 1500,
                       "feature_unlocks": [
                         "<b>Component</b>: Artificial Fire Control Instinct",
                         "<b>Component</b>: Auxiliary Fire-control"
@@ -2975,7 +2995,7 @@
                       "base_factor": 1.0,
                       "base_weight": 65.0,
                       "category": "Computing",
-                      "cost": 8000,
+                      "cost": 4000,
                       "feature_unlocks": [
                         "<b>Component</b>: Advanced Combat Computer",
                         "<b>Component</b>: Advanced Neural Implants",
@@ -3011,7 +3031,7 @@
                           "base_factor": 0.5,
                           "base_weight": 20.0,
                           "category": "Computing",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Sapient Combat Computer",
                             "<b>Component</b>: Sapient Neural Implants"
@@ -3054,7 +3074,7 @@
                           "base_factor": 0.5,
                           "base_weight": 20.0,
                           "category": "Computing",
-                          "cost": 20000,
+                          "cost": 10000,
                           "feature_unlocks": [
                             "<b>Component</b>: Autonomous Neural Implants",
                             "<b>Component</b>: Autonomous Ship Intellect"
@@ -3099,7 +3119,7 @@
                   "base_factor": 1.0,
                   "base_weight": 90.0,
                   "category": "Computing",
-                  "cost": 3000,
+                  "cost": 1500,
                   "feature_unlocks": [
                     "Colony Development Speed +50%"
                   ],
@@ -3127,7 +3147,7 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Computing",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
                         "Colony Development Speed +50%"
                       ],
@@ -3167,9 +3187,9 @@
                   "base_factor": 2.0,
                   "base_weight": 170.0,
                   "category": "Computing",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
-                    "[GetArtisanIcon] [GetArtisan] Output +10%"
+                    "Resources Produced from £job_artisan£ Artisans +5%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3202,9 +3222,9 @@
                       "base_factor": 2.0,
                       "base_weight": 90.0,
                       "category": "Computing",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
-                        "[GetArtisanIcon] [GetArtisan] Output +10%"
+                        "Resources Produced from £job_artisan£ Artisans +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3249,7 +3269,7 @@
                   "base_factor": 1.0,
                   "base_weight": 75.0,
                   "category": "Computing",
-                  "cost": 5000,
+                  "cost": 2500,
                   "feature_unlocks": [
                     "Research Alternatives +1"
                   ],
@@ -3266,7 +3286,9 @@
                       "key": "tech_administrative_ai"
                     }
                   ],
-                  "weight_modifiers": [],
+                  "weight_modifiers": [
+                    "(×<b style='color:lime'>2.0</b>) Has Origin Synthetic Fertility"
+                  ],
                   "potential": [],
                   "children": [
                     {
@@ -3277,10 +3299,10 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Computing",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "Research Speed +5%",
-                        "[GetResearcherPluralWithIcon] Upkeep +5%"
+                        "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3296,7 +3318,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                       ],
                       "potential": [
                         "Has Gestalt Consciousness Ethic"
@@ -3314,10 +3336,10 @@
                       "base_factor": 1.0,
                       "base_weight": 45.0,
                       "category": "Computing",
-                      "cost": 16000,
+                      "cost": 8000,
                       "feature_unlocks": [
                         "Research Speed +5%",
-                        "[GetResearcherPluralWithIcon] Upkeep +5%"
+                        "Upkeep for £job_physicist££job_biologist££job_engineer£ Researchers +5%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3333,7 +3355,8 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                        "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)",
+                        "(×<b style='color:lime'>2.0</b>) Has Origin Synthetic Fertility"
                       ],
                       "potential": [
                         "Does NOT have Gestalt Consciousness Ethic"
@@ -3351,7 +3374,7 @@
                       "base_factor": 0.5,
                       "base_weight": 20.0,
                       "category": "Computing",
-                      "cost": 20000,
+                      "cost": 10000,
                       "feature_unlocks": [
                         "<b>Starbase Building</b>: Defense-Grid Supercomputer"
                       ],
@@ -3396,10 +3419,11 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Computing",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
                 "<b>Building</b>: Data-Driven Theorem Facility",
                 "<b>Building</b>: Exotic Research Enclosure",
+                "<b>Building</b>: Experimentation Complex",
                 "<b>Building</b>: Research Complexes",
                 "<b>Building</b>: Research Supply Depot"
               ],
@@ -3417,8 +3441,8 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
-                "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has access to the Galactic Market",
+                "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
               ],
               "potential": [],
               "children": [
@@ -3430,7 +3454,7 @@
                   "base_factor": 1.5,
                   "base_weight": 97.5,
                   "category": "Computing",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Building</b>: Planetary Supercomputer",
                     "<b>Building</b>: Research Institute"
@@ -3455,7 +3479,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Computing 1<br/>    •   Any Leader in council has trait Curator 1",
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [
                     "Does NOT have Origin Wilderness"
@@ -3472,9 +3496,9 @@
                   "base_factor": 1.5,
                   "base_weight": 97.5,
                   "category": "Computing",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
-                    "[GetSpecialist] Pop Resource Output +5%"
+                    "Specialist Pop Resource Output +2%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3516,10 +3540,11 @@
                   "base_factor": 2.0,
                   "base_weight": 130.0,
                   "category": "Computing",
-                  "cost": 8000,
+                  "cost": 4000,
                   "feature_unlocks": [
                     "<b>Building</b>: Advanced Research Complexes",
-                    "<b>Building</b>: Advanced Research Enclosure"
+                    "<b>Building</b>: Advanced Research Enclosure",
+                    "<b>Building</b>: Experimentation Nexus"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3540,7 +3565,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.5</b>) Is a scholarium (specialised subject)"
+                    "(×<b style='color:lime'>1.5</b>) Is a Scholarium (specialised subject)"
                   ],
                   "potential": [],
                   "children": [],
@@ -3563,9 +3588,9 @@
           "base_factor": 1.0,
           "base_weight": 100.0,
           "category": "Computing",
-          "cost": 2000,
+          "cost": 1000,
           "feature_unlocks": [
-            "Research Station Output +10%"
+            "Resources Produced from Research Stations +10%"
           ],
           "is_dangerous": false,
           "is_rare": false,
@@ -3584,9 +3609,9 @@
               "base_factor": 1.0,
               "base_weight": 90.0,
               "category": "Computing",
-              "cost": 3000,
+              "cost": 1500,
               "feature_unlocks": [
-                "Research Station Output +10%"
+                "Resources Produced from Research Stations +10%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -3612,9 +3637,9 @@
                   "base_factor": 1.0,
                   "base_weight": 85.0,
                   "category": "Computing",
-                  "cost": 4000,
+                  "cost": 2000,
                   "feature_unlocks": [
-                    "Research Station Output +10%"
+                    "Resources Produced from Research Stations +10%"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -3640,9 +3665,9 @@
                       "base_factor": 1.0,
                       "base_weight": 70.0,
                       "category": "Computing",
-                      "cost": 6000,
+                      "cost": 3000,
                       "feature_unlocks": [
-                        "Research Station Output +10%"
+                        "Resources Produced from Research Stations +10%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -3668,9 +3693,9 @@
                           "base_factor": 1.0,
                           "base_weight": 65.0,
                           "category": "Computing",
-                          "cost": 8000,
+                          "cost": 4000,
                           "feature_unlocks": [
-                            "Research Station Output +10%"
+                            "Resources Produced from Research Stations +10%"
                           ],
                           "is_dangerous": false,
                           "is_rare": false,
@@ -3715,7 +3740,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Computing",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Component</b>: Gravitic Sensors",
             "<b>Starbase Building</b>: Listening Post"
@@ -3736,12 +3761,12 @@
             {
               "key": "tech_detection_array",
               "name": "Detection Array",
-              "description": "sm_detection_array_desc",
+              "description": "A high-powered suite of external sensors, capable of detecting cloaked fleets.\n",
               "area": "physics",
               "base_factor": 1.0,
               "base_weight": 70.0,
               "category": "Computing",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Starbase Module</b>: Detection Array"
               ],
@@ -3764,7 +3789,7 @@
                 "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
               ],
               "potential": [
-                "Has DLC First Contact"
+                "Has DLC First Contact Story Pack"
               ],
               "children": [
                 {
@@ -3775,7 +3800,7 @@
                   "base_factor": 1.0,
                   "base_weight": 20.0,
                   "category": "Particles",
-                  "cost": 48000,
+                  "cost": 24000,
                   "feature_unlocks": [
                     "<b>Starbase Building</b>: Dark Matter Resonance Chamber"
                   ],
@@ -3803,7 +3828,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [],
                   "is_event": false,
@@ -3817,7 +3842,7 @@
                   "base_factor": 1.0,
                   "base_weight": 70.0,
                   "category": "Computing",
-                  "cost": 6000,
+                  "cost": 3000,
                   "feature_unlocks": [
                     "<b>Feature : </b>Assist Cloaking Detection"
                   ],
@@ -3840,7 +3865,7 @@
                     "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
                   ],
                   "potential": [
-                    "Has DLC First Contact"
+                    "Has DLC First Contact Story Pack"
                   ],
                   "children": [],
                   "is_event": false,
@@ -3858,7 +3883,7 @@
               "base_factor": 0.5,
               "base_weight": 37.5,
               "category": "Field Manipulation",
-              "cost": 6000,
+              "cost": 3000,
               "feature_unlocks": [
                 "<b>Feature : </b>Experimental Subspace Navigation"
               ],
@@ -3892,7 +3917,7 @@
               "base_factor": 1.0,
               "base_weight": 65.0,
               "category": "Computing",
-              "cost": 8000,
+              "cost": 4000,
               "feature_unlocks": [
                 "<b>Component</b>: Subspace Sensors",
                 "<b>Starbase Building</b>: Black Hole Observatory",
@@ -3926,7 +3951,7 @@
                   "base_factor": 1.0,
                   "base_weight": 45.0,
                   "category": "Computing",
-                  "cost": 16000,
+                  "cost": 8000,
                   "feature_unlocks": [
                     "<b>Component</b>: Tachyon Sensors"
                   ],
@@ -3958,7 +3983,7 @@
                       "base_factor": 1.0,
                       "base_weight": 50.0,
                       "category": "Field Manipulation",
-                      "cost": 12000,
+                      "cost": 6000,
                       "feature_unlocks": [
                         "<b>Reveals Ressource</b>: Dark Matter"
                       ],
@@ -3976,7 +4001,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the dark_matter_found country flag<br/>    •   Any System within borders<br/>\t    •   Any Planet<br/>\t\t    •   Has £sr_dark_matter£ Dark Matter greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Dark Matter Drawing"
+                        "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Dark Matter within borders<br/>    •   Any System within borders<br/>\t    •   Any Planet<br/>\t\t    •   Has £sr_dark_matter£ Dark Matter greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Dark Matter Drawing"
                       ],
                       "potential": [],
                       "children": [],
@@ -3995,8 +4020,9 @@
                   "base_factor": 1.0,
                   "base_weight": 60.0,
                   "category": "Psionics",
-                  "cost": 10000,
+                  "cost": 5000,
                   "feature_unlocks": [
+                    "<b>Building</b>: Shroud Observation Complex",
                     "<b>Reveals Ressource</b>: Zro"
                   ],
                   "is_dangerous": false,
@@ -4015,9 +4041,9 @@
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1",
                     "(×<b style='color:red'>0.1</b>) Does NOT have Technology: Psionic Theory",
-                    "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   Has trait Psionic",
-                    "(×<b style='color:lime'>1.25</b>) No owned Population Group:<br/>    •   Has trait Psionic",
-                    "(×<b style='color:lime'>2.0</b>) Any owned Leader:<br/>    •   Has trait Shroudwalker Teacher",
+                    "(×<b style='color:lime'>2.0</b>) Any owned Population Group:<br/>    •   One must be true<br/>\t    •   Has trait Psionic<br/>\t    •   Has trait Psionic",
+                    "(×<b style='color:lime'>1.25</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Any owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Latent Psionic<br/>&nbsp;&nbsp;•&nbsp; No owned Population Group:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; One must be true<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Psionic",
+                    "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have DLC Galactic Paragons<br/>&nbsp;&nbsp;•&nbsp; Any owned Leader:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has trait Shroudwalker Teacher",
                     "(×<b style='color:lime'>2.0</b>) Any Leader in council has trait Expertise: Psionics 1"
                   ],
                   "potential": [],
@@ -4045,7 +4071,7 @@
           "feature_unlocks": [
             "<b>Building</b>: Quantum Innovation Nexus"
           ],
-          "is_dangerous": false,
+          "is_dangerous": true,
           "is_rare": true,
           "is_start_tech": false,
           "prerequisites": [],
@@ -4053,7 +4079,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Crisis level: Existential Threat<br/>    •   Has Enigmatic Engineering Ascension Perk",
-            "(×<b style='color:red'>0.0</b>) Number of conditions true greater than or equal to 4<br/>    •   Has Technology: Affluence Emporium<br/>    •   Has Technology: Nourishment Complex<br/>    •   Has Technology: Dimensional Replicator<br/>    •   Has Technology: Class-3 Singularity<br/>    •   Has Technology: Hyper-Forge<br/>    •   Has Technology: Sky Dome<br/>    •   Has Technology: Aspis Bastion<br/>    •   Has Technology: Fractal Administration Processes<br/>    •   Has Technology: Robot Manufacturing Nexus<br/>    •   Has Technology: Molecular-Revitalization Institute<br/>    •   Has Technology: Justice Complex<br/>    •   Has Technology: Galactic Commerce Hub<br/>    •   Has Technology: Shrinkspace Depot<br/>    •   Has Technology: Virtual Bliss Plaza<br/>    •   Has Technology: Quantum Innovation Nexus<br/>    •   Has Technology: Quantum Drilling Plant",
+            "(×<b style='color:red'>0.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Does NOT have Cosmogenesis Ascension Perk<br/>&nbsp;&nbsp;•&nbsp; Number of conditions true greater than or equal to 4<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Affluence Emporium<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Nourishment Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dimensional Replicator<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Class-3 Singularity<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Hyper-Forge<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Sky Dome<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Aspis Bastion<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Fractal Administration Processes<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Robot Manufacturing Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Molecular-Revitalization Institute<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Justice Complex<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Galactic Commerce Hub<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Shrinkspace Depot<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Virtual Bliss Plaza<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Innovation Nexus<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Quantum Drilling Plant",
             "(×<b style='color:red'>0.025</b>) Does NOT have Crisis level: Existential Threat",
             "(×<b style='color:lime'>1.5</b>) Has Enigmatic Engineering Ascension Perk",
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than 5000"
@@ -4072,7 +4098,7 @@
               "feature_unlocks": [
                 "<b>Building</b>: Transcendental Innovation Department"
               ],
-              "is_dangerous": false,
+              "is_dangerous": true,
               "is_rare": true,
               "is_start_tech": false,
               "prerequisites": [
@@ -4085,7 +4111,9 @@
                   "key": "tech_fe_lab_1"
                 }
               ],
-              "weight_modifiers": [],
+              "weight_modifiers": [
+                "(×<b style='color:red'>0.0</b>) Does NOT have Cosmogenesis Ascension Perk"
+              ],
               "potential": [],
               "children": [],
               "is_event": false,
@@ -4103,7 +4131,7 @@
           "base_factor": 0.0,
           "base_weight": 0.0,
           "category": "Particles",
-          "cost": 1000,
+          "cost": 500,
           "feature_unlocks": [
             "<b>Component</b>: Subspace Drive",
             "<b>Feature : </b>Jump Drive Travel"
@@ -4116,7 +4144,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [],
           "potential": [
-            "Has DLC First Contact"
+            "Has DLC First Contact Story Pack"
           ],
           "children": [],
           "is_event": false,
@@ -4130,7 +4158,7 @@
           "base_factor": 2.0,
           "base_weight": 170.0,
           "category": "Particles",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Building</b>: Mote Harvesting Traps",
             "<b>Reveals Ressource</b>: Volatile Motes"
@@ -4157,7 +4185,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Particles",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Feature : </b>Astral Actions",
             "<b>Reveals Ressource</b>: astral_threads"
@@ -4169,7 +4197,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   ASTRAL_RIFT exists<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
+            "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has the astral_threads Found: country flag<br/>    •   Any System within borders<br/>\t    •   One must be true<br/>\t\t    •   ASTRAL_RIFT exists<br/>\t\t    •   Any Planet<br/>\t\t\t    •   Has £astral_threads£ astral_threads greater than 0<br/>    •   Any Country Relation<br/>\t    •   All must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Has communication with our Empire<br/>\t\t    •   Has Technology: Astral Harvesting",
             "(×<b style='color:lime'>2.0</b>) Any System within borders<br/>    •   One must be true<br/>\t    •   ASTRAL_RIFT exists<br/>\t    •   Any Planet<br/>\t\t    •   Is astral scar"
           ],
           "potential": [
@@ -4187,7 +4215,7 @@
           "base_factor": 2.0,
           "base_weight": 170.0,
           "category": "Particles",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "<b>Building</b>: Chemical Digester",
             "<b>Building</b>: Chemical Plants"
@@ -4211,10 +4239,10 @@
           "name": "Quantum Catapult",
           "description": "A Quantum Catapult harnesses the power of a Neutron Star or Pulsar to twist the fabric of space, skipping a fleet across great distances.",
           "area": "physics",
-          "base_factor": 0.25,
-          "base_weight": 12.5,
+          "base_factor": 2.0,
+          "base_weight": 100.0,
           "category": "Particles",
-          "cost": 16000,
+          "cost": 8000,
           "feature_unlocks": [
             "<b>Mega-Structure</b>: Quantum Catapult",
             "<b>Mega-Structure</b>: Quantum Catapult Single Array",
@@ -4233,14 +4261,41 @@
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2",
             "(×<b style='color:lime'>4.0</b>) One must be true<br/>    •   Has Megastructure Quantum Catapult Single Array<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult<br/>    •   Has Megastructure Quantum Catapult Twin Arrays<br/>    •   Has Megastructure Ruined Quantum Catapult<br/>    •   Has Megastructure Ruined Quantum Catapult",
-            "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
             "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
             "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
             "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols"
           ],
           "potential": [
             "Has DLC Overlord",
-            "One must be true\n    •   Has Technology: Mega-Engineering\n    •   Has the has_quantum_catapult_insight country flag\n    •   Has Origin Slingshot to the Stars"
+            "One must be true\n    •   Has Technology: Mega-Engineering\n    •   Gain Quantum Catapult Insight Astral Action\n    •   Has Origin Slingshot to the Stars"
+          ],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_starfire_cannon",
+          "name": "Starfire Cannon",
+          "description": "Like any potential hazard, the dangerous radiation from our star's transformation can also be harnessed as a useful tool. Channeling it as a beam weapon would allow us to overheat and disable enemy ships. \n\nUnlocks a planetary decision to construct a Starfire Cannon in orbit.",
+          "area": "physics",
+          "base_factor": 1.0,
+          "base_weight": 35.0,
+          "category": "Particles",
+          "cost": 12000,
+          "feature_unlocks": [],
+          "is_dangerous": false,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 4,
+          "prerequisites_names": [],
+          "weight_modifiers": [
+            "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
+            "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic"
+          ],
+          "potential": [
+            "Has Origin Red Giant",
+            "Finished the Red Giant Expansion situation"
           ],
           "children": [],
           "is_event": false,
@@ -4254,7 +4309,7 @@
           "base_factor": 1.0,
           "base_weight": 95.0,
           "category": "Computing",
-          "cost": 2500,
+          "cost": 1250,
           "feature_unlocks": [
             "Survey Speed +25%"
           ],
@@ -4267,9 +4322,9 @@
           "weight_modifiers": [
             "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
             "(×<b style='color:red'>0.0</b>) Number of years since game start is lower than 5",
-            "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
-            "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
-            "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is NOT AI<br/>&nbsp;&nbsp;•&nbsp; Number of years since game start is greater than 10",
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is NOT AI<br/>&nbsp;&nbsp;•&nbsp; Number of years since game start is greater than 15",
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is NOT AI<br/>&nbsp;&nbsp;•&nbsp; Number of years since game start is greater than 20",
             "(×<b style='color:lime'>2.0</b>) Number of owned planets is greater than 5",
             "(×<b style='color:lime'>2.0</b>) Number of owned planets is greater than 10",
             "(×<b style='color:lime'>2.0</b>) Number of owned planets is greater than 15",
@@ -4288,7 +4343,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Computing",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "Anomaly Discovery Chance +10%",
             "Anomaly Research Speed +25%"
@@ -4319,7 +4374,7 @@
           "base_factor": 1.0,
           "base_weight": 85.0,
           "category": "Computing",
-          "cost": 4000,
+          "cost": 2000,
           "feature_unlocks": [
             "Survey Speed +33%"
           ],
@@ -4347,7 +4402,7 @@
           "base_factor": 0.5,
           "base_weight": 35.0,
           "category": "Computing",
-          "cost": 6000,
+          "cost": 3000,
           "feature_unlocks": [
             "<b>Mega-Structure</b>: Dyson Swarm",
             "<b>Mega-Structure</b>: Dyson Swarm: Array",
@@ -4363,11 +4418,10 @@
           "weight_modifiers": [
             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Computing 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Megastructure Dyson Swarm: Array<br/>    •   Has Megastructure Dyson Swarm: Constellation<br/>    •   Has Megastructure Dyson Swarm",
-            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
-            "(×<b style='color:lime'>2.0</b>) Federation:<br/>    •   Has Federation Perk Scientific Inspiration<br/>    •   Any Member:<br/>\t    •   Has Technology: Dyson Swarm"
+            "(×<b style='color:lime'>2.0</b>) All must be true<br/>&nbsp;&nbsp;•&nbsp; Is part of a Federation<br/>&nbsp;&nbsp;•&nbsp; Federation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Federation Perk Scientific Inspiration<br/>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Any Member:<br/>\t&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; Has Technology: Dyson Swarm"
           ],
           "potential": [
-            "Has DLC Machine Age"
+            "Has DLC The Machine Age"
           ],
           "children": [],
           "is_event": false,
@@ -4379,7 +4433,7 @@
           "description": "By making further alterations to reality's rules, we can better monitor its reactions. At this scale, the effects are still difficult to predict, and could affect the entire galaxy.",
           "area": "physics",
           "base_factor": 1.0,
-          "base_weight": 25.0,
+          "base_weight": 15.0,
           "category": "Computing",
           "cost": 75000,
           "feature_unlocks": [],
@@ -4393,8 +4447,36 @@
             "(×<b style='color:lime'>5.0</b>) Has Technology: Theoretical Infinity Thesis"
           ],
           "potential": [
-            "Has DLC Machine Age",
-            "Has Cosmogenesis Ascension Perk"
+            "Has DLC The Machine Age",
+            "Has Cosmogenesis Ascension Perk",
+            "NOT Accepted the Keepers of Knowledge demand to stop"
+          ],
+          "children": [],
+          "is_event": false,
+          "source": "vanilla"
+        },
+        {
+          "key": "tech_synth_queen_knowledge",
+          "name": "Cetana's Thought",
+          "description": "This compendium, a gift from Cetana, is a tapestry of profound insights, elegantly composed and dense with meaning. It offers more than knowledge; it challenges and reshapes our understanding of technology, society, and the fabric of consciousness itself.",
+          "area": "physics",
+          "base_factor": 1.0,
+          "base_weight": 30.0,
+          "category": "Computing",
+          "cost": 16000,
+          "feature_unlocks": [
+            "Research Speed +20%"
+          ],
+          "is_dangerous": false,
+          "is_rare": true,
+          "is_start_tech": false,
+          "prerequisites": [],
+          "tier": 5,
+          "prerequisites_names": [],
+          "weight_modifiers": [],
+          "potential": [
+            "Has DLC The Machine Age",
+            "Cetana: The Synthetic Queen event reward"
           ],
           "children": [],
           "is_event": false,
@@ -4424,7 +4506,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -4456,7 +4538,7 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
           ],
@@ -4488,36 +4570,9 @@
             "(×<b style='color:lime'>2.0</b>) Any Owned Planet<br/>    •   Is Synaptic Lathe<br/>    •   Pop count is greater than or equal to 10000"
           ],
           "potential": [
-            "Has DLC Machine Age",
+            "Has DLC The Machine Age",
             "Has Cosmogenesis Ascension Perk",
             "Has Technology: Scalable Reservoir Computing"
-          ],
-          "children": [],
-          "is_event": false,
-          "source": "vanilla"
-        },
-        {
-          "key": "tech_synth_queen_knowledge",
-          "name": "Cetana's Thought",
-          "description": "This compendium, a gift from Cetana, is a tapestry of profound insights, elegantly composed and dense with meaning. It offers more than knowledge; it challenges and reshapes our understanding of technology, society, and the fabric of consciousness itself.",
-          "area": "physics",
-          "base_factor": 1.0,
-          "base_weight": 30.0,
-          "category": "Computing",
-          "cost": 32000,
-          "feature_unlocks": [
-            "Research Speed +20%"
-          ],
-          "is_dangerous": false,
-          "is_rare": true,
-          "is_start_tech": false,
-          "prerequisites": [],
-          "tier": 5,
-          "prerequisites_names": [],
-          "weight_modifiers": [],
-          "potential": [
-            "Has DLC Machine Age",
-            "Has the synth_queen_knowledge country flag"
           ],
           "children": [],
           "is_event": false,
@@ -4529,7 +4584,7 @@
           "description": "Increasingly powerful computation paradigms allow us to adapt individual construction projects to planetary and ultra-local gravitational conditions.",
           "area": "physics",
           "base_factor": 0.5,
-          "base_weight": 12.5,
+          "base_weight": 7.5,
           "category": "Computing",
           "cost": 50000,
           "feature_unlocks": [

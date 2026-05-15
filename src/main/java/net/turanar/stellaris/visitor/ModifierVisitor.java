@@ -56,14 +56,17 @@ public class ModifierVisitor {
 
     public WeightModifier visitModifier(StellarisParser.PairContext ctx) {
         WeightModifier retval = new WeightModifier();
-        ctx.value().map().pair().forEach(p -> {
-            try {
-                switch(p.BAREWORD().getText()) {
+        List<StellarisParser.PairContext> conditions = new ArrayList<>();
+        try {
+            for (StellarisParser.PairContext p : ctx.value().map().pair()) {
+                switch (p.BAREWORD().getText()) {
                     case "factor":
-                        if (gs(p).startsWith("value:")) {
+                        if (gs(p).startsWith("value:") || gs(p).startsWith("trigger:")) {
                             // FIXME(Tim Aschhoff): This value is hardcoded for now
                             if (gs(p).equals("value:tech_weight_likelihood")) {
                                 retval.factor = 1.25f;
+                            } else if (gs(p).equals("trigger:acquired_specimen_count")) {
+                                retval = new CustomWeightModifier("<b style='color:lime'>Number of acquired specimens</b>");
                             } else {
                                 System.err.println("Please handle defines! No value for define " + gs(p));
                             }
@@ -71,21 +74,37 @@ public class ModifierVisitor {
                             retval.factor = Float.valueOf(gs(p));
                         }
                         break;
-                    case "add": 
+                    case "add":
                         retval.add = Integer.valueOf(gs(p));
                         System.err.println("retval.add:" + retval.add);
                         break;
                     default:
-                        retval.type = ModifierType.valueOf(p.BAREWORD().getText());
-                        retval.pair = p;
+                        conditions.add(p);
                 }
-            } catch (IllegalArgumentException e) {
-                System.err.println(e.getMessage());
             }
-        });
+
+            // Handle collected conditions
+            if (conditions.size() == 1) {
+                StellarisParser.PairContext p = conditions.get(0);
+                retval.type = ModifierType.valueOf(p.BAREWORD().getText());
+                retval.pair = p;
+            } else if (conditions.size() > 1) {
+                // Create an AND clause with multiple conditions as children
+                retval.type = ModifierType.AND;
+                retval.pair = ctx; // Use the parent context
+                for (StellarisParser.PairContext p : conditions) {
+                    Modifier child = new Modifier();
+                    child.type = ModifierType.valueOf(p.BAREWORD().getText());
+                    child.pair = p;
+                    retval.children.add(child);
+                }
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
+        }
 
         // FIXME(Tim Aschhoff): Janky hack
-        if (retval.factor == null && retval.add == null) {
+        if (retval.factor == null && retval.add == null && !(retval instanceof CustomWeightModifier)) {
             return null;
         }
 

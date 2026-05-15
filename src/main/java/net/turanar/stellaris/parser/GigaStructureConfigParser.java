@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 import static net.turanar.stellaris.Global.parse;
+import static net.turanar.stellaris.Global.parseWithSubdirectories;
 
 @Component
 public class GigaStructureConfigParser extends AbstractConfigParser {
@@ -43,7 +44,7 @@ public class GigaStructureConfigParser extends AbstractConfigParser {
     }
 
     public void parseLocalisation(String folder) throws IOException {
-        parse(folder + "/localisation", "yml", path -> {
+        parseWithSubdirectories(folder + "/localisation", "yml", path -> {
             Yaml yaml = new Yaml();
             if(!path.getFileName().toString().equals("gigaengineering_l_english.yml")) return;
             Iterable<Object> data = yaml.loadAll(new StellarisYamlReader(path));

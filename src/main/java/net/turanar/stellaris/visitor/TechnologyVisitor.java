@@ -1,14 +1,17 @@
 package net.turanar.stellaris.visitor;
 
-import net.turanar.stellaris.domain.Area;
-import net.turanar.stellaris.domain.Category;
-import net.turanar.stellaris.domain.Technology;
+import net.turanar.stellaris.antlr.StellarisLexer;
+import net.turanar.stellaris.domain.*;
 import net.turanar.stellaris.antlr.StellarisParser;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.List;
+import java.util.function.Consumer;
 
 import static net.turanar.stellaris.Global.*;
 
@@ -36,6 +39,8 @@ public class TechnologyVisitor {
                 if(key.equals("ship_anomaly_research_speed_mult")) key = "mod_ship_anomaly_research_speed";
                 if(key.equals("all_technology_research_speed")) key = "all_tech_research_speed";
                 if(key.equals("army_health")) key = "mod_army_health";
+                if(key.equals("external_leader_pool_add")) key = "mod_country_external_leader_pool_size";
+                if(key.equals("councilor_exp_gain")) key = "mod_leader_councilor_exp_gain";
 
                 String effect = i18n(key);
                 if(key.equals("species_leader_exp_gain")) effect = "Species Leader Exp Gain";
@@ -107,10 +112,49 @@ public class TechnologyVisitor {
                     visitFeatureUnlocks(retval, pair.value()); break;
                 case "prerequisites":
                     if(pair.value() == null) break;
+
+                    // if we have "OR = { tech_1 tech_2 }" among values, move them to "potential"
+                    Consumer<StellarisParser.PairContext> handleOr = (subPair) -> {
+                        if (!subPair.BAREWORD().getText().equals("OR") || subPair.value().array() == null) {
+                            System.err.println("only OR is supported for prerequisites: " + subPair.BAREWORD().getText());
+                        }
+
+                        // Create: OR = { has_technology = "tech_1" has_technology = "tech_2" }
+                        StringBuilder sb = new StringBuilder("OR = { ");
+                        for (StellarisParser.ValueContext subVal : subPair.value().array().value()) {
+                            sb.append("has_technology = ").append(gs(subVal).replaceAll("\"","")).append(" ");
+                        }
+                        sb.append("}");
+                        StellarisLexer lexer = new StellarisLexer(CharStreams.fromString(sb.toString()));
+                        CommonTokenStream tokens = new CommonTokenStream(lexer);
+                        StellarisParser parser = new StellarisParser(tokens);
+
+                        Modifier newMod = new Modifier();
+                        newMod.type = ModifierType.OR;
+                        newMod.pair = parser.pair();
+                        retval.potential.add(newMod);
+                    };
+
+                    if (pair.value().map() != null) {
+                        List<StellarisParser.PairContext> pairList = pair.value().map().pair();
+                        if (pairList.isEmpty()) {
+                            break;
+                        } else if (pairList.size() == 1) {
+                            handleOr.accept(pairList.get(0));
+                        } else {
+                            System.err.println("Only single OR is supported for prerequisites: " + pairList.size());
+                        }
+                        break;
+                    }
                     if(pair.value().array() == null) break;
                     pair.value().array().value().forEach(val -> {
                         if (val == null) {
                             System.err.println("VAL IS NULL!");
+                            return;
+                        }
+
+                        if (val.pair() != null) {
+                            handleOr.accept(val.pair());
                             return;
                         }
 
@@ -123,6 +167,10 @@ public class TechnologyVisitor {
                                 .replaceAll("\"",""));
                         }
                     });
+            }
+            if (retval.potential.stream().anyMatch(m -> m.toString().contains(i18n("situation_digitization")))
+                    && !retval.prerequisites.contains("tech_identity_copy")) {
+                retval.prerequisites.add("tech_identity_copy");
             }
         }
         return retval;

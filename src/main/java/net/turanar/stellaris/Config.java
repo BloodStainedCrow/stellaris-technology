@@ -12,6 +12,8 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+
 import static net.turanar.stellaris.Global.*;
 
 @Configuration
@@ -40,7 +42,7 @@ public class Config {
     public Map<String,String> localisation() throws IOException {
         Map<String,String> retval = new HashMap<>();
 
-        parse("files/localisation/english", "yml", path -> {
+        parseWithSubdirectories("files/localisation/english", "yml", path -> {
             System.err.println(path);
             Yaml yaml = new Yaml();
             Iterable<Object> data = yaml.loadAll(new StellarisYamlReader(path));
@@ -50,7 +52,7 @@ public class Config {
                 return;
             }
             values.forEach((k, v) -> {
-                retval.put(k.toString().toLowerCase(), v.toString());
+                retval.put(Objects.toString(k).toLowerCase(), v.toString());
             });
         });
 
@@ -64,6 +66,28 @@ public class Config {
         parse("files/common/scripted_triggers", "txt", path -> {
             System.err.println(path);
             factory.getParser(path).file().pair().forEach(pair -> retval.put(pair.BAREWORD().getText(), pair));
+        });
+
+        return retval;
+    }
+
+    @Bean("GLOBAL_SCRIPTED_LOC")
+    public Map<String, String> scriptedLocalization() throws IOException {
+        Map<String, String> retval = new HashMap<>();
+
+        parse("files/common/scripted_loc", "txt", path -> {
+            if (path.getFileName().toString().equals("scripted_loc_ruloc.txt")) return; // broken file
+            factory.getParser(path).file().pair().forEach(pair -> {
+                if (!pair.BAREWORD().getText().equals("defined_text")) return;
+                String name = null;
+                String value = null;
+                for (StellarisParser.PairContext p : pair.value().map().pair()) {
+                    if (p.BAREWORD().getText().equals("name")) name = p.value().getText();
+                    if (p.BAREWORD().getText().equals("default")) value = p.value().getText();
+                }
+                if (name == null || value == null) return;
+                retval.put(name, value);
+            });
         });
 
         return retval;

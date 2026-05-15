@@ -7,7 +7,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 2500,
+    "cost": 1250,
     "feature_unlocks": [
       "<b>Component</b>: Large Null Void Beam",
       "<b>Component</b>: Medium Null Void Beam",
@@ -70,44 +70,7 @@
       "(×<b style='color:red'>0.0</b>) Always"
     ],
     "potential": [],
-    "children": [
-      {
-        "key": "tech_akx_worm_3",
-        "name": "Omega Theory",
-        "description": "When a temporal paradox becomes tangled, a kind of consciousness arises, with its own needs, its own desires. This is what has occurred with the consciousness that some call the Worm-in-Waiting. If we can align ourselves with that consciousness, we might just achieve a kind of immortality.",
-        "area": "physics",
-        "base_factor": 1.0,
-        "base_weight": 60.0,
-        "category": "Particles",
-        "cost": 10000,
-        "feature_unlocks": [
-          "<b>Building</b>: Omega Alignment"
-        ],
-        "is_dangerous": true,
-        "is_rare": true,
-        "is_start_tech": false,
-        "prerequisites": [
-          "tech_akx_worm_2",
-          "tech_akx_worm_1"
-        ],
-        "tier": 3,
-        "prerequisites_names": [
-          {
-            "name": "Entropic Recursion",
-            "key": "tech_akx_worm_1"
-          },
-          {
-            "name": "Doctrine: Strange Loop",
-            "key": "tech_akx_worm_2"
-          }
-        ],
-        "weight_modifiers": [],
-        "potential": [],
-        "children": [],
-        "is_event": true,
-        "source": "vanilla"
-      }
-    ],
+    "children": [],
     "is_event": true,
     "source": "vanilla"
   },
@@ -155,7 +118,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "New Worlds",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Max Districts (non-artificial planets only) +1"
@@ -168,7 +131,33 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_alloy_fossilization",
+    "name": "Alloy Fossilization",
+    "description": "By exposing biological material to simulated chthonian-level radiation, we can fossilize cellular structures into usable metallic alloys.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Materials",
+    "cost": 2000,
+    "feature_unlocks": [
+      "Unlocks building: ['building:building_bio_furnace']"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
     ],
     "children": [],
     "is_event": true,
@@ -182,7 +171,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "<b>Component</b>: Amoeba Flagella",
       "<b>Component</b>: Flagella Swarmers"
@@ -233,11 +222,11 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
-      "Mining Station Output +5%",
-      "Research Station Output +5%",
+      "Resources Produced from Mining Stations +5%",
+      "Resources Produced from Research Stations +5%",
       "Station Upkeep -50%"
     ],
     "is_dangerous": false,
@@ -248,7 +237,75 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_aura_intensification",
+    "name": "Psionic Aura Intensification",
+    "description": "Psionic emanations from the Shroud long to expand. With this new understanding, an empire's Psionic Auras can increase in intensity and spread throughout star systems, bringing benefits to allies and disadvantages to foes.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 8000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Psionic Aura growth",
+      "<b>Feature : </b>Psionic Aura spread",
+      "Success chance when Delving: +$@delve_success_tier_2|0$%"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_aura"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Aura",
+        "key": "tech_psionic_aura"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_aura_resonation",
+    "name": "Aura Resonation",
+    "description": "There is a way to project Psionic Auras beyond populated worlds. With the addition of an Aura Emitter, even a starbase can become a conduit for psionic emanations from the Shroud.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 4000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Aura Emitter"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_aura"
+    ],
+    "tier": 3,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Aura",
+        "key": "tech_psionic_aura"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
     ],
     "children": [],
     "is_event": true,
@@ -262,7 +319,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "<b>Component</b>: Boarding Cables"
     ],
@@ -283,12 +340,12 @@
   {
     "key": "tech_btc_1",
     "name": "Star Cracker",
-    "description": "PLANET_KILLER_STAR_CRACKER_DESC",
+    "description": "A beam of directed tachyon energy is fired into the star, triggering a supernova. The incredible energy released by this event is then used to generate vast quantities of dark matter.\n\nWhen the star detonates, ALL colonies, megastructures, and stations in the system are destroyed - including our own. All fleets in the system will go MIA. The Star-Eater itself is the only exception.",
     "area": "engineering",
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Star Cracker"
     ],
@@ -302,10 +359,48 @@
     "potential": [
       "Has DLC Nemesis",
       "Has Galactic Nemesis Ascension Perk",
-      "Has the can_build_star_eaters country flag"
+      "Galactic Nemesis level 5"
     ],
     "children": [],
     "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cloaking_psi",
+    "name": "Psi-Phase Field Generator",
+    "description": "Psi-Phase Field Generators focus the psionic potential of the ship's crew to partially phase the vessel into the Shroud. This allows the ship to remain undetected by all but the best sensor arrays, though what the crew may be forced to witness is better left unsaid.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 25.0,
+    "category": "Psionics",
+    "cost": 24000,
+    "feature_unlocks": [
+      "<b>Component</b>: Psi-Phase Field Generator"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psi_jump_drive_1"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psi Jump Drive",
+        "key": "tech_psi_jump_drive_1"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
+      "(×<b style='color:lime'>5.0</b>) Has Subterfuge Traditions Tradition"
+    ],
+    "potential": [
+      "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic",
+      "Has DLC First Contact Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "is_gestalt": false,
     "source": "vanilla"
   },
   {
@@ -316,7 +411,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 4000,
+    "cost": 2000,
     "feature_unlocks": [
       "<b>Component</b>: Advanced Neurochips",
       "<b>Component</b>: Autonomous Neurochips",
@@ -351,7 +446,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "The Empire Size Effect is modified by: -5%"
@@ -364,7 +459,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -378,7 +473,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "Fauna Capture Amount +1",
       "Fauna Capture Chance +10%"
@@ -416,7 +511,7 @@
     "category": "Voidcraft",
     "cost": 70000,
     "feature_unlocks": [],
-    "is_dangerous": false,
+    "is_dangerous": true,
     "is_rare": true,
     "is_start_tech": false,
     "prerequisites": [],
@@ -424,7 +519,8 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age",
+      "Country does NOT use biological ships"
     ],
     "children": [],
     "is_event": true,
@@ -440,7 +536,7 @@
     "category": "Voidcraft",
     "cost": 70000,
     "feature_unlocks": [],
-    "is_dangerous": false,
+    "is_dangerous": true,
     "is_rare": true,
     "is_start_tech": false,
     "prerequisites": [],
@@ -448,7 +544,8 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age",
+      "Country does NOT use biological ships"
     ],
     "children": [],
     "is_event": true,
@@ -472,7 +569,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -497,7 +594,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -522,7 +619,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -547,7 +644,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -557,7 +654,7 @@
   {
     "key": "tech_cosmogenesis_crisis_5",
     "name": "Nascent Universes",
-    "description": "Large-scale travel to different universes is a daunting task. We must engineer a spacecraft that can not only pierce the fabric of spacetime but also survive the journey.",
+    "description": "Large-scale travel to different universes is a daunting task. We must engineer a spacecraft that can not only pierce the fabric of spacetime but also survive the journey.\n\nFallen Empires will try to stop us!",
     "area": "physics",
     "base_factor": 1.0,
     "base_weight": 0.0,
@@ -572,7 +669,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -589,7 +686,7 @@
     "category": "Voidcraft",
     "cost": 70000,
     "feature_unlocks": [],
-    "is_dangerous": false,
+    "is_dangerous": true,
     "is_rare": true,
     "is_start_tech": false,
     "prerequisites": [],
@@ -597,7 +694,108 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age",
+      "Country does NOT use biological ships"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_harbinger",
+    "name": "Maze Harbinger",
+    "description": "These Harbingers nest their strike craft in interwoven pocket dimensions, each ship a labyrinth of impossible hangars, capable of deploying a fleet's worth of firepower.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": true,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Country uses biological ships"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_mauler",
+    "name": "Cipher Mauler",
+    "description": "Through organic spacetime-dimensional transcendentalism, this Mauler is larger on the inside its compact frame concealing a dense tangle of musculature. Capable of a bite deadlier than physics should allow.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": true,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Country uses biological ships"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_stinger",
+    "name": "Cryptic Stinger",
+    "description": "Brimming with more weapon systems than its power source should sustain, this Stinger shouldn't function, and yet, it fires. Continuously.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": true,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Country uses biological ships"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_cosmogenesis_weaver",
+    "name": "Quandary Weaver",
+    "description": "Equipped with support weapon arrays that outstrip its visible anatomy, the Quandary Weaver rewrites spatial norms. Alone, it can shift the momentum of entire battles.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 70000,
+    "feature_unlocks": [],
+    "is_dangerous": true,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Country uses biological ships"
     ],
     "children": [],
     "is_event": true,
@@ -611,7 +809,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 32000,
+    "cost": 16000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Synaptic Lathe"
     ],
@@ -623,7 +821,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age",
+      "Has DLC The Machine Age",
       "Has Cosmogenesis Ascension Perk"
     ],
     "children": [],
@@ -642,6 +840,38 @@
     "feature_unlocks": [
       "<b>Component</b>: Blessing of the Composer",
       "<b>Component</b>: Mark of the Composer"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_psionic_theory"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Psionic Theory",
+        "key": "tech_psionic_theory"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_covenant_cradle",
+    "name": "Mark of the Cradle",
+    "description": "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 60000,
+    "feature_unlocks": [
+      "<b>Component</b>: Blessing of the Cradle",
+      "<b>Component</b>: Mark of the Cradle"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -759,6 +989,32 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_cryovault",
+    "name": "Frozen World Habitats",
+    "description": "By harnessing the subthermal dynamics found in the environments of frozen worlds, we can create more hospitable living conditions in colder climates.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "New Worlds",
+    "cost": 2000,
+    "feature_unlocks": [
+      "Unlocks building : ['building:building_cryovault']"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_crystal_armor_1",
     "name": "Crystal-Infused Plating",
     "description": "By infusing armor plating with Crystalline matter we are able to further increase the durability of our ships' protective hulls.",
@@ -766,7 +1022,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "<b>Component</b>: Crystal Infused Innards",
       "<b>Component</b>: Large Crystal-Infused Plating",
@@ -780,7 +1036,7 @@
     "tier": 2,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+<b style='color:lime'>5</b>) Has the crystal_armor_1_weight country flag"
+      "(+<b style='color:lime'>5</b>) Crystalline Entities outcome"
     ],
     "potential": [],
     "children": [],
@@ -795,7 +1051,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 16000,
+    "cost": 8000,
     "feature_unlocks": [
       "<b>Component</b>: Crystal Forged Innards",
       "<b>Component</b>: Large Crystal-Forged Plating",
@@ -852,7 +1108,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Dyson Sphere",
       "<b>Mega-Structure</b>: Dyson Sphere Frame",
@@ -875,9 +1131,7 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [
-      "Has DLC Utopia"
-    ],
+    "potential": [],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -964,7 +1218,7 @@
     "base_factor": 10.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Bio-Disintegrator",
       "<b>Component</b>: Large Matter Disintegrator",
@@ -978,7 +1232,7 @@
     "tier": 5,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(×<b style='color:red'>0.0</b>) Does NOT have the Covenant: End of the Cycle modifier"
+      "(×<b style='color:red'>0.0</b>) NOT Covenant: End of the Cycle"
     ],
     "potential": [],
     "children": [],
@@ -993,7 +1247,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "£energy£ Energy Credits from £job£ Jobs +5%"
     ],
@@ -1010,6 +1264,32 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_georadiation_terraforming",
+    "name": "Georadiation Terraforming",
+    "description": "By exposing the biosphere of a planet to molecular radiation decay, we promote the growth of certain resources while turning the world into a toxic wasteland.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "New Worlds",
+    "cost": 4000,
+    "feature_unlocks": [
+      "Unlocks the planetary decision Toxify World"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_hyper_drive_bio_integration",
     "name": "Hyperdrive Bio-integration",
     "description": "Traveling across hyperlanes can be hazardous for spaceborne life, but we are able to enhance their capabilities.",
@@ -1017,7 +1297,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 4000,
+    "cost": 2000,
     "feature_unlocks": [
       "<b>Component</b>: Hyperdimensional Inner-Ear",
       "<b>Component</b>: Imprinted Breach Point Memories",
@@ -1051,7 +1331,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Industry",
-    "cost": 16000,
+    "cost": 8000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -1061,7 +1341,71 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_identity_fusion",
+    "name": "Identity Fusion",
+    "description": "Merging the identities and memories of two or more Synthetics into a mechanical body will create new, somewhat unique individuals.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 40.0,
+    "category": "Industry",
+    "cost": 10000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_identity_copy"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Identity Copies",
+        "key": "tech_identity_copy"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Finished the Synthesization situation"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_identity_initialization",
+    "name": "Identity Initialization",
+    "description": "We will be able to initialize an identity kernel and provide it with a virtual childhood. While expensive, we can simulate the optimal experiences to generate productive personalities.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 40.0,
+    "category": "Industry",
+    "cost": 10000,
+    "feature_unlocks": [],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_identity_copy"
+    ],
+    "tier": 4,
+    "prerequisites_names": [
+      {
+        "name": "Identity Copies",
+        "key": "tech_identity_copy"
+      }
+    ],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC The Machine Age",
+      "Finished the Synthesization situation"
     ],
     "children": [],
     "is_event": true,
@@ -1075,7 +1419,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Industry",
-    "cost": 32000,
+    "cost": 16000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": true,
@@ -1085,7 +1429,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
     ],
     "children": [],
     "is_event": true,
@@ -1099,7 +1443,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 12000,
+    "cost": 6000,
     "feature_unlocks": [],
     "is_dangerous": true,
     "is_rare": true,
@@ -1109,7 +1453,33 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Does NOT have the l_cluster_opened global flag"
+      "NOT L-Gates opened"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_living_test_subjects",
+    "name": "Living Test Subjects",
+    "description": "The utilization of basic slime-spawned lifeforms as willing test subjects greatly improves research efficiency.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Biology",
+    "cost": 1000,
+    "feature_unlocks": [
+      "Research Cost (£society£ Society) -5%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 1,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
     ],
     "children": [],
     "is_event": true,
@@ -1123,7 +1493,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Industry",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "District Cost -30%",
@@ -1137,7 +1507,33 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_materiality_engine",
+    "name": "Materiality Engine",
+    "description": "The psionic energy of the Shroud adjoins every point in the physical galaxy. The Materiality Engine exploits this interface, making it possible to reach across dimensions and materialize valuable components and resources.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 16000,
+    "feature_unlocks": [
+      "<b>Building</b>: Materiality Engine"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
     ],
     "children": [],
     "is_event": true,
@@ -1151,7 +1547,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Matter Decompressor",
       "<b>Mega-Structure</b>: Matter Decompressor Site",
@@ -1188,7 +1584,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 5000,
+    "cost": 2500,
     "feature_unlocks": [
       "<b>Component</b>: Medium Cutting Laser",
       "<b>Component</b>: Medium Mining Beam Projector",
@@ -1216,7 +1612,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Large Nanite Quill Battery",
       "<b>Component</b>: Medium Nanite Quill Battery",
@@ -1244,7 +1640,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Nanite Flak Battery",
       "<b>Component</b>: Nanite-Infused Barb Artillery"
@@ -1269,7 +1665,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 40000,
+    "cost": 20000,
     "feature_unlocks": [
       "<b>Component</b>: Nanite Repair System"
     ],
@@ -1293,7 +1689,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Cetana's Nanites Repair System"
     ],
@@ -1305,7 +1701,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Machine Age"
+      "Has DLC The Machine Age"
     ],
     "children": [],
     "is_event": true,
@@ -1319,7 +1715,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 20000,
+    "cost": 10000,
     "feature_unlocks": [
       "Leader Lifespan +10",
       "Species Leader Exp Gain +25%"
@@ -1344,7 +1740,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Research Speed +5%"
@@ -1357,7 +1753,33 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_orbital_maneuvers",
+    "name": "Advanced Orbital Maneuvers",
+    "description": "Sublight travel can be further optimized by performing advanced calculations that make maximum use of planetary gravity wells.",
+    "area": "physics",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Computing",
+    "cost": 2000,
+    "feature_unlocks": [
+      "Sublight Speed +10%"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
     ],
     "children": [],
     "is_event": true,
@@ -1371,7 +1793,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "<b>Component</b>: Orbital Shed Disperser",
       "<b>Component</b>: Orbital Trash Disperser"
@@ -1396,7 +1818,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Time Spent Missing In Action -15%"
@@ -1409,7 +1831,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1423,7 +1845,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Military Theory",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys "
     ],
@@ -1435,7 +1857,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1449,9 +1871,9 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
-      "£trade£ Trade from £job£ Jobs +5%"
+      "£trade£ Trade from £job£ Jobs +2%"
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -1466,14 +1888,82 @@
     "source": "vanilla"
   },
   {
-    "key": "tech_psionic_barrier",
-    "name": "Psionic Barrier",
-    "description": "These barriers are generated out of pure psychic energy by a cadre of psionic specialists. They will be able to stop some incoming fire, like our Energy deflector systems, but without the prohibitive power consumption.",
+    "key": "tech_psi_jump_drive_1",
+    "name": "Psi Jump Drive",
+    "description": "The Psi Jump Drive harnesses the psi energies emitted by the crew to force the vessel through the very fabric of reality, instantly \"jumping\" vast distances.",
     "area": "society",
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Psionics",
-    "cost": 8000,
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Component</b>: Psi Jump Drive",
+      "<b>Component</b>: Psionic Jump Organ",
+      "<b>Feature : </b>Jump Drive Travel"
+    ],
+    "is_dangerous": true,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [
+      "tech_precognition_interface"
+    ],
+    "tier": 5,
+    "prerequisites_names": [
+      {
+        "name": "Precognition Interface",
+        "key": "tech_precognition_interface"
+      }
+    ],
+    "weight_modifiers": [
+      "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Any Leader in council has trait Expertise: Psionics 1<br/>    •   Any Leader in council has trait Curator 1<br/>    •   Any Leader in council has trait Spark of Genius 1<br/>    •   Any Leader in council has trait Spark of Genius 2<br/>    •   Any Leader in council has trait Maniacal 1<br/>    •   Any Leader in council has trait Maniacal 2<br/>    •   Any Leader in council has trait Maniacal 3",
+      "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
+      "(×<b style='color:lime'>5.0</b>) One must be true<br/>    •   Has Government Civic: Eager Explorers<br/>    •   Has Government Civic: Privatized Exploration<br/>    •   Has Government Civic: Stargazers<br/>    •   Has Government Civic: Exploration Protocols",
+      "(×<b style='color:lime'>1.5</b>) The Guest outcome"
+    ],
+    "potential": [
+      "One must be true\n    •   Has DLC Shadows of the Shroud\n    •   Does NOT have Gestalt Consciousness Ethic"
+    ],
+    "children": [],
+    "is_event": true,
+    "is_gestalt": false,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_psionic_aura",
+    "name": "Psionic Aura",
+    "description": "Psionic emanations from the Shroud bring an entity's favor into corporeal reality. An empire attuned to a Shroud patron will emit a Psionic Aura from where their psionic populations are concentrated.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 4000,
+    "feature_unlocks": [
+      "<b>Feature : </b>Psionic Auras",
+      "Success chance when Delving: +$@delve_success_tier_1|0$%"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 3,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_psionic_barrier",
+    "name": "Psionic Barrier",
+    "description": "These barriers are generated out of pure psionic energy by a cadre of psionic specialists. They will be able to stop some incoming fire, like our energy deflector systems, but without the prohibitive power consumption.",
+    "area": "society",
+    "base_factor": 0.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 4000,
     "feature_unlocks": [
       "<b>Component</b>: Large Psi-Resonant Tissue",
       "<b>Component</b>: Large Psionic Barrier",
@@ -1503,14 +1993,98 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_psionic_bombers",
+    "name": "Psionic Bombers",
+    "description": "These small and nimble craft specialize in delivering concentrated payloads of psionic energy. The larger the target, the greater resonance its explosions achieve.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Component</b>: Psionic Bombers",
+      "<b>Component</b>: Psionic Sappers"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_psionic_disruptor",
+    "name": "Psionic Disruptors",
+    "description": "These highly-advanced disruptors fire a powerful lance of psionic energy through enemy hulls, allowing for the targeted disabling of hostile weaponry.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Component</b>: Medium Psionic Bio-Disruptors",
+      "<b>Component</b>: Medium Psionic Disruptor",
+      "<b>Component</b>: Psionic Bio-Disruptors",
+      "<b>Component</b>: Small Psionic Bio-Disruptors",
+      "<b>Component</b>: Small Psionic Disruptor"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_psionic_lightning",
+    "name": "Psionic Lightning",
+    "description": "By establishing a temporary psionic connection between one ship and another, a direct charge of mental power can be discharged to devastating effect. Such raw energy is capable of confusing ship systems and influencing the minds of the crew within.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Component</b>: Psionic Bio-Lightning",
+      "<b>Component</b>: Psionic Lightning"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_psionic_shield",
     "name": "Psionic Shields",
-    "description": "These extremely powerful shields are generated out of pure psychic energy by a cadre of psionic specialists. Their powers are further augmented by large arrays of psi emitters.",
+    "description": "These extremely powerful shields are generated out of pure psionic energy by a cadre of psionic specialists. Their powers are further augmented by large arrays of psi emitters.",
     "area": "society",
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Psionics",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Large Psionic Shield",
       "<b>Component</b>: Large Zro-Infused Musculature",
@@ -1540,6 +2114,32 @@
     "source": "vanilla"
   },
   {
+    "key": "tech_pyroclastic_resonation",
+    "name": "Pyroclastic Resonation",
+    "description": "By harnessing the extreme thermal energy found on molten worlds, our starbases can increase the energy output in a system with exceptional efficiency.",
+    "area": "engineering",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Industry",
+    "cost": 2000,
+    "feature_unlocks": [
+      "<b>Starbase Building</b>: Pyroclastic Resonator"
+    ],
+    "is_dangerous": false,
+    "is_rare": false,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 2,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
+    "source": "vanilla"
+  },
+  {
     "key": "tech_regenerative_hull_tissue",
     "name": "Regenerative Hull Tissue",
     "description": "A genetically altered version of silicon-based bacteria could potentially be manipulated to regenerate non-organic materials.",
@@ -1547,7 +2147,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 10000,
+    "cost": 5000,
     "feature_unlocks": [
       "<b>Component</b>: Regenerative Hull Tissue"
     ],
@@ -1571,7 +2171,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Field Manipulation",
-    "cost": 10000,
+    "cost": 5000,
     "feature_unlocks": [
       "<b>Feature : </b>Astral Rift Exploration"
     ],
@@ -1597,7 +2197,7 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Mega-Structure</b>: Completed Ring World Section",
       "<b>Mega-Structure</b>: Ring World Frame",
@@ -1618,7 +2218,6 @@
     ],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC Utopia",
       "Does NOT have Origin Wilderness"
     ],
     "children": [],
@@ -1633,7 +2232,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Insult Efficiency +50%"
@@ -1646,7 +2245,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -1660,7 +2259,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Large Scourge Missile",
       "<b>Component</b>: Scourge Missile"
@@ -1685,7 +2284,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Building</b>: Baol Organic Plant"
     ],
@@ -1711,7 +2310,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Starbase Building</b>: Cybrex Mining Hub"
     ],
@@ -1737,7 +2336,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Starbase Building</b>: Irassian Naval Yards"
     ],
@@ -1763,7 +2362,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Building</b>: First League Filing Offices"
     ],
@@ -1789,7 +2388,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Building</b>: Vultaum Reality Computer"
     ],
@@ -1815,7 +2414,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Starbase Building</b>: Yuht Astronomical Interferometer"
     ],
@@ -1841,7 +2440,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Archaeostudies",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Starbase Building</b>: Zroni Storm Caster"
     ],
@@ -1867,7 +2466,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 4000,
+    "cost": 2000,
     "feature_unlocks": [
       "<b>Component</b>: Gravity-Attuned Sensory Organs",
       "<b>Component</b>: Subspace-Monitoring Sensory Organs",
@@ -1900,7 +2499,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "<b>Component</b>: Cloud Lightning",
       "<b>Component</b>: Lightning Breath"
@@ -1925,7 +2524,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 3000,
+    "cost": 1500,
     "feature_unlocks": [
       "<b>Component</b>: Energy Siphon"
     ],
@@ -1949,7 +2548,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 24000,
+    "cost": 12000,
     "feature_unlocks": [
       "<b>Component</b>: Skravird Strike Craft",
       "<b>Component</b>: Warmaster Flagella"
@@ -1976,10 +2575,10 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Materials",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
-      "£alloys£ Alloys per 100 [foundry.GetIcon] [GetAlloyProducerPlural] +50%"
+      "£alloys£ Produced per 100 £job_foundry£ Metallurgists +25%"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -1989,7 +2588,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2003,7 +2602,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 48000,
+    "cost": 24000,
     "feature_unlocks": [
       "<b>Component</b>: Scourge Swarmers",
       "<b>Component</b>: Swarm Strikers"
@@ -2028,10 +2627,10 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Voidcraft",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
-      "Monthly £unity£ Unity from Hyper Relays +3"
+      "Monthly £unity£ Unity from Hyper Relays +1"
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -2041,7 +2640,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2055,7 +2654,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Propulsion",
-    "cost": 4000,
+    "cost": 2000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2084,7 +2683,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Computing",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Operation Difficulty +-1",
@@ -2098,7 +2697,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2112,7 +2711,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2141,7 +2740,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "<b>Component</b>: Gastric Fountain"
     ],
@@ -2166,13 +2765,13 @@
   },
   {
     "key": "tech_unique_mutation_restorative_enzymes",
-    "name": "RESTORATIVE_ENZYMES",
-    "description": "When this creature dies, a random creature in the fleet regains $@unique_mutation_restorative_enzymes_gain|0%$ of its Hull and Armor.",
+    "name": "Restorative Enzymes",
+    "description": "On death, the Tiyanki Matriarch produces an assortment of protective chemicals in a final attempt to preserve the lives of her remaining kin.",
     "area": "society",
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 16000,
+    "cost": 8000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2201,7 +2800,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
       "<b>Component</b>: Leechcraft"
     ],
@@ -2227,12 +2826,12 @@
   {
     "key": "tech_unique_mutation_starborne_biology",
     "name": "Starborne Biology",
-    "description": "A main source of energy for large creatures in deep space comes from the power of starlight. The closer they are to brighter stars, the faster they develop.",
+    "description": "Lifeforms infused with the genetic material of Voidspawn no longer need to feed, they simply absorb energy from starlight.",
     "area": "society",
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 16000,
+    "cost": 8000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2261,7 +2860,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2290,7 +2889,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [],
     "is_dangerous": false,
     "is_rare": false,
@@ -2344,7 +2943,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Particles",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys "
     ],
@@ -2356,7 +2955,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2370,10 +2969,10 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Biology",
-    "cost": 8000,
+    "cost": 4000,
     "feature_unlocks": [
-      "Damage to Voidworms ",
-      "mod_tech_voidworm_immunity_effect"
+      "Colonies are immune to Voidworm bombardment.\nDamage to Voidworms: +$@vaccine_damage_vs_country_type_voidworms_mult|0%$",
+      "Damage to Voidworms "
     ],
     "is_dangerous": false,
     "is_rare": false,
@@ -2397,7 +2996,7 @@
     "base_factor": 1.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 6000,
+    "cost": 3000,
     "feature_unlocks": [
       "Available Envoys ",
       "Damage to Rivals +10%"
@@ -2410,7 +3009,7 @@
     "prerequisites_names": [],
     "weight_modifiers": [],
     "potential": [
-      "Has DLC First Contact"
+      "Has DLC First Contact Story Pack"
     ],
     "children": [],
     "is_event": true,
@@ -2424,11 +3023,11 @@
     "base_factor": 0.0,
     "base_weight": 0.0,
     "category": "Statecraft",
-    "cost": 2500,
+    "cost": 1250,
     "feature_unlocks": [
       "<b>Starbase Building</b>: Interstellar Recruitment Office",
       "First Contact Speed +20%",
-      "mod_tech_xeno_linguistics_effect"
+      "Grants a small amount of £influence£ Influence\nAllows Renowned Leaders to appear."
     ],
     "is_dangerous": false,
     "is_rare": true,
@@ -2437,17 +3036,44 @@
     "tier": 1,
     "prerequisites_names": [],
     "weight_modifiers": [
-      "(+<b style='color:lime'>100</b>) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is of country type: default<br/>\t\t    •   Is of country type: Awakened Marauders<br/>\t\t    •   Is of country type: Fallen Empire<br/>\t\t    •   Is of country type: Awakened Empire<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
+      "(+<b style='color:lime'>100</b>) All must be true<br/>    •   All must be true<br/>\t    •   One must be true<br/>\t\t    •   Is normal empire<br/>\t\t    •   Empire is The Horde<br/>\t\t    •   Is a Fallen Empire<br/>\t\t    •   Is an Awakened Empire<br/>\t\t    •   Is an Enclave<br/>\t    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   All must be false<br/>\t    •   Has Government Civic: Fanatic Purifiers<br/>\t    •   Has Government Civic: Determined Exterminator<br/>\t    •   Has Government Civic: Devouring Swarm<br/>\t    •   Has Government Civic: Scorched World Heralds<br/>\t    •   Has Government Civic: Pyromanic Instinct<br/>\t    •   Has Crisis perk Ever Hungry<br/>    •   Does NOT have Gestalt Consciousness Ethic<br/>    •   Percentage of playable empires met is greater than 0%"
     ],
     "potential": [
       "Has DLC Galactic Paragons",
-      "All must be true\n    •   One must be true\n\t    •   Is of country type: default\n\t    •   Is of country type: Awakened Marauders\n\t    •   Is of country type: Fallen Empire\n\t    •   Is of country type: Awakened Empire\n    •   Does NOT have Gestalt Consciousness Ethic",
+      "All must be true\n    •   One must be true\n\t    •   Is normal empire\n\t    •   Empire is The Horde\n\t    •   Is a Fallen Empire\n\t    •   Is an Awakened Empire\n\t    •   Is an Enclave\n    •   Does NOT have Gestalt Consciousness Ethic",
       "Does NOT have Gestalt Consciousness Ethic",
-      "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   Has Government Civic: Determined Exterminator\n    •   Has Government Civic: Devouring Swarm\n    •   Has Crisis perk Ever Hungry"
+      "All must be false\n    •   Has Government Civic: Fanatic Purifiers\n    •   Has Government Civic: Determined Exterminator\n    •   Has Government Civic: Devouring Swarm\n    •   Has Government Civic: Scorched World Heralds\n    •   Has Government Civic: Pyromanic Instinct\n    •   Has Crisis perk Ever Hungry"
     ],
     "children": [],
     "is_event": true,
     "is_gestalt": false,
+    "source": "vanilla"
+  },
+  {
+    "key": "tech_zro_launcher",
+    "name": "Zro Launchers",
+    "description": "These highly concentrated pellets of zro can be dispersed through enemy shields unabated, shifting through multiple realities. Once contact is made with a physical object, the effects are exponential in devastation.",
+    "area": "society",
+    "base_factor": 1.0,
+    "base_weight": 0.0,
+    "category": "Psionics",
+    "cost": 20000,
+    "feature_unlocks": [
+      "<b>Component</b>: Zro Launchers",
+      "<b>Component</b>: Zro Pods"
+    ],
+    "is_dangerous": false,
+    "is_rare": true,
+    "is_start_tech": false,
+    "prerequisites": [],
+    "tier": 5,
+    "prerequisites_names": [],
+    "weight_modifiers": [],
+    "potential": [
+      "Has DLC Shadows of the Shroud"
+    ],
+    "children": [],
+    "is_event": true,
     "source": "vanilla"
   }
 ]
